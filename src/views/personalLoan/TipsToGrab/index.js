@@ -4,13 +4,15 @@ import {
   AccordionSummary,
   Box,
   Button,
+  Container,
   Grid,
   Typography,
 } from "@mui/material";
 import React from "react";
-import tipstograbimg from "../../../assets/tipstograbimg.webp";
+import tipstograbimg from "../../../assets/images/PersonalLoanImages/tipstograbimg.webp";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import CheckCircleOutlineIcon from "@mui/icons-material/CheckCircleOutline";
+import GetMatchedButton from "../../../components/GetMatchedButton";
 
 const TipsToGrab = () => {
   const [expanded, setExpanded] = React.useState("panel1");
@@ -19,21 +21,27 @@ const TipsToGrab = () => {
     setExpanded(newExpanded ? panel : false);
   };
 
-  const AccHeadingColor = {
+  const AccHeading = {
     color: "#243771",
-    fontSize: "1rem",
-    fontWeight: "bold",
+    fontSize: { xs: "18px", md: "22px" },
+    fontFamily: "Inter",
+    fontWeight: "900",
+  };
+  const AccPara = {
+    color: "#222",
+    fontFamily: "Inter",
+    fontSize: { xs: "16px" },
   };
 
   const CheckCircle = {
-    marginTop: "6px",
+    // marginTop: "6px",
     color: "black",
     marginRight: "10px",
   };
   return (
     <>
-      <Box>
-        <Grid container p="2rem">
+      <Container  maxWidth={"xl"} sx={{padding:  "60px 0px 50px" ,}}>
+        <Grid container  sx={{ padding: { xs: "10px", md: "32px" } }}>
           {/* Left Side */}
           <Grid item xs={12} sm={6} md={6} lg={6} xl={6}>
             <Box
@@ -46,19 +54,29 @@ const TipsToGrab = () => {
               }}
             >
               <Box sx={{
-                 padding: {
-                  // xs:"3rem 1rem 1rem 1.3rem",
-                  // sm:"3rem",
-                  // md:"3rem",
-                  lg:"3rem 0 0 0",
-                  xl:"3rem 0 0 13rem"
-                },
+                
                 width:{sm:"90%",xl:"100%"}
               }}>
-                <Typography variant="h4" color="#243771" fontWeight="bolder">
+                <Typography  sx={{
+                    textAlign: { sm: "left" },
+                    color: "#243771",
+                    fontSize: { xs: "24px", sm: "32px", lg: "34px" },
+                    fontFamily: "Inter",
+                    fontWeight: "900",
+                    lineHeight: "1.1",
+                    margin: "0 0 18px",
+                  }}>
                   Tips To Grab The Best Deal On Personal Loan
                 </Typography>
-                <Typography variant="h6" color="#404040" gutterBottom>
+                <Typography   sx={{
+                    textAlign: { sm: "left" },
+                    color: "#404040",
+                    fontSize: { xs: "16px", md: "21px" },
+                    fontFamily: "Inter",
+
+                    lineHeight: "1.5",
+                    margin: "0 0 18px",
+                  }}>
                   You can follow the tips mentioned below to grab the best deal
                   on personal loan and make repayment less troublesome:
                 </Typography>
@@ -77,12 +95,12 @@ const TipsToGrab = () => {
                     id="panel1d-header"
                   >
                     <CheckCircleOutlineIcon sx={{ ...CheckCircle }} />
-                    <Typography sx={{ ...AccHeadingColor }}>
+                    <Typography sx={{ ...AccHeading }}>
                       Determine the Required Credit:
                     </Typography>
                   </AccordionSummary>
                   <AccordionDetails>
-                    <Typography>
+                    <Typography sx={{ ...AccPara }}>
                       Taking a credit more than your requirement will lead you
                       to pay more interest. As it will increase the instalment
                       amount, you may face difficulties in repayment. This is
@@ -108,12 +126,12 @@ const TipsToGrab = () => {
                   >
                     <CheckCircleOutlineIcon sx={{ ...CheckCircle }} />
 
-                    <Typography sx={{ ...AccHeadingColor }}>
+                    <Typography sx={{ ...AccHeading }}>
                       Check Your Credit Report:
                     </Typography>
                   </AccordionSummary>
                   <AccordionDetails>
-                    <Typography>
+                    <Typography sx={{ ...AccPara }}>
                       Since a personal loan is an unsecured credit facility,
                       lenders put more focus on the creditworthiness of their
                       borrowers. Credit scores and reports contain all the
@@ -137,12 +155,12 @@ const TipsToGrab = () => {
                   >
                     <CheckCircleOutlineIcon sx={{ ...CheckCircle }} />
 
-                    <Typography sx={{ ...AccHeadingColor }}>
+                    <Typography sx={{ ...AccHeading}}>
                       Compare Loan Offers:
                     </Typography>
                   </AccordionSummary>
                   <AccordionDetails>
-                    <Typography>
+                    <Typography sx={{ ...AccPara}}>
                       At Credmudra, there are more than 30 lenders from which
                       you can borrow. You can see that their loan offers are not
                       the same. The interest, charges and other terms can vary.
@@ -166,12 +184,12 @@ const TipsToGrab = () => {
                   >
                     <CheckCircleOutlineIcon sx={{ ...CheckCircle }} />
 
-                    <Typography sx={{ ...AccHeadingColor }}>
+                    <Typography sx={{ ...AccHeading}}>
                       Choose a Suitable Tenure:
                     </Typography>
                   </AccordionSummary>
                   <AccordionDetails>
-                    <Typography>
+                    <Typography sx={{ ...AccPara}}>
                       Choosing a suitable tenure is essential for smooth
                       repayment. When the tenure is longer, you will have to be
                       ready to pay more interest on your loan. When you go with
@@ -188,28 +206,10 @@ const TipsToGrab = () => {
                   display:"flex",
               alignItems:"center",
               justifyContent: {xs:"center",sm:"left"},
-             
+              marginBottom:{xs:"20px",sm:"0"}
                 }}
               >
-                <Button
-                  sx={{
-                    "&:hover": {
-                      backgroundColor: "#E7BC08",
-                    },
-                    padding: "12px 25px 12px 25px",
-                    boxShadow: "0px 3px 6px #00000029",
-                    borderRadius: "10px",
-                    backgroundColor: "#F7D64A",
-                    color: "#243788",
-                    marginTop: "10px",
-                    fontWeight: "900",
-                    transition: ".4s all ease-in-out",
-                    textTransform: "capitalize ",
-                    fontSize: { xs: "1.1rem", xl: "1rem" },
-                  }}
-                >
-                  Get Matched Now!
-                </Button>
+                <GetMatchedButton/>
               </Box>
             </Box>
             </Box>
@@ -225,7 +225,7 @@ const TipsToGrab = () => {
                 flexDirection: "column",
               }}
             >
-              <Box sx={{ width: { xl: "70%" }, padding:"20px 10px 10px 10px" }}>
+              <Box sx={{ width: "100%"}}>
                 <img
                   src={tipstograbimg}
                   alt="loading"
@@ -238,7 +238,7 @@ const TipsToGrab = () => {
             </Box>
           </Grid>
         </Grid>
-      </Box>
+        </Container>
     </>
   );
 };

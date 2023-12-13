@@ -1,19 +1,33 @@
 import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import LayOut from "./layout";
+import Layout from "./layout";
 import BusinessLoan from "./views/businessLoan";
 import PersonalLoan from "./views/personalLoan";
-import CredMudraPage from "./views/credMudraPage";
+import PersonalLoanForDebt from "./views/PersonalLoanForDebt";
+import PersonalLoanForMedical from "./views/PersonalLoanForMedical";
+import PersonalLoanForTravel from "./views/PersonalLoanForTravel";
+import CredmudraPage from "./views/credmudraPage";
 
 const App = () => {
   return (
     <>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<LayOut />}>
-            <Route path="/" index element={<CredMudraPage />} />
+          <Route path="/" element={<Layout />}>
+            <Route path="/" index element={<CredmudraPage />} />
             <Route path="/business-loan" element={<BusinessLoan />} />
             <Route path="/personal-loan" element={<PersonalLoan />} />
+            <Route path="/personalloanfordebt"
+              element={<PersonalLoanForDebt />}
+            />
+            <Route
+              path="/personalloanformedical"
+              element={<PersonalLoanForMedical />}
+            />
+            <Route
+              path="/personalloanfortravel"
+              element={<PersonalLoanForTravel />}
+            />
           </Route>
         </Routes>
       </BrowserRouter>

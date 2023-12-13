@@ -1,7 +1,7 @@
 import { Box } from "@mui/material";
 import React from "react";
 
-const CredMudraPage = () => {
+const CredmudraPage = () => {
   return (
     <>
       <Box>CredMudra Main page</Box>
@@ -9,4 +9,4 @@ const CredMudraPage = () => {
   );
 };
 
-export default CredMudraPage;
+export default CredmudraPage;

@@ -8,7 +8,7 @@ import {
   Stack,
   Toolbar,
 } from "@mui/material";
-import CredmudraLogo from "../../assets/credmudra_logo_new.png";
+import CredmudraLogo from "../../assets/images/credmudra_logo_new.png";
 import KeyboardArrowDownOutlinedIcon from "@mui/icons-material/KeyboardArrowDownOutlined";
 import MenuIcon from "@mui/icons-material/Menu";
 
@@ -20,7 +20,6 @@ const Header = () => {
           sx={{
             boxShadow: "none",
             backgroundColor: "black",
-            position:"static"
           }}
         >
           <Container maxWidth="xl">
@@ -30,6 +29,7 @@ const Header = () => {
                 alignItems="center"
                 justifyContent="space-between"
                 width="100%"
+                paddingX={{ xs: "20px", sm: "24px", md: "48px" }}
               >
                 <CardMedia
                   component="img"
@@ -44,7 +44,7 @@ const Header = () => {
                   <Link
                     underline="none"
                     color="white"
-                    fontWeight="600"
+                    fontWeight="500"
                     fontSize="16"
                     fontFamily="Inter, sans-serif"
                   >
@@ -53,7 +53,7 @@ const Header = () => {
                   <Link
                     underline="none"
                     color="white"
-                    fontWeight="600"
+                    fontWeight="500"
                     fontSize="16"
                     fontFamily="Inter, sans-serif"
                     display="flex"
@@ -66,7 +66,7 @@ const Header = () => {
                   <Link
                     underline="none"
                     color="white"
-                    fontWeight="600"
+                    fontWeight="500"
                     fontSize="16"
                     fontFamily="Inter, sans-serif"
                   >
@@ -78,7 +78,7 @@ const Header = () => {
                     display: { xs: "flex", md: "none" },
                     height: { xs: "33px", sm: "36px" },
                     width: { xs: "38px", sm: "42px" },
-                    bgcolor: "#f7d64a",
+                    bgcolor: "#F7D64A",
                     borderRadius: "2px",
                     justifyContent: "center",
                     alignItems: "center",

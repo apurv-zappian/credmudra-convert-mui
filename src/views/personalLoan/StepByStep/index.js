@@ -8,11 +8,11 @@ import {
   Grid,
   Typography,
 } from "@mui/material";
-import stepbystepimg1 from "../../../assets/stepbystepimg1.webp";
-import stepbystepimg2 from "../../../assets/stepbystepimg2.webp";
-import stepbystepimg3 from "../../../assets/stepbystepimg3.webp";
-import stepbystepimg4 from "../../../assets/stepbystepimg4.webp";
-import stepbystepimg5 from "../../../assets/stepbystepimg5.webp";
+import stepbystepimg1 from "../../../assets/images/PersonalLoanImages/stepbystepimg1.webp";
+import stepbystepimg2 from "../../../assets/images/PersonalLoanImages/stepbystepimg2.webp";
+import stepbystepimg3 from "../../../assets/images/PersonalLoanImages/stepbystepimg3.webp";
+import stepbystepimg4 from "../../../assets/images/PersonalLoanImages/stepbystepimg4.webp";
+import stepbystepimg5 from "../../../assets/images/PersonalLoanImages/stepbystepimg5.webp";
 
 const StepByStep = () => {
   const CardData = [
@@ -22,7 +22,7 @@ const StepByStep = () => {
       description:
         "You will first need to enter your mobile number and verify it by providing the OTP received on it.",
       image: stepbystepimg1,
-      align:'right'
+      align: "right",
     },
     {
       step: "STEP 2",
@@ -30,7 +30,7 @@ const StepByStep = () => {
       description:
         "Mention the loan amount you will need along with a convenient repayment period. Enter your PAN card and email ID.",
       image: stepbystepimg2,
-      align:'center'
+      align: "center",
     },
     {
       step: "STEP 3",
@@ -38,7 +38,7 @@ const StepByStep = () => {
       description:
         "Select the type of your employment and enter other relevant information regarding your profession.",
       image: stepbystepimg3,
-      align:'left'
+      align: "left",
     },
     {
       step: "STEP 4",
@@ -46,7 +46,7 @@ const StepByStep = () => {
       description:
         "Give necessary inputs like gross annual income, savings account details, name, date of birth, present address, etc. Disclose your present debt obligations.",
       image: stepbystepimg4,
-      align:'center'
+      align: "center",
     },
     {
       step: "STEP 5",
@@ -54,41 +54,64 @@ const StepByStep = () => {
       description:
         "Click the ‘Submit’ button after putting the tick mark on the declaration box.",
       image: stepbystepimg5,
-      align:'center'
+      align: "center",
     },
   ];
 
   return (
-      <Box>
-        <Container>
-        <Grid container >
-          {/* Top section */}
-          <Grid item sm={12}>
-            <Box>
-              <Box
+    <Container maxWidth={"lg"}>
+      <Grid container sx={{ padding: "80px 0px 10px" }}>
+        {/* Top section */}
+        <Grid item sm={12}>
+          <Box>
+            <Box
+              sx={{
+                // padding: "3rem 0 2rem",
+                textAlign: "center",
+                // maxWidth: "856px",
+                // margin: "auto",
+                // fontSize: "1rem",
+              }}
+            >
+              <Typography
                 sx={{
-                  padding: "3rem 0 2rem",
+                  lineHeight: { xs: "1.1", md: "1.5" },
+                  marginBottom: "25px",
+                  fontSize: { xs: "24px", sm: "30px", md: "40px" },
+                  fontFamily: "Inter",
+                  color: "#243771",
+                  fontWeight: "900",
                   textAlign: "center",
-                  maxWidth: "856px",
-                  margin: "auto",
-                  fontSize: "1rem",
+                  margin: { sm: "0px 0px 28px", md: "0px 100px 28px" },
                 }}
               >
-                <Typography variant="h3" gutterBottom color="#243771" fontWeight="bolder">
-                  Step-By-Step Process To Apply For Personal Loan
-                </Typography>
-                <Typography variant="h6" color="#243771">
-                  Here is the stepwise process you need to follow to apply for a
-                  personal loan online through Credmudra:
-                </Typography>
-              </Box>
+                Step-By-Step Process To Apply For Personal Loan
+              </Typography>
+              <Typography
+                sx={{
+                  lineHeight: { xs: "1.1", sm: "1.5" },
+                  marginBottom: "25px",
+                  fontSize: { xs: "16px", sm: "20px" },
+                  fontFamily: "Inter",
+                  color: "#243771",
+                  // fontWeight: "900",
+                  margin: { sm: "0px 0px 100px", md: "0px 28px 100px" },
+                }}
+              >
+                Here is the stepwise process you need to follow to apply for a
+                personal loan online through Credmudra:
+              </Typography>
             </Box>
-          </Grid>
-          </Grid>
-          {/* Bottom Section */}
-        <Grid container sx={{display:'flex',justifyContent:'center',}} spacing={2}>
+          </Box>
+        </Grid>
+      </Grid>
+      {/* Bottom Section */}
+      <Grid
+        container
+        sx={{ display: "flex", justifyContent: "center" }}
+        spacing={2}
+      >
         {CardData.map((step, index) => (
-
           <Grid
             item
             xs={12}
@@ -96,46 +119,83 @@ const StepByStep = () => {
             md={4}
             lg={4}
             xl={4}
-            sx={{ width: "100%", height: "100%",display:"flex",alignItems:"center",justifyContent:"center",}}
+            sx={{
+              width: "100%",
+              height: "100%",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+            }}
           >
-              <Box>
-                  <Card elevation={0} sx={{ maxWidth: "50%",minWidth:'300px',minHeight:'360px', textAlign: "center",margin:'0 auto',}}>
-                    <CardActionArea>
-                      <Box>
-                        <img
-                          alt="image1"
-                          src={step.image}
-                        />
-                      </Box>
-                      <CardContent>
-                        <Typography
-                          variant="h3"
-                          fontWeight="bolder"
-                          sx={{
-                            opacity: ".2",
-                            lineHeight: ".1",
-                            marginTop: "2rem",
-                            zIndex:"2"
-                          }}
-                        >
-                            {step.step}
-                        </Typography>
-                        <Typography gutterBottom variant="h5" color="#243771" fontWeight="bolder" fontSize="2rem" lineHeight="1">
-                          {step.title}
-                        </Typography>
-                        <Typography variant="body2" color="text.secondary">
-                          {step.description}
-                        </Typography>
-                      </CardContent>
-                    </CardActionArea>
-                  </Card>
-                </Box>
+            <Box>
+              <Card
+                elevation={0}
+                sx={{
+                  maxWidth: "50%",
+                  minWidth: "300px",
+                  minHeight: "360px",
+                  textAlign: "center",
+                  margin: "0 auto",
+                }}
+              >
+                <CardActionArea>
+                  <Box>
+                    <img
+                      alt="image1"
+                      src={step.image}
+                      style={{
+                        marginBottom: "45px",
+                      }}
+                    />
+                  </Box>
+                  <CardContent>
+                    <Typography
+                      sx={{
+                        opacity: ".5",
+                        lineHeight: ".1",
+                        marginTop: "5px",
+                        zIndex: "2",
+                        fontSize: "52px",
+                        fontFamily: "Inter",
+                        color: "#e4e4e4",
+                        fontWeight: "900",
+                      }}
+                    >
+                      {step.step}
+                    </Typography>
+                    <Typography
+                      sx={{
+                        lineHeight: { xs: "1.1", sm: "1.5" },
+                        marginBottom: "25px",
+                        fontSize: { xs: "21px" },
+                        fontFamily: "Inter",
+                        color: "#243771",
+                        fontWeight: "900",
+                        // textAlign:{xs:"center"}
+                      }}
+                    >
+                      {step.title}
+                    </Typography>
+                    <Typography
+                      sx={{
+                        lineHeight: "1.5",
+                        marginBottom: "25px",
+                        fontSize: { xs: "16px" },
+                        fontFamily: "Inter",
+                        color: "#404040",
+                        // fontWeight:"900"
+                      }}
+                    >
+                      {step.description}
+                    </Typography>
+                  </CardContent>
+                </CardActionArea>
+              </Card>
+            </Box>
           </Grid>
-            ))}
-
-        </Grid>
-        </Container>
-      </Box>
+        ))}
+      </Grid>
+    </Container>
   );
 };
 

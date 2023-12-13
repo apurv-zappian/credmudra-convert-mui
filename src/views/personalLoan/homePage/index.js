@@ -5,130 +5,139 @@ import {
     Typography,
   } from "@mui/material";
   import React from "react";
-  import section1image from "../../../assets/section1image.png";
-  import waveimgsection1 from "../../../assets/wavesection1.svg";
+  import section1image from "../../../assets/images/PersonalLoanImages/section1image.png";
+  import waveimg from "../../../assets/images/PersonalLoanImages/waveimg.svg";
 import Section1Form from "../../../components/Section1Form";
   
   const PlHomePage = () => {
   
     const label = { inputProps: { "aria-label": "Checkbox demo" } };
   
-   
-  
     return (
       <>
-        {/* <Box sx={{ display: "flex",minHeight:"auto"}}> */}
-          <Grid container sx={{minHeight:"100vh"}} p="2rem">
-            <Grid item xs={12} sm={12} md={6} lg={6} xl={6}>
-              <img
-                alt="loading"
-                src={waveimgsection1}
-                style={{
-                  position: "absolute",
-                  top: "0",
-                  left:"0",
-                  width: "50%",
-                  zIndex: "-1",
-                }}
-              />
-  
-              <Box
+      <Grid
+        container
+        sx={{
+          minHeight: { xs: "0vh", sm: "100vh" },
+          padding: { xs: "16px", sm: "10px", md: "32px" },
+        }}
+      >
+        <Grid item xs={12} sm={6} marginTop={{ xs: "15%", sm: "0%" }}>
+          <img
+            alt="loading"
+            src={waveimg}
+            style={{
+              position: "absolute",
+              top: "0",
+              left: "0",
+              width: "50%",
+              zIndex: "-1",
+            }}
+          />
+
+          <Box
+            sx={{
+              display: "flex",
+              minHeight: { xs: "72vh", sm: "100vh" },
+              justifyContent: "center",
+              flexDirection: "column",
+            }}
+          >
+            <Box
+              sx={{
+                padding: { sm: "16px", xl: "0 0 0 112px" },
+                textAlign: { xs: "center", sm: "left" },
+                width: { md: "80%", lg: "90%", xl: "90%" },
+                // height:{xs:"50vh"}
+              }}
+            >
+              <Typography
+                // variant="h3"
+                gutterBottom
                 sx={{
-                  // padding: "0rem 10rem 0rem",
-                  display: "flex",
-                  minHeight: "100vh",
-                  justifyContent: "center",
-                  flexDirection: "column",
+                  fontFamily: "Inter",
+                  color: "#243771",
+                  // maxWidth:{xs:"400px",sm:"540px"},
+                  maxWidth: "540px",
+                  fontSize: { xs: "26px", sm: "34px", md: "34px", lg: "38px" },
+                  lineHeight: "1.2",
+                  fontWeight: "900",
                 }}
               >
-                <Box sx={{
-                  padding:{xs:"0 1rem 0rem",xl:"0 9rem 0"},
-                  textAlign:{xs:"center",md:"left"}
-                  }}>
+                Personal Loans- Handpicked Offers And Highest Disbursal Rate
+              </Typography>
+              <Typography
+                sx={{
+                  font: "normal normal normal 18px/29px Inter",
+                  color: "#10162c",
+                  marginBottom: "14px",
+                }}
+              >
+                So why wait ? Make your move and take that first step towards
+                your aspirations.
+              </Typography>
+
+              <Typography
+                sx={{
+                  marginBottom: "14px",
+                  color: "#404040",
+                  fontSize: "14px",
+                  fontFamily: "Inter",
+                }}
+              >
+                Enter your 10 digit mobile number to proceed
+              </Typography>
+              <Section1Form />
+              <Box display="flex" alignItems="left">
+                <Checkbox
+                  {...label}
+                  defaultChecked
+                  sx={{ marginTop: "12px" }}
+                />
                 <Typography
-                  variant="h3"
-                  gutterBottom
+                  marginTop="20px"
+                  // variant="subtitle2"
+                  textAlign="justify"
+                  width={{ md: "80%", xl: "65%" }}
                   sx={{
-                    font:'normal normal 900 38px/45px Inter',
-                    color: "#243771",
-                    // maxWidth:{xs:"400px",sm:"540px"},
-                    maxWidth:"540px",
-                    fontSize:{xs:"30px",lg:"34px"},
-                    lineHeight:"1.3"
+                    color: "#999",
+                    fontSize: "13px",
+                    lineHeight: "1.5",
+                    fontFamily:"Inter"
                   }}
                 >
-                  Personal Loans- Handpicked Offers And Highest Disbursal Rate
+                  By continuing, I agree to Credmudra's Privacy Policy and Terms
+                  & Conditions and receive communication from Credmudra via SMS,
+                  E-mail, and WhatsApp.
                 </Typography>
-                <Typography variant="h6" sx={{
-                  font:"normal normal normal 18px/29px Inter",
-                  color:"#10162c",
-                  marginBottom:"14px"
-                }}>
-                  So why wait ? Make your move and take that first step towards
-                  your aspirations.
-                </Typography>
-  
-                <Typography variant="subtitle1" sx={{
-                  marginBottom:"14px",
-                  color:"#404040"
-                }}>
-                  Enter your 10 digit mobile number to proceed
-                </Typography>
-                <Section1Form />
-                <Box
-                  display="flex"
-                  alignItems="left"
-                >
-                  <Checkbox
-                    {...label}
-                    defaultChecked
-                    sx={{ marginTop: "12px" }}
-                  />
-                  <Typography
-                    marginTop="20px"
-                    variant="subtitle2"
-                    textAlign="justify"
-                    width={{md:"80%",xl:"65%"}}
-                    sx={{
-                      color:"#999",
-                      fontSize:"13px",
-                      lineHeight:"1.5"
-                    }}
-                  >
-                    By continuing, I agree to Credmudra's Privacy Policy and Terms
-                    & Conditions and receive communication from Credmudra via SMS,
-                    E-mail, and WhatsApp.
-                  </Typography>
-                </Box>
-                </Box>
               </Box>
-            </Grid>
-            {/* Right Side */}
-            <Grid
-              item
-              xs={12}
-              sm={6}
-            >
-              <Box sx={{
-                  display: {xs:'none',sm:"none",md:"flex",xl:"flex"},
-                  minHeight: "100vh",
-                  justifyContent: "center",
-                  flexDirection: "column",
-                }}>
-              <img
-                src={section1image}
-                style={{
-                  width: "100%",
-                  height: "auto",
-                  marginTop: "2%",
-                }}
-                alt="loading"
-              />
-              </Box>
-            </Grid>
-          </Grid>
-        {/* </Box> */}
-      </>
+            </Box>
+          </Box>
+        </Grid>
+        {/* Right Side */}
+        <Grid item xs={12} sm={6} display={{ xs: "none", sm: "flex" }}>
+          <Box
+            sx={{
+              display: { xs: "none", sm: "flex", md: "flex", xl: "flex" },
+              // minHeight: {xs:"0vh",sm:"100vh"},
+              justifyContent: "center",
+              flexDirection: "column",
+              paddingY: "3rem",
+            }}
+          >
+            <img
+              src={section1image}
+              style={{
+                width: "100%",
+                height: "auto",
+                // marginTop: "2%",
+              }}
+              alt="loading"
+            />
+          </Box>
+        </Grid>
+      </Grid>
+    </>
     );
   };
   
