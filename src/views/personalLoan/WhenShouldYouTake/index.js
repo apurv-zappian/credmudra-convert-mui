@@ -1,0 +1,262 @@
+import { FiberManualRecord } from "@mui/icons-material";
+import { Box, Button, Grid, List, ListItem, Typography } from "@mui/material";
+import React from "react";
+
+const WhenShouldYouTake = () => {
+  const CircleIcon = {
+    color: "#F7D64A",
+    fontSize: "1.2rem",
+    position: "absolute",
+    top: "15px",
+    left: "0",
+  };
+
+  const TypographySubHeadings = {
+    color: "#404040",
+    fontWeight: "900",
+    fontSize: "16px",
+    fontFamily: "Inter,sans-serif",
+  };
+  return (
+    <>
+      <Grid container p="2rem">
+        {/* Left Side  */}
+        <Grid item xs={12} sm={12} md={6} lg={6} xl={7}>
+          <Box
+            sx={{
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              flexDirection: "column",
+              // marginLeft: { xs: "0", xl: "25%" },
+              //   padding: { xs: "2rem 7rem 1rem" },
+              // padding: "3rem",
+            }}
+          >
+            <Box
+              sx={{
+                width: { sm: "100%", md: "85%", lg: "90%", xl: "80%" },
+                padding: {
+                  // xs:"3rem 1rem 1rem 1.3rem",
+                  // sm:"3rem",
+                  // md:"3rem",
+                  // lg:"3rem 0 0 0",
+                  xl:"0rem 0 0 4rem"
+                },
+              }}
+            >
+              <List>
+                <ListItem sx={{ position: "relative" }}>
+                  <FiberManualRecord sx={{ ...CircleIcon }} />
+                  <Typography
+                    variant="h6"
+                    sx={{
+                      marginLeft: "10px",
+                      fontFamily: "Inter,sans-serif",
+                      fontSize: "16px",
+                      color: "#404040",
+                    }}
+                  >
+                    <Typography
+                      variant="h5"
+                      display="inline"
+                      sx={{ ...TypographySubHeadings }}
+                    >
+                      Medical Emergency:
+                    </Typography>
+                    Medical emergency is uncertain in nature and you may require
+                    a small to large credit within a short span. Taking a
+                    personal loan from Credmudra will help you face the
+                    challenge boldly. With us, you can get a loan credited to
+                    your account quickly. It can even be on the same day.
+                  </Typography>
+                </ListItem>
+                <ListItem sx={{ position: "relative" }}>
+                  <FiberManualRecord sx={{ ...CircleIcon }} />
+                  <Typography
+                    variant="h6"
+                    sx={{
+                      marginLeft: "10px",
+                      fontFamily: "Inter,sans-serif",
+                      fontSize: "16px",
+                      color: "#404040",
+                    }}
+                  >
+                    <Typography
+                      variant="h5"
+                      display="inline"
+                      sx={{ ...TypographySubHeadings }}
+                    >
+                      Debt Consolidations:
+                    </Typography>
+                    If you have multiple loans, you need to remember the
+                    scheduled date of all your loan instalments and pay them
+                    separately. Now, if you go for debt consolidation, all your
+                    existing obligations will be merged into one. So, you can
+                    repay your outstanding debts by paying one instalment.
+                  </Typography>
+                </ListItem>
+                <ListItem sx={{ position: "relative" }}>
+                  <FiberManualRecord sx={{ ...CircleIcon }} />
+                  <Typography
+                    variant="h6"
+                    sx={{
+                      marginLeft: "10px",
+                      fontFamily: "Inter,sans-serif",
+                      fontSize: "16px",
+                      color: "#404040",
+                    }}
+                  >
+                    <Typography
+                      variant="h5"
+                      display="inline"
+                      sx={{ ...TypographySubHeadings }}
+                    >
+                      Educational Expenses:
+                    </Typography>
+                    You can take a personal loan to get immediate credit and pay
+                    for the tuition fees of your child. This way, you will not
+                    have to wait longer to arrange the necessary fund. You can
+                    easily repay the credit with small instalments starting from
+                    the next month.
+                  </Typography>
+                </ListItem>
+                <ListItem sx={{ position: "relative" }}>
+                  <FiberManualRecord sx={{ ...CircleIcon }} />
+                  <Typography
+                    variant="h6"
+                    sx={{
+                      marginLeft: "10px",
+                      fontFamily: "Inter,sans-serif",
+                      fontSize: "16px",
+                      color: "#404040",
+                    }}
+                  >
+                    <Typography
+                      variant="h5"
+                      display="inline"
+                      sx={{ ...TypographySubHeadings }}
+                    >
+                      Family Festivals:
+                    </Typography>
+                    To plan family occasions or events like weddings, you may
+                    need to have a lump sum credit at your disposal. You can
+                    take a personal loan if you do not have the required amount
+                    during such events. As a result, you will not have to
+                    compromise with your budget.
+                  </Typography>
+                </ListItem>
+                <ListItem sx={{ position: "relative" }}>
+                  <FiberManualRecord sx={{ ...CircleIcon }} />
+                  <Typography
+                    variant="h6"
+                    sx={{
+                      marginLeft: "10px",
+                      fontFamily: "Inter,sans-serif",
+                      fontSize: "16px",
+                      color: "#404040",
+                    }}
+                  >
+                    <Typography
+                      variant="h5"
+                      display="inline"
+                      sx={{ ...TypographySubHeadings }}
+                    >
+                      Big Purchases:
+                    </Typography>
+                    There are some big and luxurious expenses, like the purchase
+                    of a cosy flat or vehicle, which you have wanted to realise
+                    for so long. You can take a personal loan to meet those life
+                    goals easily. You will get a lump sum end-usage-free credit
+                    to bear any expenses you want.
+                  </Typography>
+                </ListItem>
+              </List>
+            </Box>
+          </Box>
+        </Grid>
+        {/* Right Side */}
+        <Grid item xs={12} sm={12} md={6} lg={6} xl={5}>
+          <Box
+            sx={{
+              display: "flex",
+              alignItems: "left",
+              justifyContent: "center",
+              flexDirection: "column",
+              // paddingTop: "12rem",
+              //   flexDirection: "column",
+              //   marginTop: "2rem",
+            }}
+          >
+            <Box
+              sx={{
+                padding: {
+                  //   // xs:"3rem 1rem 1rem 1.3rem",
+                  // sm:"7rem 0 0",
+                  md: "7rem 0 0",
+                  lg: "9rem 0 0 0",
+                  xl: "12rem 0 0",
+                },
+                width: { sm: "100%", md: "85%", lg: "90%", xl: "80%" },
+              }}
+            >
+              <Typography
+                variant="h3"
+                fontWeight="bolder"
+                color="#243771"
+                textAlign={{ xs: "center", md: "left" }}
+                sx={{
+                  fontFamily: "Inter,sans-serif",
+                  fontSize: "24px",
+                  marginBottom: "23px",
+                  fontWeight: "900",
+                }}
+              >
+                When Should You Take A Personal Loan?
+              </Typography>
+              <Typography
+                variant="h6"
+                textAlign={{ xs: "center", md: "left" }}
+                sx={{
+                  fontSize: "16px",
+                  marginBottom: "23px",
+                }}
+              >
+                Here are some circumstances under which you can consider taking
+                a personal loan:
+              </Typography>
+              <Box textAlign={{ xs: "center", md: "left" }}>
+                <Button
+                  sx={{
+                    "&:hover": {
+                      backgroundColor: "#243788",
+                      color: "#F7D64A",
+                    },
+                    padding: {
+                      xs: "12px 15px 12px",
+                      xl: "12px 25px 12px 25px",
+                    },
+                    boxShadow: "0px 3px 6px #00000029",
+                    borderRadius: "10px",
+                    backgroundColor: "#F7D64A",
+                    color: "#243788",
+                    fontWeight: "900",
+                    transition: ".4s all ease-in-out",
+                    textTransform: "capitalize ",
+                    fontSize: "1rem",
+                    width: { xs: "200px", xl: "250px" },
+                    marginTop: "1rem",
+                  }}
+                >
+                  Get Matched Now!
+                </Button>
+              </Box>
+            </Box>
+          </Box>
+        </Grid>
+      </Grid>
+    </>
+  );
+};
+
+export default WhenShouldYouTake;

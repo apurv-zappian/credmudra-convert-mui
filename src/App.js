@@ -1,25 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import LayOut from "./layout";
+import BusinessLoan from "./views/businessLoan";
+import PersonalLoan from "./views/personalLoan";
+import CredMudraPage from "./views/credMudraPage";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<LayOut />}>
+            <Route path="/" index element={<CredMudraPage />} />
+            <Route path="/business-loan" element={<BusinessLoan />} />
+            <Route path="/personal-loan" element={<PersonalLoan />} />
+          </Route>
+        </Routes>
+      </BrowserRouter>
+    </>
   );
-}
+};
 
 export default App;
