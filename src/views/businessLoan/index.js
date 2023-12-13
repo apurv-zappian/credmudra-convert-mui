@@ -1,11 +1,15 @@
 import { Box } from "@mui/material";
-import React from "react";
-
+import React, { Fragment } from "react";
+import BussinessLoanHomePage from '../businessLoan/homepage/index'
+import WhyBussinessLoanSection from "./whyBussinessLoan";
+import ChooseCredmudraLoan from "./chooseCredmudraLoanSection/index"
 const BusinessLoan = () => {
   return (
-    <>
-      <Box>BusinessLoan</Box>
-    </>
+   <Fragment>
+     <BussinessLoanHomePage/>
+     <WhyBussinessLoanSection/>
+     <ChooseCredmudraLoan/>
+   </Fragment>
   );
 };
 
