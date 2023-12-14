@@ -1,21 +1,16 @@
 import React from "react";
-import { Box, Grid, List, ListItem, ListItemText, Typography } from "@mui/material";
+import {
+  Box,
+  Grid,
+  List,
+  ListItem,
+  Typography,
+} from "@mui/material";
 import { FiberManualRecord } from "@mui/icons-material";
 import findoutimg from "../../../assets/images/PersonalLoanForTravelImages/findout.png";
 
 const FindOutWhen = () => {
-    const primaryTextStyles = {
-        fontSize: '18px',
-        fontWeight: 'bold',
-        color: 'blue',
-        // Add any other primary text styles here
-      };
-    
-      const secondaryTextStyles = {
-        fontSize: '14px',
-        color: 'green',
-        // Add any other secondary text styles here
-      };
+  
   const CircleIcon = {
     color: "#F7D64A",
     fontSize: "10px",
@@ -43,15 +38,28 @@ const FindOutWhen = () => {
             top: "0",
           }}
         />
-        <Grid container sx={{ 
-            // padding: { xs: "10px", md: "32px" }
-             }}>
+        <Grid
+          container
+          sx={
+            {
+              // padding: { xs: "10px", md: "32px" }
+            }
+          }
+        >
           <Grid
             item
             xs={12}
             sm={6}
             //   sx={{ display: { xs: "none", sm: "flex" } }}
-            alignContent={'center'}
+            // alignContent={"center"}
+            sx={{
+              display:"flex",
+              alignItems:'center',
+              justifyContent:'center',
+              flexDirection:'column',
+              // backgroundColor:"gray"
+              padding: "0px 10px 0px"
+            }}
           >
             <Box
               sx={{
@@ -59,9 +67,12 @@ const FindOutWhen = () => {
                   xs: "0",
                   sm: "0 0 0 16px",
                   lg: "0 0 0 144px",
-                  xl: "0 0 0 240px",
+                  // xl: "0 0 0 150px",
                 },
-                width: { sm: "85%" },
+                width: { sm: "70%" },
+                // marginLeft:"15%",
+                // backgroundColor:'pink'
+             
               }}
             >
               <Typography
@@ -90,7 +101,7 @@ const FindOutWhen = () => {
               </Typography>
             </Box>
           </Grid>
-          <Grid item xs={12} sm={6}>
+          <Grid item xs={12} sm={6} sx={{ padding: "0px 10px 0px" }}>
             <Box
               sx={{
                 color: "#fff",
@@ -100,6 +111,7 @@ const FindOutWhen = () => {
                   lg: "0 144px 0 0",
                   xl: "0 240px 0 0",
                 },
+                
               }}
             >
               <Typography
@@ -132,7 +144,8 @@ const FindOutWhen = () => {
               >
                 {" "}
                 <FiberManualRecord sx={{ ...CircleIcon }} />
-                Public and private limited companies, partnership firms, sole proprietorships, LLPs
+                Public and private limited companies, partnership firms, sole
+                proprietorships, LLPs
               </Typography>
               <Typography
                 sx={{
@@ -147,7 +160,8 @@ const FindOutWhen = () => {
               >
                 {" "}
                 <FiberManualRecord sx={{ ...CircleIcon }} />
-                Large enterprises dealing only in trading, services and manufacturing sectors
+                Large enterprises dealing only in trading, services and
+                manufacturing sectors
               </Typography>
               <Typography
                 sx={{
@@ -164,19 +178,30 @@ const FindOutWhen = () => {
                 <FiberManualRecord sx={{ ...CircleIcon }} />
                 Co-operative societies, NGOs and trusts
               </Typography>
+              <List>
+              <ListItem
+                  sx={{
+                    fontSize: { xs: "16px", sm: "18px" },
+                    fontWeight: "400",
+                    fontFamily: "Inter",
+                  }}
+                >
+                  <FiberManualRecord sx={{ ...CircleIcon }} />
+                  <Typography
+                    sx={{
+                      color: "#f7d64a",
+                      fontWeight: "700",
 
-              <List sx={{ listStyle: "none" }}>
-              <ListItem>
-        {/* <ListItemIcon>
-          
-        </ListItemIcon> */}
-        <ListItemText
-          primary="Primary Text"
-          secondary="Secondary Text"
-          primaryTypographyProps={{ style: primaryTextStyles }}
-          secondaryTypographyProps={{ style: secondaryTextStyles }}
-        />
-      </ListItem>
+                      fontFamily: "Inter",
+                      fontSize: { xs: "16px", sm: "18px" },
+                      display: "inline",
+                    }}
+                  >
+                    Age  :
+                  </Typography>{" "}
+                 21 to 65 years old
+                </ListItem>
+              
 
                 <ListItem
                   sx={{
@@ -205,6 +230,7 @@ const FindOutWhen = () => {
                     fontSize: { xs: "16px", sm: "18px" },
                     fontWeight: "400",
                     fontFamily: "Inter",
+                    display:"inline"
                   }}
                 >
                   <FiberManualRecord sx={{ ...CircleIcon }} />
@@ -217,8 +243,8 @@ const FindOutWhen = () => {
                       display: "inline",
                     }}
                   >
-                 Minimum yearly turnover :
-                  </Typography>{" "}
+                    Minimum yearly turnover:
+                  </Typography>
                   Vary across lenders
                 </ListItem>
                 <ListItem
@@ -238,7 +264,7 @@ const FindOutWhen = () => {
                       display: "inline",
                     }}
                   >
-                   Credit score :
+                    Credit score :
                   </Typography>{" "}
                   750 or more
                 </ListItem>
@@ -247,8 +273,8 @@ const FindOutWhen = () => {
                 sx={{ fontSize: "15px", fontFamily: "Inter", color: "FFFFFF" }}
               >
                 {" "}
-                Note: The above-mentioned details can vary from lender to lender depending on their terms and conditions.
-
+                Note: The above-mentioned details can vary from lender to lender
+                depending on their terms and conditions.
               </Typography>
             </Box>
           </Grid>
