@@ -10,17 +10,52 @@ import {
   Typography,
 } from "@mui/material";
 import { CheckCircleOutlineOutlined, ExpandMore } from "@mui/icons-material";
-import { chooseCredmudraLoanImage } from "../../../assets/images/BussinessLoanImage/index";
-const ChooseCredmudraLoanSection = () => {
+import { featureBenefitImage } from "../../../assets/images/FeatureBenefitImage/index";
+const FeatureBenefitSection = () => {
   const [expanded, setExpanded] = React.useState("panel1");
 
   const handleChange = (panel) => (event, newExpanded) => {
     setExpanded(newExpanded ? panel : false);
   };
-
   return (
     <Fragment>
       <Grid container sx={{ minHeight: "70vh", padding: "80px 0px" }}>
+        <Grid
+          item
+          xl={6}
+          lg={6}
+          md={6}
+          sm={12}
+          xs={12}
+          sx={{
+            display: "flex",
+            justifyContent: "center",
+          }}
+        >
+          <Box
+            sx={{
+              width: {
+                xl: "70%",
+                lg: "90%",
+                md: "70%",
+                sm: "70%",
+                xs: "70%",
+              },
+              height: "auto",
+            }}
+          >
+            <img
+              src={featureBenefitImage}
+              alt="choosephoto"
+              style={{
+                width: "100%",
+                height: "auto",
+                objectFit: "cover",
+                objectPosition: "center",
+              }}
+            />
+          </Box>
+        </Grid>
         <Grid
           item
           xl={6}
@@ -45,8 +80,8 @@ const ChooseCredmudraLoanSection = () => {
             <Box
               sx={{
                 width: {
-                  xl: "85%",
-                  lg: "85%",
+                  xl: "90%",
+                  lg: "90%",
                   md: "90%",
                   sm: "100%",
                   xs: "100%",
@@ -77,14 +112,14 @@ const ChooseCredmudraLoanSection = () => {
                   },
                 }}
               >
-                Choose Credmudra For The Best Business Loan
+                Features And Benefits Of A Business <br /> Loan
               </Typography>
             </Box>
             <Box
               sx={{
                 width: {
-                  xl: "85%",
-                  lg: "85%",
+                  xl: "90%",
+                  lg: "90%",
                   md: "90%",
                   sm: "100%",
                   xs: "100%",
@@ -140,14 +175,15 @@ const ChooseCredmudraLoanSection = () => {
                       },
                     }}
                   >
-                    Prompt Loan Disbursal
+                    Instant Disbursal
                   </Typography>
                 </AccordionSummary>
                 <AccordionDetails>
                   <Typography>
-                    With us, the TAT of borrowing a business loan is reduced to
-                    meet your financial requirements without wasting time. We
-                    promise to sanction and disburse the loan amount the same
+                    The requested sum of money gets credited to your account
+                    real quick once the application and documents are verified
+                    successfully. If you choose Credmudra, the wait time is
+                    minimal. Moreover, you can get the amount credited the same
                     day.
                   </Typography>
                 </AccordionDetails>
@@ -197,14 +233,13 @@ const ChooseCredmudraLoanSection = () => {
                       },
                     }}
                   >
-                    Loan Match Making
+                    Collateral-free Advances
                   </Typography>
                 </AccordionSummary>
                 <AccordionDetails>
                   <Typography>
-                    Just apply for the loan, submit necessary papers and relax.
-                    We will do the rest. Finding the right lending partner that
-                    matches your requirements is what we do. And we do it best.
+                    As unsecured loans, financial institutions do not ask for
+                    any collateral while sanctioning the loan application.
                   </Typography>
                 </AccordionDetails>
               </Accordion>
@@ -253,20 +288,19 @@ const ChooseCredmudraLoanSection = () => {
                       },
                     }}
                   >
-                    Easy Application
+                    Hassle-free Documentation
                   </Typography>
                 </AccordionSummary>
                 <AccordionDetails>
                   <Typography>
-                    Our application process is user-friendly and seamless. You
-                    only need to furnish your mobile phone number, required
-                    details and mention your loan requirements.
+                    Only a handful of documents are needed while sanctioning
+                    business loan applications.
                   </Typography>
                 </AccordionDetails>
               </Accordion>
               <Accordion
-                expanded={expanded === "panel3"}
-                onChange={handleChange("panel3")}
+                expanded={expanded === "panel4"}
+                onChange={handleChange("panel4")}
                 sx={{
                   boxShadow: "none",
                   borderBottom: "1px solid #e8e8e8",
@@ -309,13 +343,69 @@ const ChooseCredmudraLoanSection = () => {
                       },
                     }}
                   >
-                    Loan Tenure at your Discretion
+                    Convienent Repayment Facility
                   </Typography>
                 </AccordionSummary>
                 <AccordionDetails>
                   <Typography>
-                    Choose the loan tenure per your convenience. Just ensure the
-                    chosen EMI is within your repayment capacity.
+                    Use a business loan EMI calculator to determine the EMI
+                    amount and choose the instalment that best suits your
+                    financial strength.
+                  </Typography>
+                </AccordionDetails>
+              </Accordion>
+              <Accordion
+                expanded={expanded === "panel5"}
+                onChange={handleChange("panel5")}
+                sx={{
+                  boxShadow: "none",
+                  borderBottom: "1px solid #e8e8e8",
+                  marginTop: "2px",
+                }}
+              >
+                <AccordionSummary
+                  aria-controls="panel3d-content"
+                  id="panel3d-header"
+                  expandIcon={<ExpandMore />}
+                  sx={{ paddingBottom: "20px" }}
+                >
+                  <CheckCircleOutlineOutlined
+                    sx={{
+                      marginTop: "10px",
+                      fontSize: {
+                        xl: "25px",
+                        lg: "25px",
+                        md: "25px",
+                        sm: "20px",
+                        xs: "20px",
+                      },
+                    }}
+                  />
+                  <Typography
+                    sx={{
+                      fontSize: {
+                        xl: "22px",
+                        lg: "22px",
+                        md: "22px",
+                        sm: "20px",
+                        xs: "20px",
+                      },
+                      paddingLeft: "10px",
+                      fontWeight: "900",
+                      color: "#243788",
+                      marginTop: {
+                        sm: "5px",
+                        xs: "5px",
+                      },
+                    }}
+                  >
+                    No End-use Restriction Attached
+                  </Typography>
+                </AccordionSummary>
+                <AccordionDetails>
+                  <Typography>
+                    You can use the borrowed sum to fund any business expense
+                    without any obligation or restriction from the lender.
                   </Typography>
                 </AccordionDetails>
               </Accordion>
@@ -354,45 +444,9 @@ const ChooseCredmudraLoanSection = () => {
             </Box>
           </Box>
         </Grid>
-        <Grid
-          item
-          xl={6}
-          lg={6}
-          md={6}
-          sm={12}
-          xs={12}
-          sx={{
-            display: "flex",
-            justifyContent: "center",
-          }}
-        >
-          <Box
-            sx={{
-              width: {
-                xl: "80%",
-                lg: "90%",
-                md: "70%",
-                sm: "70%",
-                xs: "70%",
-              },
-              height: "auto",
-            }}
-          >
-            <img
-              src={chooseCredmudraLoanImage}
-              alt="choosephoto"
-              style={{
-                width: "100%",
-                height: "auto",
-                objectFit: "cover",
-                objectPosition: "center",
-              }}
-            />
-          </Box>
-        </Grid>
       </Grid>
     </Fragment>
   );
 };
 
-export default ChooseCredmudraLoanSection;
+export default FeatureBenefitSection;
