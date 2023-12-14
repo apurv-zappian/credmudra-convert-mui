@@ -14,6 +14,7 @@ import {
 } from "@mui/material";
 import React from "react";
 import styled from "styled-components";
+import GetMatchedButton from "../../../components/GetMatchedButton";
 
 const BankThatOffer = () => {
   const StyledTableCell = styled(TableCell)(({ theme }) => ({
@@ -53,93 +54,149 @@ const BankThatOffer = () => {
   ];
   return (
     <>
-      <Box>
-        <Container>
-          <Grid container alignItems="center">
-            <Grid item xs={12} md={4}>
-              <Box>
-                <Typography variant="h2">
+      <Box bgcolor="#fcefd8">
+        <Container
+          sx={{
+            padding: "70px 10px 80px",
+          }}
+          maxWidth={"xl"}
+        >
+          <Grid container alignItems="center" spacing={6}>
+            <Grid
+              item
+              xs={12}
+              sm={5}
+            //   bgcolor={"red"}
+              sx={{ padding: "0px 10px 20px" }}
+            >
+              <Box
+                sx={{
+                  padding: { lg: "0% 20% 0% 5%",xl:"0% 25% 0% 5%"},
+                }}
+                // bgcolor={"pink"}
+              >
+                <Typography
+                  sx={{
+                    textAlign: { xs: "center", sm: "left" },
+                    fontSize: { xs: "22px", sm: "24px", md: "36px" },
+                    fontFamily: "Inter",
+                    color: "#243771",
+                    fontWeight: "900",
+                    lineHeight: { xs: "1.3", md: "1.1" },
+                    margin: { xs: "0px 0px 20px", sm: "0px 0px 30px" },
+                    // padding:{xl:"0px 80px 0px"}
+                  }}
+                >
                   Banks That Offer Travel Loan
                 </Typography>
-                <Typography variant="body1">
+                <Typography
+                  sx={{
+                    textAlign: { xs: "center", sm: "left" },
+                    fontSize: { xs: "17px" },
+                    fontFamily: "Inter",
+                    color: "#404040",
+                    // fontWeight: "900",
+                    lineHeight: { xs: "1.5" },
+                    margin: { xs: "0px 0px 25px" },
+                    // padding:{xl:"0px 80px 0px"}
+                  }}
+                >
                   Take a look at the following table to learn about some of the
                   top banks that offer travel loans at competitive interest
                   rates:
                 </Typography>
+                <Box
+                  sx={{
+                    display: "flex",
+                    alignItems: { xs: "center", sm: "left" },
+                    justifyContent: { xs: "center", sm: "left" },
+                    // margin: { xs: "0px 0px 24px" },
+                    // padding:{xl:"0rem 5rem 0rem"}
+                  }}
+                >
+                  <GetMatchedButton/>
+                </Box>
               </Box>
             </Grid>
-            <Grid item xs={12} md={6} className="offset-md-2">
-              <Paper
-                elevation={5}
+            <Grid item xs={12} sm={7}>
+              <Box
                 sx={{
-                  padding: 2,
-                  boxShadow: "5px 5px 10px gray",
-                  backgroundColor: "#E9E9E9",
+                  marginLeft: { sm: "16%" },
+                  padding:{lg:"0 5% 0% 0%"}
                 }}
               >
-                <TableContainer component={Paper}>
-                  <Table aria-label="customized table">
-                    <TableHead>
-                      <TableRow>
-                        <StyledTableCell
-                          sx={{
-                            borderRight: "2px solid #C1C5D3",
-                            //   padding: "16px 10px",
-                            fontSize: { xs: "18px" },
-                            fontFamily: "Inter,sans-serif",
-                          }}
-                        >
-                          BANK
-                        </StyledTableCell>
-                        <StyledTableCell
-                          align="right"
-                          sx={{
-                            borderRight: "2px solid #C1C5D3",
-                            // padding:"16px 10px",
-                            fontSize: { xs: "18px" },
-                            fontFamily: "Inter,sans-serif",
-                          }}
-                        >
-                          INTEREST RATE
-                        </StyledTableCell>
-                      </TableRow>
-                    </TableHead>
-                    <TableBody>
-                      {rows.map((row) => (
-                        <StyledTableRow key={row.i}>
+                <Paper
+                  elevation={5}
+                  sx={{
+                    padding: 2,
+                    boxShadow: "5px 5px 10px gray",
+                    backgroundColor: "#E9E9E9",
+                  }}
+                >
+                  <TableContainer component={Paper}>
+                    <Table aria-label="customized table">
+                      <TableHead>
+                        <TableRow>
                           <StyledTableCell
-                            component="th"
-                            scope="row"
                             sx={{
                               borderRight: "2px solid #C1C5D3",
-                              fontSize: "18px",
+                              //   padding: "16px 10px",
+                              fontSize: { xs: "18px" },
                               fontFamily: "Inter,sans-serif",
-                              padding: "15px",
-                              textAlign: "center",
-                              color: "#404040",
                             }}
                           >
-                            {row.bank}
+                            BANK
                           </StyledTableCell>
                           <StyledTableCell
                             align="right"
                             sx={{
                               borderRight: "2px solid #C1C5D3",
-                              fontSize: "18px",
+                              // padding:"16px 10px",
+                              fontSize: { xs: "18px" },
                               fontFamily: "Inter,sans-serif",
-                              padding: "15px",
-                              textAlign: "center",
-                              color: "#404040",
                             }}
                           >
-                            {row.interestrate}
+                            INTEREST RATE
                           </StyledTableCell>
-                        </StyledTableRow>
-                      ))}
-                    </TableBody>
-                  </Table>
-                </TableContainer>
-              </Paper>
+                        </TableRow>
+                      </TableHead>
+                      <TableBody>
+                        {rows.map((row) => (
+                          <StyledTableRow key={row.i}>
+                            <StyledTableCell
+                              component="th"
+                              scope="row"
+                              sx={{
+                                borderRight: "2px solid #C1C5D3",
+                                fontSize: "18px",
+                                fontFamily: "Inter,sans-serif",
+                                padding: "15px",
+                                textAlign: "center",
+                                color: "#404040",
+                              }}
+                            >
+                              {row.bank}
+                            </StyledTableCell>
+                            <StyledTableCell
+                              align="right"
+                              sx={{
+                                borderRight: "2px solid #C1C5D3",
+                                fontSize: "18px",
+                                fontFamily: "Inter,sans-serif",
+                                padding: "15px",
+                                textAlign: "center",
+                                color: "#404040",
+                              }}
+                            >
+                              {row.interestrate}
+                            </StyledTableCell>
+                          </StyledTableRow>
+                        ))}
+                      </TableBody>
+                    </Table>
+                  </TableContainer>
+                </Paper>
+              </Box>
             </Grid>
           </Grid>
         </Container>
