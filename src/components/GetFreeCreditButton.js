@@ -36,7 +36,7 @@
 
 import { Button } from "@mui/material";
 import React, { useState } from "react";
-import GetStartedWith from "../views/creditScore/GetStartedWith";
+import GetStartedWith1 from "../views/creditScore/GetStartedWith1";
 
 const GetFreeCreditButton = () => {
   const [openModal, setOpenModal] = useState(false);
@@ -71,8 +71,7 @@ const GetFreeCreditButton = () => {
       >
         Get Free Credit Score
       </Button>
-
-      {openModal && <GetStartedWith onClose={handleCloseModal} />}
+      {openModal && <GetStartedWith1 onClose={handleCloseModal} />}
     </>
   );
 };
