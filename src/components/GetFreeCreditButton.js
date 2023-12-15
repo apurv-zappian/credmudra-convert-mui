@@ -37,16 +37,28 @@
 import { Button } from "@mui/material";
 import React, { useState } from "react";
 import GetStartedWith1 from "../views/creditScore/GetStartedWith1";
+import GetStartedWith2 from "../views/creditScore/GetStartedWith2";
 
 const GetFreeCreditButton = () => {
   const [openModal, setOpenModal] = useState(false);
 
-  const handleButtonClick = () => {
+  const handleButtonClick1 = () => {
     setOpenModal(true);
   };
 
-  const handleCloseModal = () => {
+  const handleCloseModal1 = () => {
     setOpenModal(false);
+  };
+
+  const [openModal2, setOpenModal2] = useState(false);
+
+  const handleButtonClick2 = () => {
+    setOpenModal(false);
+    setOpenModal2(true);
+  };
+
+  const handleCloseModal2 = () => {
+    setOpenModal2(false);
   };
 
   return (
@@ -67,11 +79,19 @@ const GetFreeCreditButton = () => {
             background: "#75A54C",
           },
         }}
-        onClick={handleButtonClick}
+        onClick={handleButtonClick1}
       >
         Get Free Credit Score
       </Button>
-      {openModal && <GetStartedWith1 onClose={handleCloseModal} />}
+      {openModal && (
+        <GetStartedWith1 openModal={openModal} onClose={handleCloseModal1} handleButtonClick2={handleButtonClick2} />
+      )}
+      {openModal2 && (
+        <GetStartedWith2
+          openModal2={openModal2}
+          handleCloseModal2={handleCloseModal2}
+        />
+      )}
     </>
   );
 };

@@ -1,16 +1,9 @@
 import React from "react";
-import {
-  Box,
-  Grid,
-  List,
-  ListItem,
-  Typography,
-} from "@mui/material";
+import { Box, Grid, List, ListItem, Typography } from "@mui/material";
 import { FiberManualRecord } from "@mui/icons-material";
 import findoutimg from "../../../assets/images/PersonalLoanForTravelImages/findout.png";
 
 const FindOutWhen = () => {
-  
   const CircleIcon = {
     color: "#F7D64A",
     fontSize: "10px",
@@ -53,12 +46,12 @@ const FindOutWhen = () => {
             //   sx={{ display: { xs: "none", sm: "flex" } }}
             // alignContent={"center"}
             sx={{
-              display:"flex",
-              alignItems:'center',
-              justifyContent:'center',
-              flexDirection:'column',
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              flexDirection: "column",
               // backgroundColor:"gray"
-              padding: "0px 10px 0px"
+              padding: "0px 10px 0px",
             }}
           >
             <Box
@@ -72,7 +65,6 @@ const FindOutWhen = () => {
                 width: { sm: "70%" },
                 // marginLeft:"15%",
                 // backgroundColor:'pink'
-             
               }}
             >
               <Typography
@@ -111,7 +103,6 @@ const FindOutWhen = () => {
                   lg: "0 144px 0 0",
                   xl: "0 240px 0 0",
                 },
-                
               }}
             >
               <Typography
@@ -179,7 +170,7 @@ const FindOutWhen = () => {
                 Co-operative societies, NGOs and trusts
               </Typography>
               <List>
-              <ListItem
+                <ListItem
                   sx={{
                     fontSize: { xs: "16px", sm: "18px" },
                     fontWeight: "400",
@@ -197,11 +188,32 @@ const FindOutWhen = () => {
                       display: "inline",
                     }}
                   >
-                    Age  :
+                    Age :
                   </Typography>{" "}
-                 21 to 65 years old
+                  21 to 65 years old
                 </ListItem>
-              
+                <ListItem
+                  sx={{
+                    fontSize: { xs: "16px", sm: "18px" },
+                    fontWeight: "400",
+                    fontFamily: "Inter",
+                  }}
+                >
+                  <FiberManualRecord sx={{ ...CircleIcon }} />
+                  <Typography
+                    sx={{
+                      color: "#f7d64a",
+                      fontWeight: "700",
+
+                      fontFamily: "Inter",
+                      fontSize: { xs: "16px", sm: "18px" },
+                      display: "inline",
+                    }}
+                  >
+                    Employment type :
+                  </Typography>{" "}
+                  Self-employed
+                </ListItem>
 
                 <ListItem
                   sx={{
@@ -230,7 +242,7 @@ const FindOutWhen = () => {
                     fontSize: { xs: "16px", sm: "18px" },
                     fontWeight: "400",
                     fontFamily: "Inter",
-                    display:"inline"
+                    display: "inline",
                   }}
                 >
                   <FiberManualRecord sx={{ ...CircleIcon }} />

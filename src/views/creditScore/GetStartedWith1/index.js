@@ -14,17 +14,9 @@ import CreditScoreMeter from "../../../assets/images/CreditScoreImages/credit_sc
 import { Link } from "react-router-dom";
 import GetStartedWith2 from "../GetStartedWith2";
 
-const GetStartedWith1 = ({ onClose }) => {
-  const [openModal2, setOpenModal2] = useState(false);
-
-  const handleButtonClick = () => {
-    setOpenModal2(true);
-  };
-
-  const handleCloseModal = () => {
-  };
+const GetStartedWith1 = ({ openModal,onClose,handleButtonClick2,handleCloseModal }) => {
   return (
-    <Dialog open={true} onClose={handleCloseModal} maxWidth={{ xs: "40%", xl: "100%" }}>
+    <Dialog open={openModal} onClose={handleCloseModal} maxWidth={{ xs: "40%", xl: "100%" }}>
       <Grid
         container
         direction="row"
@@ -139,7 +131,7 @@ const GetStartedWith1 = ({ onClose }) => {
                   background: "#E4E7ED",
                 },
               }}
-              onClick={handleButtonClick}
+              onClick={handleButtonClick2}
             >
               <Typography
                 variant="subtitle1"
@@ -152,7 +144,7 @@ const GetStartedWith1 = ({ onClose }) => {
                 Proceed
               </Typography>
             </Button>
-            {openModal2 && <GetStartedWith2 onClose={handleCloseModal} />}
+            {/* {openModal2 && <GetStartedWith2 onClose={handleCloseModal} />} */}
           </Box>
         </Grid>
       </Grid>

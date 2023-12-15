@@ -13,11 +13,14 @@ import DisabledByDefaultIcon from "@mui/icons-material/DisabledByDefault";
 import CreditScoreMeter from "../../../assets/images/CreditScoreImages/credit_score_concept2 [Converted].png";
 import { Link } from "react-router-dom";
 
-const GetStartedWith2 = ({ onClose }) => {
+const GetStartedWith2 = ({
+  openModal2,
+  handleCloseModal2,
+}) => {
   return (
     <Dialog
-      open={true}
-      onClose={onClose}
+      open={openModal2}
+      onClose={handleCloseModal2}
       maxWidth={{ xs: "50%", sm: "70%", xl: "100%" }}
     >
       <Grid
@@ -25,11 +28,15 @@ const GetStartedWith2 = ({ onClose }) => {
         direction="row"
         justifyContent="center"
         alignItems="center"
-
-        sx={{ bgcolor: "#fff", border: "2px solid #243771", height: "auto", position:"relative" }}
+        sx={{
+          bgcolor: "#fff",
+          border: "2px solid #243771",
+          height: "auto",
+          position: "relative",
+        }}
       >
-      <Box sx={{position:"absolute", right:'0', top:"0"}}>
-          <Button onClick={onClose}>
+        <Box sx={{ position: "absolute", right: "0", top: "0" }}>
+          <Button onClick={handleCloseModal2}>
             <DisabledByDefaultIcon sx={{ color: "#F7D64A" }} />
           </Button>
         </Box>
@@ -58,7 +65,6 @@ const GetStartedWith2 = ({ onClose }) => {
             padding: "24px",
           }}
         >
-          
           <DialogTitle
             sx={{
               fontSize: { xs: "18px", sm: "27px" },
@@ -167,7 +173,7 @@ const GetStartedWith2 = ({ onClose }) => {
             >
               <Typography
                 sx={{
-                    color: "#fff",
+                  color: "#fff",
                   fontSize: "16px",
                 }}
               >
