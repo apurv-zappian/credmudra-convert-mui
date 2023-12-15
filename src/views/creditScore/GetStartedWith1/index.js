@@ -1,11 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   Box,
   Button,
   Checkbox,
   Dialog,
-  DialogActions,
-  DialogContent,
   DialogTitle,
   Grid,
   TextField,
@@ -14,17 +12,31 @@ import {
 import DisabledByDefaultIcon from "@mui/icons-material/DisabledByDefault";
 import CreditScoreMeter from "../../../assets/images/CreditScoreImages/credit_score_concept2 [Converted].png";
 import { Link } from "react-router-dom";
+import GetStartedWith2 from "../GetStartedWith2";
 
-const GetStartedWith = ({ onClose }) => {
+const GetStartedWith1 = ({ onClose }) => {
+  const [openModal2, setOpenModal2] = useState(false);
+
+  const handleButtonClick = () => {
+    setOpenModal2(true);
+  };
+
+  const handleCloseModal = () => {
+  };
   return (
-    <Dialog open={true} onClose={onClose} maxWidth={{sm:"70%", xl:"100%"}}>
+    <Dialog open={true} onClose={handleCloseModal} maxWidth={{ xs: "40%", xl: "100%" }}>
       <Grid
         container
         direction="row"
         justifyContent="center"
         alignItems="center"
-        sx={{ bgcolor: "#fff", border: "2px solid #243771", height: "auto" }}
+        sx={{ bgcolor: "#fff", border: "2px solid #243771", height: "auto", position:"relative" }}
       >
+        <Box sx={{position:"absolute", right:'0', top:"0"}}>
+          <Button onClick={onClose}>
+            <DisabledByDefaultIcon sx={{ color: "#F7D64A" }} />
+          </Button>
+        </Box>
         {/* Left side with image */}
         <Grid
           item
@@ -34,7 +46,7 @@ const GetStartedWith = ({ onClose }) => {
             display: "flex",
             justifyContent: "center",
             alignItems: "center",
-            height: {xs:"45%", sm:"70%", md:"100%"},
+            // height: { xs: "45%", sm: "70%", md: "100%" },
           }}
         >
           <img src={CreditScoreMeter} alt="meter" style={{ maxWidth: "80%" }} />
@@ -47,35 +59,54 @@ const GetStartedWith = ({ onClose }) => {
           sx={{
             display: "flex",
             flexDirection: "column",
-            padding: "24px",
+            // justifyContent: { xs: "center", md: "flex-start" },
+            // alignItems: { xs: "center", md: "flex-start" },
+            padding: { xs: "15px", md: "24px" },
           }}
         >
-          <DialogActions>
-            <Button onClick={onClose}>
-              <DisabledByDefaultIcon sx={{ color: "#F7D64A" }} />
-            </Button>
-          </DialogActions>
           <DialogTitle
             sx={{
-              fontSize: "27px",
+              fontSize: { xs: "16px", sm: "27px" },
               fontWeight: "600",
               fontFamily: "Inter",
               color: "#262250",
+              padding: "0",
+              // textAlign:{xs:"center", md:"left"}
             }}
           >
             Get Started With Credmudra
           </DialogTitle>
-          <DialogContent>
-            <Typography>
-              Enter your mobile number to login or signup
+          <Typography
+            sx={{
+              fontSize: { xs: "12px", sm: "18px" },
+              fontWeight: "400",
+              fontFamily: "Inter",
+              color: "#262250",
+              paddingY: "10px",
+              // textAlign:{xs:"center", md:"left"}
+            }}
+          >
+            Enter your mobile number to login or signup
+          </Typography>
+          <Box sx={{ paddingY: "10px", marginBottom: "50px" }}>
+            <Typography
+              sx={{
+                fontSize: "13px",
+                fontFamily: "Inter",
+                color: "#243771",
+                paddingY: "10px",
+              }}
+            >
+              Mobile
             </Typography>
-          </DialogContent>
-          <TextField
-            sx={{ width: "100%", marginBottom: "24px" }}
-            id="outlined-basic"
-            label="Enter Mobile"
-            variant="outlined"
-          />
+            <TextField
+              name="amount"
+              variant="outlined"
+              fullWidth
+              width="100%"
+              placeholder="Enter Mobile"
+            />
+          </Box>
           <Box
             sx={{
               display: "flex",
@@ -108,6 +139,7 @@ const GetStartedWith = ({ onClose }) => {
                   background: "#E4E7ED",
                 },
               }}
+              onClick={handleButtonClick}
             >
               <Typography
                 variant="subtitle1"
@@ -120,6 +152,7 @@ const GetStartedWith = ({ onClose }) => {
                 Proceed
               </Typography>
             </Button>
+            {openModal2 && <GetStartedWith2 onClose={handleCloseModal} />}
           </Box>
         </Grid>
       </Grid>
@@ -127,4 +160,4 @@ const GetStartedWith = ({ onClose }) => {
   );
 };
 
-export default GetStartedWith;
+export default GetStartedWith1;
