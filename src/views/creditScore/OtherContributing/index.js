@@ -96,7 +96,7 @@ const OtherContributing = () => {
                     display: "inline",
                   }}
                 >
-                  <TaskAltIcon />
+                  <TaskAltIcon sx={{marginRight:"10px",}} />
                   <Typography
                     sx={{
                       color: "#243771",
@@ -106,8 +106,8 @@ const OtherContributing = () => {
                       display: "inline",
                     }}
                   >
-                  Errors in your credit report:
-                  </Typography>
+                  Errors in your credit report : 
+                  </Typography>{" "}
                   Ensure accuracy by checking your credit report regularly and disputing any errors.
                 </ListItem>
 
@@ -119,7 +119,7 @@ const OtherContributing = () => {
                     display: "inline",
                   }}
                 >
-                  <TaskAltIcon />
+                  <TaskAltIcon sx={{marginRight:"10px",}} />
                   <Typography
                     sx={{
                       color: "#243771",
@@ -129,8 +129,8 @@ const OtherContributing = () => {
                       display: "inline",
                     }}
                   >
-                  Sparse credit history:
-                  </Typography>
+                  Sparse credit history :
+                  </Typography>{" "}
                   Limited credit history can hinder your score. Consider building your credit with a secured credit card.
                 </ListItem>
                 <ListItem
@@ -141,7 +141,7 @@ const OtherContributing = () => {
                     display: "inline",
                   }}
                 >
-                  <TaskAltIcon />
+                  <TaskAltIcon sx={{marginRight:"10px",}} />
                   <Typography
                     sx={{
                       color: "#243771",
@@ -151,8 +151,8 @@ const OtherContributing = () => {
                       display: "inline",
                     }}
                   >
-                  Loan guarantor defaults:
-                  </Typography>
+                  Loan guarantor defaults :
+                  </Typography>{" "}
                   Defaulting on a loan guarantee can negatively impact your score.
                 </ListItem>
                 <ListItem
@@ -163,7 +163,7 @@ const OtherContributing = () => {
                     display: "inline",
                   }}
                 >
-                  <TaskAltIcon />
+                  <TaskAltIcon sx={{marginRight:"10px",}} />
                   <Typography
                     sx={{
                       color: "#243771",
@@ -173,8 +173,8 @@ const OtherContributing = () => {
                       display: "inline",
                     }}
                   >
-                    CRIF High Mark:
-                  </Typography>
+                    CRIF High Mark :
+                  </Typography>{" "}
                   Specializes in credit information for individuals and
                   businesses.
                 </ListItem>

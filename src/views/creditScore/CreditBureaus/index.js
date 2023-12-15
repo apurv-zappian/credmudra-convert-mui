@@ -2,7 +2,6 @@ import { Box, Grid, List, ListItem, Typography } from "@mui/material";
 import React from "react";
 import CreditBureausImage from "../../../assets/images/CreditScoreImages/creditbureaus.png";
 import TaskAltIcon from "@mui/icons-material/TaskAlt";
-import { FiberManualRecordTwoTone } from "@mui/icons-material";
 import GetFreeCreditButton from "../../../components/GetFreeCreditButton";
 
 const CreditBureaus = () => {
@@ -63,7 +62,6 @@ const CreditBureaus = () => {
                   sx={{
                     display: "flex",
                     flexDirection: "column",
-                    padding: "0px",
                   }}
                 >
                   <ListItem
@@ -74,7 +72,7 @@ const CreditBureaus = () => {
                       display: "inline",
                     }}
                   >
-                    <TaskAltIcon />
+                    <TaskAltIcon sx={{marginRight:"10px",}} />
                     <Typography
                       sx={{
                         color: "#243771",
@@ -84,8 +82,8 @@ const CreditBureaus = () => {
                         display: "inline",
                       }}
                     >
-                      CIBIL (TransUnion CIBIL):
-                    </Typography>
+                      CIBIL (TransUnion CIBIL) :
+                    </Typography>{" "}
                     The most established bureau in India, widely used by
                     lenders.
                   </ListItem>
@@ -98,7 +96,7 @@ const CreditBureaus = () => {
                       display: "inline",
                     }}
                   >
-                    <TaskAltIcon />
+                    <TaskAltIcon sx={{marginRight:"10px",}} />
                     <Typography
                       sx={{
                         color: "#243771",
@@ -108,8 +106,8 @@ const CreditBureaus = () => {
                         display: "inline",
                       }}
                     >
-                      Equifax:
-                    </Typography>
+                      Equifax :
+                    </Typography>{" "}
                     Another major player offering credit reports and scores.
                   </ListItem>
                   <ListItem
@@ -120,7 +118,7 @@ const CreditBureaus = () => {
                       display: "inline",
                     }}
                   >
-                    <TaskAltIcon />
+                    <TaskAltIcon sx={{marginRight:"10px",}} />
                     <Typography
                       sx={{
                         color: "#243771",
@@ -130,8 +128,8 @@ const CreditBureaus = () => {
                         display: "inline",
                       }}
                     >
-                      Experian:
-                    </Typography>
+                      Experian :
+                    </Typography>{" "}
                     A newer entrant with a unique credit scoring model.
                   </ListItem>
                   <ListItem
@@ -142,7 +140,7 @@ const CreditBureaus = () => {
                       display: "inline",
                     }}
                   >
-                    <TaskAltIcon />
+                    <TaskAltIcon sx={{marginRight:"10px",}} />
                     <Typography
                       sx={{
                         color: "#243771",
@@ -152,8 +150,8 @@ const CreditBureaus = () => {
                         display: "inline",
                       }}
                     >
-                      CRIF High Mark:
-                    </Typography>
+                      CRIF High Mark :
+                    </Typography>{" "}
                     Specializes in credit information for individuals and
                     businesses.
                   </ListItem>

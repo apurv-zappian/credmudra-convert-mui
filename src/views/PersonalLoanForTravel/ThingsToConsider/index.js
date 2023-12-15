@@ -14,14 +14,13 @@ import GetMatchedButton from "../../../components/GetMatchedButton";
 const ThingsToConsider = () => {
   const CircleIcon = {
     color: "#F7D64A",
-    fontSize: "10px",
+    fontSize: "15px",
     marginRight: "10px",
     // marginTop:"-10px"
   };
 
   return (
     <>
-      <Box bgcolor="#fcefb8">
         <Container
           sx={{
             display: {
@@ -38,20 +37,24 @@ const ThingsToConsider = () => {
               xs={12}
               sm={6}
               sx={{
-                padding: "0px 10px 0px",
+                // padding: "0px 10px 0px 20px",
                 //    backgroundColor: "pink"
+                display:'flex',
+                alignItems:'center',
+                justifyContent:'center'
               }}
             >
               <Box
                 sx={{
-                  width: { xl: "90%" },
+                  width: {lg:"80%", xl: "80%" },
                   //  paddingTop: "2rem"
+                  marginLeft:{lg:"10%"}
                 }}
               >
                 <img
                   src={thingstoconsiderimg}
                   alt="why to get a personal loan for medical emergencies"
-                  style={{ width: "100%", height: "100%" }}
+                  style={{ width: "100%", height:"auto"}}
                 />
               </Box>
             </Grid>
@@ -172,7 +175,6 @@ const ThingsToConsider = () => {
             </Grid>
           </Grid>
         </Container>
-      </Box>
     </>
   );
 };

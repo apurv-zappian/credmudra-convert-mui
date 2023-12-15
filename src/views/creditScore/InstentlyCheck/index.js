@@ -94,7 +94,7 @@ const InstentlyCheck = () => {
                   sx={{
                     display: "flex",
                     alignItems: "center",
-                    justifyContent: "center",
+                    // justifyContent: "center",
                   }}
                 >
                   <List
