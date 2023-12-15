@@ -8,6 +8,7 @@ import PersonalLoanForMedical from "./views/PersonalLoanForMedical";
 import PersonalLoanForTravel from "./views/PersonalLoanForTravel";
 import CredmudraPage from "./views/credmudraPage";
 import CreditScore from "./views/creditScore";
+import PersonalLoanForTwoWheeler from "./views/PersonalLoanForTwoWheeler";
 
 const App = () => {
   return (
@@ -18,7 +19,8 @@ const App = () => {
             <Route path="/" index element={<CredmudraPage />} />
             <Route path="/business-loan" element={<BusinessLoan />} />
             <Route path="/personal-loan" element={<PersonalLoan />} />
-            <Route path="/personalloanfordebt"
+            <Route
+              path="/personalloanfordebt"
               element={<PersonalLoanForDebt />}
             />
             <Route
@@ -30,9 +32,10 @@ const App = () => {
               element={<PersonalLoanForTravel />}
             />
             <Route
-              path="/credit-score"
-              element={<CreditScore />}
+              path="/personalloanfortwowheeler"
+              element={<PersonalLoanForTwoWheeler />}
             />
+            <Route path="/credit-score" element={<CreditScore />} />
           </Route>
         </Routes>
       </BrowserRouter>

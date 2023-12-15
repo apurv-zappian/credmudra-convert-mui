@@ -21,7 +21,7 @@ const WhyCredmydraGiving = () => {
         sx={{
           background: "#243771",
           overflow: "hidden",
-          padding: { xs: "40px 10px", sm: "30px" },
+          padding: { xs: "40px 10px", sm: "80px 10px" },
           //   position: "relative",
         }}
       >

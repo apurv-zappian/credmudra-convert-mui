@@ -7,9 +7,9 @@ import { FiberManualRecord } from "@mui/icons-material";
 const WhyShouldYouConsider = () => {
     const CircleIcon = {
         color: "#F7D64A",
-        fontSize: "10px",
+        fontSize: "15px",
         marginRight: "10px",
-        // marginTop:"-10px"
+        // marginTop:"5px"
       };
   return (
     <>
@@ -28,7 +28,7 @@ const WhyShouldYouConsider = () => {
                 lg: "15% 0% 10%% 10%",
                 xl: "15% 10% 0% 10%",
               },
-              padding: { sm: "48px 16px 0px 48px", xl: "0px 0px 48px" },
+              // padding: { sm: "48px 16px 0px 48px", xl: "0px 0px 48px" },
             }}
           >
             <Typography

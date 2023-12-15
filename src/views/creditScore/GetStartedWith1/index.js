@@ -22,7 +22,7 @@ const GetStartedWith1 = ({ openModal,onClose,handleButtonClick2,handleCloseModal
         direction="row"
         justifyContent="center"
         alignItems="center"
-        sx={{ bgcolor: "#fff", border: "2px solid #243771", height: "auto", position:"relative" }}
+        sx={{ bgcolor: "#fff", border: "3px solid #243771",borderRadius:"5px", height: "auto", position:"relative",}}
       >
         <Box sx={{position:"absolute", right:'0', top:"0"}}>
           <Button onClick={onClose}>
@@ -54,6 +54,7 @@ const GetStartedWith1 = ({ openModal,onClose,handleButtonClick2,handleCloseModal
             // justifyContent: { xs: "center", md: "flex-start" },
             // alignItems: { xs: "center", md: "flex-start" },
             padding: { xs: "15px", md: "24px" },
+            marginTop:"20px"
           }}
         >
           <DialogTitle

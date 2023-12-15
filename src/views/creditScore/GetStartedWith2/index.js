@@ -13,10 +13,7 @@ import DisabledByDefaultIcon from "@mui/icons-material/DisabledByDefault";
 import CreditScoreMeter from "../../../assets/images/CreditScoreImages/credit_score_concept2 [Converted].png";
 import { Link } from "react-router-dom";
 
-const GetStartedWith2 = ({
-  openModal2,
-  handleCloseModal2,
-}) => {
+const GetStartedWith2 = ({ openModal2, handleCloseModal2 }) => {
   return (
     <Dialog
       open={openModal2}
@@ -30,9 +27,10 @@ const GetStartedWith2 = ({
         alignItems="center"
         sx={{
           bgcolor: "#fff",
-          border: "2px solid #243771",
+          border: "3px solid #243771",
           height: "auto",
           position: "relative",
+        borderRadius:"5px",
         }}
       >
         <Box sx={{ position: "absolute", right: "0", top: "0" }}>
@@ -63,6 +61,7 @@ const GetStartedWith2 = ({
             display: "flex",
             flexDirection: "column",
             padding: "24px",
+            marginTop: "20px",
           }}
         >
           <DialogTitle
@@ -93,6 +92,7 @@ const GetStartedWith2 = ({
                 fontSize: "13px",
                 fontFamily: "Inter",
                 color: "#243771",
+                paddingBottom: "10px",
               }}
             >
               Full Name(As per PAN Card)
@@ -110,6 +110,8 @@ const GetStartedWith2 = ({
                 fontSize: "13px",
                 fontFamily: "Inter",
                 color: "#243771",
+
+                paddingBottom: "10px",
               }}
             >
               PAN Number
@@ -127,6 +129,8 @@ const GetStartedWith2 = ({
                 fontSize: "13px",
                 fontFamily: "Inter",
                 color: "#243771",
+
+                paddingBottom: "10px",
               }}
             >
               Email ID
