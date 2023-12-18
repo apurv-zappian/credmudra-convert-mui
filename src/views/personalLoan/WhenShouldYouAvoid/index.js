@@ -6,7 +6,7 @@ import GetMatchedButton from "../../../components/GetMatchedButton";
 const WhenShouldYouAvoid = () => {
   const CircleIcon = {
     color: "#F7D64A",
-    fontSize: "1.2rem",
+    fontSize: "20px",
     // marginRight: ".5vmax",
     position:"absolute",
     top:"15px",
@@ -25,18 +25,21 @@ const WhenShouldYouAvoid = () => {
       <Container maxWidth={"xl"} sx={{ padding: "60px 0px 50px" }}>
         <Grid container sx={{ padding: { xs: "10px", md: "32px" } }}>
           {/* Left Side  */}
-          <Grid item xs={12} sm={6} md={6} lg={6} xl={5} > 
+          <Grid item xs={12} sm={6} md={6} lg={6} xl={5} sx={{ display: "flex",
+                alignItems: { sm: "center" },
+                justifyContent:{sm:"center"},
+                flexDirection: "column",}}> 
             <Box
            
               sx={{
-                display: "flex",
-                alignItems: { xl: "left" },
-                justifyContent: "center",
-                flexDirection: "column",
+                // display: "flex",
+                // alignItems: { xl: "left" },
+                // justifyContent: "center",
+                // flexDirection: "column",
                 // padding: { sm: "60% 0% 0%" },
-                width: { sm: "80%", xl: "90%" },
+                width: { sm: "90%", xl: "90%" },
                 textAlign: { xs: "center", sm: "left" },
-                marginTop:{sm:"30%"}
+                // marginTop:{sm:"30%"} 
               }}
             >
               <Typography
@@ -65,7 +68,11 @@ const WhenShouldYouAvoid = () => {
                 avoid taking a personal loan if you are facing situations as
                 mentioned here:
               </Typography>
-              <Box textAlign={{ xs: "center", sm: "left" }}>
+              <Box sx={{ display: "flex",
+                alignItems: { xs: "center",sm:"flex-start" },
+                justifyContent:{xs:"center",sm:"flex-start"},
+              }}
+                >
                 <GetMatchedButton />
               </Box>
             </Box>
@@ -75,7 +82,7 @@ const WhenShouldYouAvoid = () => {
             <Box
               sx={{
                 display: "flex",
-                alignItems: "left",
+                alignItems: "flex-start",
                 justifyContent: "center",
                 flexDirection: "column",
                 // marginLeft: { xs: "0", xl: "25%" },
@@ -165,7 +172,7 @@ const WhenShouldYouAvoid = () => {
                     }}
                   >
                     <Typography
-                      variant="h5"
+
                       display="inline"
                       sx={{ ...TypographySubHeadings }}
                     >

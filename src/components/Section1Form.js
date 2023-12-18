@@ -5,7 +5,10 @@ const Section1Form = () => {
 
   return (
     <>
-      <Box>
+      <Box sx={{
+        display:"flex",
+        justifyContent:"flex-start",
+        flexDirection:{xs:"column",lg:"row"}}}>
         <TextField
           placeholder="XXXXXXXXXX"
           InputProps={{
@@ -25,11 +28,15 @@ const Section1Form = () => {
           }}
           sx={{
             backgroundColor: "#fff",
-            border: "1px solid #F7D64A",
+            // border: "1px solid #F7D64A",
             width: {xs:"100%",md:"285px"},
             borderRadius: "8px",
             "& input": {
-              fontSize: "1max",
+              fontSize: "16px",
+              border:"none",
+            },
+            "& fieldset": {
+              borderColor: "#F7D64A", 
             },
           }}
         />
@@ -50,7 +57,7 @@ const Section1Form = () => {
             transition: ".4s all ease-in-out",
             textTransform:"capitalize ",
             width:{xs:"100%",md:"285px",xl:"150px"},
-            marginTop:{xs:"1rem",md:".5rem",lg:"0",xl:"0"}
+            marginTop:{xs:"16px",md:"8px",lg:"0",xl:"0"}
           }}
         >
           Apply Now

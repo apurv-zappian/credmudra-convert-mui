@@ -5,6 +5,7 @@ import DocumentsForTwoWheeler from './DocumentsForTwoWheeler'
 import KeyFeatures from './KeyFeatures'
 import StepsForTwoWheelerLoan from './StepsForTwoWheelerLoan'
 import InterestRate from './InterestRate'
+import FAQSTwoWheeler from './FAQSTwoWheeler'
 
 const PersonalLoanForTwoWheeler = () => {
   return (
@@ -15,6 +16,7 @@ const PersonalLoanForTwoWheeler = () => {
       <KeyFeatures/>
       <StepsForTwoWheelerLoan/>
       <InterestRate/>
+      <FAQSTwoWheeler/>
     </>
   )
 }

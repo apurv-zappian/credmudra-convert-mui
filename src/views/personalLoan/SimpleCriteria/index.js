@@ -6,8 +6,8 @@ import { FiberManualRecord } from "@mui/icons-material";
 const SimpleCriteria = () => {
   const CircleIcon = {
     color: "#F7D64A",
-    fontSize: "1vmax",
-    marginRight: ".5vmax",
+    fontSize: "15px",
+    marginRight: "10px",
     // marginTop:"-10px"
   };
 
@@ -36,9 +36,11 @@ const SimpleCriteria = () => {
         }}
       />
       <Grid container sx={{ padding: { xs: "10px", md: "32px" } }}>
-        <Grid item xs={6} sx={{ display: { xs: "none", sm: "flex" } }} />
-        <Grid item xs={12} sm={6}>
-          <Box sx={{ color: "#fff" ,padding:{xs:"0",sm:"0 16px 0 0",lg:"0 144px 0 0",xl:"0 240px 0 0"}}}>
+        <Grid item xs={6} sm={4} md={6} sx={{ display: { xs: "none", sm: "flex" } }} />
+        <Grid item xs={12} sm={8} md={6}>
+          <Box sx={{ color: "#fff" ,
+          // padding:{xs:"0",sm:"0 16px 0 0",lg:"0 144px 0 0",xl:"0 240px 0 0"}
+          }}>
             <Typography
               sx={{
                 color: "#f7d64a !important",
@@ -153,7 +155,7 @@ const SimpleCriteria = () => {
                 More than Rs.25,000 per month
               </ListItem>
             </List>
-            <Typography sx={{fontSize:"15px",fontFamily:"Inter",color:"FFFFFF"}}> Note: These eligibility parameters are indicative and subject to
+            <Typography sx={{fontSize:"15px",fontFamily:"Inter",color:"#fff"}}> Note: These eligibility parameters are indicative and subject to
           change</Typography>
           </Box>
         </Grid>

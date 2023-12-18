@@ -21,7 +21,7 @@ const FAQSOnPersonalLoan = () => {
     const AccHeading = {
       color: "#243771",
       fontSize: { xs: "20px", sm: "22px" },
-      fontWeight: "900",
+      fontWeight: "700",
       fontFamily: "Inter",
     };
   
@@ -33,18 +33,25 @@ const FAQSOnPersonalLoan = () => {
     };
   
     const CircleIcon = {
-      // marginTop: "6px",
+      marginTop: "6px",
       color: "#243771",
       marginRight: "10px",
     };
   return (
     <>
        <Container maxWidth={"xl"} sx={{ padding: "60px 0px 50px" }}>
-        <Grid container sx={{ padding: { xs: "10px", } }} alignItems={'center'}>
-          {/* Left Side */}
-          <Grid item xs={12} sm={5}>
-            {/* <Box sx={{display:"flex",alignItems:"center",justifyContent:"space-around"}}> */}
-            <Box sx={{margin:{xl:"0% 30% 0% 0%"}}}>
+        <Grid container sx={{ padding: { xs: "10px", } }} spacing={2}>
+          <Grid item xs={12} sm={5} sx={{
+              display:'flex',
+              alignItems:{xs:"flex-start",sm:'center'},
+              justifyContent:{xs:"flex-start",sm:'center'},
+             
+
+            }}>
+            <Box sx={{ width:{sm:"100%"},
+            marginRight:{md:"10%"}
+          
+          }}>
               <Typography
                 sx={{
                   fontSize: { xs: "24px", sm: "26px", md: "32px" },
@@ -60,9 +67,7 @@ const FAQSOnPersonalLoan = () => {
                 FAQs On Personal Loan For Medical Emergencies
               </Typography>
             </Box>
-            {/* </Box> */}
           </Grid>
-          {/* Right Side */}
           <Grid item xs={12} sm={7}>
             <Box
               sx={{

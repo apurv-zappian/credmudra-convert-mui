@@ -29,8 +29,8 @@ const DocumentsRequiredForMedical = () => {
     fontSize: { xs: "16px" },
     fontFamily: "Inter,sans-serif",
     textAlign: { xs: "center", sm: "left" },
-    display:"flex",
-    justifyContent:{xs:"center",sm:"flex-start"}
+    display: "flex",
+    justifyContent: { xs: "center", sm: "flex-start" },
   };
   const ListInfo = [
     {
@@ -108,7 +108,7 @@ const DocumentsRequiredForMedical = () => {
             >
               <Box
                 sx={{
-                  width: { xs: "100%", sm: "60%", md: "70%" },
+                  width: { xs: "100%", sm: "55%", md: "70%" },
                   // backgroundColor:"pink"
                 }}
               >
@@ -142,7 +142,7 @@ const DocumentsRequiredForMedical = () => {
               </Box>
               <Box
                 sx={{
-                  width: { xs: "100%", sm: "40%", md: "30%" },
+                  width: { xs: "100%", sm: "45%", md: "30%" },
                   display: "flex",
                   alignItems: { xs: "center" },
                   justifyContent: { xs: "center" },
@@ -168,19 +168,19 @@ const DocumentsRequiredForMedical = () => {
                 {ListInfo.map((doc, index) => (
                   <Box
                     sx={{
-                      // backgroundColor: "red",
-                      // width: { xs: "50%" },
                       width: { xs: "100%", sm: "48%" },
                       display: "flex",
                       alignItems: { xs: "center", sm: "flex-start" },
                       flexDirection: "column",
-                      // margin: "10px 0",
                     }}
                   >
                     <Box>
-                      <img src={doc.imgSrc} alt="img1" style={{margin:"0px 0px 20px",width:"85px"}}/>
+                      <img
+                        src={doc.imgSrc}
+                        alt="img1"
+                        style={{ margin: "0px 0px 20px", width: "85px" }}
+                      />
                     </Box>
-                    {/* <Box> */}
                     <Typography
                       sx={{
                         color: "#f7d64a",
@@ -188,7 +188,7 @@ const DocumentsRequiredForMedical = () => {
                         fontSize: { xs: "18px" },
                         fontFamily: "Inter,sans-serif",
                         textAlign: { xs: "center", sm: "left" },
-                        margin:"0px 0px 8px"
+                        margin: "0px 0px 8px",
                       }}
                     >
                       {doc.title}
@@ -196,7 +196,7 @@ const DocumentsRequiredForMedical = () => {
                     <Box>
                       <List
                         sx={{
-                          textAlign: "center", // Center text in ListItems
+                          textAlign: "center", 
                         }}
                       >
                         {doc.items.map((item, idx) => (
@@ -205,7 +205,12 @@ const DocumentsRequiredForMedical = () => {
                             sx={{ ...ListItemStyling }}
                           >
                             {" "}
-                            <FiberManualRecord sx={{...CircleIcon,display:{xs:"none",sm:"block"} }} />
+                            <FiberManualRecord
+                              sx={{
+                                ...CircleIcon,
+                                display: { xs: "none", sm: "block" },
+                              }}
+                            />
                             {item}
                           </ListItem>
                         ))}
@@ -213,7 +218,6 @@ const DocumentsRequiredForMedical = () => {
                     </Box>
                   </Box>
 
-                  // </Box>
                 ))}
               </Box>
             </Grid>

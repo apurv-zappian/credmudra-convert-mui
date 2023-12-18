@@ -24,21 +24,14 @@ const FindOutWhen = () => {
           src={findoutimg}
           alt="Credmudra logo"
           style={{
-            left: "10%",
+            left: "5%",
             maxWidth: "530px",
             opacity: ".6",
             position: "absolute",
             top: "0",
           }}
         />
-        <Grid
-          container
-          sx={
-            {
-              // padding: { xs: "10px", md: "32px" }
-            }
-          }
-        >
+        <Grid container>
           <Grid
             item
             xs={12}
@@ -56,13 +49,13 @@ const FindOutWhen = () => {
           >
             <Box
               sx={{
-                padding: {
-                  xs: "0",
-                  sm: "0 0 0 16px",
-                  lg: "0 0 0 144px",
-                  // xl: "0 0 0 150px",
-                },
-                width: { sm: "70%" },
+                // padding: {
+                //   xs: "0",
+                //   sm: "0 0 0 16px",
+                //   lg: "0 0 0 144px",
+                //   // xl: "0 0 0 150px",
+                // },
+                width: { sm: "60%" },
                 // marginLeft:"15%",
                 // backgroundColor:'pink'
               }}

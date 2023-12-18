@@ -22,12 +22,11 @@ const DocumentRequired = () => {
     <>
       <Container maxWidth={"xl"} sx={{ padding: "60px 0px 50px" }}>
         <Grid container sx={{ padding: { xs: "10px" } }}>
-          {/* Left Side */}
           <Grid item xs={12} sm={6} md={6} lg={6} xl={5}>
             <Box
               sx={{
                 display: "flex",
-                alignItems: { xs: "center", sm: "left" },
+                alignItems: { xs: "center", sm: "flex-start" },
                 justifyContent: "center",
                 flexDirection: "column",
                 // padding:{xs:"1rem 5rem 1rem"}
@@ -35,9 +34,8 @@ const DocumentRequired = () => {
             >
               <Box
                 sx={{
-                  width: { sm: "70%", xl: "90%" },
-                  margin: { xl: "0px 65px 0px 0px" },
-                  // padding: { sm: "80px 0 75px", lg: "50px 0px 50px" },
+                  width: { sm: "90%", xl: "90%" },
+                  // margin: { xl: "0px 65px 0px 0px" },
                 }}
                 textAlign={{ xs: "center", sm: "left" }}
               >
@@ -71,7 +69,7 @@ const DocumentRequired = () => {
                   sx={{
                     display: "flex",
                     alignItems: "center",
-                    justifyContent: { xs: "center", sm: "left" },
+                    justifyContent: { xs: "center", sm: "flex-start" },
                   }}
                 >
                   <GetMatchedButton />
@@ -79,19 +77,15 @@ const DocumentRequired = () => {
               </Box>
             </Box>
           </Grid>
-          {/* Right Side  */}
           <Grid item xs={12} sm={6} md={6} lg={6} xl={7}>
             <Box
               sx={{
                 display: "flex",
-                alignItems: { xs: "center", xl: "left" },
+                alignItems: { xs: "center", xl: "flex-start" },
                 justifyContent: "center",
                 flexDirection: "column",
                 color: "white",
-                // padding:{sm:"5rem 0 0",xl:"3rem",}
-                // margin:"0 0 30px",
-                // padding:{sm:"5rem 0 4rem",lg:"3rem 4rem 3rem 0rem"},
-                // marginRight:{xl:"7rem"}
+                marginLeft:{md:"5%"}
               }}
             >
               <List>

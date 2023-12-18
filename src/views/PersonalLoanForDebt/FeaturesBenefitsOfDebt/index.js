@@ -42,26 +42,17 @@ const FeaturesBenefitsOfDebt = () => {
     <>
       <Container maxWidth={"xl"} sx={{ padding: "60px 0px 50px" }}>
         <Grid container sx={{ padding: { xs: "10px" } }}>
-          {/* Left Side */}
           <Grid item xs={12} sm={6} md={6} lg={6}>
             <Box
               sx={{
-                height: "100%",
                 display: "flex",
-                alignItems: "left",
+                alignItems: "center",
                 justifyContent: "center",
                 flexDirection: "column",
               }}
             >
               <Box
                 sx={{
-                  // padding: {
-                  //   // xs:"3rem 1rem 1rem 1.3rem",
-                  //   sm: "3rem 0 0 1rem",
-                  //   // md:"3rem",
-                  //   lg: "3rem 0 0 0",
-                  //   xl: "3rem 0 0 17rem",
-                  // },
                   width: { sm: "90%", xl: "100%" },
                 }}
               >
@@ -99,11 +90,9 @@ const FeaturesBenefitsOfDebt = () => {
                   sx={{
                     backgroundColor: "transparent",
                     marginTop: "20px",
-                    // padding: "0px 0px 10px 0px",
                   }}
                 >
                   <AccordionSummary
-                    // sx={{display:'flex',alignItems:'center'}}
                     expandIcon={<ExpandMoreIcon sx={{ color: "black" }} />}
                     aria-controls="panel1d-content"
                     id="panel1d-header"
@@ -132,7 +121,6 @@ const FeaturesBenefitsOfDebt = () => {
                   onChange={handleChange("panel2")}
                   sx={{
                     backgroundColor: "transparent",
-                    // padding: "0px 0px 10px 0px",
                   }}
                 >
                   <AccordionSummary
@@ -162,7 +150,6 @@ const FeaturesBenefitsOfDebt = () => {
                   expanded={expanded === "panel3"}
                   onChange={handleChange("panel3")}
                   sx={{
-                    // padding: "0px 0px 10px 0px",
                     backgroundColor: "transparent",
                   }}
                 >
@@ -192,7 +179,7 @@ const FeaturesBenefitsOfDebt = () => {
                   sx={{
                     display: "flex",
                     alignItems: "center",
-                    justifyContent: { xs: "center", sm: "left" },
+                    justifyContent: { xs: "center", sm: "flex-start" },
                   }}
                 >
                   <GetMatchedButton />
@@ -200,7 +187,6 @@ const FeaturesBenefitsOfDebt = () => {
               </Box>
             </Box>
           </Grid>
-          {/* Right Side */}
           <Grid item xs={12} sm={6} md={6} lg={6}>
             <Box
               sx={{
@@ -210,20 +196,18 @@ const FeaturesBenefitsOfDebt = () => {
                 justifyContent: "center",
                 flexDirection: "column",
                 color: "white",
-                padding:{xl:"50px"}
+                padding: { xl: "50px" },
               }}
             >
               <Box
                 sx={{
                   width: "100%",
-                  // paddingTop: "3rem",
-                  // marginRight: { xl: "12rem" },
                 }}
               >
                 <img
                   src={featuresbenefitsimg}
                   alt="loading"
-                  style={{ width: "100%", height: "100%" }}
+                  style={{ width: "100%", height: "auto" }}
                 />
               </Box>
             </Box>

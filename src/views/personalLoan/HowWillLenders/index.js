@@ -57,9 +57,10 @@ const HowWillLenders = () => {
                   alignItems: "left",
                   justifyContent: "center",
                   // width: {sm:"80%",md:"100%",xl:"100%"},
+                  width: { sm: "80%", md: "100%", xl: "100%" },
                 }}
               >
-                <Box
+                {/* <Box
                   sx={{
                     // padding: {
                     //   xs: "0 0 1rem",
@@ -68,10 +69,10 @@ const HowWillLenders = () => {
                     //   lg: "3rem 0 3rem",
                     //   xl: "3rem 13rem 0 0",
                     // },
-                    width: { sm: "80%", md: "100%", xl: "100%" },
+                    // width: { sm: "80%", md: "100%", xl: "100%" },
                     // marginRight:{md:"5%"}
                   }}
-                >
+                > */}
                   <Typography
                     sx={{
                       // marginLeft: "10px",
@@ -90,7 +91,7 @@ const HowWillLenders = () => {
                     and approval of your loan application.
                   </Typography>
                 </Box>
-              </Box>
+              {/* </Box> */}
             </Grid>
           </Grid>
         </Container>

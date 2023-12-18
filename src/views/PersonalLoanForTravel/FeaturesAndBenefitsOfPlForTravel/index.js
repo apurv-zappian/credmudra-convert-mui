@@ -112,7 +112,7 @@ const FeaturesAndBenefitsOfPlForTravel = () => {
   return (
     <>
       <Box>
-        <Container maxWidth={'lg'} sx={{ padding: "80px 0px 50px" }}>
+        <Container maxWidth={'xl'} sx={{ padding: "80px 0px 50px" }}>
           <Typography
             sx={{
               textAlign: { xs: "center" },
@@ -130,7 +130,7 @@ const FeaturesAndBenefitsOfPlForTravel = () => {
           <Grid container spacing={2}>
             
             {ListItemDetails.map((doc, index) => (
-                <Grid item xs={12} sm={6} key={index}  sx={{ padding: "0px 10px 0px" }}>
+                <Grid item xs={12} sm={6} key={index}  sx={{ padding: "0px 10px 0px" ,width:{xl:"100%"}}}>
               <List sx={{...ListBox}}>
                 <ListItem>
                   <ListItemIcon sx={{ paddingRight: "10px" }}>

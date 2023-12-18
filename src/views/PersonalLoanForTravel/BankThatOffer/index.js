@@ -22,11 +22,9 @@ const BankThatOffer = () => {
       backgroundColor: "#243771",
       color: "white",
       fontWeight: "900",
-      // fontSize: "1vmax",
       textAlign: "center",
     },
     [`&.${tableCellClasses.body}`]: {
-      // fontSize: "1vmax",
       textAlign: "center",
     },
   }));
@@ -61,17 +59,23 @@ const BankThatOffer = () => {
           }}
           maxWidth={"xl"}
         >
-          <Grid container alignItems="center" spacing={6}>
+          <Grid container>
             <Grid
               item
               xs={12}
-              sm={5}
-            //   bgcolor={"red"}
-              sx={{ padding: "0px 10px 20px" }}
+              sm={6}
+              //   bgcolor={"red"}
+              sx={{
+                padding: "0px 10px 20px",
+                display: "flex",
+                flexDirection: "column",
+                alignItems: { xs: "flex-start", sm: "center" },
+                justifyContent: { xs: "flex-start", sm: "center" },
+              }}
             >
               <Box
                 sx={{
-                  padding: { lg: "0% 20% 0% 5%",xl:"0% 25% 0% 5%"},
+                  // width: { md: "70%" },
                 }}
                 // bgcolor={"pink"}
               >
@@ -108,28 +112,33 @@ const BankThatOffer = () => {
                 <Box
                   sx={{
                     display: "flex",
-                    alignItems: { xs: "center", sm: "left" },
-                    justifyContent: { xs: "center", sm: "left" },
+                    alignItems: { xs: "center", sm: "flex-start" },
+                    justifyContent: { xs: "center", sm: "flex-start" },
                     // margin: { xs: "0px 0px 24px" },
                     // padding:{xl:"0rem 5rem 0rem"}
                   }}
                 >
-                  <GetMatchedButton/>
+                  <GetMatchedButton />
                 </Box>
               </Box>
             </Grid>
-            <Grid item xs={12} sm={7}>
-              <Box
-                sx={{
-                  marginLeft: { sm: "16%" },
-                  padding:{lg:"0 5% 0% 0%"}
-                }}
-              >
+            <Grid
+              item
+              xs={12}
+              sm={6}
+              sx={{
+                display: "flex",
+                flexDirection: "column",
+                alignItems: { xs: "flex-start", sm: "center" },
+                justifyContent: { xs: "flex-start", sm: "center" },
+              }}
+            >
+              <Box sx={{ width: { md: "80%" } }}>
                 <Paper
                   elevation={5}
                   sx={{
                     padding: 2,
-                    boxShadow: "5px 5px 10px gray",
+                    // boxShadow: "5px 5px 10px gray",
                     backgroundColor: "#E9E9E9",
                   }}
                 >

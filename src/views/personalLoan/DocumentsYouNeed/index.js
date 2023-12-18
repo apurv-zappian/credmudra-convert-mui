@@ -34,14 +34,14 @@ const DocumentsYouNeed = () => {
             <Box
               sx={{
                 display: "flex",
-                alignItems: { xs: "center", sm: "left" },
+                alignItems: { xs: "center", sm: "flex-start" },
                 justifyContent: "center",
                 flexDirection: "column",
               }}
             >
               <Box
                 sx={{
-                  width: { sm: "70%", xl: "90%" },
+                  width: { sm: "90%" },
                   margin: { xl: "0px 65px 0px 0px" },
                   // padding: { sm: "80px 0 75px", lg: "50px 0px 50px" },
                 }}
@@ -76,7 +76,7 @@ const DocumentsYouNeed = () => {
                   sx={{
                     display: "flex",
                     alignItems: "center",
-                    justifyContent: { xs: "center", sm: "left" },
+                    justifyContent: { xs: "center", sm: "flex-start" },
                   }}
                 >
                   <GetMatchedButton   />
@@ -89,7 +89,7 @@ const DocumentsYouNeed = () => {
             <Box
               sx={{
                 display: "flex",
-                alignItems: { xs: "center", xl: "left" },
+                alignItems: { xs: "center", xl: "flex-start" },
                 justifyContent: "center",
                 flexDirection: "column",
                 color: "white",

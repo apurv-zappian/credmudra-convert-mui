@@ -205,7 +205,7 @@ const TipsToGrab = () => {
                 sx={{
                   display:"flex",
               alignItems:"center",
-              justifyContent: {xs:"center",sm:"left"},
+              justifyContent: {xs:"center",sm:"flex-start"},
               marginBottom:{xs:"20px",sm:"0"}
                 }}
               >

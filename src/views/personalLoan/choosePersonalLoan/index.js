@@ -23,11 +23,15 @@ const ChoosePersonalLoan = () => {
 
   const AccHeadingColor = {
     color: "#F7D64A",
-    fontSize: { sm: "1rem", md: "1.5rem" },
-    fontWeight: "bold",
+    fontSize: { xs: "20px", sm: "22px" },
+    fontWeight: "700",
+    fontFamily:"Inter"
   };
   const AccParaColor = {
     color: "white",
+    fontSize: { xs: "16px",},
+    // fontWeight: "700",
+    fontFamily:"Inter"
   };
 
   const CheckCircle = {
@@ -73,10 +77,11 @@ const ChoosePersonalLoan = () => {
                 sx={{
                   height: "100%",
                   display: "flex",
-                  alignItems: "left",
+                  alignItems: "flex-start",
                   justifyContent: "center",
                   flexDirection: "column",
                   color: "white",
+                  width: { sm: "90%", xl: "100%" },
                 }}
               >
                 <Box
@@ -88,7 +93,7 @@ const ChoosePersonalLoan = () => {
                     //   lg: "3rem 0 0 0 ",
                     //   xl: "3rem 0 0 0",
                     // },
-                    width: { sm: "90%", xl: "100%" },
+                    // width: { sm: "90%", xl: "100%" },
                   }}
                 >
                   <Typography
@@ -310,7 +315,7 @@ const ChoosePersonalLoan = () => {
                   sx={{
                     display: "flex",
                     alignItems: "center",
-                    justifyContent: { xs: "center", sm: "left" },
+                    justifyContent: { xs: "center", sm: "flex-start" },
                     padding: "16px 0 16px",
                   }}
                 >
