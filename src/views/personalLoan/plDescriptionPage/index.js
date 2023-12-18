@@ -1,13 +1,19 @@
-import { Box, Container, Grid, List, ListItem, Typography } from "@mui/material";
+import {
+  Box,
+  Container,
+  Grid,
+  List,
+  ListItem,
+  Typography,
+} from "@mui/material";
 import React from "react";
 import { FiberManualRecord } from "@mui/icons-material";
 
 const PlDescriptionPage = () => {
-
   const BulletPoints = {
     color: "#F7D64A",
     fontSize: "15px",
-    marginRight: ".5vmax",
+    marginRight: "8px",
     // position:"absolute"
   };
   const ListStyling = {
@@ -28,12 +34,6 @@ const PlDescriptionPage = () => {
     margin: "0 0 18px",
   };
 
-  const CircleIcon = {
-    color: "#F7D64A",
-    // fontSize: { sm: "1.5vmax", lg: "1vmax" },
-    marginRight: ".5vmax",
-  };
-
   return (
     <>
       <Container maxWidth={"xl"}>
@@ -48,7 +48,7 @@ const PlDescriptionPage = () => {
               sx={{
                 height: "auto",
                 display: "flex",
-                alignItems: "left",
+                alignItems: "flex-start",
                 justifyContent: "center",
                 flexDirection: "column",
                 // padding:{xl:"0 10rem 0"},
@@ -161,7 +161,7 @@ const PlDescriptionPage = () => {
               sx={{
                 height: "100%",
                 display: "flex",
-                alignItems: "left",
+                alignItems: "flex-start",
                 justifyContent: "space-evenly",
                 flexDirection: "column",
                 marginLeft: { sm: "10%", xl: "10%" },

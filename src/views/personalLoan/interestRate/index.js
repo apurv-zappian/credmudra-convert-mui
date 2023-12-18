@@ -23,11 +23,11 @@ const InterestRate = () => {
       backgroundColor: "#243771",
       color: "white",
       fontWeight: "bolder",
-      fontSize: "1vmax",
+      fontSize: "18px",
       textAlign: "center",
     },
     [`&.${tableCellClasses.body}`]: {
-      fontSize: "1vmax",
+      fontSize: "18px",
       textAlign: "center",
     },
   }));
@@ -62,55 +62,74 @@ const InterestRate = () => {
   return (
     <>
       <Box>
-        <Grid
-          container
-          // padding={{
-          //   xs: "3rem",
-          //   md: "3rem 3rem 3rem",
-          //   lg: "3rem 0 3rem",
-          //   xl: "3rem 0 3rem",
-          // }}
-          p="2rem"
-        >
-          {/* Left Side */}
-          <Grid item xs={12} sm={6} md={6} lg={6} xl={6}>
+        <Grid container spacing={2} sx={{ padding: "60px 0px 50px" }}>
+          <Grid
+            item
+            xs={12}
+            sm={6}
+            md={6}
+            lg={6}
+            xl={6}
+            sx={{
+              display: "flex",
+              alignItems: { sm: "center" },
+              justifyContent: { sm: "center" },
+              flexDirection: "column",
+            }}
+          >
             <Box
               sx={{
-                paddingTop: { sm: "7rem", xl: "15rem" },
-                paddingRight: { sm: "0 2rem 0" },
-                // width: { sm: "100%", md: "50%", xl: "60%" },
+                width: { sm: "80%", lg: "80%", xl: "70%" },
+                marginLeft: { sm: "20%" },
+                paddingRight: { sm: "10%" },
                 textAlign: { xs: "center", sm: "left" },
-                // margin: "auto",
               }}
             >
-              <Box sx={{
-                padding:{lg:"0 0 0 7rem",xl:"0 0 0 20rem"},
-                width: { sm: "80%", md: "50%",lg:"80%", xl: "80%" },
-                
-
-              }}>
-                <Typography variant="h3" color="#243771" fontWeight="bolder" sx={{
-                  fontSize:"30px",
-                  lineHeight:"1.4",
-                  font:"normal normal 900 44px/50px Inter",
-                  marginBottom:"10px"
-                }}>
-                  Attractive Personal Loan Interest Rates
-                </Typography>
-                <Typography variant="h5">
-                  Check out the applicable interest rate on personal loan across
-                  several lenders:
-                </Typography>
-              </Box>
+              <Typography
+                sx={{
+                  fontSize: { xs: "26px", sm: "30px", lg: "44px" },
+                  // lineHeight:"1.4",
+                  font: "normal normal 900 44px/50px Inter",
+                  marginBottom: "10px",
+                  color: "#243771",
+                  fontWeight: "900",
+                }}
+              >
+                Attractive Personal Loan Interest Rates
+              </Typography>
+              <Typography
+                sx={{
+                  fontSize: { xs: "17px", sm: "18px", lg: "16px", xl: "18px" },
+                  font: "Inter",
+                  marginBottom: "10px",
+                  color: "#10162c",
+                  // fontWeight:"900"
+                  opacity: 1,
+                }}
+              >
+                Check out the applicable interest rate on personal loan across
+                several lenders:
+              </Typography>
             </Box>
           </Grid>
-          {/* Right Side */}
 
-          <Grid item xs={12} sm={6} md={6} lg={6} xl={6}>
+          <Grid
+            item
+            xs={12}
+            sm={6}
+            md={6}
+            lg={6}
+            xl={6}
+            sx={{
+              display: "flex",
+              alignItems: { sm: "flex-start" },
+              justifyContent: { sm: "flex-start" },
+              flexDirection: "column",
+            }}
+          >
             <Box
               sx={{
-                width: { xs: "100%", sm: "100%", lg: "90%", xl: "70%" },
-                paddingTop: "2rem",
+                width: { lg: "90%", xl: "70%" },
               }}
             >
               <Paper

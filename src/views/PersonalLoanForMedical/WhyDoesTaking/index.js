@@ -20,16 +20,29 @@ const WhyDoesTaking = () => {
             display: {
               xs: "block",
               padding: "70px 10px 80px",
-            //   backgroundColor: "gray",
+              //   backgroundColor: "gray",
             },
           }}
           maxWidth={"xl"}
         >
           <Grid container>
-            <Grid item xs={12} sm={6} md={7}  sx={{ padding: "0px 10px 0px" }}>
-              <Box sx={{ 
-                padding: { xl: "0% 15% 0% 0%" }
-                 }}>
+            <Grid
+              item
+              xs={12}
+              sm={6}
+              md={7}
+              sx={{
+                padding: "0px 10px 0px",
+                display: "flex",
+                alignItems: "flex-start",
+                justifyContent: "flex-start",
+              }}
+            >
+              <Box
+                sx={{
+                  width: { xl: "90%" },
+                }}
+              >
                 <Typography
                   sx={{
                     textAlign: { sm: "left" },
@@ -77,11 +90,13 @@ const WhyDoesTaking = () => {
               xs={12}
               sm={6}
               md={5}
-              
               sx={{
-                 padding: "0px 10px 0px",
-            //    backgroundColor: "pink" 
-            }}
+                padding: "0px 10px 0px",
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+                //    backgroundColor: "pink"
+              }}
             >
               <Box
                 sx={{
@@ -92,7 +107,7 @@ const WhyDoesTaking = () => {
                 <img
                   src={whydoestakingimg}
                   alt="why to get a personal loan for medical emergencies"
-                  style={{ width: "100%", height: "100%" }}
+                  style={{ width: "100%" }}
                 />
               </Box>
             </Grid>

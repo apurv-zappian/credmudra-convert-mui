@@ -52,7 +52,7 @@ const WhyIsPlBetter = () => {
               sx={{
                 height: "100%",
                 display: "flex",
-                alignItems: "left",
+                alignItems: "center",
                 justifyContent: "center",
                 flexDirection: "column",
               }}
@@ -97,7 +97,7 @@ const WhyIsPlBetter = () => {
                   facilities? Here are the reasons you should know:
                 </Typography>
                 <Accordion
-                  elevation={0}
+                  elevation={0} 
                   expanded={expanded === "panel1"}
                   onChange={handleChange("panel1")}
                   sx={{
@@ -230,7 +230,7 @@ const WhyIsPlBetter = () => {
                   sx={{
                     display: "flex",
                     alignItems: "center",
-                    justifyContent: { xs: "center", sm: "left" },
+                    justifyContent: { xs: "center", sm: "flex-start" },
                   }}
                 >
                   <GetMatchedButton />

@@ -1,20 +1,14 @@
-import {
-    Box,
-    Checkbox,
-    Grid,
-    Typography,
-  } from "@mui/material";
-  import React from "react";
-  import cruisethroughimg from "../../../assets/images/PersonalLoanForTwoWheelerImages/cruisethroughimg.png"
-  import waveimg from "../../../assets/images/PersonalLoanImages/waveimg.svg";
+import { Box, Checkbox, Grid, Typography } from "@mui/material";
+import React from "react";
+import cruisethroughimg from "../../../assets/images/PersonalLoanForTwoWheelerImages/cruisethroughimg.png";
+import waveimg from "../../../assets/images/PersonalLoanImages/waveimg.svg";
 import Section1Form from "../../../components/Section1Form";
-  
-  const CruiseThroughLife = () => {
-  
-    const label = { inputProps: { "aria-label": "Checkbox demo" } };
-  
-    return (
-      <>
+
+const CruiseThroughLife = () => {
+  const label = { inputProps: { "aria-label": "Checkbox demo" } };
+
+  return (
+    <>
       <Grid
         container
         sx={{
@@ -52,7 +46,6 @@ import Section1Form from "../../../components/Section1Form";
               }}
             >
               <Typography
-                // variant="h3"
                 gutterBottom
                 sx={{
                   fontFamily: "Inter",
@@ -73,7 +66,8 @@ import Section1Form from "../../../components/Section1Form";
                   marginBottom: "14px",
                 }}
               >
-                Say Goodbye to Two-Wheeler Worries with Competitive Solutions and Convenient EMI options.
+                Say Goodbye to Two-Wheeler Worries with Competitive Solutions
+                and Convenient EMI options.
               </Typography>
 
               <Typography
@@ -95,14 +89,13 @@ import Section1Form from "../../../components/Section1Form";
                 />
                 <Typography
                   marginTop="20px"
-                  // variant="subtitle2"
                   textAlign="justify"
                   width={{ md: "80%", xl: "65%" }}
                   sx={{
                     color: "#999",
                     fontSize: "13px",
                     lineHeight: "1.5",
-                    fontFamily:"Inter"
+                    fontFamily: "Inter",
                   }}
                 >
                   By continuing, I agree to Credmudra's Privacy Policy and Terms
@@ -113,7 +106,6 @@ import Section1Form from "../../../components/Section1Form";
             </Box>
           </Box>
         </Grid>
-        {/* Right Side */}
         <Grid item xs={12} sm={6} display={{ xs: "none", sm: "flex" }}>
           <Box
             sx={{
@@ -137,8 +129,7 @@ import Section1Form from "../../../components/Section1Form";
         </Grid>
       </Grid>
     </>
-    );
-  };
-  
-  export default CruiseThroughLife;
-  
+  );
+};
+
+export default CruiseThroughLife;

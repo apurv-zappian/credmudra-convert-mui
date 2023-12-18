@@ -60,17 +60,11 @@ const StepsForTwoWheelerLoan = () => {
 
   return (
     <Container>
-      <Grid container  sx={{ padding: "80px 0px 10px",}}>
-        {/* Top section */}
+      <Grid container sx={{ padding: "80px 0px 10px" }}>
         <Grid item sm={12}>
-          {/* <Box> */}
           <Box
             sx={{
-              // padding: "3rem 0 2rem",
               textAlign: "center",
-              // maxWidth: "856px",
-              // margin: "auto",
-              // fontSize: "1rem",
             }}
           >
             <Typography
@@ -98,13 +92,12 @@ const StepsForTwoWheelerLoan = () => {
                 margin: { sm: "0px 0px 100px", md: "0px 40px 100px" },
               }}
             >
-              Follow these steps to successfully bag an two wheeler loan on Credmudra:
+              Follow these steps to successfully bag an two wheeler loan on
+              Credmudra:
             </Typography>
           </Box>
-          {/* </Box> */}
         </Grid>
       </Grid>
-      {/* Bottom Section */}
       <Grid
         container
         sx={{ display: "flex", justifyContent: "center" }}
@@ -113,6 +106,7 @@ const StepsForTwoWheelerLoan = () => {
         {CardData.map((step, index) => (
           <Grid
             item
+            key={index}
             xs={12}
             sm={6}
             md={4}
@@ -120,7 +114,7 @@ const StepsForTwoWheelerLoan = () => {
             xl={4}
             sx={{
               width: "100%",
-              height: "100%",
+              // height: "100%",
               display: "flex",
               alignItems: "center",
               justifyContent: "center",
@@ -139,22 +133,26 @@ const StepsForTwoWheelerLoan = () => {
               >
                 <CardActionArea>
                   <Box>
-                    <img alt="image1" src={step.image} style={{
-                          marginBottom: "45px",
-                        }} />
+                    <img
+                      alt="image1"
+                      src={step.image}
+                      style={{
+                        marginBottom: "45px",
+                      }}
+                    />
                   </Box>
                   <CardContent>
                     <Typography
-                     sx={{
-                      opacity: ".5",
-                      lineHeight: ".1",
-                      marginTop: "5px",
-                      zIndex: "2",
-                      fontSize: "52px",
-                      fontFamily: "Inter",
-                      color: "#e4e4e4",
-                      fontWeight: "900",
-                    }}
+                      sx={{
+                        opacity: ".5",
+                        lineHeight: ".1",
+                        marginTop: "5px",
+                        zIndex: "2",
+                        fontSize: "52px",
+                        fontFamily: "Inter",
+                        color: "#e4e4e4",
+                        fontWeight: "900",
+                      }}
                     >
                       {step.step}
                     </Typography>
@@ -171,14 +169,16 @@ const StepsForTwoWheelerLoan = () => {
                     >
                       {step.title}
                     </Typography>
-                    <Typography  sx={{
-                          lineHeight: "1.5",
-                          marginBottom: "25px",
-                          fontSize: { xs: "16px" },
-                          fontFamily: "Inter",
-                          color: "#404040",
-                          // fontWeight:"900"
-                        }}>
+                    <Typography
+                      sx={{
+                        lineHeight: "1.5",
+                        marginBottom: "25px",
+                        fontSize: { xs: "16px" },
+                        fontFamily: "Inter",
+                        color: "#404040",
+                        // fontWeight:"900"
+                      }}
+                    >
                       {step.description}
                     </Typography>
                   </CardContent>

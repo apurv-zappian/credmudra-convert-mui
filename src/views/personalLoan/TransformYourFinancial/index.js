@@ -43,7 +43,7 @@ const TransformYourFinancial = () => {
                   display: "flex",
                   flexWrap: "wrap",
                   alignItems: "center",
-                  justifyContent: "space-evenly",
+                  justifyContent: "center",
                   // padding:{sm:"0px 10px 0px 10px"}
                   // flexDirection: { xs: "column", md: "row" },
                   // padding:"0rem 3rem 3rem"
@@ -52,7 +52,7 @@ const TransformYourFinancial = () => {
                 <Card
                   sx={{
                     // width: "3%",
-                    minWidth: { xs: "250px", sm: "600px", md: "250px" },
+                    minWidth: { xs: "250px", sm: "580px", md: "250px" },
                     minHeight: "150px",
                     position: "relative",
                     backgroundColor: "#10162C",
@@ -124,7 +124,7 @@ const TransformYourFinancial = () => {
                 <Card
                   sx={{
                     // width: "3%",
-                    minWidth: { xs: "250px", sm: "600px", md: "250px" },
+                    minWidth: { xs: "250px", sm: "580px", md: "250px" },
                     minHeight: "150px",
                     position: "relative",
                     backgroundColor: "#5ab56b",
@@ -195,7 +195,7 @@ const TransformYourFinancial = () => {
                 <Card
                   sx={{
                     // width: "3%",
-                    minWidth: { xs: "250px", sm: "600px", md: "250px" },
+                    minWidth: { xs: "250px", sm: "580px", md: "250px" },
                     minHeight: "150px",
                     position: "relative",
                     backgroundColor: "#10162C",

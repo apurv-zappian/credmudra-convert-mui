@@ -11,17 +11,22 @@ const WillConsolidatingDebt = () => {
           item
           xs={12}
           sm={6}
-          sx={{ padding: { xs: "16px 32px 0px", sm: "0" } }}
+          sx={{
+            padding: { xs: "16px 32px 16px" },
+            display: "flex",
+            alignItems: { xs: "center", },
+            justifyContent: { xs: "center",},
+            flexDirection: "column",
+          }}
         >
           <Box
             sx={{
-              margin: {
-                xs: "0% 0% 5%",
-                sm: "10% 5% 10%",
-                lg: "15% 0% 10%% 10%",
-                xl: "15% 10% 0% 10%",
-              },
-              padding: { sm: "48px 16px 0px 48px", xl: "0px 0px 48px" },
+              // margin: {
+              //   xs: "0% 0% 5%",
+              //   sm: "5% 0%",
+              //   xl:"0% 5% 0% 0%"
+              // },
+              width:{xl:"80%"}
             }}
           >
             <Typography
@@ -72,8 +77,8 @@ const WillConsolidatingDebt = () => {
             <Box
               sx={{
                 display: "flex",
-                alignItems: { xs: "center", sm: "left" },
-                justifyContent: { xs: "center", sm: "left" },
+                alignItems: { xs: "center", sm: "flex-start" },
+                justifyContent: { xs: "center", sm: "flex-start" },
               }}
             >
               <GetMatchedButton />
@@ -84,22 +89,15 @@ const WillConsolidatingDebt = () => {
           item
           xs={12}
           sm={6}
-          sx={{ padding: { xs: "16px 32px 32px", sm: "0" } }}
+          sx={{
+            padding: { xs: "16px 32px 32px", sm: "0" },
+            display: "flex",
+            alignItems: { xs: "center",xl:"flex-end"},
+            justifyContent: { xs: "center",xl:"flex-end" },
+          }}
         >
-          <Box
-            sx={{
-              padding: { sm: "70% 0% 10%", md: "20% 0% 10% 0%", lg: "0% 0%" },
-            }}
-          >
-            <img
-              src={willconsolidatingdebt}
-              alt="loading"
-              width={"100%"}
-              //   style={{ width: "100%",height:"auto"}}
-              // style={{borderStyle: "none",
-              //     height: "auto",
-              //     maxWidth: "100%"}}
-            />
+          <Box>
+            <img src={willconsolidatingdebt} alt="loading" style={{width:"100%"}} />
           </Box>
         </Grid>
       </Grid>

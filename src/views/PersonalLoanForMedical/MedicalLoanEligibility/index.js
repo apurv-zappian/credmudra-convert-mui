@@ -37,23 +37,27 @@ const MedicalLoanEligibility = () => {
         <Container
           maxWidth={"xl"}
           sx={{
-            display:{xs:"block"},
-            padding: { xs: "80px 0px 10px" },
-            // display: "flex",
-            // alignItems: "center",
-            // justifyContent: "center",
+            display: { xs: "block" },
+            padding: { xs: "80px 10px 10px" },
           }}
         >
           <Grid container alignItems="center" spacing={2}>
-            <Grid item xs={12} md={4} lg={4} xl={3}>
+            <Grid
+              item
+              xs={12}
+              md={4}
+              lg={4}
+              xl={3}
+              sx={{
+                display: "flex",
+                alignItems: { xs: "center", md: "flex-start" },
+                justifyContent: { xs: "center", md: "flex-start" },
+                flexDirection: "column",
+              }}
+            >
               <Box
                 sx={{
-                  // width: { md: "90%", xl: "100%" },
-                  // display: "flex",
-                  // alignItems: { xs: "center", md: "left" },
-                  // justifyContent: { xs: "center", md: "left" },
-                  // flexDirection: "column",
-                  padding: { md: "0% 0% 0% 25%",lg:"0% 0% 0% 25%",xl:"0%" },
+                  marginLeft:{md:"4%"},
                 }}
               >
                 <Typography
@@ -64,8 +68,8 @@ const MedicalLoanEligibility = () => {
                     color: "#243771",
                     fontWeight: "900",
                     lineHeight: "1.1",
-                    // margin: { xs: "0px 0px 8px" },
-                    // padding: { xl: "0rem 5rem 0rem" },
+                    margin:"0 0 10px"
+                   
                   }}
                 >
                   Medical Loan Eligibility Criteria
@@ -78,6 +82,7 @@ const MedicalLoanEligibility = () => {
                     color: "#404040",
                     // fontWeight: "900",
                     lineHeight: { xs: "1.1", md: "1.5" },
+                    margin:"0 0 10px"
                     // margin: { xs: "0px 0px 8px" },
                     // padding: { xl: "0rem 5rem 0rem" },
                   }}
@@ -88,10 +93,9 @@ const MedicalLoanEligibility = () => {
                 <Box
                   sx={{
                     display: "flex",
-                    alignItems: { xs: "center", sm: "left" },
-                    justifyContent: { xs: "center", md: "left" },
-                    // margin: "0px 0px 20px",
-                    // padding: { lg: "0rem 5rem 0rem 0rem" },
+                    alignItems: { xs: "center", sm: "flex-start" },
+                    justifyContent: { xs: "center", md: "flex-start" },
+                    margin:"0 0 10px"
                   }}
                 >
                   <GetMatchedButton />

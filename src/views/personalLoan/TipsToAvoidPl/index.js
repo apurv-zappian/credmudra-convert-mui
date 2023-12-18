@@ -23,11 +23,15 @@ const TipsToAvoidPl = () => {
 
   const AccHeadingColor = {
     color: "#F7D64A",
-    fontSize: "1rem",
-    fontWeight: "bold",
+    fontSize: { xs: "20px", sm: "22px" },
+    fontWeight: "700",
+    fontFamily:"Inter"
   };
   const AccParaColor = {
     color: "white",
+    fontSize: { xs: "16px",},
+    // fontWeight: "700",
+    fontFamily:"Inter"
   };
 
   const CheckCircle = {
@@ -73,7 +77,7 @@ const TipsToAvoidPl = () => {
                 sx={{
                   height: "100%",
                   display: "flex",
-                  alignItems: "left",
+                  alignItems: "flex-start",
                   justifyContent: "center",
                   flexDirection: "column",
                   color: "white",
@@ -261,7 +265,7 @@ const TipsToAvoidPl = () => {
                   sx={{
                     display: "flex",
                     alignItems: "center",
-                    justifyContent: { xs: "center", sm: "left" },
+                    justifyContent: { xs: "center", sm: "flex-start" },
                   }}
                 >
                   <GetMatchedButton />

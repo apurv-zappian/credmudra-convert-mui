@@ -70,7 +70,12 @@ const LendersThatOffer = () => {
         maxWidth={"xl"}
       >
         <Grid container alignItems="center" spacing={4}>
-          <Grid item xs={12} sm={5} xl={5}>
+          <Grid item xs={12} md={5} xl={5} sx={{
+                display: "flex",
+                alignItems: { xs: "center", md: "flex-start" },
+                justifyContent: { xs: "center", md: "flex-start" },
+                flexDirection:"column"
+              }}>
             <Typography
               sx={{
                 // margin: { xl: "0px 105px 0px" },
@@ -96,7 +101,7 @@ const LendersThatOffer = () => {
                 fontWeight: "400",
                 color: "#404040",
                 lineHeight: "1.7",
-                textAlign: { xs: "center", sm: "left" },
+                textAlign: { xs: "center", md: "left" },
               }}
             >
               Here is a table listing several prominent financial institutions
@@ -110,7 +115,7 @@ const LendersThatOffer = () => {
                 fontWeight: "400",
                 color: "#404040",
                 lineHeight: "1.7",
-                textAlign: { xs: "center", sm: "left" },
+                textAlign: { xs: "center", md: "left" },
               }}
             >
               It is imperative that you compare personal medical loan offers
@@ -120,8 +125,8 @@ const LendersThatOffer = () => {
             <Box
               sx={{
                 display: "flex",
-                alignItems: { xs: "center", sm: "left" },
-                justifyContent: { xs: "center", sm: "left" },
+                alignItems: { xs: "center", md: "flex-start" },
+                justifyContent: { xs: "center", md: "flex-start" },
                 margin: "0px 0px 20px",
                 // padding: { xl: "0px 96px 0px" },
               }}
@@ -129,12 +134,16 @@ const LendersThatOffer = () => {
               <GetMatchedButton />
             </Box>
           </Grid>
-          <Grid item xs={12} sm={7} xl={7}>
+          <Grid item xs={12} md={7} xl={7} sx={{
+                display: "flex",
+                alignItems: { xs: "center", md: "flex-start" },
+                justifyContent: { xs: "center", md: "flex-start" },
+              }}>
             <Paper
               elevation={5}
               sx={{
                 padding: 2,
-                boxShadow: "5px 5px 10px gray",
+                // boxShadow: "5px 5px 10px gray",
                 backgroundColor: "#E9E9E9",
               }}
             >

@@ -6,6 +6,9 @@ import {
   Box,
   Container,
   Grid,
+  List,
+  ListItem,
+  ListItemText,
   Typography,
 } from "@mui/material";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
@@ -29,164 +32,173 @@ const FAQS = () => {
     color: "#404040",
     fontSize: { xs: "16px" },
     fontFamily: "Inter",
-    // padding:"16px 20px"
   };
 
   const CircleIcon = {
-    // marginTop: "6px",
     color: "#243771",
     marginRight: "10px",
   };
   return (
     <>
       <Container maxWidth={"xl"} sx={{ padding: "60px 0px 50px" }}>
-        <Grid container sx={{ padding: { xs: "10px", } }} alignItems={'center'}>
-          {/* Left Side */}
-          <Grid item xs={12} sm={6}>
-            {/* <Box sx={{display:"flex",alignItems:"center",justifyContent:"space-around"}}> */}
-            <Box sx={{width:{sm:"70%"}}}>
+        <Grid container sx={{ padding: { xs: "10px" } }} spacing={2}>
+          <Grid
+            item
+            xs={12}
+            sm={6}
+            sx={{
+              display: "flex",
+              alignItems: { xs: "center" },
+              justifyContent: { xs: "center" },
+              textAlign:{xs:"left",sm:"center"}
+            }}
+          >
+            <Box sx={{marginLeft:{sm:"4%"}}}>
               <Typography
                 sx={{
                   fontSize: { xs: "24px", sm: "26px", md: "32px" },
                   fontWeight: "900",
                   fontFamily: "Inter,sans-serif",
-                  // padding: { sm: "7rem 3rem 0rem", xl: "5rem 3rem 0rem" },
                   color: "#243771",
                   textAlign: { xs: "left", xl: "left" },
                   lineHeight: "1.1",
-                  margin:"0px 0px 30px"
+                  margin: "0px 0px 30px",
                 }}
               >
                 FAQs About Personal Loan For Debt Consolidation
               </Typography>
             </Box>
-            {/* </Box> */}
           </Grid>
-          {/* Right Side */}
-          <Grid item xs={12} sm={6}>
-            <Box
-              sx={{
-                display: "flex",
-                alignItems: "left",
-                justifyContent: "left",
-                borderRadius: "10px",
-                fontFamily: "Inter,sans-serif",
-                // marginRight: { xl: "10%" },
-                // Width:"66%"
-              }}
-            >
-              <Box
+          <Grid
+            item
+            xs={12}
+            sm={6}
+            sx={{
+              display: "flex",
+              alignItems: "flex-start",
+              justifyContent: "flex-start",
+              borderRadius: "10px",
+            }}
+          >
+            <Box>
+              <Accordion
+                expanded={expanded === "panel1"}
+                onChange={handleChange("panel1")}
                 sx={{
-                  width: "100%" ,
-                  // padding:"15px 20px 11px 30px"
-                  //   marginRight:"15%"
+                  backgroundColor: "#FCEFB8",
+                  marginTop: "20px",
+                  boxShadow: "0 3px 6px rgba(0,0,0,.161)",
+                  borderRadius: "10px",
+                  border: "none !important",
+                }}
+                elevation={0}
+              >
+                <AccordionSummary
+                  expandIcon={<ExpandMoreIcon />}
+                  aria-controls="panel1d-content"
+                  id="panel1d-header"
+                >
+                  <FiberManualRecord sx={{ ...CircleIcon }} />
+
+                  <Typography sx={{ ...AccHeading }}>
+                    1. Is balance transfer better than debt consolidation?
+                  </Typography>
+                </AccordionSummary>
+                <AccordionDetails>
+                  <Typography sx={{ ...AccPara }}>
+                    Both of these debt management facilities have their own pros
+                    and cons. You must take into account all these factors while
+                    choosing the suitable option. Your primary motive must be to
+                    select a facility that will reduce your debt load while
+                    helping you save a considerable sum of money.
+                  </Typography>
+                </AccordionDetails>
+              </Accordion>
+              <Accordion
+                expanded={expanded === "panel2"}
+                onChange={handleChange("panel2")}
+                border={"none"}
+                sx={{
+                  backgroundColor: "#FCEFB8",
+                  marginTop: "20px",
+                  boxShadow: "0 3px 6px rgba(0,0,0,.161)",
+                  borderRadius: "10px",
+                  "&::before": {
+                    backgroundColor: "rgb(0 0 0 / 0%)",
+                  },
                 }}
               >
-                <Accordion
-                  expanded={expanded === "panel1"}
-                  onChange={handleChange("panel1")}
-                  sx={{
-                    backgroundColor: "#FCEFB8",
-                    marginTop: "20px",
-                    boxShadow: "0 3px 6px rgba(0,0,0,.161)",
-                    borderRadius: "10px",
-                    border: "none !important",
-                  }}
-                  elevation={0}
+                <AccordionSummary
+                  expandIcon={<ExpandMoreIcon />}
+                  aria-controls="panel2d-content"
+                  id="panel2d-header"
                 >
-                  <AccordionSummary
-                    expandIcon={<ExpandMoreIcon />}
-                    aria-controls="panel1d-content"
-                    id="panel1d-header"
-                  >
-                    {/* <Circle sx={{ ...CircleIcon }} /> */}
-                    <FiberManualRecord sx={{ ...CircleIcon }} />
+                  <FiberManualRecord sx={{ ...CircleIcon }} />
 
-                    <Typography sx={{ ...AccHeading }}>
-                      1. Is balance transfer better than debt consolidation?
-                    </Typography>
-                  </AccordionSummary>
-                  <AccordionDetails>
-                    <Typography sx={{ ...AccPara }}>
-                      Both of these debt management facilities have their own
-                      pros and cons. You must take into account all these
-                      factors while choosing the suitable option. Your primary
-                      motive must be to select a facility that will reduce your
-                      debt load while helping you save a considerable sum of
-                      money.
-                    </Typography>
-                  </AccordionDetails>
-                </Accordion>
-                <Accordion
-                  expanded={expanded === "panel2"}
-                  onChange={handleChange("panel2")}
-                  border={"none"}
-                  sx={{
-                    backgroundColor: "#FCEFB8",
-                    marginTop: "20px",
-                    boxShadow: "0 3px 6px rgba(0,0,0,.161)",
-                    borderRadius: "10px",
-                    "&::before": {
-                      backgroundColor: "rgb(0 0 0 / 0%)",
-                    },
-                  }}
+                  <Typography sx={{ ...AccHeading }}>
+                    2. What should I avoid while consolidating debts?
+                  </Typography>
+                </AccordionSummary>
+                <AccordionDetails>
+                  <Typography sx={{ ...AccPara }}>
+                    While consolidating your existing debts, you should try to
+                    avoid the following types of credits:
+                    <List>
+                        <ListItem>
+                          <FiberManualRecord sx={{fontSize:"10px",marginRight:"10px"}}/>
+                          <ListItemText primary="Loans with a high interest rate"/>
+                        </ListItem>
+                        <ListItem>
+                          <FiberManualRecord sx={{fontSize:"10px",marginRight:"10px"}}/>
+                          <ListItemText primary="Loans with high additional charges"/>
+                        </ListItem>
+                        <ListItem>
+                          <FiberManualRecord sx={{fontSize:"10px",marginRight:"10px"}}/>
+                          <ListItemText primary="Home equity loans"/>
+                        </ListItem>
+                        <ListItem>
+                          <FiberManualRecord sx={{fontSize:"10px",marginRight:"10px"}}/>
+                          <ListItemText primary="401(k) loans"/>
+                        </ListItem>
+                      </List>
+                  </Typography>
+                </AccordionDetails>
+              </Accordion>
+              <Accordion
+                expanded={expanded === "panel3"}
+                onChange={handleChange("panel3")}
+                sx={{
+                  backgroundColor: "#FCEFB8",
+                  marginTop: "20px",
+                  boxShadow: "0 3px 6px rgba(0,0,0,.161)",
+                  borderRadius: "10px",
+                  "&::before": {
+                    backgroundColor: "rgb(0 0 0 / 0%)",
+                  },
+                }}
+                elevation={0}
+              >
+                <AccordionSummary
+                  expandIcon={<ExpandMoreIcon />}
+                  aria-controls="panel3d-content"
+                  id="panel3d-header"
                 >
-                  <AccordionSummary
-                    expandIcon={<ExpandMoreIcon />}
-                    aria-controls="panel2d-content"
-                    id="panel2d-header"
-                  >
-                    {/* <Circle sx={{ ...Circle }} /> */}
-                    <FiberManualRecord sx={{ ...CircleIcon }} />
+                  <FiberManualRecord sx={{ ...CircleIcon }} />
 
-                    <Typography sx={{ ...AccHeading }}>
-                      2. What should I avoid while consolidating debts?
-                    </Typography>
-                  </AccordionSummary>
-                  <AccordionDetails>
-                    <Typography sx={{ ...AccPara }}>
-                      While consolidating your existing debts, you should try to
-                      avoid the following types of credits:
-                    </Typography>
-                  </AccordionDetails>
-                </Accordion>
-                <Accordion
-                  expanded={expanded === "panel3"}
-                  onChange={handleChange("panel3")}
-                  sx={{
-                    backgroundColor: "#FCEFB8",
-                    marginTop: "20px",
-                    boxShadow: "0 3px 6px rgba(0,0,0,.161)",
-                    borderRadius: "10px",
-                    "&::before": {
-                      backgroundColor: "rgb(0 0 0 / 0%)",
-                    },
-                  }}
-                  elevation={0}
-                >
-                  <AccordionSummary
-                    expandIcon={<ExpandMoreIcon />}
-                    aria-controls="panel3d-content"
-                    id="panel3d-header"
-                  >
-                    {/* <Circle sx={{ ...Circle }} /> */}
-                    <FiberManualRecord sx={{ ...CircleIcon }} />
-
-                    <Typography sx={{ ...AccHeading }}>
-                      3. Can I select tenure for repaying a personal loan for
-                      debt consolidation?
-                    </Typography>
-                  </AccordionSummary>
-                  <AccordionDetails>
-                    <Typography sx={{ ...AccPara }}>
-                      Yes. With Credmudra, you can select your loan repayment
-                      tenure, i.e., from three months to two years. The
-                      flexibility of repayment is a primary reason that makes us
-                      one of the best short-term loan aggregators in the market.
-                    </Typography>
-                  </AccordionDetails>
-                </Accordion>
-              </Box>
+                  <Typography sx={{ ...AccHeading }}>
+                    3. Can I select tenure for repaying a personal loan for debt
+                    consolidation?
+                  </Typography>
+                </AccordionSummary>
+                <AccordionDetails>
+                  <Typography sx={{ ...AccPara }}>
+                    Yes. With Credmudra, you can select your loan repayment
+                    tenure, i.e., from three months to two years. The
+                    flexibility of repayment is a primary reason that makes us
+                    one of the best short-term loan aggregators in the market.
+                  </Typography>
+                </AccordionDetails>
+              </Accordion>
             </Box>
           </Grid>
         </Grid>

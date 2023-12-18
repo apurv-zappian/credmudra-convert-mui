@@ -11,7 +11,7 @@ import {
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import { FiberManualRecord } from "@mui/icons-material";
 
-const FAQSAboutTravel = () => {
+const FAQSTwoWheeler = () => {
   const [expanded, setExpanded] = React.useState("panel1");
 
   const handleChange = (panel) => (event, newExpanded) => {
@@ -21,7 +21,7 @@ const FAQSAboutTravel = () => {
   const AccHeading = {
     color: "#243771",
     fontSize: { xs: "20px", sm: "22px" },
-    fontWeight: "900",
+    fontWeight: "700",
     fontFamily: "Inter",
   };
 
@@ -33,38 +33,42 @@ const FAQSAboutTravel = () => {
   };
 
   const CircleIcon = {
-    // marginTop: "6px",
+    marginTop: "6px",
     color: "#243771",
     marginRight: "10px",
   };
   return (
     <>
       <Container maxWidth={"xl"} sx={{ padding: "60px 0px 50px" }}>
-        <Grid container sx={{ padding: { xs: "10px" } }} spacing={2} alignItems={'center'}>
+        <Grid
+          container
+          sx={{ padding: { xs: "10px" } }}
+          spacing={2}
+          alignItems={"center"}
+        >
           <Grid
             item
             xs={12}
             sm={6}
             sx={{
               display: "flex",
-              alignItems: { xs: "flex-start", },
-              justifyContent: { xs: "flex-start",  },
+              alignItems: { xs: "flex-start",sm:"center" },
+              justifyContent: { xs: "flex-start",sm:"center" },
             }}
           >
-            <Box>
+            <Box sx={{ width: {sm:"90%", md: "70%" } }}>
               <Typography
                 sx={{
                   fontSize: { xs: "24px", sm: "26px", md: "32px" },
                   fontWeight: "900",
                   fontFamily: "Inter,sans-serif",
-                  // padding: { sm: "7rem 3rem 0rem", xl: "5rem 3rem 0rem" },
                   color: "#243771",
-                  textAlign: { xs: "left", xl: "left" },
+                  textAlign: { xs: "left", },
                   lineHeight: "1.1",
                   margin: "0px 0px 30px",
                 }}
               >
-                FAQs About Personal Loan For Travel
+                FAQs About Personal Loan For Two Wheeler
               </Typography>
             </Box>
           </Grid>
@@ -100,20 +104,19 @@ const FAQSAboutTravel = () => {
                     aria-controls="panel1d-content"
                     id="panel1d-header"
                   >
-                    {/* <Circle sx={{ ...CircleIcon }} /> */}
                     <FiberManualRecord sx={{ ...CircleIcon }} />
 
                     <Typography sx={{ ...AccHeading }}>
-                      Can I take a travel loan for international vacations?
+                      Where to find the best personal loan offer for a
+                      two-wheeler?
                     </Typography>
                   </AccordionSummary>
                   <AccordionDetails>
                     <Typography sx={{ ...AccPara }}>
-                      Yes, you can avail a travel loan for international
-                      vacations upon meeting the eligibility criteria of your
-                      lender. However, you also need to stay prepared for
-                      unexpected expenses and pay for foreign currency
-                      conversion charges.
+                      You may reach out to Credmudra mentors for a one-on-one
+                      discussion on how to negotiate for the best interest rate.
+                      We have a bunch of reputed lenders offering the lowest
+                      interest on personal loans.
                     </Typography>
                   </AccordionDetails>
                 </Accordion>
@@ -136,18 +139,18 @@ const FAQSAboutTravel = () => {
                     aria-controls="panel2d-content"
                     id="panel2d-header"
                   >
-                    {/* <Circle sx={{ ...Circle }} /> */}
                     <FiberManualRecord sx={{ ...CircleIcon }} />
 
                     <Typography sx={{ ...AccHeading }}>
-                      What are the benefits of our pre-approved personal loan?
+                      Can I get a bike loan if my CIBIL score is 650?
                     </Typography>
                   </AccordionSummary>
                   <AccordionDetails>
                     <Typography sx={{ ...AccPara }}>
-                      If you are eligible for our pre-approved personal loan,
-                      you can enjoy benefits such as lower interest rates,
-                      instant approval and disbursement.
+                      Credit score requirements tend to vary from one lender to
+                      another. However, there remains a significant chance of
+                      grabbing a personal loan with 650 CIBIL score but in
+                      exchange of higher interest rates.
                     </Typography>
                   </AccordionDetails>
                 </Accordion>
@@ -170,18 +173,18 @@ const FAQSAboutTravel = () => {
                     aria-controls="panel3d-content"
                     id="panel3d-header"
                   >
-                    {/* <Circle sx={{ ...Circle }} /> */}
                     <FiberManualRecord sx={{ ...CircleIcon }} />
 
                     <Typography sx={{ ...AccHeading }}>
-                      How much personal loan for travel can I get at Credmudra?
+                      What is the minimum salary for a loan from Credmudra?
                     </Typography>
                   </AccordionSummary>
                   <AccordionDetails>
                     <Typography sx={{ ...AccPara }}>
-                      You can avail a personal loan for travel ranging between
-                      Rs.1,000 and Rs.20 lakhs depending on your requirement and
-                      eligibility.
+                      You can opt for a loan even if you are currently employed
+                      with a salary of Rs. 9000. The only reason a lender asks
+                      for your monthly income is to determine your repaying
+                      capacity after taking the loan.
                     </Typography>
                   </AccordionDetails>
                 </Accordion>
@@ -204,20 +207,19 @@ const FAQSAboutTravel = () => {
                     aria-controls="panel4d-content"
                     id="panel4d-header"
                   >
-                    {/* <Circle sx={{ ...Circle }} /> */}
                     <FiberManualRecord sx={{ ...CircleIcon }} />
 
                     <Typography sx={{ ...AccHeading }}>
-                      How can I repay my travel loan?
+                      How many years is a bike loan?
                     </Typography>
                   </AccordionSummary>
                   <AccordionDetails>
                     <Typography sx={{ ...AccPara }}>
-                      The most convenient way to pay off your loan is by paying
-                      EMIs. But if you fear defaulting on your monthly payments,
-                      you can set up standing instructions or turn on the auto
-                      debit facility. Just make sure that you have sufficient
-                      balance in your linked bank account.
+                      Depending on the lender’s policies, a two-wheeler loan
+                      typically exceeds no more than 5 years. Many financing
+                      companies allow you to make partial prepayments at
+                      occasional intervals to bring down the interest rates in
+                      exchange for some foreclosure charges.
                     </Typography>
                   </AccordionDetails>
                 </Accordion>
@@ -230,4 +232,4 @@ const FAQSAboutTravel = () => {
   );
 };
 
-export default FAQSAboutTravel;
+export default FAQSTwoWheeler;

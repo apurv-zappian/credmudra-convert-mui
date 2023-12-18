@@ -41,7 +41,7 @@ const FAQS = () => {
                 // padding: "3rem",
                 display: "flex",
                 alignItems: "center",
-                justifyContent: {xs:"left",},
+                justifyContent: {xs:"flex-start",},
                 // margin:{sm:"70% 0% 0% 0%"}
               }}
             >
@@ -65,8 +65,8 @@ const FAQS = () => {
             <Box
               sx={{
                 display: "flex",
-                alignItems: "left",
-                justifyContent: "left",
+                alignItems: "flex-start",
+                justifyContent: "flex-start",
                 borderRadius: "10px",
                 fontFamily: "Inter,sans-serif",
               }}

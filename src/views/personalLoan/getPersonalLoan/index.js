@@ -18,7 +18,7 @@ const GetPersonalLoan = () => {
     >
       <Container maxWidth={"xl"}>
         <Box
-          sx={{ padding: { xs: "10px", md: "32px" } }}
+          sx={{ padding: { xs: "30px 10px", md: "32px" } }}
           //  sx={{maxWidth:'1500px',padding: { xs: "0rem .5rem 0rem", md: "2rem" }}}
         >
           <Typography

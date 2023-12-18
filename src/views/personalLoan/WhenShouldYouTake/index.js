@@ -14,7 +14,7 @@ import GetMatchedButton from "../../../components/GetMatchedButton";
 const WhenShouldYouTake = () => {
   const CircleIcon = {
     color: "#F7D64A",
-    fontSize: "1.2rem",
+    fontSize: "20px",
     position: "absolute",
     top: "15px",
     left: "0",
@@ -173,33 +173,35 @@ const WhenShouldYouTake = () => {
             </Box>
           </Grid>
           {/* Right Side */}
-          <Grid item xs={12} sm={6} md={6} lg={6} xl={5}>
+          <Grid item xs={12} sm={6} md={6} lg={6} xl={5} sx={{ display: "flex",
+                alignItems: {sm:"center"},
+                justifyContent:{sm: "center"},
+                flexDirection: "column",}}>
             <Box
               sx={{
-                display: "flex",
-                alignItems: "left",
-                justifyContent: "center",
-                flexDirection: "column",
-                width: { sm: "90%", md: "85%", lg: "90%", xl: "80%" },
+                // display: "flex",
+                // alignItems: "left",
+                // justifyContent: "center",
+                // flexDirection: "column",
+                width: { sm: "90%", xl: "70%" },
                 textAlign: { xs: "center", sm: "left" },
                 // padding:{sm:"90% 0% 0% 10%",lg:"40% 0% 0% 5%"},
                 // paddingTop: "12rem",
                 //   flexDirection: "column",
-                marginTop: { sm: "30%" },
+                // marginTop: { sm: "30%" },
                 // backgroundColor:"gray",
-                marginLeft: { xl: "20%" },
+                marginLeft: { sm: "5%" },
               }}
             >
               <Typography
-                variant="h3"
-                fontWeight="bolder"
-                color="#243771"
+               
                 // textAlign={{ xs: "center", sm: "left" }}
                 sx={{
                   fontFamily: "Inter,sans-serif",
                   fontSize: { xs: "24px", sm: "32px", md: "40px" },
                   marginBottom: "23px",
                   fontWeight: "900",
+                  color:"#243771"
                 }}
               >
                 When Should You Take A Personal Loan?
@@ -215,7 +217,10 @@ const WhenShouldYouTake = () => {
                 Here are some circumstances under which you can consider taking
                 a personal loan:
               </Typography>
-              <Box textAlign={{ xs: "center", sm: "left" }}>
+              <Box sx={{ display: "flex",
+                alignItems: { xs: "center",sm:"flex-start" },
+                justifyContent:{xs:"center",sm:"flex-start"},
+              }}>
                 <GetMatchedButton />
               </Box>
             </Box>

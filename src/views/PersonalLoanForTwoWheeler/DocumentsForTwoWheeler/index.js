@@ -22,21 +22,19 @@ const DocumentsForTwoWheeler = () => {
     <>
       <Container maxWidth={"xl"} sx={{ padding: "60px 0px 50px" }}>
         <Grid container sx={{ padding: { xs: "10px" } }}>
-          {/* Left Side */}
-          <Grid item xs={12} sm={6} md={6} lg={6} xl={5}>
+          <Grid item xs={12} sm={6} md={6} lg={6}>
             <Box
               sx={{
                 display: "flex",
-                alignItems: { xs: "center", sm: "left" },
+                alignItems: { xs: "center",  },
                 justifyContent: "center",
                 flexDirection: "column",
-                // padding:{xs:"1rem 5rem 1rem"}
               }}
             >
               <Box
                 sx={{
-                  width: { sm: "70%", xl: "90%" },
-                  margin: { xl: "0px 65px 0px 0px" },
+                  width: { sm: "90%", md: "70%" },
+                  // margin: { xl: "0px 65px 0px 0px" },
                   // padding: { sm: "80px 0 75px", lg: "50px 0px 50px" },
                 }}
                 textAlign={{ xs: "center", sm: "left" }}
@@ -71,7 +69,7 @@ const DocumentsForTwoWheeler = () => {
                   sx={{
                     display: "flex",
                     alignItems: "center",
-                    justifyContent: { xs: "center", sm: "left" },
+                    justifyContent: { xs: "center", sm: "flex-start" },
                   }}
                 >
                   <GetMatchedButton />
@@ -80,7 +78,7 @@ const DocumentsForTwoWheeler = () => {
             </Box>
           </Grid>
           {/* Right Side  */}
-          <Grid item xs={12} sm={6} md={6} lg={6} xl={7}>
+          <Grid item xs={12} sm={6} md={6} lg={6}>
             <Box
               sx={{
                 display: "flex",

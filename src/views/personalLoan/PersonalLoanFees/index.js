@@ -159,7 +159,7 @@ const PersonalLoanFees = () => {
           >
             <Box
               sx={{
-                height: "100%",
+                // height: "100%",
                 display: "flex",
                 alignItems: "center",
                 justifyContent: "center",
@@ -169,7 +169,7 @@ const PersonalLoanFees = () => {
             >
               <Box
                 sx={{
-                  width: { sm: "70%", lg: "70%", xl: "80%" },
+                  width: { sm: "90%", },
                   textAlign: { xs: "center", sm: "left" },
                   // padding:{xl:"0 9rem 0 0"},
                 }}
@@ -192,7 +192,7 @@ const PersonalLoanFees = () => {
                   sx={{
                     display: "flex",
                     alignItems: "center",
-                    justifyContent: { xs: "center", sm: "left" },
+                    justifyContent: { xs: "center", sm: "flex-start" },
                   }}
                 >
                   <GetMatchedButton />
