@@ -56,9 +56,9 @@ const FrequntlyAsked = () => {
                 // textAlign: "left",
                 // padding: "3rem",
                 display: "flex",
-                alignItems: "center",
-                justifyContent: { xs: "left" },
-                paddingX: { lg: "50px", xl: "70px" },
+                alignItems: "flex-start",
+                justifyContent: { xs: "flex-start" },
+                // paddingX: { lg: "50px", xl: "70px" },
                 // margin:{sm:"70% 0% 0% 0%"}
               }}
             >
@@ -82,8 +82,8 @@ const FrequntlyAsked = () => {
             <Box
               sx={{
                 display: "flex",
-                alignItems: "left",
-                justifyContent: "left",
+                alignItems: "flex-start",
+                justifyContent: "flex-start",
                 borderRadius: "10px",
                 fontFamily: "Inter,sans-serif",
               }}

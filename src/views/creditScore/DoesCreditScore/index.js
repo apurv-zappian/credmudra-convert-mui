@@ -4,8 +4,6 @@ import {
   AccordionSummary,
   Box,
   Grid,
-  List,
-  ListItem,
   Typography,
 } from "@mui/material";
 import React from "react";
@@ -63,7 +61,7 @@ const DoesCreditScore = () => {
               display: "flex",
               alignItems: "center",
               justifyContent: "center",
-              marginLeft: { sm: "10%" },
+              marginLeft: { sm: "7%" },
               marginTop: { xs: "20px", sm: "0" },
               //   padding: { sm: "20% 4% 10%", md: "10% 4% 10% 0%", lg: "0% 0%" },
             }}
@@ -133,7 +131,7 @@ const DoesCreditScore = () => {
                 aria-controls="panel1d-content"
                 id="panel1d-header"
               >
-                <CheckCircleOutlineIcon sx={{ ...CheckCircle }} />
+                <CheckCircleOutlineIcon sx={{ ...CheckCircle, paddingTop:"5px" }} />
                 <Typography sx={{ ...AccHeading }}>
                   The timing of inquiries matters:
                 </Typography>
@@ -162,7 +160,7 @@ const DoesCreditScore = () => {
                 aria-controls="panel2d-content"
                 id="panel2d-header"
               >
-                <CheckCircleOutlineIcon sx={{ ...CheckCircle }} />
+                <CheckCircleOutlineIcon sx={{ ...CheckCircle, paddingTop:"5px" }} />
 
                 <Typography sx={{ ...AccHeading }}>
                   Duration of impact:

@@ -17,7 +17,7 @@ const GetMatchedButton = () => {
                     backgroundColor: "#f7d64a",
                     color: "#243771",
                     marginTop: "10px",
-                    fontWeight: "900",
+                    fontWeight: "600",
                     transition: ".4s all ease-in-out",
                     textTransform: "capitalize ",
                     fontSize: { xs: "16px"},

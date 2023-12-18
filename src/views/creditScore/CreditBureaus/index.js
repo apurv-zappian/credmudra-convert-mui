@@ -1,4 +1,9 @@
-import { Box, Grid, List, ListItem, Typography } from "@mui/material";
+import {
+  Box,
+  Grid,
+  List,
+  Typography,
+} from "@mui/material";
 import React from "react";
 import CreditBureausImage from "../../../assets/images/CreditScoreImages/creditbureaus.png";
 import TaskAltIcon from "@mui/icons-material/TaskAlt";
@@ -23,7 +28,7 @@ const CreditBureaus = () => {
                 marginLeft: { xs: "0%", sm: "15%" },
               }}
             >
-              <Typography
+              <Typography 
                 sx={{
                   fontSize: { xs: "24px", sm: "28px", lg: "38px" },
                   fontWeight: "900",
@@ -39,17 +44,10 @@ const CreditBureaus = () => {
               <Typography
                 sx={{
                   fontSize: { xs: "16px", sm: "20px" },
-                  fontFamily: "Inter,sans-serif",
-                  color: "#404040",
+                  color: "#243771",
                   margin: "0px 0px 24px",
                   textAlign: { xs: "center", sm: "left" },
-                  // padding: {
-                  //   sm: "0rem 3rem 0rem 0rem",
-                  //   lg: "0rem 6rem 0rem 0rem",
-                  //   xl: "0rem 11rem 0rem 0rem",
-                  // },
                   lineHeight: "1.7",
-                  fontWeight: "300",
                 }}
               >
                 Credit bureaus collect and analyze your credit information,
@@ -58,103 +56,91 @@ const CreditBureaus = () => {
                 main credit bureaus:
               </Typography>
               <Box>
-                <List
-                  sx={{
-                    display: "flex",
-                    flexDirection: "column",
-                  }}
-                >
-                  <ListItem
+                <List sx={{ display: "flex", gap: "10px" }}>
+                  <TaskAltIcon sx={{marginTop:{sm:"1px", md:"3px"}, color:'#10162C'}} />
+                  <Typography
                     sx={{
-                      fontSize: { xs: "16px", sm: "18px" },
-                      fontWeight: "400",
-                      fontFamily: "Inter",
-                      display: "inline",
+                      color: "#243771",
+                      fontWeight: "600",
+                      fontSize: { xs: "16px", sm: "18px", md: "20px" },
                     }}
                   >
-                    <TaskAltIcon sx={{marginRight:"10px",}} />
+                    CIBIL (TransUnion CIBIL) :
                     <Typography
+                    component={"span"}
                       sx={{
-                        color: "#243771",
-                        fontWeight: "700",
-                        fontFamily: "Inter",
-                        fontSize: { xs: "16px", sm: "18px" },
                         display: "inline",
+                        fontSize: { xs: "16px", sm: "18px", md: "20px" },
                       }}
                     >
-                      CIBIL (TransUnion CIBIL) :
-                    </Typography>{" "}
-                    The most established bureau in India, widely used by
-                    lenders.
-                  </ListItem>
-
-                  <ListItem
+                      {" "}
+                      The most established bureau in India, widely used by
+                      lenders.
+                    </Typography>
+                  </Typography>
+                </List>
+                <List sx={{ display: "flex", gap: "10px" }}>
+                  <TaskAltIcon sx={{marginTop:{sm:"1px", md:"3px"}, color:'#10162C'}} />
+                  <Typography
                     sx={{
-                      fontSize: { xs: "16px", sm: "18px" },
-                      fontWeight: "400",
-                      fontFamily: "Inter",
-                      display: "inline",
+                      color: "#243771",
+                      fontWeight: "600",
+                      fontSize: { xs: "16px", sm: "18px", md: "20px" },
                     }}
                   >
-                    <TaskAltIcon sx={{marginRight:"10px",}} />
+                  Equifax :
                     <Typography
                       sx={{
-                        color: "#243771",
-                        fontWeight: "700",
-                        fontFamily: "Inter",
-                        fontSize: { xs: "16px", sm: "18px" },
                         display: "inline",
+                        fontSize: { xs: "16px", sm: "18px", md: "20px" },
                       }}
                     >
-                      Equifax :
-                    </Typography>{" "}
-                    Another major player offering credit reports and scores.
-                  </ListItem>
-                  <ListItem
+                      {" "}
+                      Another major player offering credit reports and scores.
+                    </Typography>
+                  </Typography>
+                </List>
+                <List sx={{ display: "flex", gap: "10px" }}>
+                  <TaskAltIcon sx={{marginTop:{sm:"1px", md:"3px"}, color:'#10162C'}} />
+                  <Typography
                     sx={{
-                      fontSize: { xs: "16px", sm: "18px" },
-                      fontWeight: "400",
-                      fontFamily: "Inter",
-                      display: "inline",
+                      color: "#243771",
+                      fontWeight: "600",
+                      fontSize: { xs: "16px", sm: "18px", md: "20px" },
                     }}
                   >
-                    <TaskAltIcon sx={{marginRight:"10px",}} />
+                  Experian :
                     <Typography
                       sx={{
-                        color: "#243771",
-                        fontWeight: "700",
-                        fontFamily: "Inter",
-                        fontSize: { xs: "16px", sm: "18px" },
                         display: "inline",
+                        fontSize: { xs: "16px", sm: "18px", md: "20px" },
                       }}
                     >
-                      Experian :
-                    </Typography>{" "}
-                    A newer entrant with a unique credit scoring model.
-                  </ListItem>
-                  <ListItem
+                      {" "}
+                      A newer entrant with a unique credit scoring model.
+                    </Typography>
+                  </Typography>
+                </List>
+                <List sx={{ display: "flex", gap: "10px" }}>
+                  <TaskAltIcon sx={{marginTop:{sm:"1px", md:"3px"}}} />
+                  <Typography
                     sx={{
-                      fontSize: { xs: "16px", sm: "18px" },
-                      fontWeight: "400",
-                      fontFamily: "Inter",
-                      display: "inline",
+                      color: "#243771",
+                      fontWeight: "600",
+                      fontSize: { xs: "16px", sm: "18px", md: "20px" },
                     }}
                   >
-                    <TaskAltIcon sx={{marginRight:"10px",}} />
+                  CRIF High Mark :
                     <Typography
                       sx={{
-                        color: "#243771",
-                        fontWeight: "700",
-                        fontFamily: "Inter",
-                        fontSize: { xs: "16px", sm: "18px" },
                         display: "inline",
+                        fontSize: { xs: "16px", sm: "18px", md: "20px" },
                       }}
                     >
-                      CRIF High Mark :
-                    </Typography>{" "}
-                    Specializes in credit information for individuals and
-                    businesses.
-                  </ListItem>
+                      {" "}
+                      Specializes in credit information for individuals and businesses.
+                    </Typography>
+                  </Typography>
                 </List>
                 <Box
                   sx={{
