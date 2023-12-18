@@ -1,4 +1,4 @@
-import { Box, Grid, List, ListItem, Typography } from "@mui/material";
+import { Box, Grid, List, Typography } from "@mui/material";
 import React from "react";
 import TaskAltIcon from "@mui/icons-material/TaskAlt";
 import GetFreeCreditButton from "../../../components/GetFreeCreditButton";
@@ -30,7 +30,7 @@ const OtherContributing = () => {
               display: "flex",
               alignItems: "center",
               justifyContent: "center",
-              marginLeft: { sm: "10%" },
+              marginLeft: { sm: "7%" },
               //   padding: { sm: "20% 4% 10%", md: "10% 4% 10% 0%", lg: "0% 0%" },
             }}
           >
@@ -63,148 +63,109 @@ const OtherContributing = () => {
             </Typography>
             <Typography
               sx={{
-                fontSize: { xs: "15px", sm: "20px" },
-                fontFamily: "Inter,sans-serif",
-                color: "#404040",
-                margin: "0px 0px 10px",
+                fontSize: { xs: "16px", sm: "20px" },
+                color: "#243771",
+                margin: "0px 0px 20px",
                 textAlign: { xs: "center", sm: "left" },
-                // padding: {
-                //   sm: "0rem 3rem 0rem 0rem",
-                //   lg: "0rem 6rem 0rem 0rem",
-                //   xl: "0rem 11rem 0rem 0rem",
-                // },
-                lineHeight: "1.4",
-                fontWeight: "300",
+                lineHeight: "1.7",
               }}
             >
               Besides the five major factors, other elements can influence your
               credit score, including:
             </Typography>
-            <Box>
-              <List
+            <List sx={{ display: "flex", gap: "10px" }}>
+              <TaskAltIcon
+                sx={{ marginTop: { sm: "1px", md: "3px" }, color: "#10162C" }}
+              />
+              <Typography
                 sx={{
-                  display: "flex",
-                  flexDirection: "column",
-                  padding: "0px",
+                  color: "#243771",
+                  fontWeight: "600",
+                  fontSize: { xs: "16px", sm: "18px", md: "20px" },
                 }}
               >
-                <ListItem
+                Errors in your credit report :
+                <Typography
                   sx={{
-                    fontSize: { xs: "16px", sm: "18px" },
-                    fontWeight: "400",
-                    fontFamily: "Inter",
                     display: "inline",
+                    fontSize: { xs: "16px", sm: "18px", md: "20px" },
                   }}
                 >
-                  <TaskAltIcon sx={{marginRight:"10px",}} />
-                  <Typography
-                    sx={{
-                      color: "#243771",
-                      fontWeight: "700",
-                      fontFamily: "Inter",
-                      fontSize: { xs: "16px", sm: "18px" },
-                      display: "inline",
-                    }}
-                  >
-                  Errors in your credit report : 
-                  </Typography>{" "}
-                  Ensure accuracy by checking your credit report regularly and disputing any errors.
-                </ListItem>
-
-                <ListItem
-                  sx={{
-                    fontSize: { xs: "16px", sm: "18px" },
-                    fontWeight: "400",
-                    fontFamily: "Inter",
-                    display: "inline",
-                  }}
-                >
-                  <TaskAltIcon sx={{marginRight:"10px",}} />
-                  <Typography
-                    sx={{
-                      color: "#243771",
-                      fontWeight: "700",
-                      fontFamily: "Inter",
-                      fontSize: { xs: "16px", sm: "18px" },
-                      display: "inline",
-                    }}
-                  >
-                  Sparse credit history :
-                  </Typography>{" "}
-                  Limited credit history can hinder your score. Consider building your credit with a secured credit card.
-                </ListItem>
-                <ListItem
-                  sx={{
-                    fontSize: { xs: "16px", sm: "18px" },
-                    fontWeight: "400",
-                    fontFamily: "Inter",
-                    display: "inline",
-                  }}
-                >
-                  <TaskAltIcon sx={{marginRight:"10px",}} />
-                  <Typography
-                    sx={{
-                      color: "#243771",
-                      fontWeight: "700",
-                      fontFamily: "Inter",
-                      fontSize: { xs: "16px", sm: "18px" },
-                      display: "inline",
-                    }}
-                  >
-                  Loan guarantor defaults :
-                  </Typography>{" "}
-                  Defaulting on a loan guarantee can negatively impact your score.
-                </ListItem>
-                <ListItem
-                  sx={{
-                    fontSize: { xs: "16px", sm: "18px" },
-                    fontWeight: "400",
-                    fontFamily: "Inter",
-                    display: "inline",
-                  }}
-                >
-                  <TaskAltIcon sx={{marginRight:"10px",}} />
-                  <Typography
-                    sx={{
-                      color: "#243771",
-                      fontWeight: "700",
-                      fontFamily: "Inter",
-                      fontSize: { xs: "16px", sm: "18px" },
-                      display: "inline",
-                    }}
-                  >
-                    CRIF High Mark :
-                  </Typography>{" "}
-                  Specializes in credit information for individuals and
-                  businesses.
-                </ListItem>
-              </List>
+                  {" "}
+                  Ensure accuracy by checking your credit report regularly and
+                  disputing any errors.
+                </Typography>
+              </Typography>
+            </List>
+            <List sx={{ display: "flex", gap: "10px" }}>
+              <TaskAltIcon
+                sx={{ marginTop: { sm: "1px", md: "3px" }, color: "#10162C" }}
+              />
               <Typography
+                sx={{
+                  color: "#243771",
+                  fontWeight: "600",
+                  fontSize: { xs: "16px", sm: "18px", md: "20px" },
+                }}
+              >
+                Sparse credit history :
+                <Typography
+                  sx={{
+                    display: "inline",
+                    fontSize: { xs: "16px", sm: "18px", md: "20px" },
+                  }}
+                >
+                  {" "}
+                  Limited credit history can hinder your score. Consider
+                  building your credit with a secured credit card.
+                </Typography>
+              </Typography>
+            </List>
+            <List sx={{ display: "flex", gap: "10px" }}>
+              <TaskAltIcon
+                sx={{ marginTop: { sm: "1px", md: "3px", color: "#10162C" } }}
+              />
+              <Typography
+                sx={{
+                  color: "#243771",
+                  fontWeight: "600",
+                  fontSize: { xs: "16px", sm: "18px", md: "20px" },
+                }}
+              >
+                Loan guarantor defaults :
+                <Typography
+                  sx={{
+                    display: "inline",
+                    fontSize: { xs: "16px", sm: "18px", md: "20px" },
+                  }}
+                >
+                  {" "}
+                  Defaulting on a loan guarantee can negatively impact your
+                  score.
+                </Typography>
+              </Typography>
+            </List>
+            <Typography
               sx={{
-                fontSize: { xs: "15px", sm: "20px" },
-                fontFamily: "Inter,sans-serif",
-                color: "#404040",
-                margin: "10px 0px 0px",
+                fontSize: { xs: "16px", sm: "20px" },
+                color: "#243771",
+                margin: "0px 0px 20px",
                 textAlign: { xs: "center", sm: "left" },
-                // padding: {
-                //   sm: "0rem 3rem 0rem 0rem",
-                //   lg: "0rem 6rem 0rem 0rem",
-                //   xl: "0rem 11rem 0rem 0rem",
-                // },
-                lineHeight: "1.4",
-                fontWeight: "300",
+                lineHeight: "1.7",
+                paddingTop: "10px",
               }}
             >
-            Understanding these factors empowers you to make informed decisions and optimize your credit score for better financial opportunities.
+              Understanding these factors empowers you to make informed
+              decisions and optimize your credit score for better financial
+              opportunities.
             </Typography>
-              <Box
-                sx={{
-                  display: "flex",
-                  justifyContent: { xs: "center", sm: "left" },
-                }}
-              >
-                <GetFreeCreditButton />
-              </Box>
+            <Box
+              sx={{
+                display: "flex",
+                justifyContent: { xs: "center", sm: "left" },
+              }}
+            >
+              <GetFreeCreditButton />
             </Box>
           </Box>
         </Grid>

@@ -1,27 +1,16 @@
 import React from "react";
 import eligibilitycriteria from "../../../assets/images/PersonalLoanForDebtImages/eligibilitycriteriaimg.png";
-import { Box, Grid, List, ListItem, Typography } from "@mui/material";
-import { FiberManualRecord } from "@mui/icons-material";
+import { Box, Grid, Typography } from "@mui/material";
 import GetFreeCreditButton from "../../../components/GetFreeCreditButton";
 
 const WhyCredmydraGiving = () => {
-  const CircleIcon = {
-    color: "#F7D64A",
-    fontSize: "1vmax",
-    marginRight: ".5vmax",
-    // marginTop:"-10px"
-  };
-
-  //   const TypographySubHeadings = {
-  //     color: "#F7D64A",
-  //   };
   return (
     <>
       <Box
         sx={{
           background: "#243771",
           overflow: "hidden",
-          padding: { xs: "40px 10px", sm: "80px 10px" },
+          padding: { xs: "40px 10px", sm: "80px 40px" },
           //   position: "relative",
         }}
       >
@@ -30,7 +19,7 @@ const WhyCredmydraGiving = () => {
             <Box
               sx={{
                 color: "#fff",
-                marginLeft: { md: "10%" },
+                marginLeft: { md: "12%" },
                 paddingRight: {  lg: "10%" },
                 textAlign: { sm: "center", md: "left" },
               }}
@@ -84,6 +73,7 @@ const WhyCredmydraGiving = () => {
               display: { xs:"none", md: "flex" },
               justifyContent: "flex-start",
               alignItems: "center",
+              paddingX:"50px"
             }}
           >
             <img
@@ -91,7 +81,6 @@ const WhyCredmydraGiving = () => {
               alt="Credmudra logo"
               style={{
                 left: "0",
-                maxWidth: "480px",
                 opacity: ".6",
                 // position: "absolute",
                 // top: "0",

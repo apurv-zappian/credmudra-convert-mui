@@ -4,14 +4,13 @@ import {
   AccordionDetails,
   AccordionSummary,
   Box,
-  Button,
   Container,
   Grid,
   Typography,
 } from "@mui/material";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import CheckCircleOutlineIcon from "@mui/icons-material/CheckCircleOutline";
-import whyisplbetter from "../../../assets/images/PersonalLoanImages/whyisplbetterimg.webp";
+import ChooseCredmudraForBlImg from "../../../assets/images/BusinessLoanImages/choosecredmudraforbl.png";
 import GetMatchedButton from "../../../components/GetMatchedButton";
 
 const ChooseCredmudraForBl = () => {
@@ -80,21 +79,7 @@ const ChooseCredmudraForBl = () => {
                     margin: "0 0 18px",
                   }}
                 >
-                  Why Is Personal Loan A Better Choice?
-                </Typography>
-                <Typography
-                  sx={{
-                    textAlign: { sm: "left" },
-                    color: "#404040",
-                    fontSize: { xs: "16px", md: "21px" },
-                    fontFamily: "Inter",
-
-                    lineHeight: "1.5",
-                    margin: "0 0 18px",
-                  }}
-                >
-                  Why should you opt for a personal loan over other credit
-                  facilities? Here are the reasons you should know:
+                  Choose Credmudra For The Best Business Loan
                 </Typography>
                 <Accordion
                   elevation={0}
@@ -112,19 +97,19 @@ const ChooseCredmudraForBl = () => {
                     aria-controls="panel1d-content"
                     id="panel1d-header"
                   >
-                    <CheckCircleOutlineIcon sx={{ ...CheckCircle }} />
+                    <CheckCircleOutlineIcon
+                      sx={{ ...CheckCircle, paddingTop: "5px" }}
+                    />
                     <Typography sx={{ ...AccHeading }}>
-                      Restrictions-Free End-Usage:
+                      Prompt Loan Disbursal
                     </Typography>
                   </AccordionSummary>
                   <AccordionDetails>
                     <Typography sx={{ ...AccPara }}>
-                      The credit you get through the personal loan will come
-                      with no restriction upon its usage. That means you are
-                      free to spend the loan amount in whichever way you prefer.
-                      Whether you use the money to bear the expenses of travel,
-                      home or kitchen renovation, healthcare bills, or other, it
-                      depends solely on your discretion.
+                      With us, the TAT of borrowing a business loan is reduced
+                      to meet your financial requirements without wasting time.
+                      We promise to sanction and disburse the loan amount the
+                      same day.
                     </Typography>
                   </AccordionDetails>
                 </Accordion>
@@ -143,21 +128,20 @@ const ChooseCredmudraForBl = () => {
                     aria-controls="panel2d-content"
                     id="panel2d-header"
                   >
-                    <CheckCircleOutlineIcon sx={{ ...CheckCircle }} />
+                    <CheckCircleOutlineIcon
+                      sx={{ ...CheckCircle, paddingTop: "5px" }}
+                    />
 
                     <Typography sx={{ ...AccHeading }}>
-                      No Need for Collateral:
+                      Loan Match Making
                     </Typography>
                   </AccordionSummary>
                   <AccordionDetails>
                     <Typography sx={{ ...AccPara }}>
-                      Personal loan is a type of unsecured credit facility. This
-                      means you do not need to keep your dear properties as
-                      collateral. It is due to this nature of the personal loan
-                      that you do not need to put your property at risk. It also
-                      minimises the time it would take to verify your
-                      property-related documents, thereby expediting the loan
-                      approval.
+                      Just apply for the loan, submit necessary papers and
+                      relax. We will do the rest. Finding the right lending
+                      partner that matches your requirements is what we do. And
+                      we do it best.
                     </Typography>
                   </AccordionDetails>
                 </Accordion>
@@ -177,20 +161,19 @@ const ChooseCredmudraForBl = () => {
                     aria-controls="panel3d-content"
                     id="panel3d-header"
                   >
-                    <CheckCircleOutlineIcon sx={{ ...CheckCircle }} />
+                    <CheckCircleOutlineIcon
+                      sx={{ ...CheckCircle, paddingTop: "5px" }}
+                    />
 
                     <Typography sx={{ ...AccHeading }}>
-                      Minimal Documentation:
+                      Easy Application
                     </Typography>
                   </AccordionSummary>
                   <AccordionDetails>
                     <Typography sx={{ ...AccPara }}>
-                      Since no property is involved, you will not have to
-                      provide documents regarding the collateral. To apply for a
-                      personal loan, you will have to provide only your basic
-                      documents which remain easily available at your house.
-                      These include only your KYC papers, identity proof and
-                      records of income.
+                      Our application process is user-friendly and seamless. You
+                      only need to furnish your mobile phone number, required
+                      details and mention your loan requirements.
                     </Typography>
                   </AccordionDetails>
                 </Accordion>
@@ -209,20 +192,18 @@ const ChooseCredmudraForBl = () => {
                     id="panel4d-header"
                     sx={{ display: "flex", alignItems: "center" }}
                   >
-                    <CheckCircleOutlineIcon sx={{ ...CheckCircle }} />
+                    <CheckCircleOutlineIcon
+                      sx={{ ...CheckCircle, paddingTop: "5px" }}
+                    />
 
                     <Typography sx={{ ...AccHeading }}>
-                      Immediate Credit Assistance:
+                      Loan Tenure at your Discretion
                     </Typography>
                   </AccordionSummary>
                   <AccordionDetails>
                     <Typography sx={{ ...AccPara }}>
-                      With a personal loan, you can meet your financial
-                      requirement at a much lower turnaround time. Lenders
-                      approve personal loan applications faster as the
-                      verification process is less time-consuming. To get the
-                      loan without any inconvenience, ensure that you meet the
-                      eligibility criteria properly.
+                      Choose the loan tenure per your convenience. Just ensure
+                      the chosen EMI is within your repayment capacity.
                     </Typography>
                   </AccordionDetails>
                 </Accordion>
@@ -250,12 +231,9 @@ const ChooseCredmudraForBl = () => {
                 color: "white",
               }}
             >
-              <Box
-                sx={{ width: "100%" }}
-                // paddingRight={{ xl: "7rem" }}
-              >
+              <Box sx={{ width: "100%" }} paddingLeft={{ md: "50px" }}>
                 <img
-                  src={whyisplbetter}
+                  src={ChooseCredmudraForBlImg}
                   alt="loading"
                   style={{ width: "100%", height: "100%" }}
                 />
