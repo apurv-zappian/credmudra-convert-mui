@@ -46,9 +46,8 @@ const TipsToAvoidPl = () => {
           <Grid
             container
             bgcolor="#243771"
-            sx={{ padding: { xs: "10px", md: "32px" } }}
+            sx={{ padding: { xs: "16px", md: "32px" } }}
           >
-            {/* Left Side */}
             <Grid item xs={12} sm={6} md={6} lg={6} xl={6}>
               <Box
                 sx={{
@@ -71,13 +70,12 @@ const TipsToAvoidPl = () => {
                 </Box>
               </Box>
             </Grid>
-            {/* Right Side */}
             <Grid item xs={12} sm={6} md={6} lg={6} xl={6}>
               <Box
                 sx={{
                   height: "100%",
                   display: "flex",
-                  alignItems: "flex-start",
+                  alignItems: {xs:'center',sm:'flex-start'},
                   justifyContent: "center",
                   flexDirection: "column",
                   color: "white",
@@ -85,14 +83,7 @@ const TipsToAvoidPl = () => {
               >
                 <Box
                   sx={{
-                    // padding: {
-                    //   // xs: "3rem 1rem 1rem 1.3rem",
-                    //   // sm: "3rem",
-                    //   // md: "3rem",
-                    //   lg: "3rem 0 0",
-                    //   xl: "3rem 0 0",
-                    // },
-                    width: { sm: "90%", xl: "100%" },
+                    width: { sm: "100%", xl: "100%" },
                   }}
                 >
                   <Typography
@@ -264,7 +255,7 @@ const TipsToAvoidPl = () => {
                 <Box
                   sx={{
                     display: "flex",
-                    alignItems: "center",
+                    alignItems: {xs:'center'},
                     justifyContent: { xs: "center", sm: "flex-start" },
                   }}
                 >

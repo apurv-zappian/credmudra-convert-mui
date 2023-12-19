@@ -27,23 +27,31 @@ const DocumentsYouNeed = () => {
   };
   return (
     <>
-      <Container maxWidth={"xl"} sx={{ padding: "60px 0px 50px" }}>
-        <Grid container sx={{ padding: { xs: "10px" } }}>
-          {/* Left Side */}
+    <Box>
+      <Container
+        maxWidth={"xl"}
+        sx={{
+          padding: "60px 0px 50px",
+        }}
+      >
+        <Grid
+          container
+          sx={{
+            padding: { xs: "16px", sm: "32px" },
+          }}
+        >
           <Grid item xs={12} sm={6} md={6} lg={6} xl={5}>
             <Box
               sx={{
                 display: "flex",
                 alignItems: { xs: "center", sm: "flex-start" },
-                justifyContent: "center",
+                justifyContent: { xs: "center", sm: "flex-start" },
                 flexDirection: "column",
               }}
             >
               <Box
                 sx={{
                   width: { sm: "90%" },
-                  margin: { xl: "0px 65px 0px 0px" },
-                  // padding: { sm: "80px 0 75px", lg: "50px 0px 50px" },
                 }}
                 textAlign={{ xs: "center", sm: "left" }}
               >
@@ -79,12 +87,11 @@ const DocumentsYouNeed = () => {
                     justifyContent: { xs: "center", sm: "flex-start" },
                   }}
                 >
-                  <GetMatchedButton   />
+                  <GetMatchedButton />
                 </Box>
               </Box>
             </Box>
           </Grid>
-          {/* Right Side  */}
           <Grid item xs={12} sm={6} md={6} lg={6} xl={7}>
             <Box
               sx={{
@@ -93,10 +100,6 @@ const DocumentsYouNeed = () => {
                 justifyContent: "center",
                 flexDirection: "column",
                 color: "white",
-                // padding:{sm:"5rem 0 0",xl:"3rem",}
-                // margin: "0px 0px 0px 40px",
-                // padding: { sm: "5rem 0 4rem", lg: "3rem 4rem 3rem 0rem" },
-                // marginRight: { xl: "7rem" },
               }}
             >
               <List>
@@ -152,7 +155,7 @@ const DocumentsYouNeed = () => {
                     }}
                   >
                     <Typography
-                      display="inline"
+                      component={'span'}  
                       sx={{ ...TypographySubHeadings }}
                     >
                       Income Proof:
@@ -167,6 +170,7 @@ const DocumentsYouNeed = () => {
           </Grid>
         </Grid>
       </Container>
+      </Box>
     </>
   );
 };

@@ -34,38 +34,35 @@ const WhyIsPlBetter = () => {
   };
 
   const CheckCircle = {
-    // marginTop: "6px",
+    marginTop: "5px",
     color: "black",
     marginRight: "10px",
   };
   return (
     <>
-      <Container maxWidth={"xl"} sx={{ padding: "60px 0px 50px" }}>
-        <Grid
-          container
-          // sx={{ padding: { xs: "3rem .5rem 3rem", sm: "1rem", md: "2rem" } }}
-          sx={{ padding: { xs: "10px", md: "32px" } }}
-        >
-          {/* Left Side */}
-          <Grid item xs={12} sm={6} md={6} lg={6} xl={6}>
-            <Box
+      <Box>
+        <Container maxWidth={"xl"} sx={{ padding: "60px 0px 50px" }}>
+          <Grid
+            container
+            spacing={2}
+            sx={{ padding: { xs: "16px", md: "32px" } }}
+          >
+            <Grid
+              item
+              xs={12}
+              sm={6}
+              md={6}
+              lg={6}
+              xl={6}
               sx={{
-                height: "100%",
                 display: "flex",
-                alignItems: "center",
+                alignItems: { xs: "center", md: "flex-start" },
                 justifyContent: "center",
                 flexDirection: "column",
               }}
             >
               <Box
                 sx={{
-                  // padding: {
-                  //   // xs:"3rem 1rem 1rem 1.3rem",
-                  //   sm: "0 0 0 1rem",
-                  //   // md:"3rem",
-                  //   lg: "3rem 0 0 0",
-                  //   xl: "3rem 0 0 13rem",
-                  // },
                   width: { sm: "90%", xl: "100%" },
                 }}
               >
@@ -97,17 +94,15 @@ const WhyIsPlBetter = () => {
                   facilities? Here are the reasons you should know:
                 </Typography>
                 <Accordion
-                  elevation={0} 
+                  elevation={0}
                   expanded={expanded === "panel1"}
                   onChange={handleChange("panel1")}
                   sx={{
                     backgroundColor: "transparent",
                     marginTop: "20px",
-                    // padding: "0px 0px 10px 0px",
                   }}
                 >
                   <AccordionSummary
-                    // sx={{display:'flex',alignItems:'center'}}
                     expandIcon={<ExpandMoreIcon sx={{ color: "black" }} />}
                     aria-controls="panel1d-content"
                     id="panel1d-header"
@@ -134,7 +129,6 @@ const WhyIsPlBetter = () => {
                   onChange={handleChange("panel2")}
                   sx={{
                     backgroundColor: "transparent",
-                    // padding: "0px 0px 10px 0px",
                   }}
                 >
                   <AccordionSummary
@@ -167,7 +161,6 @@ const WhyIsPlBetter = () => {
                   expanded={expanded === "panel3"}
                   onChange={handleChange("panel3")}
                   sx={{
-                    // padding: "0px 0px 10px 0px",
                     backgroundColor: "transparent",
                   }}
                 >
@@ -200,7 +193,6 @@ const WhyIsPlBetter = () => {
                   onChange={handleChange("panel4")}
                   sx={{
                     backgroundColor: "transparent",
-                    // padding: "0px 0px 10px 0px",
                   }}
                 >
                   <AccordionSummary
@@ -236,34 +228,32 @@ const WhyIsPlBetter = () => {
                   <GetMatchedButton />
                 </Box>
               </Box>
-            </Box>
-          </Grid>
-          {/* Right Side */}
-          <Grid item xs={12} sm={6} md={6} lg={6} xl={6}>
-            <Box
-              sx={{
-                height: "100%",
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-                flexDirection: "column",
-                color: "white",
-              }}
-            >
+            </Grid>
+            <Grid item xs={12} sm={6} md={6} lg={6} xl={6}>
               <Box
-                sx={{ width: "100%" }}
-                // paddingRight={{ xl: "7rem" }}
+                sx={{
+                  height: "100%",
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  flexDirection: "column",
+                  color: "white",
+                }}
               >
-                <img
-                  src={whyisplbetter}
-                  alt="loading"
-                  style={{ width: "100%", height: "100%" }}
-                />
+                <Box
+                  sx={{ width: "100%" }}
+                >
+                  <img
+                    src={whyisplbetter}
+                    alt="loading"
+                    style={{ width: "100%", height: "100%" }}
+                  />
+                </Box>
               </Box>
-            </Box>
+            </Grid>
           </Grid>
-        </Grid>
-      </Container>
+        </Container>
+      </Box>
     </>
   );
 };

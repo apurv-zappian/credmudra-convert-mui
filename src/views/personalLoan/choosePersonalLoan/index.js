@@ -25,13 +25,13 @@ const ChoosePersonalLoan = () => {
     color: "#F7D64A",
     fontSize: { xs: "20px", sm: "22px" },
     fontWeight: "700",
-    fontFamily:"Inter"
+    fontFamily: "Inter",
   };
   const AccParaColor = {
     color: "white",
-    fontSize: { xs: "16px",},
+    fontSize: { xs: "16px" },
     // fontWeight: "700",
-    fontFamily:"Inter"
+    fontFamily: "Inter",
   };
 
   const CheckCircle = {
@@ -46,56 +46,47 @@ const ChoosePersonalLoan = () => {
           <Grid
             container
             bgcolor="#243771"
-            sx={{ padding: { xs: "10px", md: "32px" } }}
+            spacing={2}
+            sx={{ padding: { xs: "16px", md: "32px" } }}
           >
-            {/* Left Side */}
-            <Grid item xs={12} sm={6} md={6} lg={6} xl={6}>
-              <Box
-                sx={{
-                  height: "100%",
-                  display: "flex",
-                  alignItems: "center",
-                  justifyContent: "center",
-                  flexDirection: "column",
-                }}
-              >
-                <Box sx={{ width: "100%" }}>
-                  <img
-                    src={whychooseplimg}
-                    alt="loading"
-                    style={{
-                      width: "100%",
-                      height: "100%",
-                    }}
-                  />
-                </Box>
+            <Grid
+              item
+              xs={12}
+              sm={6}
+              md={6}
+              lg={6}
+              xl={6}
+              sx={{
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+                flexDirection: "column",
+              }}
+            >
+              <Box sx={{ width: "100%" }}>
+                <img
+                  src={whychooseplimg}
+                  alt="loading"
+                  style={{
+                    width: "100%",
+                    height: "100%",
+                  }}
+                />
               </Box>
             </Grid>
-            {/* Right Side */}
             <Grid item xs={12} sm={6} md={6} lg={6} xl={6}>
               <Box
                 sx={{
                   height: "100%",
                   display: "flex",
-                  alignItems: "flex-start",
+                  alignItems: { xs: "center", sm: "flex-start" },
                   justifyContent: "center",
                   flexDirection: "column",
                   color: "white",
-                  width: { sm: "90%", xl: "100%" },
+                  width: { sm: "100%", xl: "100%" },
                 }}
               >
-                <Box
-                  sx={{
-                    // padding: {
-                    //   // xs: "3rem 1rem 1rem 1.3rem",
-                    //   sm: "3rem 0 0",
-                    //   // md: "3rem 0 0",
-                    //   lg: "3rem 0 0 0 ",
-                    //   xl: "3rem 0 0 0",
-                    // },
-                    // width: { sm: "90%", xl: "100%" },
-                  }}
-                >
+                <Box>
                   <Typography
                     sx={{
                       textAlign: { sm: "left" },
