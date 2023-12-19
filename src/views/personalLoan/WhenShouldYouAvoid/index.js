@@ -1,5 +1,13 @@
 import { FiberManualRecord } from "@mui/icons-material";
-import { Box, Button, Container, Grid, List, ListItem, Typography } from "@mui/material";
+import {
+  Box,
+  Button,
+  Container,
+  Grid,
+  List,
+  ListItem,
+  Typography,
+} from "@mui/material";
 import React from "react";
 import GetMatchedButton from "../../../components/GetMatchedButton";
 
@@ -8,38 +16,40 @@ const WhenShouldYouAvoid = () => {
     color: "#F7D64A",
     fontSize: "20px",
     // marginRight: ".5vmax",
-    position:"absolute",
-    top:"15px",
-    left:"0"
+    position: "absolute",
+    top: "15px",
+    left: "0",
   };
 
   const TypographySubHeadings = {
     color: "#404040",
     fontWeight: "900",
-    fontSize:"16px",
-    fontFamily:"Inter,sans-serif"
+    fontSize: {xs:"16px",sm:'20px'},
+    fontFamily: "Inter,sans-serif",
   };
 
   return (
     <Box bgcolor="#FCEFB8">
       <Container maxWidth={"xl"} sx={{ padding: "60px 0px 50px" }}>
-        <Grid container sx={{ padding: { xs: "10px", md: "32px" } }}>
-          {/* Left Side  */}
-          <Grid item xs={12} sm={6} md={6} lg={6} xl={5} sx={{ display: "flex",
-                alignItems: { sm: "center" },
-                justifyContent:{sm:"center"},
-                flexDirection: "column",}}> 
+        <Grid container sx={{ padding: { xs: "16px", md: "32px" } }}>
+          <Grid
+            item
+            xs={12}
+            sm={6}
+            md={6}
+            lg={6}
+            xl={5}
+            sx={{
+              display: "flex",
+              alignItems: { sm: "flex-start" },
+              justifyContent: { sm: "center" },
+              flexDirection: "column",
+            }}
+          >
             <Box
-           
               sx={{
-                // display: "flex",
-                // alignItems: { xl: "left" },
-                // justifyContent: "center",
-                // flexDirection: "column",
-                // padding: { sm: "60% 0% 0%" },
-                width: { sm: "90%", xl: "90%" },
+                width: { sm: "90%", xl: "70%" },
                 textAlign: { xs: "center", sm: "left" },
-                // marginTop:{sm:"30%"} 
               }}
             >
               <Typography
@@ -68,26 +78,24 @@ const WhenShouldYouAvoid = () => {
                 avoid taking a personal loan if you are facing situations as
                 mentioned here:
               </Typography>
-              <Box sx={{ display: "flex",
-                alignItems: { xs: "center",sm:"flex-start" },
-                justifyContent:{xs:"center",sm:"flex-start"},
-              }}
-                >
+              <Box
+                sx={{
+                  display: "flex",
+                  alignItems: { xs: "center", sm: "flex-start" },
+                  justifyContent: { xs: "center", sm: "flex-start" },
+                }}
+              >
                 <GetMatchedButton />
               </Box>
             </Box>
           </Grid>
-          {/* Right Side */}
           <Grid item xs={12} sm={6} md={6} lg={6} xl={7}>
             <Box
               sx={{
                 display: "flex",
-                alignItems: "flex-start",
+                alignItems: "flex-end",
                 justifyContent: "center",
                 flexDirection: "column",
-                // marginLeft: { xs: "0", xl: "25%" },
-                //   padding: { xs: "2rem 7rem 1rem" },
-                // padding:"3rem"
                 width: { sm: "100%", md: "85%", lg: "90%", xl: "100%" },
               }}
             >
@@ -103,7 +111,7 @@ const WhenShouldYouAvoid = () => {
                     }}
                   >
                     <Typography
-                      display="inline"
+                      component={'span'}
                       sx={{ ...TypographySubHeadings }}
                     >
                       Unstable Job:
@@ -126,7 +134,7 @@ const WhenShouldYouAvoid = () => {
                     }}
                   >
                     <Typography
-                      display="inline"
+                      component={'span'}
                       sx={{ ...TypographySubHeadings }}
                     >
                       Outstanding Debts:
@@ -149,7 +157,7 @@ const WhenShouldYouAvoid = () => {
                     }}
                   >
                     <Typography
-                      display="inline"
+                      component={'span'}
                       sx={{ ...TypographySubHeadings }}
                     >
                       Poor Credit Score:
@@ -172,8 +180,7 @@ const WhenShouldYouAvoid = () => {
                     }}
                   >
                     <Typography
-
-                      display="inline"
+                      component={'span'}
                       sx={{ ...TypographySubHeadings }}
                     >
                       Risky Investments:

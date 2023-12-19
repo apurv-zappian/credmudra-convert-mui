@@ -2,6 +2,7 @@ import React from "react";
 import { styled } from "@mui/material/styles";
 import {
   Box,
+  Container,
   Grid,
   Paper,
   Table,
@@ -62,120 +63,129 @@ const InterestRate = () => {
   return (
     <>
       <Box>
-        <Grid container spacing={2} sx={{ padding: "60px 0px 50px" }}>
+        <Container maxWidth={"xl"} sx={{ padding: "60px 16px 50px" }}>
           <Grid
-            item
-            xs={12}
-            sm={6}
-            md={6}
-            lg={6}
-            xl={6}
-            sx={{
-              display: "flex",
-              alignItems: { sm: "center" },
-              justifyContent: { sm: "center" },
-              flexDirection: "column",
-            }}
+            container
+            spacing={2}
+            sx={{ padding: { xs: "16px", md: "32px" } }}
           >
-            <Box
+            <Grid
+              item
+              xs={12}
+              // sm={6}
+              md={6}
+              lg={6}
+              xl={6}
               sx={{
-                width: { sm: "80%", lg: "80%", xl: "70%" },
-                marginLeft: { sm: "20%" },
-                paddingRight: { sm: "10%" },
-                textAlign: { xs: "center", sm: "left" },
+                display: "flex",
+                alignItems: { sm: "center", md: "flex-start" },
+                justifyContent: { sm: "center" },
+                flexDirection: "column",
               }}
             >
-              <Typography
+              <Box
                 sx={{
-                  fontSize: { xs: "26px", sm: "30px", lg: "44px" },
-                  // lineHeight:"1.4",
-                  font: "normal normal 900 44px/50px Inter",
-                  marginBottom: "10px",
-                  color: "#243771",
-                  fontWeight: "900",
+                  width: { sm: "80%", lg: "80%", xl: "65%" },
+                  textAlign: { xs: "center", md: "left" },
                 }}
               >
-                Attractive Personal Loan Interest Rates
-              </Typography>
-              <Typography
-                sx={{
-                  fontSize: { xs: "17px", sm: "18px", lg: "16px", xl: "18px" },
-                  font: "Inter",
-                  marginBottom: "10px",
-                  color: "#10162c",
-                  // fontWeight:"900"
-                  opacity: 1,
-                }}
-              >
-                Check out the applicable interest rate on personal loan across
-                several lenders:
-              </Typography>
-            </Box>
-          </Grid>
+                <Typography
+                  sx={{
+                    fontSize: { xs: "26px", sm: "30px", lg: "44px" },
+                    // lineHeight:"1.4",
+                    font: "normal normal 900 44px/50px Inter",
+                    marginBottom: "10px",
+                    color: "#243771",
+                    fontWeight: "900",
+                  }}
+                >
+                  Attractive Personal Loan Interest Rates
+                </Typography>
+                <Typography
+                  sx={{
+                    fontSize: {
+                      xs: "17px",
+                      sm: "18px",
+                      lg: "16px",
+                      xl: "18px",
+                    },
+                    font: "Inter",
+                    marginBottom: "10px",
+                    color: "#10162c",
+                    // fontWeight:"900"
+                    opacity: 1,
+                  }}
+                >
+                  Check out the applicable interest rate on personal loan across
+                  several lenders:
+                </Typography>
+              </Box>
+            </Grid>
 
-          <Grid
-            item
-            xs={12}
-            sm={6}
-            md={6}
-            lg={6}
-            xl={6}
-            sx={{
-              display: "flex",
-              alignItems: { sm: "flex-start" },
-              justifyContent: { sm: "flex-start" },
-              flexDirection: "column",
-            }}
-          >
-            <Box
+            <Grid
+              item
+              xs={12}
+              // sm={6}
+              md={6}
+              lg={6}
+              xl={6}
               sx={{
-                width: { lg: "90%", xl: "70%" },
+                display: "flex",
+                alignItems: { sm: "center" },
+                justifyContent: { sm: "center" },
+                flexDirection: "column",
               }}
             >
-              <Paper
-                elevation={5}
+              <Box
                 sx={{
-                  padding: 2,
-                  boxShadow: "5px 5px 10px gray",
-                  backgroundColor: "#E9E9E9",
+                  width: { lg: "90%", xl: "95%" },
                 }}
               >
-                <TableContainer component={Paper}>
-                  <Table sx={{ ...TableStyle }} aria-label="customized table">
-                    <TableHead>
-                      <TableRow>
-                        <StyledTableCell
-                          sx={{ borderRight: "2px solid #C1C5D3" }}
-                        >
-                          Lender
-                        </StyledTableCell>
-                        <StyledTableCell align="right">
-                          APPLICABLE INTEREST RATE
-                        </StyledTableCell>
-                      </TableRow>
-                    </TableHead>
-                    <TableBody>
-                      {rows.map((row) => (
-                        <StyledTableRow key={row.i}>
+                <Paper
+                  elevation={5}
+                  sx={{
+                    padding: 2,
+                    // boxShadow: "5px 5px 10px gray",
+                    backgroundColor: "#E9E9E9",
+                  }}
+                >
+                  <TableContainer component={Paper}>
+                    <Table sx={{ ...TableStyle }} aria-label="customized table">
+                      <TableHead>
+                        <TableRow>
                           <StyledTableCell
-                            component="th"
-                            scope="row"
                             sx={{ borderRight: "2px solid #C1C5D3" }}
                           >
-                            {row.lender}
+                            Lender
                           </StyledTableCell>
                           <StyledTableCell align="right">
-                            {row.interestrate}
+                            APPLICABLE INTEREST RATE
                           </StyledTableCell>
-                        </StyledTableRow>
-                      ))}
-                    </TableBody>
-                  </Table>
-                </TableContainer>
-              </Paper>
-            </Box>
+                        </TableRow>
+                      </TableHead>
+                      <TableBody>
+                        {rows.map((row) => (
+                          <StyledTableRow key={row.i}>
+                            <StyledTableCell
+                              component="th"
+                              scope="row"
+                              sx={{ borderRight: "2px solid #C1C5D3" }}
+                            >
+                              {row.lender}
+                            </StyledTableCell>
+                            <StyledTableCell align="right">
+                              {row.interestrate}
+                            </StyledTableCell>
+                          </StyledTableRow>
+                        ))}
+                      </TableBody>
+                    </Table>
+                  </TableContainer>
+                </Paper>
+              </Box>
+            </Grid>
           </Grid>
-        </Grid>
+        </Container>
       </Box>
     </>
   );

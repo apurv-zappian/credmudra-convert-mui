@@ -26,7 +26,7 @@ const DocumentsForTwoWheeler = () => {
             <Box
               sx={{
                 display: "flex",
-                alignItems: { xs: "center",  },
+                alignItems: { xs: "center",sm:'flex-start'  },
                 justifyContent: "center",
                 flexDirection: "column",
               }}

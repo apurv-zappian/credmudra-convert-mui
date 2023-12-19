@@ -1,4 +1,12 @@
-import { Accordion, AccordionDetails, AccordionSummary, Box, Container, Grid, Typography } from "@mui/material";
+import {
+  Accordion,
+  AccordionDetails,
+  AccordionSummary,
+  Box,
+  Container,
+  Grid,
+  Typography,
+} from "@mui/material";
 import React from "react";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import CheckCircleOutlineIcon from "@mui/icons-material/CheckCircleOutline";
@@ -14,53 +22,56 @@ const FAQS = () => {
   const AccHeading = {
     color: "#243771",
     fontSize: { xs: "20px", sm: "22px" },
-    fontFamily: "Inter",
-    fontWeight: "900",
+    fontFamily: "normal normal 700 20px/24px Inter",
+    fontWeight: "700",
   };
   const AccPara = {
-    color: "#222",
-    fontFamily: "Inter",
+    color: "#333333",
+    fontFamily: "normal normal normal 16px/22px Inter",
     fontSize: { xs: "16px" },
   };
 
   const CheckCircle = {
-    // marginTop: "6px",
+    marginTop: "6px",
     color: "#243771",
     marginRight: "10px",
+    fontWeight:"400"
   };
   return (
     <>
-      <Container maxWidth={"xl"} sx={{padding:  "60px 0px 50px" ,}}>
-        <Grid container  sx={{ padding: { xs: "10px", md: "32px" },display:"flex",alignItems:"center",justifyContent:"center",}} spacing={2}>
-          {/* Left Side */}
-          <Grid item xs={12} sm={5}>
-            {/* <Box sx={{display:"flex",alignItems:"center",justifyContent:"space-around"}}> */}
-            <Box
-              sx={{
-                // textAlign: "left",
-                // padding: "3rem",
-                display: "flex",
-                alignItems: "center",
-                justifyContent: {xs:"flex-start",},
-                // margin:{sm:"70% 0% 0% 0%"}
-              }}
-            >
+      <Container maxWidth={"xl"} sx={{ padding: "60px 0px 50px" }}>
+        <Grid
+          container
+          sx={{
+            padding: { xs: "16px", md: "32px" },
+          }}
+          spacing={2}
+          alignContent={"center"}
+        >
+          <Grid
+            item
+            xs={12}
+            sm={5}
+            sx={{
+              display: "flex",
+              alignItems: { xs: "center" },
+              justifyContent: { xs: "flex-start" },
+            }}
+          >
+            <Box>
               <Typography
                 sx={{
                   fontSize: { xs: "24px", sm: "26px", md: "32px" },
                   fontWeight: "900",
                   fontFamily: "Inter,sans-serif",
-                  // padding: { xl: "5rem 0 0" },
                   color: "#243771",
-                  margin:"0px 0px 30px"
+                  margin: "0px 0px 30px",
                 }}
               >
                 FAQs On Personal Loan
               </Typography>
             </Box>
-            {/* </Box> */}
           </Grid>
-          {/* Right Side */}
           <Grid item xs={12} sm={7}>
             <Box
               sx={{
@@ -74,7 +85,6 @@ const FAQS = () => {
               <Box
                 sx={{
                   width: "100%",
-                  // padding:"15px 20px 11px 30px"
                 }}
               >
                 <Accordion
@@ -94,7 +104,6 @@ const FAQS = () => {
                     aria-controls="panel1d-content"
                     id="panel1d-header"
                   >
-                    {/* <Circle sx={{ ...CircleIcon }} /> */}
                     <FiberManualRecord sx={{ ...CheckCircle }} />
 
                     <Typography sx={{ ...AccHeading }}>
@@ -130,7 +139,6 @@ const FAQS = () => {
                     aria-controls="panel2d-content"
                     id="panel2d-header"
                   >
-                    {/* <Circle sx={{ ...Circle }} /> */}
                     <FiberManualRecord sx={{ ...CheckCircle }} />
 
                     <Typography sx={{ ...AccHeading }}>
@@ -169,7 +177,6 @@ const FAQS = () => {
                     aria-controls="panel3d-content"
                     id="panel3d-header"
                   >
-                    {/* <Circle sx={{ ...Circle }} /> */}
                     <FiberManualRecord sx={{ ...CheckCircle }} />
 
                     <Typography sx={{ ...AccHeading }}>
@@ -202,7 +209,6 @@ const FAQS = () => {
                     aria-controls="panel4d-content"
                     id="panel4d-header"
                   >
-                    {/* <Circle sx={{ ...Circle }} /> */}
                     <FiberManualRecord sx={{ ...CheckCircle }} />
 
                     <Typography sx={{ ...AccHeading }}>

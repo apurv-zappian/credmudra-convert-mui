@@ -11,157 +11,177 @@ const SimpleCriteria = () => {
     // marginTop:"-10px"
   };
 
-  //   const TypographySubHeadings = {
-  //     color: "#F7D64A",
-  //   };
   return (
     <>
-    <Box
-      sx={{
-        background: "#243771",
-        overflow: "hidden",
-        padding: "65px 5px",
-        position: "relative",
-      }}
-    >
-      <img
-        src={eligibilitycriteria}
-        alt="Credmudra logo"
-        style={{
-          left: "10%",
-          maxWidth: "530px",
-          opacity: ".6",
-          position: "absolute",
-          top: "0",
+      <Box
+        sx={{
+          background: "#243771",
+          overflow: "hidden",
+          padding: "65px 5px",
+          position: "relative",
         }}
-      />
-      <Grid container sx={{ padding: { xs: "10px", md: "32px" } }}>
-        <Grid item xs={6} sm={4} md={6} sx={{ display: { xs: "none", sm: "flex" } }} />
-        <Grid item xs={12} sm={8} md={6}>
-          <Box sx={{ color: "#fff" ,
-          // padding:{xs:"0",sm:"0 16px 0 0",lg:"0 144px 0 0",xl:"0 240px 0 0"}
-          }}>
-            <Typography
+      >
+        <img
+          src={eligibilitycriteria}
+          alt="Credmudra logo"
+          style={{
+            left: "10%",
+            maxWidth: "530px",
+            opacity: ".6",
+            position: "absolute",
+            top: "0",
+          }}
+        />
+        <Grid container sx={{ padding: { xs: "16px", md: "32px" } }}>
+          <Grid
+            item
+            xs={6}
+            sm={4}
+            md={6}
+            sx={{ display: { xs: "none", sm: "flex" } }}
+          />
+          <Grid
+            item
+            xs={12}
+            sm={8}
+            md={6}
+            sx={{
+              display: "flex",
+              alignItems: "flex-start",
+              justifyContent: "flex-start",
+            }}
+          >
+            <Box
               sx={{
-                color: "#f7d64a !important",
-                fontSize: { xs: "24px", md: "36px" },
-                fontWeight: "900",
-                marginBottom: "25px",
-                textAlign: { xs: "center",sm:"left" },
-                lineHeight:"1.1",
-                fontFamily:"Inter"
+                color: "#fff",
+                width: { xl: "80%" },
+                paddingRight: { xl: "10px" },
               }}
             >
-             Simple Criteria To Secure Your Personal Loan
+              <Typography
+                sx={{
+                  color: "#f7d64a",
+                  fontSize: { xs: "24px", md: "36px" },
+                  fontWeight: "900",
+                  marginBottom: "25px",
+                  textAlign: { xs: "center", sm: "left" },
+                  lineHeight: "1.1",
+                  fontFamily: "Inter",
+                }}
+              >
+                Simple Criteria To Secure Your Personal Loan
+              </Typography>
+              <Typography
+                sx={{
+                  fontSize: { xs: "17px", md: "20px" },
+                  fontWeight: "300",
+                  fontFamily: "Inter",
+                  textAlign: { xs: "center", sm: "left" },
+                }}
+              >
+                You can get the personal loan easily by meeting the simple
+                eligibility criteria as mentioned below:
+              </Typography>
+              <List sx={{ listStyle: "none" }}>
+                <ListItem
+                  sx={{
+                    fontSize: { xs: "16px", sm: "18px" },
+                    fontWeight: "400",
+                    fontFamily: "Inter",
+                  }}
+                >
+                  <FiberManualRecord sx={{ ...CircleIcon }} />
+                  <Typography
+                    sx={{
+                      color: "#f7d64a",
+                      fontWeight: "700",
+                      fontFamily: "Inter",
+                      fontSize: { xs: "16px", sm: "18px" },
+                    }}
+                    component={"span"}
+                  >
+                    Nationality:
+                  </Typography>{" "}
+                  Indian
+                </ListItem>
+                <ListItem
+                  sx={{
+                    fontSize: { xs: "16px", sm: "18px" },
+                    fontWeight: "400",
+                    fontFamily: "Inter",
+                  }}
+                >
+                  <FiberManualRecord sx={{ ...CircleIcon }} />
+                  <Typography
+                    sx={{
+                      color: "#f7d64a",
+                      fontWeight: "700",
 
-            </Typography>
-            <Typography
-              sx={{
-                fontSize: { xs: "17px", md: "20px" },
-                fontWeight: "300",
-                fontFamily: "Inter",
-                textAlign: { xs: "center",sm:"left" },
-              }}
-            >
-             You can get the personal loan easily by meeting the simple eligibility criteria as mentioned below:
+                      fontFamily: "Inter",
+                      fontSize: { xs: "16px", sm: "18px" },
+                    }}
+                    component={"span"}
+                  >
+                    Employment:
+                  </Typography>{" "}
+                  Both salaried and self-employed individuals
+                </ListItem>
+                <ListItem
+                  sx={{
+                    fontSize: { xs: "16px", sm: "18px" },
+                    fontWeight: "400",
+                    fontFamily: "Inter",
+                  }}
+                >
+                  <FiberManualRecord sx={{ ...CircleIcon }} />
+                  <Typography
+                    sx={{
+                      color: "#f7d64a",
+                      fontWeight: "700",
 
-
-            </Typography>
-            <List sx={{ listStyle: "none" }}>
-              <ListItem
-                sx={{
-                  fontSize: { xs: "16px",sm:"18px" },
-                  fontWeight: "400",
-                  fontFamily: "Inter",
-                }}
-              >
-                <FiberManualRecord sx={{ ...CircleIcon }} />
-                <Typography
+                      fontFamily: "Inter",
+                      fontSize: { xs: "16px", sm: "18px" },
+                    }}
+                    component={"span"}
+                  >
+                    CIBIL Score:
+                  </Typography>{" "}
+                  Minimum 685
+                </ListItem>
+                <ListItem
                   sx={{
-                    color: "#f7d64a",
-                    fontWeight: "700",
+                    fontSize: { xs: "16px", sm: "18px" },
+                    fontWeight: "400",
                     fontFamily: "Inter",
-                    fontSize: { xs: "16px",sm:"18px" },
-                    display: "inline",
                   }}
                 >
-                  Nationality:
-                </Typography>{" "}
-                Indian
-              </ListItem>
-              <ListItem
-                sx={{
-                  fontSize: { xs: "16px",sm:"18px" },
-                  fontWeight: "400",
-                  fontFamily: "Inter",
-                }}
+                  <FiberManualRecord sx={{ ...CircleIcon }} />
+                  <Typography
+                    sx={{
+                      color: "#f7d64a",
+                      fontWeight: "700",
+                      fontFamily: "Inter",
+                      fontSize: { xs: "16px", sm: "18px" },
+                    }}
+                    component={"span"}
+                  >
+                    Monthly Income: 
+                  </Typography>
+                  More than Rs.25,000 per month
+                </ListItem>
+              </List>
+              <Typography
+                sx={{ fontSize: "15px", fontFamily: "Inter", color: "#fff" }}
               >
-                <FiberManualRecord sx={{ ...CircleIcon }} />
-                <Typography
-                  sx={{
-                    color: "#f7d64a",
-                    fontWeight: "700",
-                    
-                    fontFamily: "Inter",
-                    fontSize: { xs: "16px",sm:"18px" },
-                    display: "inline",
-                  }}
-                >
-                  Employment:
-                </Typography>{" "}
-                Both salaried and self-employed individuals
-              </ListItem>
-              <ListItem
-                sx={{
-                  fontSize: { xs: "16px",sm:"18px" },
-                  fontWeight: "400",
-                  fontFamily: "Inter",
-                }}
-              >
-                <FiberManualRecord sx={{ ...CircleIcon }} />
-                <Typography
-                  sx={{
-                    color: "#f7d64a",
-                    fontWeight: "700",
-                   
-                    fontFamily: "Inter",
-                    fontSize:{ xs: "16px",sm:"18px" },
-                    display: "inline",
-                  }}
-                >
-                  CIBIL Score:
-                </Typography>{" "}
-                Minimum 685
-              </ListItem>
-              <ListItem
-                sx={{
-                  fontSize: { xs: "16px",sm:"18px" },
-                  fontWeight: "400",
-                  fontFamily: "Inter",
-                }}
-              >
-                <FiberManualRecord sx={{ ...CircleIcon }} />
-                <Typography
-                  sx={{
-                    color: "#f7d64a",
-                    fontWeight: "700",
-                    fontFamily: "Inter",
-                    fontSize:{ xs: "16px",sm:"18px" },
-                    display: "inline",
-                  }}
-                >
-                  Monthly Income:
-                </Typography>{" "}
-                More than Rs.25,000 per month
-              </ListItem>
-            </List>
-            <Typography sx={{fontSize:"15px",fontFamily:"Inter",color:"#fff"}}> Note: These eligibility parameters are indicative and subject to
-          change</Typography>
-          </Box>
+                {" "}
+                Note: These eligibility parameters are indicative and subject to
+                change
+              </Typography>
+            </Box>
+          </Grid>
         </Grid>
-      </Grid>
-    </Box>
-  </>
+      </Box>
+    </>
   );
 };
 

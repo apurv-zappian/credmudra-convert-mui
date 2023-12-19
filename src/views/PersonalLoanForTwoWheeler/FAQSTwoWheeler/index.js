@@ -52,8 +52,8 @@ const FAQSTwoWheeler = () => {
             sm={6}
             sx={{
               display: "flex",
-              alignItems: { xs: "flex-start",sm:"center" },
-              justifyContent: { xs: "flex-start",sm:"center" },
+              alignItems: { xs: "flex-start", },
+              justifyContent: { xs: "flex-start", },
             }}
           >
             <Box sx={{ width: {sm:"90%", md: "70%" } }}>

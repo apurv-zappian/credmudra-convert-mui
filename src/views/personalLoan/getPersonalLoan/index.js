@@ -1,4 +1,4 @@
-import { Box, Button, Container, Typography } from "@mui/material";
+import { Box, Container, Typography } from "@mui/material";
 import React from "react";
 import GetMatchedButton from "../../../components/GetMatchedButton";
 
@@ -8,7 +8,6 @@ const GetPersonalLoan = () => {
       sx={{
         backgroundColor: "#243771",
         m: 0,
-        // p:'2rem',
         minHeight: "550px",
         display: "flex",
         flexDirection: "column",
@@ -17,12 +16,8 @@ const GetPersonalLoan = () => {
       }}
     >
       <Container maxWidth={"xl"}>
-        <Box
-          sx={{ padding: { xs: "30px 10px", md: "32px" } }}
-          //  sx={{maxWidth:'1500px',padding: { xs: "0rem .5rem 0rem", md: "2rem" }}}
-        >
+        <Box sx={{ padding: { xs: "30px 10px", md: "32px" } }}>
           <Typography
-            // variant="h3"
             textAlign="center"
             sx={{
               fontSize: { xs: "26px", sm: "40px", lg: "45px" },
@@ -30,13 +25,11 @@ const GetPersonalLoan = () => {
               fontWeight: "900",
               color: "#f7d64a",
               lineHeight: "1.5",
-              // padding:{xs:"0px 1rem 1.2rem",sm:"0rem 0rem 1.5rem"}
             }}
           >
             Get A Personal Loan Starting From As Low As
             <Typography
-              // variant="h3"
-              display="inline"
+              component={"span"}
               sx={{
                 color: "#7CB86D",
                 fontSize: { xs: "26px", sm: "40px", lg: "45px" },
@@ -51,8 +44,7 @@ const GetPersonalLoan = () => {
             </Typography>{" "}
             To A Maximum Of
             <Typography
-              display="inline"
-              // variant="h3"
+              component={"span"}
               sx={{
                 color: "#7CB86D",
                 fontSize: { xs: "26px", sm: "40px", lg: "45px" },
@@ -68,7 +60,6 @@ const GetPersonalLoan = () => {
             Through Credmudra!
           </Typography>
           <Typography
-            // variant="h5"
             textAlign="center"
             sx={{
               fontFamily: "Inter",

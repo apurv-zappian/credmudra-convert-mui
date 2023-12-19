@@ -12,6 +12,7 @@ import DoesCreditimg from "../../../assets/images/CreditScoreImages/DoesCreditsc
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import CheckCircleOutlineIcon from "@mui/icons-material/CheckCircleOutline";
 
+
 const DoesCreditScore = () => {
   const [expanded, setExpanded] = React.useState("panel1");
 
@@ -78,37 +79,32 @@ const DoesCreditScore = () => {
           xl={6}
           sx={{ padding: { xs: "10px 16px 0px", sm: "0" } }}
         >
-          <Box
+         <Box
             sx={{
-              display: "flex",
-              alignItems: "left",
-              justifyContent: "center",
-              flexDirection: "column",
-              paddingRight: { sm: "50px", lg: "150px" },
+              width: { xs: "100%", sm: "80%" },
+              //   marginLeft: { xs: "0%", sm: "5%" },
             }}
           >
             <Typography
               sx={{
-                textAlign: { sm: "left" },
+                fontSize: { xs: "24px", sm: "28px", lg: "38px" },
+                fontWeight: "900",
+                fontFamily: "Inter,sans-serif",
                 color: "#243771",
-                fontSize: { xs: "24px", sm: "32px", lg: "34px" },
-                fontFamily: "Inter",
-                fontWeight: "800",
+                margin: { xs: "0px 0px 12px", lg: "0px 0px 28px" },
+                textAlign: { xs: "center", sm: "left" },
                 lineHeight: "1.1",
-                margin: "0 0 18px",
               }}
             >
               Does My Credit Score Get Impacted If I Inquire About It?
             </Typography>
             <Typography
               sx={{
-                textAlign: { sm: "left" },
-                color: "#404040",
-                fontSize: { xs: "16px",sm:"18px", md: "21px" },
-                fontFamily: "Inter",
-
-                lineHeight: "1.5",
-                margin: "0 0 18px",
+                fontSize: { xs: "16px", sm: "20px" },
+                color: "#243771",
+                margin: "0px 0px 20px",
+                textAlign: { xs: "center", sm: "left" },
+                lineHeight: "1.7",
               }}
             >
               While a single hard inquiry minimally affects your credit score,
@@ -131,7 +127,9 @@ const DoesCreditScore = () => {
                 aria-controls="panel1d-content"
                 id="panel1d-header"
               >
-                <CheckCircleOutlineIcon sx={{ ...CheckCircle, paddingTop:"5px" }} />
+                <CheckCircleOutlineIcon
+                  sx={{ ...CheckCircle, paddingTop: "5px" }}
+                />
                 <Typography sx={{ ...AccHeading }}>
                   The timing of inquiries matters:
                 </Typography>
@@ -161,7 +159,6 @@ const DoesCreditScore = () => {
                 id="panel2d-header"
               >
                 <CheckCircleOutlineIcon sx={{ ...CheckCircle, paddingTop:"5px" }} />
-
                 <Typography sx={{ ...AccHeading }}>
                   Duration of impact:
                 </Typography>
@@ -176,13 +173,12 @@ const DoesCreditScore = () => {
             </Accordion>
             <Typography
               sx={{
-                textAlign: { sm: "left" },
-                color: "#404040",
-                fontSize: { xs: "16px",sm:"18px", md: "21px" },
-                fontFamily: "Inter",
-
-                lineHeight: "1.5",
-                // margin: "0 0 18px",
+                fontSize: { xs: "16px", sm: "20px" },
+                color: "#243771",
+                margin: "0px 0px 20px",
+                textAlign: { xs: "center", sm: "left" },
+                lineHeight: "1.7",
+                paddingTop: "10px",
               }}
             >
               In the initial stages of your credit journey, banks may lack
@@ -193,7 +189,6 @@ const DoesCreditScore = () => {
             <Box
               sx={{
                 display: "flex",
-                alignItems: "center",
                 justifyContent: { xs: "center", sm: "left" },
               }}
             >

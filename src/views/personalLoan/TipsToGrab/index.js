@@ -40,24 +40,29 @@ const TipsToGrab = () => {
   };
   return (
     <>
-      <Container  maxWidth={"xl"} sx={{padding:  "60px 0px 50px" ,}}>
-        <Grid container  sx={{ padding: { xs: "10px", md: "32px" } }}>
-          {/* Left Side */}
+      <Container maxWidth={"xl"} sx={{ padding: "60px 0px 50px" }}>
+        <Grid
+          container
+          spacing={2}
+          sx={{ padding: { xs: "16px", md: "32px" } }}
+        >
           <Grid item xs={12} sm={6} md={6} lg={6} xl={6}>
             <Box
               sx={{
                 height: "100%",
                 display: "flex",
-                alignItems:"left",
+                alignItems: { xs: "center", sm: "flex-start" },
                 justifyContent: "center",
                 flexDirection: "column",
               }}
             >
-              <Box sx={{
-                
-                width:{sm:"90%",xl:"100%"}
-              }}>
-                <Typography  sx={{
+              <Box
+                sx={{
+                  width: { sm: "90%", xl: "100%" },
+                }}
+              >
+                <Typography
+                  sx={{
                     textAlign: { sm: "left" },
                     color: "#243771",
                     fontSize: { xs: "24px", sm: "32px", lg: "34px" },
@@ -65,10 +70,12 @@ const TipsToGrab = () => {
                     fontWeight: "900",
                     lineHeight: "1.1",
                     margin: "0 0 18px",
-                  }}>
+                  }}
+                >
                   Tips To Grab The Best Deal On Personal Loan
                 </Typography>
-                <Typography   sx={{
+                <Typography
+                  sx={{
                     textAlign: { sm: "left" },
                     color: "#404040",
                     fontSize: { xs: "16px", md: "21px" },
@@ -76,17 +83,19 @@ const TipsToGrab = () => {
 
                     lineHeight: "1.5",
                     margin: "0 0 18px",
-                  }}>
+                  }}
+                >
                   You can follow the tips mentioned below to grab the best deal
                   on personal loan and make repayment less troublesome:
                 </Typography>
                 <Accordion
-                elevation={0}
+                  elevation={0}
                   expanded={expanded === "panel1"}
                   onChange={handleChange("panel1")}
                   sx={{
                     backgroundColor: "transparent",
                     marginTop: "20px",
+                    opacity: 1,
                   }}
                 >
                   <AccordionSummary
@@ -112,11 +121,12 @@ const TipsToGrab = () => {
                   </AccordionDetails>
                 </Accordion>
                 <Accordion
-                 elevation={0}
+                  elevation={0}
                   expanded={expanded === "panel2"}
                   onChange={handleChange("panel2")}
                   sx={{
                     backgroundColor: "transparent",
+                    opacity: 1,
                   }}
                 >
                   <AccordionSummary
@@ -143,10 +153,10 @@ const TipsToGrab = () => {
                   </AccordionDetails>
                 </Accordion>
                 <Accordion
-                elevation={0}
+                  elevation={0}
                   expanded={expanded === "panel3"}
                   onChange={handleChange("panel3")}
-                  style={{ backgroundColor: "transparent" }}
+                  style={{ backgroundColor: "transparent", opacity: 1 }}
                 >
                   <AccordionSummary
                     expandIcon={<ExpandMoreIcon />}
@@ -155,12 +165,12 @@ const TipsToGrab = () => {
                   >
                     <CheckCircleOutlineIcon sx={{ ...CheckCircle }} />
 
-                    <Typography sx={{ ...AccHeading}}>
+                    <Typography sx={{ ...AccHeading }}>
                       Compare Loan Offers:
                     </Typography>
                   </AccordionSummary>
                   <AccordionDetails>
-                    <Typography sx={{ ...AccPara}}>
+                    <Typography sx={{ ...AccPara }}>
                       At Credmudra, there are more than 30 lenders from which
                       you can borrow. You can see that their loan offers are not
                       the same. The interest, charges and other terms can vary.
@@ -172,10 +182,10 @@ const TipsToGrab = () => {
                   </AccordionDetails>
                 </Accordion>
                 <Accordion
-                elevation={0}
+                  elevation={0}
                   expanded={expanded === "panel4"}
                   onChange={handleChange("panel4")}
-                  style={{ backgroundColor: "transparent" }}
+                  style={{ backgroundColor: "transparent", opacity: 1 }}
                 >
                   <AccordionSummary
                     expandIcon={<ExpandMoreIcon />}
@@ -184,12 +194,12 @@ const TipsToGrab = () => {
                   >
                     <CheckCircleOutlineIcon sx={{ ...CheckCircle }} />
 
-                    <Typography sx={{ ...AccHeading}}>
+                    <Typography sx={{ ...AccHeading }}>
                       Choose a Suitable Tenure:
                     </Typography>
                   </AccordionSummary>
                   <AccordionDetails>
-                    <Typography sx={{ ...AccPara}}>
+                    <Typography sx={{ ...AccPara }}>
                       Choosing a suitable tenure is essential for smooth
                       repayment. When the tenure is longer, you will have to be
                       ready to pay more interest on your loan. When you go with
@@ -200,45 +210,46 @@ const TipsToGrab = () => {
                     </Typography>
                   </AccordionDetails>
                 </Accordion>
-              {/* </Box> */}
-              <Box
-                sx={{
-                  display:"flex",
-              alignItems:"center",
-              justifyContent: {xs:"center",sm:"flex-start"},
-              marginBottom:{xs:"20px",sm:"0"}
-                }}
-              >
-                <GetMatchedButton/>
+                <Box
+                  sx={{
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: { xs: "center", sm: "flex-start" },
+                    marginBottom: { xs: "20px", sm: "0" },
+                  }}
+                >
+                  <GetMatchedButton />
+                </Box>
               </Box>
-            </Box>
             </Box>
           </Grid>
-          {/* Right Side */}
-          <Grid item xs={12} sm={6} md={6} lg={6} xl={6}>
-            <Box
-              sx={{
-                height: "100%",
-                display: "flex",
-                alignItems: "left",
-                justifyContent: "center",
-                flexDirection: "column",
-              }}
-            >
-              <Box sx={{ width: "100%"}}>
-                <img
-                  src={tipstograbimg}
-                  alt="loading"
-                  style={{
-                    width: "100%",
-                    height: "100%",
-                  }}
-                />
-              </Box>
+          <Grid
+            item
+            xs={12}
+            sm={6}
+            md={6}
+            lg={6}
+            xl={6}
+            sx={{
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              flexDirection: "column",
+            }}
+          >
+            <Box sx={{ width: "100%" }}>
+              <img
+                src={tipstograbimg}
+                alt="loading"
+                style={{
+                  width: "100%",
+                  height: "100%",
+                }}
+              />
             </Box>
           </Grid>
         </Grid>
-        </Container>
+      </Container>
     </>
   );
 };
