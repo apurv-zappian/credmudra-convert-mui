@@ -21,7 +21,7 @@ const DocumentsForTwoWheeler = () => {
   return (
     <>
       <Container maxWidth={"xl"} sx={{ padding: "60px 0px 50px" }}>
-        <Grid container sx={{ padding: { xs: "10px" } }}>
+        <Grid container sx={{ padding: { xs: "20px",md:"48px" } }}>
           <Grid item xs={12} sm={6} md={6} lg={6}>
             <Box
               sx={{
@@ -33,9 +33,9 @@ const DocumentsForTwoWheeler = () => {
             >
               <Box
                 sx={{
-                  width: { sm: "90%", md: "70%" },
+                  width: { sm: "70%", md: "80%",xl:"90%" },
                   // margin: { xl: "0px 65px 0px 0px" },
-                  // padding: { sm: "80px 0 75px", lg: "50px 0px 50px" },
+                  paddingLeft:{sm:"30px",md:'20px',lg:"40px",xl:"0"}
                 }}
                 textAlign={{ xs: "center", sm: "left" }}
               >

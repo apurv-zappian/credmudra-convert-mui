@@ -32,141 +32,140 @@ const MedicalLoanEligibility = () => {
   ];
 
   return (
-    <>
-      <Box bgcolor="#fcefb8">
-        <Container
-          maxWidth={"xl"}
-          sx={{
-            display: { xs: "block" },
-            padding: { xs: "80px 10px 10px" },
-          }}
+    <Box bgcolor="#fcefb8">
+      <Container
+        maxWidth={"xl"}
+        sx={{
+          display: { xs: "block" },
+          padding: { xs: "60px 0px 50px" },
+        }}
+      >
+        <Grid
+          container
+          alignItems="center"
+          spacing={2}
+          sx={{ padding: { xs: "20px", md: "48px" } }}
         >
-          <Grid container alignItems="center" spacing={2}>
-            <Grid
-              item
-              xs={12}
-              md={4}
-              lg={4}
-              xl={3}
-              sx={{
-                display: "flex",
-                alignItems: { xs: "center", md: "flex-start" },
-                justifyContent: { xs: "center", md: "flex-start" },
-                flexDirection: "column",
-              }}
-            >
+          <Grid
+            item
+            xs={12}
+            md={4}
+            lg={5}
+            xl={4}
+            sx={{
+              display: "flex",
+              alignItems: { xs: "center" },
+              justifyContent: { xs: "center", md: "flex-start" },
+              flexDirection: "column",
+            }}
+          >
+            <Box sx={{ width: {md:"100%", lg: "100%" },paddingLeft:{xl:"15px"}}}>
+              <Typography
+                sx={{
+                  textAlign: { xs: "center", md: "left" },
+                  fontSize: { xs: "24px", sm: "32px" },
+                  fontFamily: "Inter",
+                  color: "#243771",
+                  fontWeight: "900",
+                  lineHeight: "1.1",
+                  margin: "0 0 10px",
+                }}
+              >
+                Medical Loan Eligibility Criteria
+              </Typography>
+              <Typography
+                sx={{
+                  textAlign: { xs: "center", md: "left" },
+                  fontSize: { xs: "20px", sm: "20px" },
+                  fontFamily: "Inter",
+                  color: "#404040",
+                  fontWeight: "300",
+                  lineHeight: { xs: "1.1", md: "1.5" },
+                  margin: "0 0 10px",
+                }}
+              >
+                Following are the typical eligibility criteria for a medical
+                loan:
+              </Typography>
               <Box
                 sx={{
-                  marginLeft:{md:"4%"},
+                  display: "flex",
+                  alignItems: { xs: "center", sm: "flex-start" },
+                  justifyContent: { xs: "center", md: "flex-start" },
+                  margin: "0 0 10px",
+                }}
+              >
+                <GetMatchedButton />
+              </Box>
+            </Box>
+          </Grid>
+          <Grid
+            item
+            container
+            //   spacing={2}
+            xs={12}
+            md={8}
+            lg={7}
+            xl={8}
+            //   xl={9}
+            sx={{
+              // width: "90%",
+              display: "flex",
+              flexFlow: "row wrap",
+              justifyContent: "center",
+              listStyle: "none",
+              marginLeft: "0",
+              paddingLeft: "0",
+              textAlign: "center",
+            }}
+          >
+            {eligibilityCriteria.map((criteria, index) => (
+              <Grid
+                item
+                xs={6}
+                sm={4}
+                lg={3}
+                key={index}
+                //   spacing={2}
+                sx={{
+                  alignContent: "center",
+                  background: "#fff",
+                  border: "2px solid #243771",
+                  borderRadius: "5px",
+                  // boxShadow: "0 3px 6px rgba(0,0,0,.161)",
+                  display: "flex",
+                  flexWrap: "wrap",
+                  flexFlow: "row wrap",
+                  justifyContent: "space-evenly",
+                  margin: { xs: "0px 10px 25px", sm: "0px 20px 55px" },
+                  minHeight: { xs: "250px"},
+                  padding: "25px 12px",
+                  minwidth: { xs: "220px",sm:"300px" },
+                  textAlign: "center",
                 }}
               >
                 <Typography
                   sx={{
-                    textAlign: { xs: "center", md: "left" },
-                    fontSize: { xs: "24px", sm: "32px" },
-                    fontFamily: "Inter",
                     color: "#243771",
-                    fontWeight: "900",
-                    lineHeight: "1.1",
-                    margin:"0 0 10px"
-                   
-                  }}
-                >
-                  Medical Loan Eligibility Criteria
-                </Typography>
-                <Typography
-                  sx={{
-                    textAlign: { xs: "center", md: "left" },
-                    fontSize: { xs: "20px", sm: "20px" },
+                    fontSize: "20px",
                     fontFamily: "Inter",
-                    color: "#404040",
-                    // fontWeight: "900",
-                    lineHeight: { xs: "1.1", md: "1.5" },
-                    margin:"0 0 10px"
-                    // margin: { xs: "0px 0px 8px" },
-                    // padding: { xl: "0rem 5rem 0rem" },
+                    fontWeight: "900",
                   }}
                 >
-                  Following are the typical eligibility criteria for a medical
-                  loan:
+                  {criteria.title}
                 </Typography>
-                <Box
-                  sx={{
-                    display: "flex",
-                    alignItems: { xs: "center", sm: "flex-start" },
-                    justifyContent: { xs: "center", md: "flex-start" },
-                    margin:"0 0 10px"
-                  }}
-                >
-                  <GetMatchedButton />
-                </Box>
-              </Box>
-            </Grid>
-            <Grid
-              item
-              container
-              //   spacing={2}
-              xs={12}
-              md={8}
-              lg={8}
-              xl={9}
-              //   xl={9}
-              sx={{
-                width: "90%",
-                display: "flex",
-                flexFlow: "row wrap",
-                justifyContent: "center",
-                listStyle: "none",
-                marginLeft: "0",
-                paddingLeft: "0",
-                textAlign: "center",
-              }}
-            >
-              {eligibilityCriteria.map((criteria, index) => (
-                <Grid
-                  item
-                  xs={6}
-                  sm={4}
-                  lg={3}
-                  key={index}
-                  //   spacing={2}
-                  sx={{
-                    alignContent: "center",
-                    background: "#fff",
-                    border: "2px solid #243771",
-                    borderRadius: "5px",
-                    boxShadow: "0 3px 6px rgba(0,0,0,.161)",
-                    display: "flex",
-                    flexWrap: "wrap",
-                    flexFlow: "row wrap",
-                    justifyContent: "space-around",
-                    margin: { xs: "0px 10px 25px", sm: "0px 20px 55px" },
-                    minHeight: { xs: "240px" },
-                    padding: "25px 12px",
-                    width: { xs: "220px" },
-                    textAlign: "center",
-                  }}
-                >
-                  {/* <Paper elevation={3}> */}
-                  <Typography
-                    sx={{
-                      color: "#243771",
-                      fontSize: "20px",
-                      fontFamily: "Inter",
-                      fontWeight: "900",
-                    }}
-                  >
-                    {criteria.title}
-                  </Typography>
-                  <Typography>{criteria.description}</Typography>
-                  {/* </Paper> */}
-                </Grid>
-              ))}
-            </Grid>
+                <Typography  sx={{
+                    color: "#404040",
+                    fontSize: "16px",
+                    fontFamily: "Inter",
+                    fontWeight: "300",
+                  }}> {criteria.description}</Typography>
+              </Grid>
+            ))}
           </Grid>
-        </Container>
-      </Box>
-    </>
+        </Grid>
+      </Container>
+    </Box>
   );
 };
 

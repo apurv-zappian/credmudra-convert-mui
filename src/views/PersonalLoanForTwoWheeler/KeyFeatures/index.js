@@ -38,14 +38,14 @@ const KeyFeatures = () => {
   };
 
   return (
-    <>
+    <Box>
       <Grid container bgcolor="#FCEFD8">
         <Grid
           item
           xs={12}
           sm={7}
           sx={{
-            padding: { xs: "20px 32px 20px" },
+            padding: { xs: "20px",md:'48px' },
             display: "flex",
             alignItems: { xs: "center" },
             justifyContent: { xs: "center" },
@@ -83,6 +83,7 @@ const KeyFeatures = () => {
                 expandIcon={<ExpandMoreIcon sx={{ color: "black" }} />}
                 aria-controls="panel1d-content"
                 id="panel1d-header"
+                sx={{padding:0}}
               >
                 <CheckCircleOutlineIcon sx={{ ...CheckCircle }} />
                 <Typography sx={{ ...AccHeading }}>
@@ -111,6 +112,7 @@ const KeyFeatures = () => {
                 expandIcon={<ExpandMoreIcon sx={{ color: "black" }} />}
                 aria-controls="panel2d-content"
                 id="panel2d-header"
+                sx={{padding:0}}
               >
                 <CheckCircleOutlineIcon sx={{ ...CheckCircle }} />
                 <Typography sx={{ ...AccHeading }}>
@@ -141,6 +143,7 @@ const KeyFeatures = () => {
                 expandIcon={<ExpandMoreIcon sx={{ color: "black" }} />}
                 aria-controls="panel3d-content"
                 id="panel3d-header"
+                sx={{padding:0}}
               >
                 <CheckCircleOutlineIcon sx={{ ...CheckCircle }} />
                 <Typography sx={{ ...AccHeading }}>
@@ -170,6 +173,7 @@ const KeyFeatures = () => {
                 expandIcon={<ExpandMoreIcon sx={{ color: "black" }} />}
                 aria-controls="panel4d-content"
                 id="panel4d-header"
+                sx={{padding:0}}
               >
                 <CheckCircleOutlineIcon sx={{ ...CheckCircle }} />
                 <Typography sx={{ ...AccHeading }}>
@@ -212,7 +216,7 @@ const KeyFeatures = () => {
           </Box>
         </Grid>
       </Grid>
-    </>
+    </Box>
   );
 };
 

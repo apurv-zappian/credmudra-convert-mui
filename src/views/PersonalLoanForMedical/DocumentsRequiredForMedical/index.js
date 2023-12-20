@@ -84,12 +84,12 @@ const DocumentsRequiredForMedical = () => {
   return (
     <>
       <Box bgcolor="#243771">
-        <Container maxWidth={"xl"} sx={{ padding: "80px 0px 50px" }}>
+        <Container maxWidth={"xl"} sx={{ padding: "60px 0px 50px" }}>
           <Grid
             container
             alignItems="center"
             sx={{
-              padding: { xs: "10px" },
+              padding: { xs: "20px",md:"48px 48px 0" },
               // backgroundColor:"gray"
             }}
           >
@@ -155,7 +155,7 @@ const DocumentsRequiredForMedical = () => {
             </Grid>
           </Grid>
 
-          <Grid container>
+          <Grid container sx={{padding: { xs: "20px",md:"48px 48px 0" },}}>
             <Grid item xs={12}>
               <Box
                 sx={{
