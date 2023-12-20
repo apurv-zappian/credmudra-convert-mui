@@ -100,6 +100,7 @@ const TipsToGrab = () => {
                     }}
                   >
                     <AccordionSummary
+                      sx={{ padding: 0 }}
                       expandIcon={<ExpandMoreIcon />}
                       aria-controls="panel1d-content"
                       id="panel1d-header"
@@ -131,6 +132,7 @@ const TipsToGrab = () => {
                     }}
                   >
                     <AccordionSummary
+                      sx={{ padding: 0 }}
                       expandIcon={<ExpandMoreIcon />}
                       aria-controls="panel2d-content"
                       id="panel2d-header"
@@ -160,6 +162,7 @@ const TipsToGrab = () => {
                     style={{ backgroundColor: "transparent", opacity: 1 }}
                   >
                     <AccordionSummary
+                      sx={{ padding: 0 }}
                       expandIcon={<ExpandMoreIcon />}
                       aria-controls="panel3d-content"
                       id="panel3d-header"
@@ -189,6 +192,7 @@ const TipsToGrab = () => {
                     style={{ backgroundColor: "transparent", opacity: 1 }}
                   >
                     <AccordionSummary
+                      sx={{ padding: 0 }}
                       expandIcon={<ExpandMoreIcon />}
                       aria-controls="panel4d-content"
                       id="panel4d-header"
@@ -234,7 +238,7 @@ const TipsToGrab = () => {
               sx={{
                 display: "flex",
                 alignItems: "center",
-                justifyContent: "center",
+                justifyContent: { xs: "center", sm: "flex-start" },
                 flexDirection: "column",
               }}
             >

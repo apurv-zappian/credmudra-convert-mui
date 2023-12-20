@@ -35,13 +35,12 @@ const PlDescriptionPage = () => {
   };
 
   return (
-    <>
       <Box>
         <Container maxWidth={"xl"}>
           <Grid
             container
             spacing={2}
-            sx={{ padding: { xs: "16px", md: "32px" } }}
+            sx={{ padding: { xs: "20px", md: "48px" } }}
           >
             <Grid item xs={12} sm={6} md={6}>
               <Box
@@ -199,7 +198,6 @@ const PlDescriptionPage = () => {
           </Grid>
         </Container>
       </Box>
-    </>
   );
 };
 

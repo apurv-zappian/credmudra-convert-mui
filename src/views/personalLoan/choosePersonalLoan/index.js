@@ -47,7 +47,7 @@ const ChoosePersonalLoan = () => {
             container
             bgcolor="#243771"
             spacing={2}
-            sx={{ padding: { xs: "16px", md: "32px" } }}
+            sx={{ padding: { xs: "20px", md: "48px" } }}
           >
             <Grid
               item
@@ -59,7 +59,7 @@ const ChoosePersonalLoan = () => {
               sx={{
                 display: "flex",
                 alignItems: "center",
-                justifyContent: "center",
+                justifyContent: { xs: "center", sm: "flex-start" },
                 flexDirection: "column",
               }}
             >
@@ -108,6 +108,7 @@ const ChoosePersonalLoan = () => {
                     }}
                   >
                     <AccordionSummary
+                      sx={{ padding: 0 }}
                       expandIcon={<ExpandMoreIcon sx={{ color: "white" }} />}
                       aria-controls="panel1d-content"
                       id="panel1d-header"
@@ -137,6 +138,7 @@ const ChoosePersonalLoan = () => {
                     }}
                   >
                     <AccordionSummary
+                    sx={{ padding: 0 }}
                       expandIcon={<ExpandMoreIcon sx={{ color: "white" }} />}
                       aria-controls="panel2d-content"
                       id="panel2d-header"
@@ -167,6 +169,7 @@ const ChoosePersonalLoan = () => {
                     style={{ backgroundColor: "transparent" }}
                   >
                     <AccordionSummary
+                    sx={{ padding: 0 }}
                       expandIcon={<ExpandMoreIcon sx={{ color: "white" }} />}
                       aria-controls="panel3d-content"
                       id="panel3d-header"
@@ -194,6 +197,7 @@ const ChoosePersonalLoan = () => {
                     style={{ backgroundColor: "transparent" }}
                   >
                     <AccordionSummary
+                    sx={{ padding: 0 }}
                       expandIcon={<ExpandMoreIcon sx={{ color: "white" }} />}
                       aria-controls="panel4d-content"
                       id="panel4d-header"
@@ -222,6 +226,7 @@ const ChoosePersonalLoan = () => {
                     style={{ backgroundColor: "transparent" }}
                   >
                     <AccordionSummary
+                    sx={{ padding: 0 }}
                       expandIcon={<ExpandMoreIcon sx={{ color: "white" }} />}
                       aria-controls="panel5d-content"
                       id="panel5d-header"
@@ -249,6 +254,7 @@ const ChoosePersonalLoan = () => {
                     style={{ backgroundColor: "transparent" }}
                   >
                     <AccordionSummary
+                    sx={{ padding: 0 }}
                       expandIcon={<ExpandMoreIcon sx={{ color: "white" }} />}
                       aria-controls="panel6d-content"
                       id="panel6d-header"
@@ -277,6 +283,7 @@ const ChoosePersonalLoan = () => {
                     style={{ backgroundColor: "transparent" }}
                   >
                     <AccordionSummary
+                    sx={{ padding: 0 }}
                       expandIcon={<ExpandMoreIcon sx={{ color: "white" }} />}
                       aria-controls="panel7d-content"
                       id="panel7d-header"
