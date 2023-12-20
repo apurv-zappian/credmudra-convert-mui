@@ -20,24 +20,25 @@ import featuresoftravelimg8 from "../../../assets/images/PersonalLoanForTravelIm
 
 const FeaturesAndBenefitsOfPlForTravel = () => {
   const ListBox = {
-    width: { xs: "92%",sm:"100%"},
+    width: { xs: "92%", sm: "100%" },
+    minHeight:{sm:'350px',md:"200px"},
     alignItems: "center",
     background: "#fcefb8",
     borderRadius: "5px",
     boxShadow: " 0 3px 6px rgba(0,0,0,.161)",
     display: "flex",
     // padding: "18px 15px 14px",
-    margin: {xs:"0 10px 0px 20px",sm:"0"},
+    margin: { xs: "0 10px 0px 20px", sm: "0" },
     padding: "18px 15px 14px",
-    gap:"10px",
-    justifyContent:"center"
+    gap: "10px",
+    justifyContent: "center",
   };
 
   const primaryTextStyles = {
     fontSize: "18px",
     fontFamily: "Inter",
     color: "#5ab56b",
-    fontWeight:"800",
+    fontWeight: "800",
     paddingLeft: "10px",
     lineHeight: { xs: "1.3" },
     margin: "0 0 8px",
@@ -62,57 +63,57 @@ const FeaturesAndBenefitsOfPlForTravel = () => {
     {
       image: featuresoftravelimg2,
       alt: "Instant loan approval",
-      title: "Instant Travel Loan",
+      title: "Flexible Borrowing Terms",
       description:
-        "Due to low eligibility criteria, travel loan takes the minimum time possible for approval. Take our compatibility test to hasten the process.",
+        "With available flexible borrowing terms and conditions, withdraw the amount as and when required and pay interest only on the amount used.",
     },
     {
       image: featuresoftravelimg3,
       alt: "Instant loan approval",
-      title: "Instant Travel Loan",
+      title: "Fast Disbursal",
       description:
-        "Due to low eligibility criteria, travel loan takes the minimum time possible for approval. Take our compatibility test to hasten the process.",
+        "Once your documents are verified and you satisfy all our eligibility criteria, your loan takes the shortest time possible which can range between a few hours and a few days.",
     },
     {
       image: featuresoftravelimg4,
       alt: "Instant loan approval",
-      title: "Instant Travel Loan",
+      title: "100% Paperless Process",
       description:
-        "Due to low eligibility criteria, travel loan takes the minimum time possible for approval. Take our compatibility test to hasten the process.",
+        "Our whole process is digital. You can complete the process from application to approval from the comfort of your place.",
     },
     {
       image: featuresoftravelimg5,
       alt: "Instant loan approval",
-      title: "Instant Travel Loan",
+      title: "Ample Disbursal Amount",
       description:
-        "Due to low eligibility criteria, travel loan takes the minimum time possible for approval. Take our compatibility test to hasten the process.",
+        "Our loan amount varies within the range of Rs.500 and Rs.10 lakhs. Depending upon your requirement and repayment capability, you can avail a loan of as much amount as you require.",
     },
     {
       image: featuresoftravelimg6,
       alt: "Instant loan approval",
-      title: "Instant Travel Loan",
+      title: "Minimal Documentation",
       description:
-        "Due to low eligibility criteria, travel loan takes the minimum time possible for approval. Take our compatibility test to hasten the process.",
+        "All we need is a few KYC documents and your income proof. We keep our documentation process minimal so that the queue of our customers waiting remains as short as possible.",
     },
     {
       image: featuresoftravelimg7,
       alt: "Instant loan approval",
-      title: "Instant Travel Loan",
+      title: "Pre-Approved Offers",
       description:
-        "Due to low eligibility criteria, travel loan takes the minimum time possible for approval. Take our compatibility test to hasten the process.",
+        "If you are pre-approved for availing the personal loan facility, you get quick access to the personal loan for travel.",
     },
     {
       image: featuresoftravelimg8,
       alt: "Instant loan approval",
-      title: "Instant Travel Loan",
+      title: "No Collateral Needed",
       description:
-        "Due to low eligibility criteria, travel loan takes the minimum time possible for approval. Take our compatibility test to hasten the process.",
+        "The best part is that you don’t need to put anything mortgage or as collateral. This cuts down half of the hassle of documentation process. However, for short-term loans, some of our lenders might require collateral.",
     },
   ];
   return (
-    <>
-      <Box>
-        <Container maxWidth={'xl'} sx={{ padding: "80px 0px 50px" }}>
+    <Box>
+      <Container maxWidth={"xl"} sx={{ padding: "60px 0px 50px" }}>
+        <Box>
           <Typography
             sx={{
               textAlign: { xs: "center" },
@@ -126,12 +127,17 @@ const FeaturesAndBenefitsOfPlForTravel = () => {
           >
             Features And Benefits Of Travel Loan
           </Typography>
-        
-          <Grid container spacing={2}>
-            
-            {ListItemDetails.map((doc, index) => (
-                <Grid item xs={12} sm={6} key={index}  sx={{ padding: "0px 10px 0px" ,width:{xl:"100%"}}}>
-              <List sx={{...ListBox}}>
+        </Box>
+        <Grid container spacing={2}>
+          {ListItemDetails.map((doc, index) => (
+            <Grid
+              item
+              xs={12}
+              sm={6}
+              key={index}
+              sx={{ padding: "0px 10px 0px", width: { xl: "100%" } }}
+            >
+              <List sx={{ ...ListBox }}>
                 <ListItem>
                   <ListItemIcon sx={{ paddingRight: "10px" }}>
                     <img src={doc.image} alt="" />
@@ -141,16 +147,14 @@ const FeaturesAndBenefitsOfPlForTravel = () => {
                     secondary={doc.description}
                     primaryTypographyProps={{ style: primaryTextStyles }}
                     secondaryTypographyProps={{ style: secondaryTextStyles }}
-          
                   />
                 </ListItem>
               </List>
-          </Grid>
-            ))}
-          </Grid>
-        </Container>
-      </Box>
-    </>
+            </Grid>
+          ))}
+        </Grid>
+      </Container>
+    </Box>
   );
 };
 

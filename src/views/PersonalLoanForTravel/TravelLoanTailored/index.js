@@ -1,20 +1,19 @@
-import { Box, Checkbox, Grid, Typography } from '@mui/material'
-import React from 'react'
-import Section1Form from '../../../components/Section1Form'
+import { Box, Checkbox, Grid, Typography } from "@mui/material";
+import React from "react";
+import Section1Form from "../../../components/Section1Form";
 import waveimg from "../../../assets/images/PersonalLoanForTravelImages/waveimg.svg";
 import travelloantailoredimg from "../../../assets/images/PersonalLoanForTravelImages/travelloantailored.png";
 
-
-
 const TravelLoanTailored = () => {
-    const label = { inputProps: { "aria-label": "Checkbox demo" } };
+  const label = { inputProps: { "aria-label": "Checkbox demo" } };
   return (
-    <>
-        <Grid
+    <Box>
+      <Grid
         container
+        spacing={2}
         sx={{
           minHeight: { xs: "0vh", sm: "100vh" },
-          padding: { xs: "16px", sm: "10px", md: "32px" },
+          padding: { xs: "16px", md: "32px" },
         }}
       >
         <Grid item xs={12} sm={6} marginTop={{ xs: "15%", sm: "0%" }}>
@@ -35,15 +34,15 @@ const TravelLoanTailored = () => {
               display: "flex",
               minHeight: { xs: "72vh", sm: "100vh" },
               justifyContent: "center",
+              alignItems: "center",
               flexDirection: "column",
             }}
           >
             <Box
               sx={{
-                padding: { sm: "16px", xl: "0 0 0 112px" },
                 textAlign: { xs: "center", sm: "left" },
-                width: { md: "80%", lg: "90%", xl: "90%" },
-                // height:{xs:"50vh"}
+                width: { lg: "90%", xl: "70%" },
+                marginLeft: { lg: "5%", xl: "18%" },
               }}
             >
               <Typography
@@ -59,7 +58,7 @@ const TravelLoanTailored = () => {
                   fontWeight: "900",
                 }}
               >
-                Personal Loans- Handpicked Offers And Highest Disbursal Rate
+                Travel Loan Tailored To Your Dreams!
               </Typography>
               <Typography
                 sx={{
@@ -68,8 +67,8 @@ const TravelLoanTailored = () => {
                   marginBottom: "14px",
                 }}
               >
-                So why wait ? Make your move and take that first step towards
-                your aspirations.
+                Say goodbye to financial worries and bon voyage to your dream
+                destination!
               </Typography>
 
               <Typography
@@ -98,7 +97,7 @@ const TravelLoanTailored = () => {
                     color: "#999",
                     fontSize: "13px",
                     lineHeight: "1.5",
-                    fontFamily:"Inter"
+                    fontFamily: "Inter",
                   }}
                 >
                   By continuing, I agree to Credmudra's Privacy Policy and Terms
@@ -132,8 +131,8 @@ const TravelLoanTailored = () => {
           </Box>
         </Grid>
       </Grid>
-    </>
-  )
-}
+    </Box>
+  );
+};
 
-export default TravelLoanTailored
+export default TravelLoanTailored;

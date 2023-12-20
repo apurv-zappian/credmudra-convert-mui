@@ -20,18 +20,18 @@ const ThingsToConsider = () => {
   };
 
   return (
-    <>
+    <Box>
       <Container
         sx={{
           display: {
             xs: "block",
-            padding: "70px 10px 80px",
+            padding: "60px 0px 50px",
             //   backgroundColor: "gray",
           },
         }}
         maxWidth={"xl"}
       >
-        <Grid container>
+        <Grid container sx={{ padding: { xs: "20px", md: "48px" } }}>
           <Grid
             item
             xs={12}
@@ -41,16 +41,10 @@ const ThingsToConsider = () => {
               //    backgroundColor: "pink"
               display: "flex",
               alignItems: "center",
-              justifyContent: "center",
+              justifyContent: {xs:"center",sm:"flex-start"},
             }}
           >
-            <Box
-              sx={{
-                width: { lg: "80%", xl: "80%" },
-                //  paddingTop: "2rem"
-                marginLeft: { lg: "10%" },
-              }}
-            >
+            <Box sx={{padding:{xl:'50px'}}}>
               <img
                 src={thingstoconsiderimg}
                 alt="why to get a personal loan for medical emergencies"
@@ -183,7 +177,7 @@ const ThingsToConsider = () => {
           </Grid>
         </Grid>
       </Container>
-    </>
+    </Box>
   );
 };
 

@@ -51,89 +51,82 @@ const BankThatOffer = () => {
     createData("Standard Chartered", "Starting from 11% p.a."),
   ];
   return (
-    <>
       <Box bgcolor="#fcefd8">
-        <Container
-          sx={{
-            padding: "70px 10px 80px",
-          }}
-          maxWidth={"xl"}
-        >
-          <Grid container>
+        <Container maxWidth={"xl"} sx={{ padding: "60px 0px 50px" }}>
+          <Grid
+            container
+            spacing={2}
+            sx={{ padding: { xs: "20px", md: "48px" } }}
+          >
             <Grid
               item
               xs={12}
-              sm={6}
-              //   bgcolor={"red"}
+              // sm={6}
+              md={6}
+              lg={6}
+              xl={6}
               sx={{
-                padding: "0px 10px 20px",
                 display: "flex",
+                alignItems: { sm: "center", md: "flex-start" },
+                justifyContent: { sm: "center" },
                 flexDirection: "column",
-                alignItems: { xs: "flex-start", sm: "center" },
-                justifyContent: { xs: "flex-start", sm: "center" },
               }}
             >
               <Box
                 sx={{
-                  // width: { md: "70%" },
+                  width: { sm: "80%", lg: "80%", xl: "65%" },
+                  textAlign: { xs: "center", md: "left" },
                 }}
-                // bgcolor={"pink"}
               >
                 <Typography
                   sx={{
-                    textAlign: { xs: "center", sm: "left" },
                     fontSize: { xs: "22px", sm: "24px", md: "36px" },
-                    fontFamily: "Inter",
+                    // lineHeight:"1.4",
+                    font: "normal normal 900 44px/50px Inter",
+                    marginBottom: "10px",
                     color: "#243771",
                     fontWeight: "900",
-                    lineHeight: { xs: "1.3", md: "1.1" },
-                    margin: { xs: "0px 0px 20px", sm: "0px 0px 30px" },
-                    // padding:{xl:"0px 80px 0px"}
                   }}
                 >
                   Banks That Offer Travel Loan
                 </Typography>
                 <Typography
                   sx={{
-                    textAlign: { xs: "center", sm: "left" },
-                    fontSize: { xs: "17px" },
-                    fontFamily: "Inter",
-                    color: "#404040",
-                    // fontWeight: "900",
-                    lineHeight: { xs: "1.5" },
-                    margin: { xs: "0px 0px 25px" },
-                    // padding:{xl:"0px 80px 0px"}
+                    fontSize: {
+                      xs: "17px",
+                      sm: "18px",
+                      lg: "16px",
+                      xl: "18px",
+                    },
+                    font: "Inter",
+                    marginBottom: "10px",
+                    color: "#10162c",
+                    // fontWeight:"900"
+                    opacity: 1,
                   }}
                 >
                   Take a look at the following table to learn about some of the
                   top banks that offer travel loans at competitive interest
                   rates:
                 </Typography>
-                <Box
-                  sx={{
-                    display: "flex",
-                    alignItems: { xs: "center", sm: "flex-start" },
-                    justifyContent: { xs: "center", sm: "flex-start" },
-                    // margin: { xs: "0px 0px 24px" },
-                    // padding:{xl:"0rem 5rem 0rem"}
-                  }}
-                >
+                <Box>
                   <GetMatchedButton />
                 </Box>
               </Box>
             </Grid>
+
             <Grid
               item
               xs={12}
-              sm={6}
+              md={6}
               sx={{
                 display: "flex",
                 flexDirection: "column",
-                alignItems: { xs: "flex-start", sm: "center" },
-                justifyContent: { xs: "flex-start", sm: "center" },
+                alignItems: { xs: "center", sm: "center" },
+                justifyContent: { xs: "center", sm: "center" },
               }}
             >
-              <Box sx={{ width: { md: "80%" } }}>
+              <Box sx={{ width: { md: "100%" } }}>
                 <Paper
                   elevation={5}
                   sx={{
@@ -210,7 +203,6 @@ const BankThatOffer = () => {
           </Grid>
         </Container>
       </Box>
-    </>
   );
 };
 

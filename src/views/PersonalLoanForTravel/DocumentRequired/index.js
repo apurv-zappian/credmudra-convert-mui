@@ -19,15 +19,15 @@ const DocumentRequired = () => {
   };
 
   return (
-    <>
+    <Box>
       <Container maxWidth={"xl"} sx={{ padding: "60px 0px 50px" }}>
-        <Grid container sx={{ padding: { xs: "10px" } }}>
+        <Grid container sx={{ padding: { xs: "16px", md: "32px" } }}>
           <Grid item xs={12} sm={6} md={6} lg={6} xl={5}>
             <Box
               sx={{
                 display: "flex",
                 alignItems: { xs: "center", sm: "flex-start" },
-                justifyContent: "center",
+                justifyContent: { xs: "center", sm: "flex-start" },
                 flexDirection: "column",
                 // padding:{xs:"1rem 5rem 1rem"}
               }}
@@ -85,7 +85,7 @@ const DocumentRequired = () => {
                 justifyContent: "center",
                 flexDirection: "column",
                 color: "white",
-                marginLeft:{md:"5%"}
+                marginLeft: { md: "5%" },
               }}
             >
               <List>
@@ -166,7 +166,7 @@ const DocumentRequired = () => {
                       fontWeight: "700",
                     }}
                   >
-                   Photographs
+                    Photographs
                   </Typography>
                 </ListItem>
               </List>
@@ -174,7 +174,7 @@ const DocumentRequired = () => {
           </Grid>
         </Grid>
       </Container>
-    </>
+    </Box>
   );
 };
 
