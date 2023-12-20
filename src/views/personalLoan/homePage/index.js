@@ -8,7 +8,6 @@ const PlHomePage = () => {
   const label = { inputProps: { "aria-label": "Checkbox demo" } };
 
   return (
-    <>
       <Box>
         <Grid
           container
@@ -51,7 +50,7 @@ const PlHomePage = () => {
                 <Typography
                   gutterBottom
                   sx={{
-                    fontFamily: "Inter",
+                    fontFamily: "normal normal 900 38px/45px Inter;",
                     color: "#243771",
                     maxWidth: "540px",
                     fontSize: {
@@ -61,7 +60,7 @@ const PlHomePage = () => {
                       lg: "38px",
                     },
                     lineHeight: "1.2",
-                    fontWeight: "900",
+                    fontWeight: "700",
                   }}
                 >
                   Personal Loans- Handpicked Offers And Highest Disbursal Rate
@@ -142,7 +141,6 @@ const PlHomePage = () => {
           </Grid>
         </Grid>
       </Box>
-    </>
   );
 };
 

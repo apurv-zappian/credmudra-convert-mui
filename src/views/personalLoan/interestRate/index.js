@@ -61,13 +61,12 @@ const InterestRate = () => {
   ];
 
   return (
-    <>
       <Box>
         <Container maxWidth={"xl"} sx={{ padding: "60px 0px 50px" }}>
           <Grid
             container
             spacing={2}
-            sx={{ padding: { md: "32px" } }}
+            sx={{ padding: { xs: "20px", md: "48px" } }}
           >
             <Grid
               item
@@ -79,7 +78,7 @@ const InterestRate = () => {
               sx={{
                 display: "flex",
                 alignItems: { sm: "center", md: "flex-start" },
-                justifyContent: { sm: "center" },
+                justifyContent: {  sm: "center" },
                 flexDirection: "column",
               }}
             >
@@ -187,7 +186,6 @@ const InterestRate = () => {
           </Grid>
         </Container>
       </Box>
-    </>
   );
 };
 

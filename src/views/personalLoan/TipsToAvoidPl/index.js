@@ -54,7 +54,7 @@ const TipsToAvoidPl = () => {
                   height: "100%",
                   display: "flex",
                   alignItems: "center",
-                  justifyContent: "center",
+                  justifyContent: { xs: "center", sm: "flex-start" },
                   flexDirection: "column",
                 }}
               >
@@ -120,6 +120,7 @@ const TipsToAvoidPl = () => {
                     elevation={0}
                   >
                     <AccordionSummary
+                      sx={{ padding: 0 }}
                       expandIcon={<ExpandMoreIcon sx={{ color: "white" }} />}
                       aria-controls="panel1d-content"
                       id="panel1d-header"
@@ -148,6 +149,7 @@ const TipsToAvoidPl = () => {
                     elevation={0}
                   >
                     <AccordionSummary
+                      sx={{ padding: 0 }}
                       expandIcon={<ExpandMoreIcon sx={{ color: "white" }} />}
                       aria-controls="panel2d-content"
                       id="panel2d-header"
@@ -176,6 +178,7 @@ const TipsToAvoidPl = () => {
                     elevation={0}
                   >
                     <AccordionSummary
+                      sx={{ padding: 0 }}
                       expandIcon={<ExpandMoreIcon sx={{ color: "white" }} />}
                       aria-controls="panel3d-content"
                       id="panel3d-header"
@@ -203,6 +206,7 @@ const TipsToAvoidPl = () => {
                     elevation={0}
                   >
                     <AccordionSummary
+                      sx={{ padding: 0 }}
                       expandIcon={<ExpandMoreIcon sx={{ color: "white" }} />}
                       aria-controls="panel4d-content"
                       id="panel4d-header"
@@ -231,6 +235,7 @@ const TipsToAvoidPl = () => {
                     elevation={0}
                   >
                     <AccordionSummary
+                      sx={{ padding: 0 }}
                       expandIcon={<ExpandMoreIcon sx={{ color: "white" }} />}
                       aria-controls="panel5d-content"
                       id="panel5d-header"
