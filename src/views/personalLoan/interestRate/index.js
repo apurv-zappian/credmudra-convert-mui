@@ -80,6 +80,7 @@ const InterestRate = () => {
                 alignItems: { sm: "center", md: "flex-start" },
                 justifyContent: {  sm: "center" },
                 flexDirection: "column",
+                padding: { xs: "16px", md: "0px" },
               }}
             >
               <Box

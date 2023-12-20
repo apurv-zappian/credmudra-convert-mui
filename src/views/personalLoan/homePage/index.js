@@ -40,28 +40,22 @@ const PlHomePage = () => {
             >
               <Box
                 sx={{
-                  // padding: { sm: "16px", xl: "0 0 0 112px" },
                   textAlign: { xs: "center", sm: "left" },
                   width: { lg: "90%", xl: "70%" },
                   marginLeft: { lg: "5%", xl: "18%" },
-                  // height:{xs:"50vh"}
                 }}
               >
                 <Typography
-                  gutterBottom
-                  sx={{
-                    fontFamily: "normal normal 900 38px/45px Inter;",
-                    color: "#243771",
-                    maxWidth: "540px",
-                    fontSize: {
-                      xs: "26px",
-                      sm: "34px",
-                      md: "34px",
-                      lg: "38px",
-                    },
-                    lineHeight: "1.2",
-                    fontWeight: "700",
-                  }}
+                gutterBottom
+                sx={{
+                  fontFamily: "Inter",
+                  color: "#243771",
+                  // maxWidth:{xs:"400px",sm:"540px"},
+                  maxWidth: "540px",
+                  fontSize: { xs: "26px", sm: "34px", md: "34px", lg: "38px" },
+                  lineHeight: "1.2",
+                  fontWeight: "900",
+                }}
                 >
                   Personal Loans- Handpicked Offers And Highest Disbursal Rate
                 </Typography>

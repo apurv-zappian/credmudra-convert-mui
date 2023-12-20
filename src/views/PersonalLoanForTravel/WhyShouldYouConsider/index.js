@@ -12,8 +12,8 @@ const WhyShouldYouConsider = () => {
     // marginTop:"5px"
   };
   return (
-    <>
-      <Grid container bgcolor="#FCEFD8" sx={{ marginTop: "5%" }}>
+    <Box>
+      <Grid container bgcolor="#FCEFD8" >
         <Grid
           item
           xs={12}
@@ -157,14 +157,11 @@ const WhyShouldYouConsider = () => {
           sx={{
             padding: { xs: "16px 32px 32px", sm: "0" },
             display: "flex",
-            alignItems: { xs: "center",xl:"flex-start"},
-            justifyContent: { xs: "center",xl:"flex-start" },
+            alignItems: { xs: "center" },
+            justifyContent: { xs: "center", sm: "flex-end" },
           }}
         >
           <Box
-            sx={{
-              // padding: { sm: "70% 0% 10%", md: "20% 0% 10% 0%", lg: "0% 0%" },
-            }}
           >
             <img
               src={whyshouldyouconsiderimg}
@@ -178,7 +175,7 @@ const WhyShouldYouConsider = () => {
           </Box>
         </Grid>
       </Grid>
-    </>
+    </Box>
   );
 };
 

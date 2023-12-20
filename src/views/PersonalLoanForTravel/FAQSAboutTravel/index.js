@@ -38,9 +38,9 @@ const FAQSAboutTravel = () => {
     marginRight: "10px",
   };
   return (
-    <>
+    <Box>
       <Container maxWidth={"xl"} sx={{ padding: "60px 0px 50px" }}>
-        <Grid container sx={{ padding: { xs: "10px" } }} spacing={2} alignItems={'center'}>
+        <Grid container sx={{ padding: { xs: "20px", md: "48px" } }} spacing={2} alignItems={'center'}>
           <Grid
             item
             xs={12}
@@ -226,7 +226,7 @@ const FAQSAboutTravel = () => {
           </Grid>
         </Grid>
       </Container>
-    </>
+    </Box>
   );
 };
 
