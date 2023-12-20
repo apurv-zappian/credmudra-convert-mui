@@ -19,13 +19,13 @@ const WhyDoesTaking = () => {
           sx={{
             display: {
               xs: "block",
-              padding: "70px 10px 80px",
+              padding: "60px 0px 50px",
               //   backgroundColor: "gray",
             },
           }}
           maxWidth={"xl"}
         >
-          <Grid container>
+          <Grid container sx={{padding: { xs: "20px",md:"48px" },}}>
             <Grid
               item
               xs={12}
@@ -93,8 +93,8 @@ const WhyDoesTaking = () => {
               sx={{
                 padding: "0px 10px 0px",
                 display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
+                alignItems:  {xs:"center",sm:"flex-start"},
+                justifyContent: {xs:"center",sm:"flex-start"},
                 //    backgroundColor: "pink"
               }}
             >

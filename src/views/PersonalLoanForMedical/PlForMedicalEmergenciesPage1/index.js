@@ -15,7 +15,7 @@ const PersonalLoanForMedicalEmergenciesPage1 = () => {
           padding: { xs: "16px", md: "32px" },
         }}
       >
-        <Grid item xs={12} sm={6} marginTop={{ xs: "15%", sm: "0%" }}>
+        <Grid item xs={12} sm={6} marginTop={{ xs: "15%", sm: "5%",md:'0%' }}>
           <img
             alt="loading"
             src={waveimg}
@@ -33,6 +33,7 @@ const PersonalLoanForMedicalEmergenciesPage1 = () => {
               display: "flex",
               minHeight: { xs: "72vh", sm: "100vh" },
               justifyContent: "center",
+              alignItems:'center',
               flexDirection: "column",
             }}
           >
@@ -61,9 +62,11 @@ const PersonalLoanForMedicalEmergenciesPage1 = () => {
               </Typography>
               <Typography
                 sx={{
-                  font: "normal normal normal 18px/29px Inter",
+                  fontFamily: "Inter",
                   color: "#10162c",
                   marginBottom: "14px",
+                  fontSize:{xs:"16px",sm:'18px'},
+                  fontWeight:"300"
                 }}
               >
                 Medical emergencies can be a source of immense anxiety, particularly if you are caught off-guard.

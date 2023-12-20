@@ -38,11 +38,11 @@ const FAQSTwoWheeler = () => {
     marginRight: "10px",
   };
   return (
-    <>
+    <Box>
       <Container maxWidth={"xl"} sx={{ padding: "60px 0px 50px" }}>
         <Grid
           container
-          sx={{ padding: { xs: "10px" } }}
+          sx={{ padding: { xs: "20px",md:"48px" } }}
           spacing={2}
           alignItems={"center"}
         >
@@ -52,11 +52,11 @@ const FAQSTwoWheeler = () => {
             sm={6}
             sx={{
               display: "flex",
-              alignItems: { xs: "flex-start", },
-              justifyContent: { xs: "flex-start", },
+              alignItems: { xs: "center" },
+              justifyContent: { xs: "flex-start" },
             }}
           >
-            <Box sx={{ width: {sm:"90%", md: "70%" } }}>
+            <Box sx={{ width: {sm:"90%", md: "70%",xl:"60%" } }}>
               <Typography
                 sx={{
                   fontSize: { xs: "24px", sm: "26px", md: "32px" },
@@ -228,7 +228,7 @@ const FAQSTwoWheeler = () => {
           </Grid>
         </Grid>
       </Container>
-    </>
+    </Box>
   );
 };
 

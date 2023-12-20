@@ -60,87 +60,107 @@ const LendersThatOffer = () => {
     createData("MoneyTap", "13% – 24%", "₹3,000 – ₹5,00,000"),
   ];
   return (
-    <>
+    <Box>
       <Container
         sx={{
           display: { xs: "block" },
-          padding: "70px 10px 80px",
+          padding: "60px 0px 50px",
           // backgroundColor: "gray",
         }}
         maxWidth={"xl"}
       >
-        <Grid container alignItems="center" spacing={4}>
-          <Grid item xs={12} md={5} xl={5} sx={{
-                display: "flex",
-                alignItems: { xs: "center", md: "flex-start" },
-                justifyContent: { xs: "center", md: "flex-start" },
-                flexDirection:"column"
-              }}>
-            <Typography
-              sx={{
-                // margin: { xl: "0px 105px 0px" },
-                fontSize: { xs: "26px", sm: "30px", xl: "44px" },
-                fontFamily: "Inter,sans-serif",
-                fontWeight: "900",
-                color: "#243771",
-                lineHeight: "1.3",
-                textAlign: { xs: "center", sm: "left" },
-              }}
-            >
-              Lenders That Offer Medical Loans
-            </Typography>
-            <Typography
-              sx={{
-                margin: {
-                  xs: "16px 0px 35px",
-                  sm: "16px 0px",
-                  xl: "16px 150px 16px 0px",
-                },
-                fontSize: { xs: "17px", sm: "18px", xl: "22px" },
-                fontFamily: "Inter,sans-serif",
-                fontWeight: "400",
-                color: "#404040",
-                lineHeight: "1.7",
-                textAlign: { xs: "center", md: "left" },
-              }}
-            >
-              Here is a table listing several prominent financial institutions
-              that provide personal loans for medical emergencies:
-            </Typography>
-            <Typography
-              sx={{
-                margin: { xs: "16px 0px 35px", xl: "16px 150px 16px 0px" },
-                fontSize: { xs: "17px", xl: "22px" },
-                fontFamily: "Inter,sans-serif",
-                fontWeight: "400",
-                color: "#404040",
-                lineHeight: "1.7",
-                textAlign: { xs: "center", md: "left" },
-              }}
-            >
-              It is imperative that you compare personal medical loan offers
-              across various lenders before deciding on which one to finalize,
-              as per your financial needs and requirements.
-            </Typography>
-            <Box
-              sx={{
-                display: "flex",
-                alignItems: { xs: "center", md: "flex-start" },
-                justifyContent: { xs: "center", md: "flex-start" },
-                margin: "0px 0px 20px",
-                // padding: { xl: "0px 96px 0px" },
-              }}
-            >
-              <GetMatchedButton />
+        <Grid
+          container
+          alignItems="center"
+          // spacing={4}
+          sx={{ padding: { xs: "20px", md: "48px" } }}
+        >
+          <Grid
+            item
+            xs={12}
+            md={6}
+            xl={4}
+            sx={{
+              display: "flex",
+              alignItems: { xs: "center" },
+              justifyContent: { xs: "center", md: "flex-start" },
+              flexDirection: "column",
+            }}
+          >
+            <Box sx={{width:{md:"100%",xl:'100%'}}}>
+              <Typography
+                sx={{
+                  fontSize: { xs: "26px", sm: "30px", xl: "44px" },
+                  fontFamily: "Inter,sans-serif",
+                  fontWeight: "900",
+                  color: "#243771",
+                  lineHeight: "1.3",
+                  textAlign: { xs: "center", md: "left" },
+                  margin:"0 0 10px"
+                }}
+                gutterBottom
+              >
+                Lenders That Offer Medical Loans
+              </Typography>
+              <Typography
+                sx={{
+                  margin:"0 0 10px",
+                  paddingRight:{md:"30%",xl:'0'},
+                  fontSize: { xs: "17px", md: "18px", xl: "22px" },
+                  fontFamily: "Inter,sans-serif",
+                  fontWeight: "400",
+                  color: "#404040",
+                  lineHeight: "1.5",
+                  textAlign: { xs: "center", md: "left" },
+                }}
+                gutterBottom
+              >
+                Here is a table listing several prominent financial institutions
+                that provide personal loans for medical emergencies:
+              </Typography>
+              <Typography
+                sx={{
+                  margin: "0 0 10px",
+                  paddingRight:{md:'30%',xl:"0"},
+                  fontSize: { xs: "17px", md:"18px", xl: "22px" },
+                  fontFamily: "Inter,sans-serif",
+                  fontWeight: "400",
+                  color: "#404040",
+                  lineHeight: "1.5",
+                  textAlign: { xs: "center", md: "left" },
+                }}
+                gutterBottom
+              >
+                It is imperative that you compare personal medical loan offers
+                across various lenders before deciding on which one to finalize,
+                as per your financial needs and requirements.
+              </Typography>
+              <Box
+                sx={{
+                  display: "flex",
+                  alignItems: { xs: "center", md: "flex-start" },
+                  justifyContent: { xs: "center", md: "flex-start" },
+                  margin: "0px 0px 20px",
+                  // padding: { xl: "0px 96px 0px" },
+                }}
+              >
+                <GetMatchedButton />
+              </Box>
             </Box>
           </Grid>
-          <Grid item xs={12} md={7} xl={7} sx={{
-                display: "flex",
-                alignItems: { xs: "center", md: "flex-start" },
-                justifyContent: { xs: "center", md: "flex-start" },
-              }}>
+          <Grid
+            item
+            xs={12}
+            md={6}
+            xl={8}
+            sx={{
+              display: "flex",
+              alignItems: { xs: "center", },
+              justifyContent: { xs: "center", md: "flex-end" },
+            }}
+          >
             <Paper
-              elevation={5}
+              // elevation={5}
               sx={{
                 padding: 2,
                 // boxShadow: "5px 5px 10px gray",
@@ -236,7 +256,7 @@ const LendersThatOffer = () => {
           </Grid>
         </Grid>
       </Container>
-    </>
+    </Box>
   );
 };
 

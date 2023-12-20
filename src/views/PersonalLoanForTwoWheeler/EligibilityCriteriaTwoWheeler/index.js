@@ -30,7 +30,7 @@ const EligibilityCriteriaTwoWheeler = () => {
             top: "0",
           }}
         />
-        <Grid container>
+        <Grid container sx={{xs:"20px",md:"48px"}}>
           <Grid
             item
             xs={12}
@@ -46,7 +46,7 @@ const EligibilityCriteriaTwoWheeler = () => {
           >
             <Box
               sx={{
-                width: { sm: "70%", md: "70%", xl: "60%" },
+                width: { sm: "70%", md: "70%", xl: "50%" },
               }}
             >
               <Typography

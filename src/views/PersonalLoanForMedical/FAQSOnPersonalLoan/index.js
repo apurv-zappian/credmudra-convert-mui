@@ -40,7 +40,7 @@ const FAQSOnPersonalLoan = () => {
   return (
     <>
        <Container maxWidth={"xl"} sx={{ padding: "60px 0px 50px" }}>
-        <Grid container sx={{ padding: { xs: "10px", } }} spacing={2}>
+        <Grid container sx={{ padding: { xs: "20px",md:"48px" } }} spacing={2}>
           <Grid item xs={12} sm={5} sx={{
               display:'flex',
               alignItems:{xs:"flex-start",sm:'center'},
