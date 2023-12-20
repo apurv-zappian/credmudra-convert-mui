@@ -103,6 +103,7 @@ const WhyIsPlBetter = () => {
                   }}
                 >
                   <AccordionSummary
+                    sx={{ padding: 0 }}
                     expandIcon={<ExpandMoreIcon sx={{ color: "black" }} />}
                     aria-controls="panel1d-content"
                     id="panel1d-header"
@@ -132,7 +133,7 @@ const WhyIsPlBetter = () => {
                   }}
                 >
                   <AccordionSummary
-                    sx={{ display: "flex", alignItems: "center" }}
+                    sx={{ padding: 0 }}
                     expandIcon={<ExpandMoreIcon sx={{ color: "black" }} />}
                     aria-controls="panel2d-content"
                     id="panel2d-header"
@@ -165,7 +166,7 @@ const WhyIsPlBetter = () => {
                   }}
                 >
                   <AccordionSummary
-                    sx={{ display: "flex", alignItems: "center" }}
+                    sx={{ padding: 0 }}
                     expandIcon={<ExpandMoreIcon sx={{ color: "black" }} />}
                     aria-controls="panel3d-content"
                     id="panel3d-header"
@@ -199,7 +200,7 @@ const WhyIsPlBetter = () => {
                     expandIcon={<ExpandMoreIcon sx={{ color: "black" }} />}
                     aria-controls="panel4d-content"
                     id="panel4d-header"
-                    sx={{ display: "flex", alignItems: "center" }}
+                    sx={{ padding: 0 }}
                   >
                     <CheckCircleOutlineIcon sx={{ ...CheckCircle }} />
 
@@ -240,7 +241,7 @@ const WhyIsPlBetter = () => {
                 // height: "100%",
                 display: "flex",
                 alignItems: "center",
-                justifyContent: "center",
+                justifyContent: { xs: "center", sm: "flex-start" },
                 flexDirection: "column",
                 color: "white",
               }}
@@ -255,7 +256,7 @@ const WhyIsPlBetter = () => {
             </Grid>
           </Grid>
         </Container>
-      </Box>  
+      </Box>
     </>
   );
 };
