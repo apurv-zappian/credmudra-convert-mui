@@ -56,7 +56,7 @@ const WhyIsPlBetter = () => {
               xl={6}
               sx={{
                 display: "flex",
-                alignItems: { xs: "center", md: "flex-start" },
+                alignItems: { xs: "center", sm: "flex-start" },
                 justifyContent: "center",
                 flexDirection: "column",
               }}
@@ -229,31 +229,33 @@ const WhyIsPlBetter = () => {
                 </Box>
               </Box>
             </Grid>
-            <Grid item xs={12} sm={6} md={6} lg={6} xl={6}>
-              <Box
-                sx={{
-                  height: "100%",
-                  display: "flex",
-                  alignItems: "center",
-                  justifyContent: "center",
-                  flexDirection: "column",
-                  color: "white",
-                }}
-              >
-                <Box
-                  sx={{ width: "100%" }}
-                >
-                  <img
-                    src={whyisplbetter}
-                    alt="loading"
-                    style={{ width: "100%", height: "100%" }}
-                  />
-                </Box>
+            <Grid
+              item
+              xs={12}
+              sm={6}
+              md={6}
+              lg={6}
+              xl={6}
+              sx={{
+                // height: "100%",
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+                flexDirection: "column",
+                color: "white",
+              }}
+            >
+              <Box sx={{ width: "100%" }}>
+                <img
+                  src={whyisplbetter}
+                  alt="loading"
+                  style={{ width: "100%", height: "auto" }}
+                />
               </Box>
             </Grid>
           </Grid>
         </Container>
-      </Box>
+      </Box>  
     </>
   );
 };

@@ -16,7 +16,7 @@ const DocumentsYouNeed = () => {
     color: "#F7D64A",
     fontSize: "10px",
     marginRight: "10px",
-    // marginTop:"-10px"
+    // marginTop:"3px"
   };
 
   const TypographySubHeadings = {
@@ -114,7 +114,7 @@ const DocumentsYouNeed = () => {
                     }}
                   >
                     <Typography
-                      display="inline"
+                      component={'span'}  
                       sx={{ ...TypographySubHeadings }}
                     >
                       Identity Proof:
@@ -134,7 +134,7 @@ const DocumentsYouNeed = () => {
                     }}
                   >
                     <Typography
-                      display="inline"
+                      component={'span'}  
                       sx={{ ...TypographySubHeadings }}
                     >
                       {" "}

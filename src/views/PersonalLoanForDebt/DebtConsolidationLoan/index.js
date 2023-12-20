@@ -5,7 +5,7 @@ import GetMatchedButton from "../../../components/GetMatchedButton";
 
 const DebtConsolidationLoan = () => {
   return (
-    <>
+    <Box>
       <Grid container bgcolor="#FCEFD8">
         <Grid
           item
@@ -13,10 +13,10 @@ const DebtConsolidationLoan = () => {
           sm={6}
           bgcolor="#FCEFD8"
           sx={{
-            padding: { xs: "16px 32px 0px", sm: "0" },
+            padding: { xs: "16px", sm: "0" },
             display: "flex",
-            alignItems: { xs: "center",xl:"flex-start"},
-            justifyContent: { xs: "center",xl:"flex-start" },
+            alignItems: { xs: "center", xl: "flex-start" },
+            justifyContent: { xs: "center", xl: "flex-start" },
           }}
         >
           <Box>
@@ -33,10 +33,10 @@ const DebtConsolidationLoan = () => {
           sm={6}
           bgcolor="#FCEFD8"
           sx={{
-            padding: { xs: "16px 32px 16px",},
+            padding: { xs: "16px 32px 16px" },
             display: "flex",
-            alignItems: { xs: "center", },
-            justifyContent: { xs: "center",},
+            alignItems: { xs: "center" },
+            justifyContent: { xs: "center" },
             flexDirection: "column",
           }}
         >
@@ -91,7 +91,7 @@ const DebtConsolidationLoan = () => {
           </Box>
         </Grid>
       </Grid>
-    </>
+    </Box>
   );
 };
 

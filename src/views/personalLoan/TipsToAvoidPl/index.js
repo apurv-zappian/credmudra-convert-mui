@@ -25,13 +25,13 @@ const TipsToAvoidPl = () => {
     color: "#F7D64A",
     fontSize: { xs: "20px", sm: "22px" },
     fontWeight: "700",
-    fontFamily:"Inter"
+    fontFamily: "Inter",
   };
   const AccParaColor = {
     color: "white",
-    fontSize: { xs: "16px",},
+    fontSize: { xs: "16px" },
     // fontWeight: "700",
-    fontFamily:"Inter"
+    fontFamily: "Inter",
   };
 
   const CheckCircle = {
@@ -75,7 +75,7 @@ const TipsToAvoidPl = () => {
                 sx={{
                   height: "100%",
                   display: "flex",
-                  alignItems: {xs:'center',sm:'flex-start'},
+                  alignItems: { xs: "center", sm: "flex-start" },
                   justifyContent: "center",
                   flexDirection: "column",
                   color: "white",
@@ -255,7 +255,7 @@ const TipsToAvoidPl = () => {
                 <Box
                   sx={{
                     display: "flex",
-                    alignItems: {xs:'center'},
+                    alignItems: { xs: "center" },
                     justifyContent: { xs: "center", sm: "flex-start" },
                   }}
                 >

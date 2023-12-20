@@ -6,16 +6,12 @@ import { FiberManualRecord } from "@mui/icons-material";
 const EligibilityCriteria = () => {
   const CircleIcon = {
     color: "#F7D64A",
-    fontSize: "1vmax",
-    marginRight: ".5vmax",
+    fontSize: "15px",
+    marginRight: "10px",
     // marginTop:"-10px"
   };
 
-  //   const TypographySubHeadings = {
-  //     color: "#F7D64A",
-  //   };
   return (
-
     <>
       <Box
         sx={{
@@ -36,19 +32,41 @@ const EligibilityCriteria = () => {
             top: "0",
           }}
         />
-        <Grid container>
-          <Grid item xs={6} sx={{ display: { xs: "none", sm: "flex" } }} />
-          <Grid item xs={12} sm={6}>
-            <Box sx={{ color: "#fff" ,padding:{xs:"0",sm:"0 16px 0 0",lg:"0 144px 0 0",xl:"0 240px 0 0"}}}>
+        <Grid container sx={{ padding: { xs: "16px", md: "32px" } }}>
+          <Grid
+            item
+            xs={6}
+            sm={4}
+            md={6}
+            sx={{ display: { xs: "none", sm: "flex" } }}
+          />
+          <Grid
+            item
+            xs={12}
+            sm={8}
+            md={6}
+            sx={{
+              display: "flex",
+              alignItems: "flex-start",
+              justifyContent: "flex-start",
+            }}
+          >
+            <Box
+              sx={{
+                color: "#ffffff",
+                paddingRight: { xl: "10px" },
+                width: {sm:"95%", xl: "75%" },
+              }}
+            >
               <Typography
                 sx={{
-                  color: "#f7d64a !important",
+                  color: "#f7d64a",
                   fontSize: { xs: "24px", md: "36px" },
                   fontWeight: "900",
                   marginBottom: "25px",
-                  textAlign: { xs: "center",sm:"left" },
-                  lineHeight:"1.1",
-                  fontFamily:"Inter"
+                  textAlign: { xs: "center", sm: "left" },
+                  lineHeight: "1.1",
+                  fontFamily: "Inter",
                 }}
               >
                 Eligibility Criteria For Debt Consolidation Loan
@@ -58,7 +76,7 @@ const EligibilityCriteria = () => {
                   fontSize: { xs: "17px", md: "20px" },
                   fontWeight: "300",
                   fontFamily: "Inter",
-                  textAlign: { xs: "center",sm:"left" },
+                  textAlign: { xs: "center", sm: "left" },
                 }}
               >
                 Although the eligibility criteria for a debt consolidation loan
@@ -68,7 +86,7 @@ const EligibilityCriteria = () => {
               <List sx={{ listStyle: "none" }}>
                 <ListItem
                   sx={{
-                    fontSize: { xs: "16px",sm:"18px" },
+                    fontSize: { xs: "16px", sm: "18px" },
                     fontWeight: "400",
                     fontFamily: "Inter",
                   }}
@@ -79,9 +97,9 @@ const EligibilityCriteria = () => {
                       color: "#f7d64a",
                       fontWeight: "700",
                       fontFamily: "Inter",
-                      fontSize: { xs: "16px",sm:"18px" },
-                      display: "inline",
+                      fontSize: { xs: "16px", sm: "18px" },
                     }}
+                    component={"span"}
                   >
                     Nationality:
                   </Typography>{" "}
@@ -89,7 +107,7 @@ const EligibilityCriteria = () => {
                 </ListItem>
                 <ListItem
                   sx={{
-                    fontSize: { xs: "16px",sm:"18px" },
+                    fontSize: { xs: "16px", sm: "18px" },
                     fontWeight: "400",
                     fontFamily: "Inter",
                   }}
@@ -99,11 +117,11 @@ const EligibilityCriteria = () => {
                     sx={{
                       color: "#f7d64a",
                       fontWeight: "700",
-                      
+
                       fontFamily: "Inter",
-                      fontSize: { xs: "16px",sm:"18px" },
-                      display: "inline",
+                      fontSize: { xs: "16px", sm: "18px" },
                     }}
+                    component={"span"}
                   >
                     Employment:
                   </Typography>{" "}
@@ -111,7 +129,7 @@ const EligibilityCriteria = () => {
                 </ListItem>
                 <ListItem
                   sx={{
-                    fontSize: { xs: "16px",sm:"18px" },
+                    fontSize: { xs: "16px", sm: "18px" },
                     fontWeight: "400",
                     fontFamily: "Inter",
                   }}
@@ -121,11 +139,11 @@ const EligibilityCriteria = () => {
                     sx={{
                       color: "#f7d64a",
                       fontWeight: "700",
-                     
+
                       fontFamily: "Inter",
-                      fontSize:{ xs: "16px",sm:"18px" },
-                      display: "inline",
+                      fontSize: { xs: "16px", sm: "18px" },
                     }}
+                    component={"span"}
                   >
                     CIBIL Score:
                   </Typography>{" "}
@@ -133,7 +151,7 @@ const EligibilityCriteria = () => {
                 </ListItem>
                 <ListItem
                   sx={{
-                    fontSize: { xs: "16px",sm:"18px" },
+                    fontSize: { xs: "16px", sm: "18px" },
                     fontWeight: "400",
                     fontFamily: "Inter",
                   }}
@@ -144,9 +162,9 @@ const EligibilityCriteria = () => {
                       color: "#f7d64a",
                       fontWeight: "700",
                       fontFamily: "Inter",
-                      fontSize:{ xs: "16px",sm:"18px" },
-                      display: "inline",
+                      fontSize: { xs: "16px", sm: "18px" },
                     }}
+                    component={"span"}
                   >
                     Monthly Income:
                   </Typography>{" "}
