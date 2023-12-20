@@ -7,12 +7,12 @@ const label = { inputProps: { "aria-label": "Checkbox demo" } };
 
 const PersonalLoanForMedicalEmergenciesPage1 = () => {
   return (
-    <>
+    <Box>
        <Grid
         container
         sx={{
           minHeight: { xs: "0vh", sm: "100vh" },
-          padding: { xs: "1rem", sm: ".5rem", md: "2rem" },
+          padding: { xs: "16px", md: "32px" },
         }}
       >
         <Grid item xs={12} sm={6} marginTop={{ xs: "15%", sm: "0%" }}>
@@ -38,14 +38,13 @@ const PersonalLoanForMedicalEmergenciesPage1 = () => {
           >
             <Box
               sx={{
-                padding: { sm: "1rem", xl: "0 0 0 7rem" },
                 textAlign: { xs: "center", sm: "left" },
-                width: { md: "80%", lg: "90%", xl: "90%" },
+                width: { lg: "90%", xl: "70%" },
+                marginLeft: { lg: "5%", xl: "18%" },
                 // height:{xs:"50vh"}
               }}
             >
               <Typography
-                // variant="h3"
                 gutterBottom
                 sx={{
                   fontFamily: "Inter",
@@ -91,7 +90,7 @@ const PersonalLoanForMedicalEmergenciesPage1 = () => {
                 Enter your 10 digit mobile number to proceed
               </Typography>
               <Section1Form />
-              <Box display="flex" alignItems="left">
+              <Box display="flex" alignItems="flex-start">
                 <Checkbox
                   {...label}
                   defaultChecked
@@ -99,7 +98,6 @@ const PersonalLoanForMedicalEmergenciesPage1 = () => {
                 />
                 <Typography
                   marginTop="20px"
-                  // variant="subtitle2"
                   textAlign="justify"
                   width={{ md: "80%", xl: "65%" }}
                   sx={{
@@ -117,7 +115,6 @@ const PersonalLoanForMedicalEmergenciesPage1 = () => {
             </Box>
           </Box>
         </Grid>
-        {/* Right Side */}
         <Grid item xs={12} sm={6} display={{ xs: "none", sm: "flex" }}>
           <Box
             sx={{
@@ -125,7 +122,8 @@ const PersonalLoanForMedicalEmergenciesPage1 = () => {
               // minHeight: {xs:"0vh",sm:"100vh"},
               justifyContent: "center",
               flexDirection: "column",
-              paddingY: "3rem",
+              paddingY: "48px",
+              marginTop:"2%"
             }}
           >
             <img
@@ -140,7 +138,7 @@ const PersonalLoanForMedicalEmergenciesPage1 = () => {
           </Box>
         </Grid>
       </Grid>
-    </>
+    </Box>
   );
 };
 

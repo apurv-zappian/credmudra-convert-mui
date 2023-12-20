@@ -59,137 +59,137 @@ const StepByStepProcess = () => {
   ];
 
   return (
-    <Container>
-      <Grid container  sx={{ padding: "80px 0px 10px",}}>
-        {/* Top section */}
-        <Grid item sm={12}>
-          {/* <Box> */}
-          <Box
-            sx={{
-              // padding: "3rem 0 2rem",
-              textAlign: "center",
-              // maxWidth: "856px",
-              // margin: "auto",
-              // fontSize: "1rem",
-            }}
-          >
-            <Typography
+    <Box>
+      <Container maxWidth={'xl'} sx={{ padding: "60px 0px 50px" }}>
+        <Grid container sx={{ padding: { xs: "20px", sm: "48px" } }}>
+          <Grid item sm={12}>
+            <Box
               sx={{
-                lineHeight: { xs: "1.1", md: "1.5" },
-                marginBottom: "25px",
-                fontSize: { xs: "24px", sm: "30px", md: "40px" },
-                fontFamily: "Inter",
-                color: "#243771",
-                fontWeight: "900",
                 textAlign: "center",
-                margin: { sm: "0px 0px 28px", md: "0px 100px 28px" },
               }}
             >
-              Step-By-Step Process To Apply For Debt Consolidation Loan
-            </Typography>
-            <Typography
-              sx={{
-                lineHeight: { xs: "1.1", sm: "1.5" },
-                marginBottom: "25px",
-                fontSize: { xs: "16px", sm: "20px" },
-                fontFamily: "Inter",
-                color: "#243771",
-                // fontWeight: "900",
-                margin: { sm: "0px 0px 100px", md: "0px 40px 100px" },
-              }}
-            >
-              Here is the stepwise process you need to follow to apply for a
-              Debt Consolidation loan online through Credmudra:
-            </Typography>
-          </Box>
-          {/* </Box> */}
-        </Grid>
-      </Grid>
-      {/* Bottom Section */}
-      <Grid
-        container
-        sx={{ display: "flex", justifyContent: "center" }}
-        spacing={2}
-      >
-        {CardData.map((step, index) => (
-          <Grid
-            item
-            xs={12}
-            sm={6}
-            md={4}
-            lg={4}
-            xl={4}
-            sx={{
-              width: "100%",
-              height: "100%",
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-            }}
-          >
-            <Box>
-              <Card
-                elevation={0}
+              <Typography
                 sx={{
-                  maxWidth: "50%",
-                  minWidth: "300px",
-                  minHeight: "360px",
+                  lineHeight: { xs: "1.1", md: "1.5" },
+                  marginBottom: "25px",
+                  fontSize: { xs: "24px", sm: "30px", md: "40px" },
+                  fontFamily: "Inter",
+                  color: "#243771",
+                  fontWeight: "900",
                   textAlign: "center",
-                  margin: "0 auto",
+                  margin: { sm: "0px 0px 28px", md: "0px 100px 28px" },
                 }}
               >
-                <CardActionArea>
-                  <Box>
-                    <img alt="image1" src={step.image} style={{
+                Step-By-Step Process To Apply For Debt Consolidation Loan
+              </Typography>
+              <Typography
+                sx={{
+                  lineHeight: { xs: "1.1", sm: "1.5" },
+                  marginBottom: "25px",
+                  fontSize: { xs: "16px", sm: "20px" },
+                  fontFamily: "Inter",
+                  color: "#243771",
+                  // fontWeight: "900",
+                  margin: { sm: "0px 0px 100px", md: "0px 40px 100px" },
+                }}
+              >
+                Here is the stepwise process you need to follow to apply for a
+                Debt Consolidation loan online through Credmudra:
+              </Typography>
+            </Box>
+          </Grid>
+        </Grid>
+        <Grid
+          container
+          sx={{ display: "flex", justifyContent: "center" }}
+          spacing={2}
+        >
+          {CardData.map((step, index) => (
+            <Grid
+              item
+              xs={12}
+              sm={6}
+              md={4}
+              lg={4}
+              xl={4}
+              sx={{
+                width: "100%",
+                height: "100%",
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+              }}
+            >
+              <Box>
+                <Card
+                  elevation={0}
+                  sx={{
+                    maxWidth: "50%",
+                    minWidth: "300px",
+                    minHeight: "360px",
+                    textAlign: "center",
+                    margin: "0 auto",
+                  }}
+                >
+                  <CardActionArea>
+                    <Box>
+                      <img
+                        alt="image1"
+                        src={step.image}
+                        style={{
                           marginBottom: "45px",
-                        }} />
-                  </Box>
-                  <CardContent>
-                    <Typography
-                     sx={{
-                      opacity: ".5",
-                      lineHeight: ".1",
-                      marginTop: "5px",
-                      zIndex: "2",
-                      fontSize: "52px",
-                      fontFamily: "Inter",
-                      color: "#e4e4e4",
-                      fontWeight: "900",
-                    }}
-                    >
-                      {step.step}
-                    </Typography>
-                    <Typography
-                      sx={{
-                        lineHeight: { xs: "1.1", sm: "1.5" },
-                        marginBottom: "25px",
-                        fontSize: { xs: "21px" },
-                        fontFamily: "Inter",
-                        color: "#243771",
-                        fontWeight: "900",
-                        // textAlign:{xs:"center"}
-                      }}
-                    >
-                      {step.title}
-                    </Typography>
-                    <Typography  sx={{
+                        }}
+                      />
+                    </Box>
+                    <CardContent>
+                      <Typography
+                        sx={{
+                          opacity: ".5",
+                          lineHeight: ".1",
+                          marginTop: "5px",
+                          zIndex: "2",
+                          fontSize: "52px",
+                          fontFamily: "Inter",
+                          color: "#e4e4e4",
+                          fontWeight: "900",
+                        }}
+                      >
+                        {step.step}
+                      </Typography>
+                      <Typography
+                        sx={{
+                          lineHeight: { xs: "1.1", sm: "1.5" },
+                          marginBottom: "25px",
+                          fontSize: { xs: "21px" },
+                          fontFamily: "Inter",
+                          color: "#243771",
+                          fontWeight: "900",
+                          // textAlign:{xs:"center"}
+                        }}
+                      >
+                        {step.title}
+                      </Typography>
+                      <Typography
+                        sx={{
                           lineHeight: "1.5",
                           marginBottom: "25px",
                           fontSize: { xs: "16px" },
                           fontFamily: "Inter",
                           color: "#404040",
                           // fontWeight:"900"
-                        }}>
-                      {step.description}
-                    </Typography>
-                  </CardContent>
-                </CardActionArea>
-              </Card>
-            </Box>
-          </Grid>
-        ))}
-      </Grid>
-    </Container>
+                        }}
+                      >
+                        {step.description}
+                      </Typography>
+                    </CardContent>
+                  </CardActionArea>
+                </Card>
+              </Box>
+            </Grid>
+          ))}
+        </Grid>
+      </Container>
+    </Box>
   );
 };
 

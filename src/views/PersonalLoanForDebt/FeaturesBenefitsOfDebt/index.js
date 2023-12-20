@@ -31,7 +31,7 @@ const FeaturesBenefitsOfDebt = () => {
     color: "#404040",
     fontSize: { xs: "16px" },
     font: "normal normal normal 16px/22px Inter",
-    padding: { xs: "2px 20px 16px" },
+    padding: { xs: "2px 20px 16px" }, 
   };
   const CheckCircle = {
     marginTop: { md: "20px" },
@@ -41,7 +41,11 @@ const FeaturesBenefitsOfDebt = () => {
   return (
     <Box>
       <Container maxWidth={"xl"} sx={{ padding: "60px 0px 50px" }}>
-        <Grid container spacing={2} sx={{ padding: { xs: "16px", sm: "32px" } }}>
+        <Grid
+          container
+          spacing={2}
+          sx={{ padding: { xs: "20px", md: "48px" } }}
+        >
           <Grid
             item
             xs={12}
@@ -57,7 +61,7 @@ const FeaturesBenefitsOfDebt = () => {
           >
             <Box
               sx={{
-                width: { sm: "90%", xl: "100%" },
+                width: { sm: "100%", xl: "100%" },
               }}
             >
               <Typography
@@ -78,7 +82,7 @@ const FeaturesBenefitsOfDebt = () => {
                   textAlign: { sm: "left" },
                   color: "#404040",
                   fontSize: { xs: "16px", md: "21px" },
-                  fontFamily: "Inter",
+                  fontFamily: "Inter,sans-serif",
                   fontWeight: "300",
                   lineHeight: "1.5",
                   margin: "0 0 18px",
@@ -97,6 +101,7 @@ const FeaturesBenefitsOfDebt = () => {
                 }}
               >
                 <AccordionSummary
+                  sx={{ padding: "0" }}
                   expandIcon={<ExpandMoreIcon sx={{ color: "black" }} />}
                   aria-controls="panel1d-content"
                   id="panel1d-header"
@@ -128,7 +133,8 @@ const FeaturesBenefitsOfDebt = () => {
                 }}
               >
                 <AccordionSummary
-                  sx={{ display: "flex", alignItems: "center" }}
+                  // sx={{ display: "flex", alignItems: "center" }}
+                  sx={{ padding: "0" }}
                   expandIcon={<ExpandMoreIcon sx={{ color: "black" }} />}
                   aria-controls="panel2d-content"
                   id="panel2d-header"
@@ -158,7 +164,8 @@ const FeaturesBenefitsOfDebt = () => {
                 }}
               >
                 <AccordionSummary
-                  sx={{ display: "flex", alignItems: "center" }}
+                  // sx={{ display: "flex", alignItems: "center" }}
+                  sx={{ padding: "0" }}
                   expandIcon={<ExpandMoreIcon sx={{ color: "black" }} />}
                   aria-controls="panel3d-content"
                   id="panel3d-header"
@@ -199,8 +206,8 @@ const FeaturesBenefitsOfDebt = () => {
             sx={{
               // height: "100%",
               display: "flex",
-              alignItems: { xs: "center", },
-              justifyContent: { xs: "center", },
+              alignItems: { xs: "center" },
+              justifyContent: { xs: "center", sm: "flex-start", lg: "center" },
               flexDirection: "column",
               color: "white",
               padding: { xl: "30px" },

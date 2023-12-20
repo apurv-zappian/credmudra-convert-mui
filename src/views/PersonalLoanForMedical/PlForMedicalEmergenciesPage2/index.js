@@ -15,7 +15,6 @@ const PlForMedicalEmergenciesPage2 = () => {
     color: "#F7D64A",
     fontSize: "15px",
     marginRight: "10px",
-    // marginTop:"-10px"
   };
   const ListItemStyling = {
     color: "#404040",
@@ -27,7 +26,7 @@ const PlForMedicalEmergenciesPage2 = () => {
     <>
       <Box bgcolor="#fcefb8">
         <Container
-          sx={{ display: { xs: "block", padding: "70px 10px 80px" } }}
+          sx={{ display: { xs: "block", padding: "60px 0px 50px" } }}
           maxWidth={"xl"}
         >
           <Grid
@@ -35,6 +34,7 @@ const PlForMedicalEmergenciesPage2 = () => {
             alignItems="center"
             // bgcolor="#fcefb8"
             spacing={2}
+            sx={{ padding: { xs: "20px", md: "48px" } }}
           >
             <Grid
               item
@@ -42,11 +42,11 @@ const PlForMedicalEmergenciesPage2 = () => {
               sm={5}
               sx={{
                 display: "flex",
-                alignItems: { xs: "center", sm: "flex-start" },
+                alignItems: { xs: "center"},
                 justifyContent: { xs: "center", sm: "flex-start" },
               }}
             >
-              <Box sx={{ width: { sm: "100%", md: "80%" } }}>
+              <Box sx={{ width: { sm: "100%", md: "80%",lg:'100%' } }}>
                 <Typography
                   sx={{
                     textAlign: { xs: "center", sm: "left" },
@@ -89,7 +89,7 @@ const PlForMedicalEmergenciesPage2 = () => {
                     fontSize: { xs: "15px", sm: "20px" },
                     fontFamily: "Inter",
                     color: "#404040",
-                    // fontWeight: "900",
+                    fontWeight: "300",
                     lineHeight: { xs: "1.3", sm: "1.5" },
                     margin: { xs: "0px 0px 24px" },
                   }}
@@ -156,7 +156,6 @@ const PlForMedicalEmergenciesPage2 = () => {
                       Other similar treatments{" "}
                     </Typography>
                   </ListItem>
-                  {/* ... Other list items */}
                 </List>
                 <Typography
                   sx={{
@@ -164,7 +163,7 @@ const PlForMedicalEmergenciesPage2 = () => {
                     fontSize: { xs: "15px", sm: "20px" },
                     fontFamily: "Inter",
                     color: "#404040",
-                    // fontWeight: "900",
+                    fontWeight: "300",
                     lineHeight: { xs: "1.3", md: "1.1" },
                     // margin: { xs: "0px 0px 24px" },
                   }}

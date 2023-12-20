@@ -5,14 +5,14 @@ import GetMatchedButton from "../../../components/GetMatchedButton";
 
 const WillConsolidatingDebt = () => {
   return (
-    <>
-      <Grid container bgcolor="#FCEFD8" sx={{ marginTop: "5%" }}>
+    <Box>
+      <Grid container bgcolor="#FCEFD8">
         <Grid
           item
           xs={12}
           sm={6}
           sx={{
-            padding: { xs: "16px 32px 16px" },
+            padding: { xs: "20px",md:"48px"},
             display: "flex",
             alignItems: { xs: "center", },
             justifyContent: { xs: "center",},
@@ -21,17 +21,12 @@ const WillConsolidatingDebt = () => {
         >
           <Box
             sx={{
-              // margin: {
-              //   xs: "0% 0% 5%",
-              //   sm: "5% 0%",
-              //   xl:"0% 5% 0% 0%"
-              // },
               width:{xl:"80%"}
             }}
           >
             <Typography
               sx={{
-                fontSize: { xs: "24px", sm: "28px", lg: "38px" },
+                fontSize: { xs: "28px",lg: "32px",xl:'38px' },
                 fontWeight: "900",
                 fontFamily: "Inter,sans-serif",
                 color: "#243771",
@@ -46,7 +41,7 @@ const WillConsolidatingDebt = () => {
             <Typography
               sx={{
                 fontSize: { xs: "16px", sm: "20px", lg: "20px" },
-                // fontWeight: "900",
+                fontWeight: "300",
                 fontFamily: "Inter,sans-serif",
                 color: "#404040",
                 margin: { xs: "0px 0px 24px", lg: "0px 0px 30px" },
@@ -60,7 +55,7 @@ const WillConsolidatingDebt = () => {
             <Typography
               sx={{
                 fontSize: { xs: "16px", sm: "20px", lg: "20px" },
-                // fontWeight: "900",
+                fontWeight: "300",
                 fontFamily: "Inter,sans-serif",
                 color: "#404040",
                 margin: { xs: "0px 0px 24px", lg: "0px 0px 30px" },
@@ -90,7 +85,7 @@ const WillConsolidatingDebt = () => {
           xs={12}
           sm={6}
           sx={{
-            padding: { xs: "16px 32px 32px", sm: "0" },
+            padding: { xs: "16px", sm: "0" },
             display: "flex",
             alignItems: { xs: "center",xl:"flex-end"},
             justifyContent: { xs: "center",xl:"flex-end" },
@@ -101,7 +96,7 @@ const WillConsolidatingDebt = () => {
           </Box>
         </Grid>
       </Grid>
-    </>
+    </Box>
   );
 };
 

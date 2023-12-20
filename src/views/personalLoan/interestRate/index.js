@@ -141,7 +141,7 @@ const InterestRate = () => {
                 }}
               >
                 <Paper
-                  elevation={5}
+                  // elevation={5}
                   sx={{
                     padding: 2,
                     // boxShadow: "5px 5px 10px gray",
