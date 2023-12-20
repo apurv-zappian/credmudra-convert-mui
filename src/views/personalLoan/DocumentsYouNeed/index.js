@@ -1,7 +1,6 @@
 import { FiberManualRecord } from "@mui/icons-material";
 import {
   Box,
-  Button,
   Container,
   Grid,
   List,
@@ -26,7 +25,6 @@ const DocumentsYouNeed = () => {
     fontWeight: "900",
   };
   return (
-    <>
     <Box>
       <Container
         maxWidth={"xl"}
@@ -171,7 +169,6 @@ const DocumentsYouNeed = () => {
         </Grid>
       </Container>
       </Box>
-    </>
   );
 };
 

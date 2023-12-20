@@ -32,7 +32,7 @@ const EligibilityCriteria = () => {
             top: "0",
           }}
         />
-        <Grid container sx={{ padding: { xs: "16px", md: "32px" } }}>
+        <Grid container sx={{ padding: { xs: "20px", md: "48px" } }}>
           <Grid
             item
             xs={6}

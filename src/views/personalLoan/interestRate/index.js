@@ -63,11 +63,11 @@ const InterestRate = () => {
   return (
     <>
       <Box>
-        <Container maxWidth={"xl"} sx={{ padding: "60px 16px 50px" }}>
+        <Container maxWidth={"xl"} sx={{ padding: "60px 0px 50px" }}>
           <Grid
             container
             spacing={2}
-            sx={{ padding: { xs: "16px", md: "32px" } }}
+            sx={{ padding: { md: "32px" } }}
           >
             <Grid
               item
@@ -142,7 +142,7 @@ const InterestRate = () => {
                 }}
               >
                 <Paper
-                  elevation={5}
+                  // elevation={5}
                   sx={{
                     padding: 2,
                     // boxShadow: "5px 5px 10px gray",

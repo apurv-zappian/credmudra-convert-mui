@@ -14,12 +14,17 @@ const KnowTheRight = () => {
     justifyContent: "center",
   };
   return (
-    <>
-      <Box sx={{ ...BackgroundImage,
-      // padding:"80px 0px"
-       }}>
-        <Container maxWidth={"xl"} sx={{ padding: "60px 0px 50px" }}>
-          <Box sx={{ padding: { xs: "10px",} }}>
+    <Box sx={{ ...BackgroundImage }}>
+      <Container maxWidth={"xl"} sx={{ padding: "60px 0px 50px" }}>
+        <Box
+          sx={{
+            padding: { xs: "20px", md: "48px" },
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            flexDirection:'column',
+          }}
+        >
           <Typography
             sx={{
               textAlign: { xs: "center" },
@@ -61,7 +66,7 @@ const KnowTheRight = () => {
               textAlign: { xs: "center" },
               fontSize: { xs: "17px", md: "21px" },
               fontFamily: "Inter",
-              color: "#FFFFFF",
+              color: "#ffffff",
               //   fontWeight: "900",
               lineHeight: "1.5",
               margin: "0px 0px 24px",
@@ -78,7 +83,7 @@ const KnowTheRight = () => {
               textAlign: { xs: "center" },
               fontSize: { xs: "17px", md: "21px" },
               fontFamily: "Inter",
-              color: "#FFFFFF",
+              color: "#ffffff",
               //   fontWeight: "900",
               lineHeight: "1.5",
               margin: "0px 0px 24px",
@@ -99,10 +104,9 @@ const KnowTheRight = () => {
           >
             <GetMatchedButton />
           </Box>
-          </Box>
-        </Container>
-      </Box>
-    </>
+        </Box>
+      </Container>
+    </Box>
   );
 };
 

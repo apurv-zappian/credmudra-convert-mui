@@ -36,26 +36,24 @@ const DebtConsolidationVsBalance = () => {
     marginRight: "10px",
   };
   return (
-    <>
+    <Box>
       <Container maxWidth={"xl"} sx={{ padding: "60px 0px 50px" }}>
         <Grid
           container
-          className="personal-loan-discover-the-power accordian_white_bg"
-          sx={{ padding: { xs: "10px" } }}
+          sx={{ padding: { xs: "20px",md:"48px" } }}
         >
           <Grid
             item
             xs={12}
             sm={6}
             sx={{
-              padding: { xs: "16px 32px 0px" },
               display: "flex",
-              alignItems: { xs: "center", sm: "flex-start" },
-              justifyContent: { xs: "center", sm: "flex-start" },
+              alignItems: "flex-start",
+              justifyContent: "center",
               flexDirection: "column",
             }}
           >
-            <Box>
+            <Box sx={{ width: { xl: "95%" } }}>
               <Typography
                 sx={{
                   textAlign: { sm: "left" },
@@ -76,7 +74,7 @@ const DebtConsolidationVsBalance = () => {
                   fontSize: { xs: "16px" },
                   fontFamily: "Inter",
                   color: "#404040",
-                  // fontWeight: "900",
+                  fontWeight: "300",
                   lineHeight: "1.3",
                   margin: "0px 0px 24px",
                 }}
@@ -91,16 +89,13 @@ const DebtConsolidationVsBalance = () => {
                   fontSize: { xs: "16px" },
                   fontFamily: "Inter",
                   color: "#404040",
-                  // fontWeight: "900",
+                  fontWeight: "300",
                   lineHeight: "1.3",
                   margin: "0px 0px 24px",
                 }}
               >
                 Here are a few points you should take into account:
               </Typography>
-              {/* Accordion */}
-              {/* Accordion items */}
-              {/* Button for CTA */}
               <Accordion
                 elevation={0}
                 expanded={expanded === "panel1"}
@@ -114,6 +109,7 @@ const DebtConsolidationVsBalance = () => {
                   expandIcon={<ExpandMoreIcon />}
                   aria-controls="panel1d-content"
                   id="panel1d-header"
+                  sx={{padding:'0'}}
                 >
                   <CheckCircleOutlineIcon sx={{ ...CheckCircle }} />
                   <Typography sx={{ ...AccHeading }}>
@@ -144,6 +140,7 @@ const DebtConsolidationVsBalance = () => {
                   expandIcon={<ExpandMoreIcon />}
                   aria-controls="panel2d-content"
                   id="panel2d-header"
+                  sx={{padding:'0'}}
                 >
                   <CheckCircleOutlineIcon sx={{ ...CheckCircle }} />
                   <Typography sx={{ ...AccHeading }}>
@@ -174,6 +171,7 @@ const DebtConsolidationVsBalance = () => {
                   expandIcon={<ExpandMoreIcon />}
                   aria-controls="panel3d-content"
                   id="panel3d-header"
+                  sx={{padding:'0'}}
                 >
                   <CheckCircleOutlineIcon sx={{ ...CheckCircle }} />
                   <Typography sx={{ ...AccHeading }}>
@@ -196,7 +194,7 @@ const DebtConsolidationVsBalance = () => {
                   fontSize: { xs: "16px" },
                   fontFamily: "Inter",
                   color: "#404040",
-                  // fontWeight: "900",
+                  fontWeight: "300",
                   lineHeight: "1.3",
                   margin: "0px 0px 24px",
                 }}
@@ -211,7 +209,7 @@ const DebtConsolidationVsBalance = () => {
                   fontSize: { xs: "16px" },
                   fontFamily: "Inter",
                   color: "#404040",
-                  // fontWeight: "900",
+                  fontWeight: "300",
                   lineHeight: "1.3",
                   margin: "0px 0px 24px",
                 }}
@@ -235,10 +233,9 @@ const DebtConsolidationVsBalance = () => {
             xs={12}
             sm={6}
             sx={{
-              padding: { xs: "16px 32px 32px", sm: "0" },
               display: "flex",
-              alignItems: { xs: "center" },
-              justifyContent: { xs: "center" },
+              alignItems:  { xs: "center", sm: "flex-start" },
+              justifyContent:"center",
             }}
           >
             <Box>
@@ -251,7 +248,7 @@ const DebtConsolidationVsBalance = () => {
           </Grid>
         </Grid>
       </Container>
-    </>
+    </Box>
   );
 };
 

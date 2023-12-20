@@ -35,28 +35,27 @@ const TopThreeThings = () => {
   const CheckCircle = {
     marginTop: "6px",
     marginRight: "10px",
+    // padding:'0'
   };
   return (
-    <>
-      <Container maxWidth={"xl"} sx={{ padding: "50px 0px 50px" }}>
-        <Grid container sx={{ padding: { xs: "10px" } }} spacing={2}>
+    <Box>
+      <Container maxWidth={"xl"} sx={{ padding: "60px 0px 50px" }}>
+        <Grid
+          container
+          sx={{ padding: { xs: "20px", md: "48px" } }}
+          spacing={2}
+        >
           <Grid
             item
             xs={12}
             sm={6}
             sx={{
               display: "flex",
-              alignItems: "center",
+              alignItems: { xs: "center", sm: "flex-start" },
               justifyContent: "center",
             }}
           >
-            <Box
-              sx={
-                {
-                  padding:{xl:"70px"}
-                }
-              }
-            >
+            <Box>
               <img
                 src={topthreeimg}
                 alt="Things To Consider When Choosing Debt Consolidation loan"
@@ -71,12 +70,12 @@ const TopThreeThings = () => {
             sx={{
               display: "flex",
               alignItems: "flex-start",
-              justifyContent: "space-between",
+              justifyContent: "center",
               flexDirection: "column",
               color: "white",
             }}
           >
-            <Box>
+            <Box sx={{ width: { xl: "95%" } }}>
               <Typography
                 sx={{
                   textAlign: { sm: "left" },
@@ -113,16 +112,13 @@ const TopThreeThings = () => {
                   fontSize: { xs: "16px", md: "21px" },
                   fontFamily: "Inter",
                   color: "#404040",
-                  // fontWeight: "900",
+                  fontWeight: "300",
                   lineHeight: "1.3",
                   margin: "0px 0px 24px",
                 }}
               >
                 Here are some pointers to take note of:
               </Typography>
-              {/* Accordion */}
-              {/* Accordion items */}
-              {/* Button for CTA */}
               <Accordion
                 elevation={0}
                 expanded={expanded === "panel1"}
@@ -133,6 +129,7 @@ const TopThreeThings = () => {
                 }}
               >
                 <AccordionSummary
+                  sx={{ padding: "0" }}
                   expandIcon={<ExpandMoreIcon />}
                   aria-controls="panel1d-content"
                   id="panel1d-header"
@@ -164,6 +161,7 @@ const TopThreeThings = () => {
                   expandIcon={<ExpandMoreIcon />}
                   aria-controls="panel2d-content"
                   id="panel2d-header"
+                  sx={{ padding: "0" }}
                 >
                   <CheckCircleOutlineIcon sx={{ ...CheckCircle }} />
                   <Typography sx={{ ...AccHeading }}>
@@ -194,6 +192,7 @@ const TopThreeThings = () => {
                   expandIcon={<ExpandMoreIcon />}
                   aria-controls="panel3d-content"
                   id="panel3d-header"
+                  sx={{ padding: "0" }}
                 >
                   <CheckCircleOutlineIcon sx={{ ...CheckCircle }} />
                   <Typography sx={{ ...AccHeading }}>
@@ -214,7 +213,7 @@ const TopThreeThings = () => {
                   fontSize: { xs: "16px", md: "21px" },
                   fontFamily: "Inter",
                   color: "#404040",
-                  // fontWeight: "900",
+                  fontWeight: "300",
                   lineHeight: "1.3",
                   margin: "0px 0px 24px",
                 }}
@@ -236,7 +235,7 @@ const TopThreeThings = () => {
           </Grid>
         </Grid>
       </Container>
-    </>
+    </Box>
   );
 };
 

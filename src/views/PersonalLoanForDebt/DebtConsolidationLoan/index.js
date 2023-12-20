@@ -11,9 +11,8 @@ const DebtConsolidationLoan = () => {
           item
           xs={12}
           sm={6}
-          bgcolor="#FCEFD8"
           sx={{
-            padding: { xs: "16px", sm: "0" },
+            padding: { xs: "20px", sm: "0" },
             display: "flex",
             alignItems: { xs: "center", xl: "flex-start" },
             justifyContent: { xs: "center", xl: "flex-start" },
@@ -33,7 +32,7 @@ const DebtConsolidationLoan = () => {
           sm={6}
           bgcolor="#FCEFD8"
           sx={{
-            padding: { xs: "16px 32px 16px" },
+            padding: { xs: "20px",md:"48px" },
             display: "flex",
             alignItems: { xs: "center" },
             justifyContent: { xs: "center" },
@@ -42,10 +41,6 @@ const DebtConsolidationLoan = () => {
         >
           <Box
             sx={{
-              // margin: {
-              //   xs: "0% 0% 5%",
-              //   sm: "5% 0%",
-              // },
               width: { md: "80%" },
             }}
           >

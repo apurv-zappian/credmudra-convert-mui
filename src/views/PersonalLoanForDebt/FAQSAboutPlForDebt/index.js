@@ -37,11 +37,12 @@ const FAQS = () => {
   const CircleIcon = {
     color: "#243771",
     marginRight: "10px",
+    marginTop:'5px'
   };
   return (
-    <>
+    <Box>
       <Container maxWidth={"xl"} sx={{ padding: "60px 0px 50px" }}>
-        <Grid container sx={{ padding: { xs: "10px" } }} spacing={2}>
+        <Grid container sx={{ padding: { xs: "20px",md:"48px" } }} spacing={2}>
           <Grid
             item
             xs={12}
@@ -53,7 +54,7 @@ const FAQS = () => {
               textAlign:{xs:"left",sm:"center"}
             }}
           >
-            <Box sx={{marginLeft:{sm:"4%"}}}>
+            <Box>
               <Typography
                 sx={{
                   fontSize: { xs: "24px", sm: "26px", md: "32px" },
@@ -203,7 +204,7 @@ const FAQS = () => {
           </Grid>
         </Grid>
       </Container>
-    </>
+    </Box>
   );
 };
 

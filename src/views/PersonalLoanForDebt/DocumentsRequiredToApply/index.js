@@ -24,63 +24,62 @@ const DocumentsRequiredToApply = () => {
     fontWeight: "900",
   };
   return (
-    <>
-      <Container maxWidth={"xl"} sx={{ padding: "60px 0px 50px" }}>
-        <Grid container sx={{ padding: { xs: "10px" } }}>
-          <Grid item xs={12} sm={6} md={6} lg={6} xl={5}>
+    <Box>
+      <Container
+        maxWidth={"xl"}
+        sx={{
+          padding: "60px 0px 50px",
+        }}
+      >
+        <Grid container spacing={2} sx={{ padding: { xs: "20px",md:"48px" } }}>
+          <Grid item xs={12} sm={6} lg={6} xl={6}>
             <Box
               sx={{
+                width: { sm: "100%", xl: "70%" },
                 display: "flex",
-                alignItems: { xs: "center", sm: "flex-start" },
-                justifyContent: "center",
+                alignItems: { xs: "center", md: "flex-start" },
+                justifyContent: { xs: "center" },
                 flexDirection: "column",
               }}
+              textAlign={{ xs: "center", sm: "left" }}
             >
+              <Typography
+                sx={{
+                  color: "#243771",
+                  fontSize: { xs: "24px", sm: "30px", lg: "36px" },
+                  fontFamily: "Inter",
+                  fontWeight: "900",
+                  lineHeight: "1.1",
+                  margin: "0 0 14px",
+                }}
+              >
+                Documents You Need To Prepare For Personal Loan
+              </Typography>
+              <Typography
+                sx={{
+                  color: "#404040",
+                  fontSize: { xs: "16px", sm: "18px" },
+                  fontFamily: "Inter",
+                  lineHeight: "1.5",
+                  margin: "0 0 24px",
+                  fontWeight: "500",
+                }}
+              >
+                Here are the documents you will need to submit during the
+                personal loan application process:
+              </Typography>
               <Box
                 sx={{
-                  width: { sm: "90%" },
-                  margin: { xl: "0px 65px 0px 0px" },
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: { xs: "center", sm: "flex-start" },
                 }}
-                textAlign={{ xs: "center", sm: "left" }}
               >
-                <Typography
-                  sx={{
-                    color: "#243771",
-                    fontSize: { xs: "24px", sm: "30px", lg: "36px" },
-                    fontFamily: "Inter",
-                    fontWeight: "900",
-                    lineHeight: "1.1",
-                    margin: "0 0 14px",
-                  }}
-                >
-                  Documents You Need To Prepare For Personal Loan
-                </Typography>
-                <Typography
-                  sx={{
-                    color: "#404040",
-                    fontSize: { xs: "16px", sm: "18px" },
-                    fontFamily: "Inter",
-                    lineHeight: "1.5",
-                    margin: "0 0 24px",
-                    fontWeight: "500",
-                  }}
-                >
-                  Here are the documents you will need to submit during the
-                  personal loan application process:
-                </Typography>
-                <Box
-                  sx={{
-                    display: "flex",
-                    alignItems: "center",
-                    justifyContent: { xs: "center", sm: "flex-start" },
-                  }}
-                >
-                  <GetMatchedButton />
-                </Box>
+                <GetMatchedButton />
               </Box>
             </Box>
           </Grid>
-          <Grid item xs={12} sm={6} md={6} lg={6} xl={7}>
+          <Grid item xs={12} sm={6} lg={6} xl={6}>
             <Box
               sx={{
                 display: "flex",
@@ -158,7 +157,7 @@ const DocumentsRequiredToApply = () => {
           </Grid>
         </Grid>
       </Container>
-    </>
+    </Box>
   );
 };
 
