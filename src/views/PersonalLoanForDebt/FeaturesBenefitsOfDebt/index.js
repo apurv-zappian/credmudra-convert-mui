@@ -39,182 +39,188 @@ const FeaturesBenefitsOfDebt = () => {
     // padding:{xs:"2px 20px 16px"}
   };
   return (
-    <>
+    <Box>
       <Container maxWidth={"xl"} sx={{ padding: "60px 0px 50px" }}>
-        <Grid container sx={{ padding: { xs: "10px" } }}>
-          <Grid item xs={12} sm={6} md={6} lg={6}>
+        <Grid container spacing={2} sx={{ padding: { xs: "16px", sm: "32px" } }}>
+          <Grid
+            item
+            xs={12}
+            sm={6}
+            md={6}
+            lg={6}
+            sx={{
+              display: "flex",
+              alignItems: { xs: "center", sm: "flex-start" },
+              justifyContent: "center",
+              flexDirection: "column",
+            }}
+          >
             <Box
               sx={{
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-                flexDirection: "column",
+                width: { sm: "90%", xl: "100%" },
               }}
             >
-              <Box
+              <Typography
                 sx={{
-                  width: { sm: "90%", xl: "100%" },
+                  textAlign: { xs: "left" },
+                  color: "#243771",
+                  fontSize: { xs: "24px", sm: "24px", lg: "34px" },
+                  fontFamily: "Inter",
+                  fontWeight: "900",
+                  lineHeight: "1.1",
+                  margin: "0 0 18px",
                 }}
               >
-                <Typography
-                  sx={{
-                    textAlign: { sm: "left" },
-                    color: "#243771",
-                    fontSize: { xs: "24px", sm: "24px", lg: "34px" },
-                    fontFamily: "Inter",
-                    fontWeight: "900",
-                    lineHeight: "1.1",
-                    margin: "0 0 18px",
-                  }}
+                Features And Benefits Of Debt Consolidation Loan
+              </Typography>
+              <Typography
+                sx={{
+                  textAlign: { sm: "left" },
+                  color: "#404040",
+                  fontSize: { xs: "16px", md: "21px" },
+                  fontFamily: "Inter",
+                  fontWeight: "300",
+                  lineHeight: "1.5",
+                  margin: "0 0 18px",
+                }}
+              >
+                Here are the features and benefits that make debt consolidation
+                loans a viable option to manage finances:
+              </Typography>
+              <Accordion
+                elevation={0}
+                expanded={expanded === "panel1"}
+                onChange={handleChange("panel1")}
+                sx={{
+                  backgroundColor: "transparent",
+                  marginTop: "20px",
+                }}
+              >
+                <AccordionSummary
+                  expandIcon={<ExpandMoreIcon sx={{ color: "black" }} />}
+                  aria-controls="panel1d-content"
+                  id="panel1d-header"
                 >
-                  Features And Benefits Of Debt Consolidation Loan
-                </Typography>
-                <Typography
-                  sx={{
-                    textAlign: { sm: "left" },
-                    color: "#404040",
-                    fontSize: { xs: "16px", md: "21px" },
-                    fontFamily: "Inter",
-                    fontWeight: "300",
-                    lineHeight: "1.5",
-                    margin: "0 0 18px",
-                  }}
+                  <CheckCircleOutlineIcon sx={{ ...CheckCircle }} />
+                  <Typography sx={{ ...AccHeading }}>
+                    Seamless loan approval
+                  </Typography>
+                </AccordionSummary>
+                <AccordionDetails>
+                  <Typography sx={{ ...AccPara }}>
+                    If you apply for a personal loan to consolidate your ongoing
+                    debts, chances are, the lender may process your loan
+                    application in just a few hours. After you make an
+                    application, the lending partner will review your
+                    application, check your credit score and verify your
+                    documents. You will receive the loan amount within the
+                    shortest waiting time if your loan application passes all
+                    the criteria set by the lender.
+                  </Typography>
+                </AccordionDetails>
+              </Accordion>
+              <Accordion
+                elevation={0}
+                expanded={expanded === "panel2"}
+                onChange={handleChange("panel2")}
+                sx={{
+                  backgroundColor: "transparent",
+                }}
+              >
+                <AccordionSummary
+                  sx={{ display: "flex", alignItems: "center" }}
+                  expandIcon={<ExpandMoreIcon sx={{ color: "black" }} />}
+                  aria-controls="panel2d-content"
+                  id="panel2d-header"
                 >
-                  Here are the features and benefits that make debt
-                  consolidation loans a viable option to manage finances:
-                </Typography>
-                <Accordion
-                  elevation={0}
-                  expanded={expanded === "panel1"}
-                  onChange={handleChange("panel1")}
-                  sx={{
-                    backgroundColor: "transparent",
-                    marginTop: "20px",
-                  }}
-                >
-                  <AccordionSummary
-                    expandIcon={<ExpandMoreIcon sx={{ color: "black" }} />}
-                    aria-controls="panel1d-content"
-                    id="panel1d-header"
-                  >
-                    <CheckCircleOutlineIcon sx={{ ...CheckCircle }} />
-                    <Typography sx={{ ...AccHeading }}>
-                      Seamless loan approval
-                    </Typography>
-                  </AccordionSummary>
-                  <AccordionDetails>
-                    <Typography sx={{ ...AccPara }}>
-                      If you apply for a personal loan to consolidate your
-                      ongoing debts, chances are, the lender may process your
-                      loan application in just a few hours. After you make an
-                      application, the lending partner will review your
-                      application, check your credit score and verify your
-                      documents. You will receive the loan amount within the
-                      shortest waiting time if your loan application passes all
-                      the criteria set by the lender.
-                    </Typography>
-                  </AccordionDetails>
-                </Accordion>
-                <Accordion
-                  elevation={0}
-                  expanded={expanded === "panel2"}
-                  onChange={handleChange("panel2")}
-                  sx={{
-                    backgroundColor: "transparent",
-                  }}
-                >
-                  <AccordionSummary
-                    sx={{ display: "flex", alignItems: "center" }}
-                    expandIcon={<ExpandMoreIcon sx={{ color: "black" }} />}
-                    aria-controls="panel2d-content"
-                    id="panel2d-header"
-                  >
-                    <CheckCircleOutlineIcon sx={{ ...CheckCircle }} />
+                  <CheckCircleOutlineIcon sx={{ ...CheckCircle }} />
 
-                    <Typography sx={{ ...AccHeading }}>
-                      Collateral-free credit facility
-                    </Typography>
-                  </AccordionSummary>
-                  <AccordionDetails>
-                    <Typography sx={{ ...AccPara }}>
-                      Unlike other secured credit facilities, you will not have
-                      to keep your assets as collateral in order to opt for a
-                      personal loan for debt consolidation purposes. You will be
-                      able to get the required sum using your CIBIL score.
-                    </Typography>
-                  </AccordionDetails>
-                </Accordion>
+                  <Typography sx={{ ...AccHeading }}>
+                    Collateral-free credit facility
+                  </Typography>
+                </AccordionSummary>
+                <AccordionDetails>
+                  <Typography sx={{ ...AccPara }}>
+                    Unlike other secured credit facilities, you will not have to
+                    keep your assets as collateral in order to opt for a
+                    personal loan for debt consolidation purposes. You will be
+                    able to get the required sum using your CIBIL score.
+                  </Typography>
+                </AccordionDetails>
+              </Accordion>
 
-                <Accordion
-                  elevation={0}
-                  expanded={expanded === "panel3"}
-                  onChange={handleChange("panel3")}
-                  sx={{
-                    backgroundColor: "transparent",
-                  }}
+              <Accordion
+                elevation={0}
+                expanded={expanded === "panel3"}
+                onChange={handleChange("panel3")}
+                sx={{
+                  backgroundColor: "transparent",
+                }}
+              >
+                <AccordionSummary
+                  sx={{ display: "flex", alignItems: "center" }}
+                  expandIcon={<ExpandMoreIcon sx={{ color: "black" }} />}
+                  aria-controls="panel3d-content"
+                  id="panel3d-header"
                 >
-                  <AccordionSummary
-                    sx={{ display: "flex", alignItems: "center" }}
-                    expandIcon={<ExpandMoreIcon sx={{ color: "black" }} />}
-                    aria-controls="panel3d-content"
-                    id="panel3d-header"
-                  >
-                    <CheckCircleOutlineIcon sx={{ ...CheckCircle }} />
+                  <CheckCircleOutlineIcon sx={{ ...CheckCircle }} />
 
-                    <Typography sx={{ ...AccHeading }}>
-                      Flexible repayment terms
-                    </Typography>
-                  </AccordionSummary>
-                  <AccordionDetails>
-                    <Typography sx={{ ...AccPara }}>
-                      Choosing the repayment term is one of the biggest
-                      advantages of opting for a personal loan for debt
-                      consolidation. You can select loan repayment tenure
-                      between 3 months to 2 years per your financial strength.
-                    </Typography>
-                  </AccordionDetails>
-                </Accordion>
+                  <Typography sx={{ ...AccHeading }}>
+                    Flexible repayment terms
+                  </Typography>
+                </AccordionSummary>
+                <AccordionDetails>
+                  <Typography sx={{ ...AccPara }}>
+                    Choosing the repayment term is one of the biggest advantages
+                    of opting for a personal loan for debt consolidation. You
+                    can select loan repayment tenure between 3 months to 2 years
+                    per your financial strength.
+                  </Typography>
+                </AccordionDetails>
+              </Accordion>
 
-                <Box
-                  sx={{
-                    display: "flex",
-                    alignItems: "center",
-                    justifyContent: { xs: "center", sm: "flex-start" },
-                  }}
-                >
-                  <GetMatchedButton />
-                </Box>
+              <Box
+                sx={{
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: { xs: "center", sm: "flex-start" },
+                }}
+              >
+                <GetMatchedButton />
               </Box>
             </Box>
           </Grid>
-          <Grid item xs={12} sm={6} md={6} lg={6}>
+          <Grid
+            item
+            xs={12}
+            sm={6}
+            md={6}
+            lg={6}
+            sx={{
+              // height: "100%",
+              display: "flex",
+              alignItems: { xs: "center", },
+              justifyContent: { xs: "center", },
+              flexDirection: "column",
+              color: "white",
+              padding: { xl: "30px" },
+            }}
+          >
             <Box
               sx={{
-                height: "100%",
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-                flexDirection: "column",
-                color: "white",
-                padding: { xl: "50px" },
+                width: "100%",
               }}
             >
-              <Box
-                sx={{
-                  width: "100%",
-                }}
-              >
-                <img
-                  src={featuresbenefitsimg}
-                  alt="loading"
-                  style={{ width: "100%", height: "auto" }}
-                />
-              </Box>
+              <img
+                src={featuresbenefitsimg}
+                alt="loading"
+                style={{ width: "100%", height: "auto" }}
+              />
             </Box>
           </Grid>
         </Grid>
       </Container>
-    </>
+    </Box>
   );
 };
 

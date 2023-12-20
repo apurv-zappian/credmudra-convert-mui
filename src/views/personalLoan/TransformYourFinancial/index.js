@@ -17,9 +17,11 @@ const TransformYourFinancial = () => {
     <>
       <Box bgcolor="#FCEFB8">
         <Container maxWidth={"xl"} sx={{ padding: "60px 0px 50px" }}>
-          <Box sx={{ 
-            padding: { xs: "16px", md: "32px" },
-             }}>
+          <Box
+            sx={{
+              padding: { xs: "16px", md: "32px" },
+            }}
+          >
             <Typography
               sx={{
                 // color: "#fff",
@@ -52,7 +54,7 @@ const TransformYourFinancial = () => {
               <Card
                 sx={{
                   width: "100%",
-                  minHeight: { xs: "150px",sm:"200px",xl:"150px" },
+                  minHeight: { xs: "150px", sm: "200px", xl: "150px" },
                   position: "relative",
                   backgroundColor: "#10162C",
                   borderRadius: "10px",
@@ -104,7 +106,7 @@ const TransformYourFinancial = () => {
               <Card
                 sx={{
                   width: "100%",
-                  minHeight: { xs: "150px",sm:"200px",xl:'150px' },
+                  minHeight: { xs: "150px", sm: "200px", xl: "150px" },
                   position: "relative",
                   backgroundColor: "#5ab56b",
                   borderRadius: "10px",
@@ -155,7 +157,7 @@ const TransformYourFinancial = () => {
               <Card
                 sx={{
                   width: "100%",
-                  minHeight: { xs: "150px",sm:"200px",xl:'150px' },
+                  minHeight: { xs: "150px", sm: "200px", xl: "150px" },
                   position: "relative",
                   backgroundColor: "#10162C",
                   borderRadius: "10px",

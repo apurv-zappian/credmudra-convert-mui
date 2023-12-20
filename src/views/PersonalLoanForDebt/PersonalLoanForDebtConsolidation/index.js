@@ -7,16 +7,16 @@ import Section1Form from "../../../components/Section1Form";
 const PersonalLoanForDebtConsolidation = () => {
   const label = { inputProps: { "aria-label": "Checkbox demo" } };
   return (
-    <>
+    <Box>
       <Grid
         container
         sx={{
           minHeight: { xs: "0vh", sm: "100vh" },
-          padding:{xs:"16px",sm:"8px",md:"32px"}
+          padding: { xs: "16px", md: "32px" },
         }}
         // bgcolor="gray"
       >
-        <Grid item xs={12} sm={6} sx={{marginTop:{xs:"20%",sm:"0%"}}}>
+        <Grid item xs={12} sm={6} sx={{ marginTop: { xs: "15%",sm:"10%", md: "0%" } }}>
           <img
             alt="loading"
             src={waveimg}
@@ -39,21 +39,21 @@ const PersonalLoanForDebtConsolidation = () => {
           >
             <Box
               sx={{
-                padding:{sm:"16px",xl:"0 0 0 112px"},
+                // padding: { sm: "16px", xl: "0 0 0 112px" },
+                marginLeft: { lg: "5%", xl: "18%" },
                 textAlign: { xs: "center", sm: "left" },
-                width: { md: "80%", lg: "90%", xl: "90%" },
+                width: { lg: "90%", xl: "70%" },
                 // height:{xs:"50vh"}
               }}
             >
               <Typography
-                // variant="h3"
                 gutterBottom
                 sx={{
                   font: "normal normal 900 38px/45px Inter",
                   color: "#243771",
                   // maxWidth:{xs:"400px",sm:"540px"},
                   maxWidth: "540px",
-                  fontSize: { xs: "26px", md: "40px" },
+                  fontSize: { xs: "30px",sm:"34px", md: "40px" },
                   lineHeight: "1.3",
                   fontWeight: "900",
                 }}
@@ -65,7 +65,7 @@ const PersonalLoanForDebtConsolidation = () => {
                   fontFamily: "Inter",
                   color: "#10162c",
                   marginBottom: "14px",
-                  fontSize:{xs:"16px"}
+                  fontSize: { xs: "16px" },
                 }}
               >
                 Debts can severely affect your financial strength and prevent
@@ -78,7 +78,7 @@ const PersonalLoanForDebtConsolidation = () => {
                   fontFamily: "Inter",
                   color: "#10162c",
                   margin: "0px 0px 24px",
-                  fontSize:{xs:"16px"}
+                  fontSize: { xs: "16px" },
                 }}
               >
                 In this regard, you can consider applying for a debt
@@ -95,8 +95,10 @@ const PersonalLoanForDebtConsolidation = () => {
               >
                 Enter your 10 digit mobile number to proceed
               </Typography>
-              <Section1Form />
-              <Box display="flex" alignItems="left">
+              <Box sx={{ width: { sm: "90%", md: "100%" } }}>
+                <Section1Form />
+              </Box>
+              <Box display="flex" alignItems="flex-start">
                 <Checkbox
                   {...label}
                   defaultChecked
@@ -104,14 +106,13 @@ const PersonalLoanForDebtConsolidation = () => {
                 />
                 <Typography
                   marginTop="20px"
-                  // variant="subtitle2"
                   textAlign="justify"
                   width={{ md: "80%", xl: "65%" }}
                   sx={{
                     color: "#999",
                     fontSize: "13px",
                     lineHeight: "1.5",
-                    fontFamily:"Inter"
+                    fontFamily: "Inter",
                   }}
                 >
                   By continuing, I agree to Credmudra's Privacy Policy and Terms
@@ -122,15 +123,15 @@ const PersonalLoanForDebtConsolidation = () => {
             </Box>
           </Box>
         </Grid>
-        {/* Right Side */}
         <Grid item xs={12} sm={6} display={{ xs: "none", sm: "flex" }}>
           <Box
             sx={{
               display: { xs: "none", sm: "flex", md: "flex", xl: "flex" },
-            //   minHeight: {xs:"0vh",sm:"100vh"},
+              //   minHeight: {xs:"0vh",sm:"100vh"},
               justifyContent: "center",
               flexDirection: "column",
-              paddingY:"3rem"
+              paddingY: "48px",
+              // marginTop: "2%",
             }}
           >
             <img
@@ -145,7 +146,7 @@ const PersonalLoanForDebtConsolidation = () => {
           </Box>
         </Grid>
       </Grid>
-    </>
+    </Box>
   );
 };
 

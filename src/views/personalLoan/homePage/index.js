@@ -92,7 +92,7 @@ const PlHomePage = () => {
                 <Box sx={{ width: { sm: "90%", md: "100%" } }}>
                   <Section1Form />
                 </Box>
-                <Box display="flex" alignItems="left">
+                <Box display="flex" alignItems="flex-start">
                   <Checkbox
                     {...label}
                     defaultChecked

@@ -53,7 +53,7 @@ const SimpleCriteria = () => {
           >
             <Box
               sx={{
-                color: "#fff",
+                color: "#ffffff",
                 width: { xl: "80%" },
                 paddingRight: { xl: "10px" },
               }}
