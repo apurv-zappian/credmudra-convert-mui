@@ -144,7 +144,10 @@ const TopThreeThings = () => {
                     If you do not research or plan your debt consolidation loan
                     properly before applying, it can negatively affect your
                     finances. This instance can be truer if you are someone who
-                    cannot manage finances properly.
+                    cannot manage finances properly. Therefore, to avoid such
+                    complications and reap the maximum benefits of a debt
+                    consolidation loan, it is best to make a repayment plan
+                    before applying for credit.
                   </Typography>
                 </AccordionDetails>
               </Accordion>
@@ -204,6 +207,9 @@ const TopThreeThings = () => {
                     A debt consolidation loan helps you to close ongoing loans.
                     This means you may have to pay some pre-closure charges to
                     the existing lender. These fees add up the total expenses.
+                    Hence, you must enquire with your existing lender about
+                    these pre-closure charges and then apply for a new debt
+                    consolidation loan.
                   </Typography>
                 </AccordionDetails>
               </Accordion>

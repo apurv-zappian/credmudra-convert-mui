@@ -182,8 +182,8 @@ const FAQSOnPersonalLoan = () => {
                   </AccordionDetails>
                 </Accordion>
                 <Accordion
-                  expanded={expanded === "panel3"}
-                  onChange={handleChange("panel3")}
+                  expanded={expanded === "panel4"}
+                  onChange={handleChange("panel4")}
                   sx={{
                     backgroundColor: "#FCEFB8",
                     marginTop: "20px",
@@ -197,8 +197,8 @@ const FAQSOnPersonalLoan = () => {
                 >
                   <AccordionSummary
                     expandIcon={<ExpandMoreIcon />}
-                    aria-controls="panel3d-content"
-                    id="panel3d-header"
+                    aria-controls="panel4d-content"
+                    id="panel4d-header"
                   >
                     {/* <Circle sx={{ ...Circle }} /> */}
                     <FiberManualRecord sx={{ ...CircleIcon }} />
@@ -214,8 +214,8 @@ const FAQSOnPersonalLoan = () => {
                   </AccordionDetails>
                 </Accordion>
                 <Accordion
-                  expanded={expanded === "panel3"}
-                  onChange={handleChange("panel3")}
+                  expanded={expanded === "panel5"}
+                  onChange={handleChange("panel5")}
                   sx={{
                     backgroundColor: "#FCEFB8",
                     marginTop: "20px",
@@ -229,10 +229,9 @@ const FAQSOnPersonalLoan = () => {
                 >
                   <AccordionSummary
                     expandIcon={<ExpandMoreIcon />}
-                    aria-controls="panel3d-content"
-                    id="panel3d-header"
+                    aria-controls="panel5d-content"
+                    id="panel5d-header"
                   >
-                    {/* <Circle sx={{ ...Circle }} /> */}
                     <FiberManualRecord sx={{ ...CircleIcon }} />
 
                     <Typography sx={{ ...AccHeading }}>
@@ -246,8 +245,8 @@ const FAQSOnPersonalLoan = () => {
                   </AccordionDetails>
                 </Accordion>
                 <Accordion
-                  expanded={expanded === "panel3"}
-                  onChange={handleChange("panel3")}
+                  expanded={expanded === "panel6"}
+                  onChange={handleChange("panel6")}
                   sx={{
                     backgroundColor: "#FCEFB8",
                     marginTop: "20px",
@@ -261,10 +260,9 @@ const FAQSOnPersonalLoan = () => {
                 >
                   <AccordionSummary
                     expandIcon={<ExpandMoreIcon />}
-                    aria-controls="panel3d-content"
-                    id="panel3d-header"
+                    aria-controls="panel6d-content"
+                    id="panel6d-header"
                   >
-                    {/* <Circle sx={{ ...Circle }} /> */}
                     <FiberManualRecord sx={{ ...CircleIcon }} />
 
                     <Typography sx={{ ...AccHeading }}>
