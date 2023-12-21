@@ -53,7 +53,7 @@ const DocumentsRequiredToApply = () => {
                   margin: "0 0 14px",
                 }}
               >
-                Documents You Need To Prepare For Personal Loan
+                Documents Required To Apply For A Debt Consolidation Loan
               </Typography>
               <Typography
                 sx={{
