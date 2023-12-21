@@ -82,7 +82,7 @@ const GetPersonalLoan = () => {
               justifyContent: "center",
             }}
           >
-            <GetMatchedButton />
+            <GetMatchedButton backCol={"#d3b01b"} Col={"#243771"} />
           </Box>
         </Box>
       </Container>

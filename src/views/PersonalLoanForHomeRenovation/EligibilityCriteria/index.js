@@ -1,15 +1,9 @@
 import React from "react";
-import {
-  Box,
-  Grid,
-  List,
-  ListItem,
-  Typography,
-} from "@mui/material";
+import { Box, Grid, List, ListItem, Typography } from "@mui/material";
 import { FiberManualRecord } from "@mui/icons-material";
 import findoutimg from "../../../assets/images/PersonalLoanForTravelImages/findout.png";
 
-const FindOutWhen = () => {
+const EligibilityCriteria = () => {
   const CircleIcon = {
     color: "#F7D64A",
     fontSize: "10px",
@@ -49,7 +43,7 @@ const FindOutWhen = () => {
         >
           <Box
             sx={{
-              width: { sm: "100%", md:"60%" },
+              width: { sm: "100%", md: "55%" },
             }}
           >
             <Typography
@@ -62,7 +56,7 @@ const FindOutWhen = () => {
                 fontFamily: "Inter",
               }}
             >
-              Find Out When Are You Not Eligible
+              Eligibility Criteria For A Personal Loan For Home Renovation
             </Typography>
             <Typography
               sx={{
@@ -73,8 +67,10 @@ const FindOutWhen = () => {
                 color: "#fff",
               }}
             >
-              You need to satisfy our few simple eligibility criteria in order
-              to get connected with our lender and get a travel loan online.
+              In order to get a personal loan, borrowers will have to fulfil a
+              set of eligibility requirements. Although, these parameters vary
+              from one lender to another, here is a basic list of eligibility
+              criteria set by most lending partners in India:
             </Typography>
           </Box>
         </Grid>
@@ -84,81 +80,18 @@ const FindOutWhen = () => {
           sm={6}
           sx={{
             display: "flex",
-            alignItems: { xs:"flex-start",  },
-            justifyContent: { xs: "flex-start" },
+            alignItems: { xs: "flex-start" },
+            justifyContent: { xs: "flex-start", md:"center" },
             flexDirection: "column",
           }}
         >
           <Box
             sx={{
-              width:{xl:"90%"},
+              width: { xl: "90%" },
               color: "#fff",
+
             }}
           >
-            <Typography
-              sx={{
-                color: "#fff",
-                fontSize: { xs: "18pxpx" },
-                //   fontWeight: "900",
-                marginBottom: "25px",
-                textAlign: { xs: "left", },
-                lineHeight: "1.5",
-                fontFamily: "Inter",
-              }}
-            >
-              {" "}
-              <FiberManualRecord sx={{ ...CircleIcon }} />
-              Business owners, individuals, entrepreneurs, MSMEs, startups and
-              self-employed professionals, such as CS, CAs, architects and
-              doctors
-            </Typography>
-            <Typography
-              sx={{
-                color: "#fff",
-                fontSize: { xs: "18pxpx" },
-                //   fontWeight: "900",
-                marginBottom: "25px",
-                textAlign: { xs: "left", },
-                lineHeight: "1.5",
-                fontFamily: "Inter",
-              }}
-            >
-              {" "}
-              <FiberManualRecord sx={{ ...CircleIcon }} />
-              Public and private limited companies, partnership firms, sole
-              proprietorships, LLPs
-            </Typography>
-            <Typography
-              sx={{
-                color: "#fff",
-                fontSize: { xs: "18pxpx" },
-                //   fontWeight: "900",
-                marginBottom: "25px",
-                textAlign: { xs: "left", },
-                lineHeight: "1.5",
-                fontFamily: "Inter",
-              }}
-            >
-              {" "}
-              <FiberManualRecord sx={{ ...CircleIcon }} />
-              Large enterprises dealing only in trading, services and
-              manufacturing sectors
-            </Typography>
-            <Typography
-              sx={{
-                color: "#fff",
-                fontSize: { xs: "18pxpx" },
-                //   fontWeight: "900",
-                marginBottom: "25px",
-                textAlign: { xs: "left", },
-                lineHeight: "1.5",
-                fontFamily: "Inter",
-              }}
-            >
-              {" "}
-              <FiberManualRecord sx={{ ...CircleIcon }} />
-              Co-operative societies, NGOs and trusts
-            </Typography>
             <List>
               <ListItem
                 sx={{
@@ -180,9 +113,9 @@ const FindOutWhen = () => {
                   }}
                   component={"span"}
                 >
-                  Age :
+                  Nationality :
                 </Typography>{" "}
-                21 to 65 years old
+                Indian
               </ListItem>
               <ListItem
                 sx={{
@@ -204,9 +137,9 @@ const FindOutWhen = () => {
                   }}
                   component={"span"}
                 >
-                  Employment type :
+                  Employment :
                 </Typography>{" "}
-                Self-employed
+                Both salaried and self-employed individuals
               </ListItem>
               <ListItem
                 sx={{
@@ -228,9 +161,9 @@ const FindOutWhen = () => {
                   }}
                   component={"span"}
                 >
-                  Business tenure :
+                  Credit Score :
                 </Typography>{" "}
-                At least 1 year or more
+                Minimum 685
               </ListItem>
               <ListItem
                 sx={{
@@ -253,41 +186,11 @@ const FindOutWhen = () => {
                   }}
                   component={"span"}
                 >
-                  Minimum yearly turnover:
+                  Monthly Income :
                 </Typography>
-                Vary across lenders
-              </ListItem>
-              <ListItem
-                sx={{
-                  fontSize: { xs: "16px", sm: "18px" },
-                  fontWeight: "400",
-                  fontFamily: "Inter",
-                  padding: 0,
-                }}
-              >
-                <FiberManualRecord sx={{ ...CircleIcon }} />
-                <Typography
-                  sx={{
-                    color: "#f7d64a",
-                    fontWeight: "700",
-                    fontFamily: "Inter",
-                    fontSize: { xs: "16px", sm: "18px" },
-                    // display: "inline",
-                  }}
-                  component={"span"}
-                >
-                  Credit score :
-                </Typography>{" "}
-                750 or more
+                More than Rs.25,000 per month
               </ListItem>
             </List>
-            <Typography
-              sx={{ fontSize: "15px", fontFamily: "Inter", color: "FFFFFF" }}
-            >
-              {" "}
-              Note: The above-mentioned details can vary from lender to lender
-              depending on their terms and conditions.
-            </Typography>
           </Box>
         </Grid>
       </Grid>
@@ -295,4 +198,4 @@ const FindOutWhen = () => {
   );
 };
 
-export default FindOutWhen;
+export default EligibilityCriteria;
