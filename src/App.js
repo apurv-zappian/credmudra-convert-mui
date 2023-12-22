@@ -9,6 +9,7 @@ import PersonalLoanForTravel from "./views/PersonalLoanForTravel";
 import CredmudraPage from "./views/credmudraPage";
 import CreditScore from "./views/creditScore";
 import PersonalLoanForTwoWheeler from "./views/PersonalLoanForTwoWheeler";
+import PersonalLoanEligibility from "./views/PersonalLoanEligibility";
 import PersonalLoanForHomeRenovation from "./views/PersonalLoanForHomeRenovation";
 
 const App = () => {
@@ -35,6 +36,10 @@ const App = () => {
             <Route
               path="/personalloanfortwowheeler"
               element={<PersonalLoanForTwoWheeler />}
+            />
+            <Route
+              path="/personalloaneligibility"
+              element={<PersonalLoanEligibility />}
             />
             <Route
               path="/personalloanforhomerenovation"
