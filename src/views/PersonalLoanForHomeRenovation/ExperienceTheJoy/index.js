@@ -1,12 +1,11 @@
 import { Box, Checkbox, Grid, Typography } from "@mui/material";
 import React from "react";
-import waveimg from "../../../assets/images/PersonalLoanImages/waveimg.svg";
+import waveimg from "../../../assets/images/PersonalLoanForHomeRenovation/waveimg.svg";
+import { Label } from "@mui/icons-material";
+import HomeRenovationimg from "../../../assets/images/PersonalLoanForHomeRenovation/homerenovation.png";
 import Section1Form from "../../../components/Section1Form";
-import BusinessHomeImg from "../../../assets/images/BusinessLoanImages/business_loan_homepage.png";
 
-const BlHomePage = () => {
-  const label = { inputProps: { "aria-label": "Checkbox demo" } };
-
+const ExperienceTheJoy = () => {
   return (
     <Box>
       <Grid
@@ -34,19 +33,18 @@ const BlHomePage = () => {
               display: "flex",
               minHeight: { xs: "72vh", sm: "100vh" },
               justifyContent: "center",
+              alignItems: "center",
               flexDirection: "column",
             }}
           >
             <Box
               sx={{
-                padding: { sm: "16px", xl: "0 0 0 112px" },
                 textAlign: { xs: "center", sm: "left" },
-                width: { md: "80%", lg: "90%", xl: "90%" },
-                // height:{xs:"50vh"}
+                width: { lg: "90%", xl: "70%" },
+                marginLeft: { lg: "5%", xl: "18%" },
               }}
             >
               <Typography
-                // variant="h3"
                 gutterBottom
                 sx={{
                   fontFamily: "Inter",
@@ -58,19 +56,19 @@ const BlHomePage = () => {
                   fontWeight: "900",
                 }}
               >
-                We Provide Funds For All Your Business Needs
+                Experience The Joy Of Home Transformation.
               </Typography>
               <Typography
                 sx={{
                   font: "normal normal normal 18px/29px Inter",
                   color: "#10162c",
+                  fontSize: { xs: "16px", sm: "18px" },
                   marginBottom: "14px",
+                  fontWeight: "300",
                 }}
               >
-                Empowering Businesses to Thrive and Grow with our Innovative and
-                Tailored Financing Solutions
+              Revamp, Refresh, and Revitalize Your Home with Our Home Improvement Loan.
               </Typography>
-
               <Typography
                 sx={{
                   marginBottom: "14px",
@@ -81,16 +79,17 @@ const BlHomePage = () => {
               >
                 Enter your 10 digit mobile number to proceed
               </Typography>
-              <Section1Form />
-              <Box display="flex" alignItems="left">
+              <Box sx={{ width: { sm: "90%", md: "100%" } }}>
+                <Section1Form />
+              </Box>
+              <Box display="flex" alignItems="flex-start">
                 <Checkbox
-                  {...label}
+                  {...Label}
                   defaultChecked
                   sx={{ marginTop: "12px" }}
                 />
                 <Typography
                   marginTop="20px"
-                  // variant="subtitle2"
                   textAlign="justify"
                   width={{ md: "80%", xl: "65%" }}
                   sx={{
@@ -108,19 +107,20 @@ const BlHomePage = () => {
             </Box>
           </Box>
         </Grid>
-        {/* Right Side */}
         <Grid item xs={12} sm={6} display={{ xs: "none", sm: "flex" }}>
           <Box
             sx={{
               display: { xs: "none", sm: "flex", md: "flex", xl: "flex" },
               // minHeight: {xs:"0vh",sm:"100vh"},
               justifyContent: "center",
+              alignItems: "center",
               flexDirection: "column",
-              paddingY: "3rem",
+              paddingY: "48px",
+              marginTop: "2%",
             }}
           >
             <img
-              src={BusinessHomeImg}
+              src={HomeRenovationimg}
               style={{
                 width: "100%",
                 height: "auto",
@@ -135,4 +135,4 @@ const BlHomePage = () => {
   );
 };
 
-export default BlHomePage;
+export default ExperienceTheJoy;
