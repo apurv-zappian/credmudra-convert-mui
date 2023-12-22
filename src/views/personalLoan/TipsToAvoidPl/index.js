@@ -3,7 +3,6 @@ import {
   AccordionDetails,
   AccordionSummary,
   Box,
-  Button,
   Container,
   Grid,
   Typography,
@@ -40,8 +39,7 @@ const TipsToAvoidPl = () => {
     marginRight: "10px",
   };
   return (
-    <>
-      <Box bgcolor="#243771">
+      <Box>
         <Container maxWidth={"xl"} sx={{ padding: "60px 0px 50px" }}>
           <Grid
             container
@@ -271,7 +269,6 @@ const TipsToAvoidPl = () => {
           </Grid>
         </Container>
       </Box>
-    </>
   );
 };
 
