@@ -146,7 +146,7 @@ const CheckYourEligibility = () => {
     fontSize: { xs: "18px" },
     fontWeight: "300",
     color: "#404040",
-    lineHeight: 1.2,
+    lineHeight: 1.5,
     margin: "23px 0",
     fontFamily: "Inter,sans-serif",
   };
@@ -180,6 +180,20 @@ const CheckYourEligibility = () => {
     fontFamily: "Inter",
     fontWeight: "300",
     margin: "0 0 20px",
+  };
+  const TabelRowStyling = {
+    borderRight: "2px solid #C1C5D3",
+    fontSize: "18px",
+    fontFamily: "Inter,sans-serif",
+    padding: "15px",
+    textAlign: "center",
+    color: "#404040",
+  };
+  const TabelHeadingStyling = {
+    borderRight: "2px solid #C1C5D3",
+    //   padding: "16px 10px",
+    fontSize: { xs: "18px" },
+    fontFamily: "Inter,sans-serif",
   };
 
   return (
@@ -250,7 +264,7 @@ const CheckYourEligibility = () => {
             </Typography>
             <List>
               {salariedListData.map((item, index) => (
-                <ListItem key={index} sx={{ padding: 0 }}>
+                <ListItem key={index} sx={{ padding: 0, lineHeight: 1.5 }}>
                   <ListItemText
                     primary={
                       <React.Fragment>
@@ -299,7 +313,7 @@ const CheckYourEligibility = () => {
             </Typography>
             <List>
               {selfEmployedData.map((item, index) => (
-                <ListItem key={index} sx={{ padding: 0 }}>
+                <ListItem key={index} sx={{ padding: 0, lineHeight: 1.5 }}>
                   <ListItemText
                     primary={
                       <React.Fragment>
@@ -361,35 +375,18 @@ const CheckYourEligibility = () => {
                 <Table aria-label="customized table">
                   <TableHead>
                     <TableRow>
-                      <StyledTableCell
-                        sx={{
-                          borderRight: "2px solid #C1C5D3",
-                          //   padding: "16px 10px",
-                          fontSize: { xs: "18px" },
-                          fontFamily: "Inter,sans-serif",
-                        }}
-                      >
+                      <StyledTableCell sx={{ ...TabelHeadingStyling }}>
                         Lender
                       </StyledTableCell>
                       <StyledTableCell
                         align="right"
-                        sx={{
-                          borderRight: "2px solid #C1C5D3",
-                          // padding:"16px 10px",
-                          fontSize: { xs: "18px" },
-                          fontFamily: "Inter,sans-serif",
-                        }}
+                        sx={{ ...TabelHeadingStyling }}
                       >
                         MINIMUM INCOME
                       </StyledTableCell>
                       <StyledTableCell
                         align="right"
-                        sx={{
-                          borderRight: "2px solid #C1C5D3",
-                          // padding:"16px 10px",
-                          fontSize: { xs: "18px" },
-                          fontFamily: "Inter,sans-serif",
-                        }}
+                        sx={{ ...TabelRowStyling }}
                       >
                         AGE RANGE
                       </StyledTableCell>
@@ -401,39 +398,19 @@ const CheckYourEligibility = () => {
                         <StyledTableCell
                           component="th"
                           scope="row"
-                          sx={{
-                            borderRight: "2px solid #C1C5D3",
-                            fontSize: "18px",
-                            fontFamily: "Inter,sans-serif",
-                            padding: "15px",
-                            textAlign: "center",
-                            color: "#404040",
-                          }}
+                          sx={{ ...TabelRowStyling }}
                         >
                           {row.lender}
                         </StyledTableCell>
                         <StyledTableCell
                           align="right"
-                          sx={{
-                            borderRight: "2px solid #C1C5D3",
-                            fontSize: "18px",
-                            fontFamily: "Inter,sans-serif",
-                            padding: "15px",
-                            textAlign: "center",
-                            color: "#404040",
-                          }}
+                          sx={{ ...TabelRowStyling }}
                         >
                           {row.income}
                         </StyledTableCell>
                         <StyledTableCell
                           align="right"
-                          sx={{
-                            fontSize: "18px",
-                            fontFamily: "Inter,sans-serif",
-                            padding: "15px",
-                            textAlign: "center",
-                            color: "#404040",
-                          }}
+                          sx={{ ...TabelRowStyling }}
                         >
                           {row.age}
                         </StyledTableCell>
@@ -491,7 +468,7 @@ const CheckYourEligibility = () => {
                   marginBottom: { xs: "20px", md: "0" },
                 }}
               >
-                Apply For A Personal Loan Online With Minimum Documentation
+                Apply For A Personal Loan Online With Minimal Documentation
               </Typography>
 
               <Button
@@ -538,7 +515,7 @@ const CheckYourEligibility = () => {
             </Typography>
             <List>
               {influencingData.map((item, index) => (
-                <ListItem key={index} sx={{ padding: 0 }}>
+                <ListItem key={index} sx={{ padding: 0, lineHeight: 1.5 }}>
                   <ListItemText
                     primary={
                       <React.Fragment>
@@ -582,7 +559,7 @@ const CheckYourEligibility = () => {
             </Typography>
             <List>
               {boostData.map((item, index) => (
-                <ListItem key={index} sx={{ padding: 0 }}>
+                <ListItem key={index} sx={{ padding: 0, lineHeight: 1.5 }}>
                   <ListItemText
                     primary={
                       <React.Fragment>
