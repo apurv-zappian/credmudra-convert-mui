@@ -11,6 +11,8 @@ import CreditScore from "./views/creditScore";
 import PersonalLoanForTwoWheeler from "./views/PersonalLoanForTwoWheeler";
 import PersonalLoanEligibility from "./views/PersonalLoanEligibility";
 import PersonalLoanForHomeRenovation from "./views/PersonalLoanForHomeRenovation";
+import PersonalLoanInterestRate from "./views/PersonalLoanInterestRate";
+import PersonalLoanEmiCalculator from "./views/PersonalLoanEmiCalculator";
 
 const App = () => {
   return (
@@ -44,6 +46,14 @@ const App = () => {
             <Route
               path="/personalloanforhomerenovation"
               element={<PersonalLoanForHomeRenovation />}
+            />
+            <Route
+              path="/personalloaninterestrate"
+              element={<PersonalLoanInterestRate />}
+            />
+             <Route
+              path="/personalloanemicalculator"
+              element={<PersonalLoanEmiCalculator />}
             />
             <Route path="/credit-score" element={<CreditScore />} />
           </Route>
