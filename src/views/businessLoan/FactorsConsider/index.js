@@ -8,12 +8,12 @@ import {
   Typography,
 } from "@mui/material";
 import * as React from "react";
-import featuresBenefitsBl from "../../../assets/images/BusinessLoanImages/featuresbenefitsbl.png";
 import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import CheckCircleOutlineIcon from "@mui/icons-material/CheckCircleOutline";
 import GetMatchedButton from "../../../components/GetMatchedButton";
+import FactorsConsiderimg from "../../../assets/images/BusinessLoanImages/factorsconsider.png";
 
-const FeaturesBenefitsBl = () => {
+const FactorsConsider = () => {
   const [expanded, setExpanded] = React.useState("panel1");
 
   const handleChange = (panel) => (event, newExpanded) => {
@@ -48,7 +48,7 @@ const FeaturesBenefitsBl = () => {
               >
                 <Box sx={{ width: "100%" }}>
                   <img
-                    src={featuresBenefitsBl}
+                    src={FactorsConsiderimg}
                     alt="loading"
                     style={{
                       width: "80%",
@@ -92,7 +92,7 @@ const FeaturesBenefitsBl = () => {
                       paddingBottom: "10px",
                     }}
                   >
-                    Features And Benefits Of A Business Loan
+                    Factors To Consider Before Taking A Business Loan
                   </Typography>
                   <Typography
                     sx={{
@@ -109,9 +109,8 @@ const FeaturesBenefitsBl = () => {
                       lineHeight: "1.7",
                     }}
                   >
-                    If you are planning to apply for a business loan, you must
-                    know the following features and benefits of this credit
-                    facility:
+                    You must take into account several essential factors while
+                    you decide on the best business loan for your firm.
                   </Typography>
                   <Accordion
                     elevation={0}
@@ -130,16 +129,21 @@ const FeaturesBenefitsBl = () => {
                     >
                       <CheckCircleOutlineIcon sx={{ ...CheckCircle }} />
                       <Typography sx={{ ...AccHeadingColor }}>
-                        Instant Disbursal
+                        Purpose of the Loan
                       </Typography>
                     </AccordionSummary>
                     <AccordionDetails>
                       <Typography>
-                        The requested sum of money gets credited to your account
-                        real quick once the application and documents are
-                        verified successfully. If you choose Credmudra, the wait
-                        time is minimal. Moreover, you can get the amount
-                        credited the same day.
+                        In order to make the best use of borrowed money, you
+                        must know your financial needs before applying for
+                        credit.
+                        <br />
+                        <br />
+                        For example, you must determine what equipment you need
+                        to buy if you are opting for a loan to upgrade your
+                        business. This will help you determine the exact amount
+                        you need and what type of business loan you should opt
+                        for.
                       </Typography>
                     </AccordionDetails>
                   </Accordion>
@@ -147,9 +151,6 @@ const FeaturesBenefitsBl = () => {
                     elevation={0}
                     expanded={expanded === "panel2"}
                     onChange={handleChange("panel2")}
-                    sx={{
-                      backgroundColor: "transparent",
-                    }}
                   >
                     <AccordionSummary
                       expandIcon={<ExpandMoreIcon />}
@@ -160,14 +161,20 @@ const FeaturesBenefitsBl = () => {
                       <CheckCircleOutlineIcon sx={{ ...CheckCircle }} />
 
                       <Typography sx={{ ...AccHeadingColor }}>
-                        Collateral-free Advances
+                        Interest Rates and Other Costs
                       </Typography>
                     </AccordionSummary>
                     <AccordionDetails>
                       <Typography>
-                        As unsecured loans, financial institutions do not ask
-                        for any collateral while sanctioning the loan
-                        application.
+                        To get the best deal, you must compare the interest
+                        rates offered by different lenders. Based on the
+                        comparison, choose a lender that offers the lowest
+                        interest rate.
+                        <br />
+                        <br />
+                        Further, you should keep an eye out for additional
+                        costs, such as processing charges, foreclosure fees,
+                        etc. These costs add up to the total loan amount.
                       </Typography>
                     </AccordionDetails>
                   </Accordion>
@@ -184,14 +191,18 @@ const FeaturesBenefitsBl = () => {
                       sx={{ padding: 0 }}
                     >
                       <CheckCircleOutlineIcon sx={{ ...CheckCircle }} />
+
                       <Typography sx={{ ...AccHeadingColor }}>
-                        Hassle-free Documentation
+                        Repayment Schedule
                       </Typography>
                     </AccordionSummary>
                     <AccordionDetails>
                       <Typography>
-                        Only a handful of documents are needed while sanctioning
-                        business loan applications.
+                        Make sure you know all the repayment terms of the credit
+                        you are applying for. Factors, such as business loan
+                        length, repayment schedule and charges associated with
+                        early and late payments should be known by every
+                        borrower.
                       </Typography>
                     </AccordionDetails>
                   </Accordion>
@@ -208,18 +219,16 @@ const FeaturesBenefitsBl = () => {
                       sx={{ padding: 0 }}
                     >
                       <CheckCircleOutlineIcon sx={{ ...CheckCircle }} />
+
                       <Typography sx={{ ...AccHeadingColor }}>
-                        Purpose-Based Loan:
+                        Company Cash Flow
                       </Typography>
                     </AccordionSummary>
                     <AccordionDetails>
                       <Typography>
-                        For the immediate requirement of small-ticket finance,
-                        you can go with short-term personal loan. If you need a
-                        significant amount of money, you can apply for a regular
-                        personal loan. Our existing customers can also take a
-                        pre-approved personal loan that comes with the facility
-                        of instant approval.
+                        Assess your business's cash flow in order to determine
+                        your repayment capability. This will help you make a
+                        repayment plan and save from a financial burden.
                       </Typography>
                     </AccordionDetails>
                   </Accordion>
@@ -236,82 +245,31 @@ const FeaturesBenefitsBl = () => {
                       sx={{ padding: 0 }}
                     >
                       <CheckCircleOutlineIcon sx={{ ...CheckCircle }} />
-                      <Typography sx={{ ...AccHeadingColor }}>
-                        Easy Online Application:
-                      </Typography>
-                    </AccordionSummary>
-                    <AccordionDetails>
-                      <Typography>
-                        Visiting the offline branches of lending institutions is
-                        hectic. Plus, you will have to book a schedule during
-                        office hours only. Eliminate all these inconveniences by
-                        applying for a personal loan with us online. So, take
-                        the first step and click on the “Apply Now” button.
-                      </Typography>
-                    </AccordionDetails>
-                  </Accordion>
-                  <Accordion
-                    elevation={0}
-                    expanded={expanded === "panel6"}
-                    onChange={handleChange("panel6")}
-                    style={{ backgroundColor: "transparent" }}
-                  >
-                    <AccordionSummary
-                      expandIcon={<ExpandMoreIcon />}
-                      aria-controls="panel6d-content"
-                      id="panel6d-header"
-                      sx={{ padding: 0 }}
-                    >
-                      <CheckCircleOutlineIcon sx={{ ...CheckCircle }} />
 
                       <Typography sx={{ ...AccHeadingColor }}>
-                        Flexible Repayment Period:
+                        Lender's Reputation
                       </Typography>
                     </AccordionSummary>
                     <AccordionDetails>
                       <Typography>
-                        Choose a period of repayment according to your
-                        preference from the available range of up to 5 years.
-                        The extensive tenure will help you ensure that the
-                        instalment amount is within your repayment capacity. You
-                        can use a personal loan EMI calculator to find the right
-                        tenure.
-                      </Typography>
-                    </AccordionDetails>
-                  </Accordion>
-                  <Accordion
-                    elevation={0}
-                    expanded={expanded === "panel7"}
-                    onChange={handleChange("panel7")}
-                    style={{ backgroundColor: "transparent" }}
-                  >
-                    <AccordionSummary
-                      expandIcon={<ExpandMoreIcon />}
-                      aria-controls="panel7d-content"
-                      id="panel7d-header"
-                      sx={{ padding: 0 }}
-                    >
-                      <CheckCircleOutlineIcon sx={{ ...CheckCircle }} />
-
-                      <Typography sx={{ ...AccHeadingColor }}>
-                        Lenient Eligibility Criteria:
-                      </Typography>
-                    </AccordionSummary>
-                    <AccordionDetails>
-                      <Typography>
-                        At Credmudra, we believe in making personal loan
-                        eligibility hassle-free for you. Our easy eligibility
-                        criteria ensure a seamless qualification process. All
-                        you need to do is fill up and submit our online
-                        application form. We'll take care of the rest, matching
-                        you with the lender that best suits your profile and
-                        requirements. Say goodbye to complicated eligibility
-                        processes and get closer to your personal loan today.
+                        Do thorough research about the financial institution or
+                        NBFC you are choosing. Learn about the lender's
+                        reputation in the market, customer service, etc. You can
+                        look for ratings and reviews from previous borrowers in
+                        order to learn more about a financial institution.
+                        <br />
+                        <br />
+                        Credmudra has partnered with some of the leading
+                        business loan providers in India. With our user-friendly
+                        interface and paperless loan application process, take a
+                        step closer to reaching your business goals.
+                        Nevertheless, if you face any issues while applying for
+                        a loan from our portal, contact our Mudra Mentors to
+                        receive comprehensive assistance.
                       </Typography>
                     </AccordionDetails>
                   </Accordion>
                 </Box>
-
                 <Box
                   sx={{
                     display: "flex",
@@ -331,4 +289,4 @@ const FeaturesBenefitsBl = () => {
   );
 };
 
-export default FeaturesBenefitsBl;
+export default FactorsConsider;

@@ -96,10 +96,9 @@ const ChooseCredmudraForBl = () => {
                     expandIcon={<ExpandMoreIcon sx={{ color: "black" }} />}
                     aria-controls="panel1d-content"
                     id="panel1d-header"
+                    sx={{ padding: 0 }}
                   >
-                    <CheckCircleOutlineIcon
-                      sx={{ ...CheckCircle, paddingTop: "5px" }}
-                    />
+                    <CheckCircleOutlineIcon sx={{ ...CheckCircle }} />
                     <Typography sx={{ ...AccHeading }}>
                       Prompt Loan Disbursal
                     </Typography>
@@ -123,14 +122,12 @@ const ChooseCredmudraForBl = () => {
                   }}
                 >
                   <AccordionSummary
-                    sx={{ display: "flex", alignItems: "center" }}
+                    sx={{ display: "flex", alignItems: "center", padding: 0 }}
                     expandIcon={<ExpandMoreIcon sx={{ color: "black" }} />}
                     aria-controls="panel2d-content"
                     id="panel2d-header"
                   >
-                    <CheckCircleOutlineIcon
-                      sx={{ ...CheckCircle, paddingTop: "5px" }}
-                    />
+                    <CheckCircleOutlineIcon sx={{ ...CheckCircle }} />
 
                     <Typography sx={{ ...AccHeading }}>
                       Loan Match Making
@@ -156,14 +153,12 @@ const ChooseCredmudraForBl = () => {
                   }}
                 >
                   <AccordionSummary
-                    sx={{ display: "flex", alignItems: "center" }}
+                    sx={{ display: "flex", alignItems: "center", padding: 0 }}
                     expandIcon={<ExpandMoreIcon sx={{ color: "black" }} />}
                     aria-controls="panel3d-content"
                     id="panel3d-header"
                   >
-                    <CheckCircleOutlineIcon
-                      sx={{ ...CheckCircle, paddingTop: "5px" }}
-                    />
+                    <CheckCircleOutlineIcon sx={{ ...CheckCircle }} />
 
                     <Typography sx={{ ...AccHeading }}>
                       Easy Application
@@ -190,11 +185,9 @@ const ChooseCredmudraForBl = () => {
                     expandIcon={<ExpandMoreIcon sx={{ color: "black" }} />}
                     aria-controls="panel4d-content"
                     id="panel4d-header"
-                    sx={{ display: "flex", alignItems: "center" }}
+                    sx={{ display: "flex", alignItems: "center", padding: 0 }}
                   >
-                    <CheckCircleOutlineIcon
-                      sx={{ ...CheckCircle, paddingTop: "5px" }}
-                    />
+                    <CheckCircleOutlineIcon sx={{ ...CheckCircle }} />
 
                     <Typography sx={{ ...AccHeading }}>
                       Loan Tenure at your Discretion
