@@ -57,6 +57,7 @@ const LatestBlog = () => {
     textAlign: "left",
     fontFamily: "Inter,sans-serif",
     opacity: 0.8,
+    marginBottom:"20px"
   };
   const smallBoxesHeadingStyling = {
     fontSize: { xs: "16px", md: "18px" },
@@ -84,7 +85,7 @@ const LatestBlog = () => {
     // width: "95%",
   };
   return (
-    <Box>
+    <Box sx={{marginTop:"5%"}}>
       <Box
         sx={{
           animationDuration: "3s",
@@ -112,7 +113,6 @@ const LatestBlog = () => {
       <Container maxWidth={"xl"} sx={{ padding: { md: "0 7%" } }}>
         <Box
           sx={{
-            // maxWidth: { md: "620px",lg:"500px" },
             display: "flex",
             flexDirection: { xs: "column", md: "row" },
             justifyContent: "space-between",
@@ -130,6 +130,7 @@ const LatestBlog = () => {
               letterSpacing: "0",
               opacity: "1",
               textAlign: "left",
+              marginBottom:"20px"
             }}
           >
             Our Latest Blog Posts

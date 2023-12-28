@@ -6,8 +6,27 @@ import {
   TextField,
   Button,
   Box,
+  styled,
 } from "@mui/material";
+
 import logoImg from "../../../assets/images/CredmudraPageImages/logo.png";
+
+const CustomTextField = styled(TextField)({
+  "& .MuiInputBase-root": {
+    border: "none",
+    backgroundColor: "#6c757d",
+    borderRadius: "5px",
+    color: "#ffffff",
+    marginBottom: "12px",
+    padding: { xs: "0", sm: "8px", md: "16px 0" },
+    textAlign: "center",
+    textTransform: "capitalize",
+    width: "100%",
+  },
+  "& .MuiInputBase-input": {
+    textAlign: "center",
+  },
+});
 
 const AvoidPitfalls = () => {
   return (
@@ -24,21 +43,28 @@ const AvoidPitfalls = () => {
         minHeight: "400px",
         objectFit: "cover",
         opacity: 1,
-        paddingBottom: "5rem",
-        paddingTop: "5rem",
       }}
     >
       <Container maxWidth={"xl"} sx={{ padding: { md: "0 7%" } }}>
-        <Grid container>
-          <Grid item md={6}>
+        <Grid
+          container
+          spacing={2}
+          sx={{
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "space-between",
+          }}
+        >
+          <Grid item xs={12} md={6}>
             <Typography
               sx={{
-                fontSize: { md: "40px" },
+                fontSize: { xs: "26px", md: "40px" },
                 fontFamily: "Inter",
                 color: "#f7d64a",
                 fontWeight: "900",
                 lineHeight: "1.1",
                 margin: "0 0 15px",
+                textAlign: { xs: "center", md: "left" },
               }}
             >
               Avoid The Pitfalls Of <br />
@@ -49,81 +75,60 @@ const AvoidPitfalls = () => {
                 fontSize: "16px",
                 fontFamily: "Inter",
                 color: "#ffffff",
+                textAlign: { xs: "center", md: "left" },
               }}
             >
               Sign Up Now To Learn The Best Practices And Borrow Smartly!
             </Typography>
           </Grid>
-          {/* <Grid item md={4} sx={{ position: 'relative', display: 'flex', justifyContent: 'center' }}>
-            <img alt="credmudra-logo" src={logoImg} style={{ width: "70%",  marginLeft: "10%", maxWidth: '100%' }} />
-          </Grid> */}
-          <Grid
-            item
-            md={6}
-            sx={
-              {
-                // display: "flex",
-                // alignItems: "center",
-                // justifyContent: "flex-end",
-              }
-            }
-          >
+
+          <Grid item xs={12} md={6}>
             <Box
               sx={{
-                // backgroundColor: "red",
-                width: "100%",
                 display: "flex",
-                alignItems: "flex-end",
-                justifyContent: "flex-end",
+                alignItems: { xs: "center", md: "flex-end" },
+                justifyContent: {
+                  xs: "center",
+                  sm: "flex-start",
+                  md: "flex-end",
+                },
                 flexDirection: "column",
               }}
             >
-              <Box>
-                <TextField
-                  id="exampleInputEmail1"
-                  type="email"
-                  name="email"
-                  placeholder="Enter email"
-                  required
-                  InputProps={{
-                    sx: {
+              <Box sx={{ width: "70%" }}>
+                <Box>
+                  <CustomTextField
+                    id="exampleInputEmail1"
+                    type="email"
+                    name="email"
+                    placeholder="Enter email"
+                    required
+                    fullWidth
+                  />
+                </Box>
+                <Box>
+                  <Button
+                    sx={{
                       "&:hover": {
-                        border: "none",
+                        backgroundColor: "#C8A618",
+                        color: "#243771",
                       },
-                      backgroundColor: "#6c757d",
-                      border: "1px solid #6c757d",
+                      background: "#f7d64a 0 0 no-repeat padding-box",
+                      border: "none",
                       borderRadius: "5px",
-                      color: "#ffffff",
-                      marginBottom: "12px",
-                      padding: "10px",
-                      textAlign: "center",
-                      textTransform: "capitalize",
-                    },
-                  }}
-                />
-              </Box>
-              <Box>
-                <Button
-                  sx={{
-                    "&:hover": {
-                      backgroundColor: "#C8A618",
                       color: "#243771",
-                    },
-                    padding: { xs: "12px 120px" },
-                    boxShadow: "0px 3px 6px #00000029",
-                    borderRadius: "10px",
-                    backgroundColor: "#f7d64a",
-                    color: "#243771",
-                    marginTop: "10px",
-                    fontWeight: "600",
-                    transition: ".4s all ease-in-out",
-                    textTransform: "capitalize ",
-                    fontSize: { xs: "16px" },
-                    fontFamily: "Inter",
-                  }}
-                >
-                  Get Started
-                </Button>
+                      fontSize: "20px",
+                      fontWeight: 700,
+                      opacity: 1,
+                      padding: { xs: "10px", md: "12px" },
+                      textTransform: "capitalize",
+                      transition: "all .4s ease",
+                      width: "100%",
+                    }}
+                  >
+                    Get Started
+                  </Button>
+                </Box>
               </Box>
             </Box>
           </Grid>
