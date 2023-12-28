@@ -21,6 +21,7 @@ import styled from "styled-components";
 import MinimalDocumentation from "../MinimalDocumentation";
 import TopWays from "../TopWays";
 import FAQS from "../FAQS";
+import { Link } from "react-router-dom";
 
 const GetPersonalLoan = () => {
   const StyledTableCell = styled(TableCell)(({ theme }) => ({
@@ -441,10 +442,10 @@ const GetPersonalLoan = () => {
             <TopWays />
           </Box>
           <Box>
-            <MinimalDocumentation/>
+            <MinimalDocumentation />
           </Box>
           <Box>
-            <FAQS/>
+            <FAQS />
           </Box>
         </Grid>
         <Grid item xs={12} md={3}>
@@ -463,15 +464,30 @@ const GetPersonalLoan = () => {
               >
                 Personal Loan Pages
               </Typography>
-              <ListItem sx={{ ...PLPagesStyling }}>
-                Personal Loan Interest Rate
-              </ListItem>
-              <ListItem sx={{ ...PLPagesStyling }}>
-                Personal Loan Eligibility
-              </ListItem>
-              <ListItem sx={{ ...PLPagesStyling }}>
-                Personal Loan EMI Calculator
-              </ListItem>
+              <Link
+                to="/personalloaninterestrate"
+                style={{ textDecoration: "none" }}
+              >
+                <ListItem sx={{ ...PLPagesStyling }}>
+                  Personal Loan Interest Rate
+                </ListItem>
+              </Link>
+              <Link
+                to="/personalloaneligibility"
+                style={{ textDecoration: "none" }}
+              >
+                <ListItem sx={{ ...PLPagesStyling }}>
+                  Personal Loan Eligibility
+                </ListItem>
+              </Link>
+              <Link
+                to="/personalloanemicalculator"
+                style={{ textDecoration: "none" }}
+              >
+                <ListItem sx={{ ...PLPagesStyling }}>
+                  Personal Loan EMI Calculator
+                </ListItem>
+              </Link>
             </List>
           </Box>
         </Grid>

@@ -1,0 +1,6 @@
+.swiper-scrollbar {
+    background-color: #243711; /* Background color of the scrollbar track */
+  }
+  .swiper-scrollbar-drag {
+    background-color: #F6D549; /* Color of the scrollbar thumb (draggable part) */
+  }

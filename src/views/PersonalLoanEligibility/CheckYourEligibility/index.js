@@ -20,6 +20,7 @@ import React from "react";
 import styled from "styled-components";
 import minimaldocumentationimg from "../../../assets/images/PersonalLoanEligibility/minimaldocumentationimg.png";
 import FAQEligibility from "../FAQEligibility";
+import { Link } from "react-router-dom";
 
 const CheckYourEligibility = () => {
   const salariedListData = [
@@ -159,6 +160,7 @@ const CheckYourEligibility = () => {
     padding: "9px 0 10px",
     textDecoration: "none",
     fontFamily: "Inter,sans-serif",
+    textDecoration: "none !important",
   };
   const CircleIcon = {
     color: "#F7D64A",
@@ -603,15 +605,30 @@ const CheckYourEligibility = () => {
               >
                 Personal Loan Pages
               </Typography>
-              <ListItem sx={{ ...PLPagesStyling }}>
-                Personal Loan Interest Rate
-              </ListItem>
-              <ListItem sx={{ ...PLPagesStyling }}>
-                Personal Loan Eligibility
-              </ListItem>
-              <ListItem sx={{ ...PLPagesStyling }}>
-                Personal Loan EMI Calculator
-              </ListItem>
+              <Link
+                to="/personalloaninterestrate"
+                style={{ textDecoration: "none" }}
+              >
+                <ListItem sx={{ ...PLPagesStyling }}>
+                  Personal Loan Interest Rate
+                </ListItem>
+              </Link>
+              <Link
+                to="/personalloaneligibility"
+                style={{ textDecoration: "none" }}
+              >
+                <ListItem sx={{ ...PLPagesStyling }}>
+                  Personal Loan Eligibility
+                </ListItem>
+              </Link>
+              <Link
+                to="/personalloanemicalculator"
+                style={{ textDecoration: "none" }}
+              >
+                <ListItem sx={{ ...PLPagesStyling }}>
+                  Personal Loan EMI Calculator
+                </ListItem>
+              </Link>
             </List>
           </Box>
         </Grid>

@@ -6,7 +6,9 @@ import DocumentRequired from "./DocumentRequired";
 import ApplyForPersonalLoan from "./ApplyForPersonalLoan";
 import FinancialInstitution from "./FinancialInstitution";
 import FAQs from "./FAQs";
-
+import SwiperComponent from "./Swiper";
+import "../../swiper.css";
+import WhyChooseCredmudra from "./WhyChooseCredmudra";
 const PersonalLoanForHomeRenovation = () => {
   return (
     <>
@@ -15,6 +17,7 @@ const PersonalLoanForHomeRenovation = () => {
       <EligibilityCriteria />
       <DocumentRequired />
       <ApplyForPersonalLoan />
+      <WhyChooseCredmudra />
       <FinancialInstitution />
       <FAQs />
     </>
