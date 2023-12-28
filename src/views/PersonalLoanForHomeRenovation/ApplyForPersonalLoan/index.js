@@ -59,7 +59,7 @@ const ApplyForPersonalLoan = () => {
   ];
 
   return (
-    <Container>
+    <Container sx={{marginBottom:"50px"}}>
       <Grid container sx={{ padding: "80px 0px 10px" }}>
         {/* Top section */}
         <Grid item sm={12}>

@@ -12,6 +12,7 @@ import React from "react";
 import Minimal from "../Minimal";
 import FAQS from "../FAQS";
 import Process from "../Process";
+import { Link } from "react-router-dom";
 
 const EmiCalculator = () => {
   const loanemiData = [
@@ -208,15 +209,30 @@ const EmiCalculator = () => {
                 >
                   Personal Loan Pages
                 </Typography>
-                <ListItem sx={{ ...PLPagesStyling }}>
-                  Personal Loan Interest Rate
-                </ListItem>
-                <ListItem sx={{ ...PLPagesStyling }}>
-                  Personal Loan Eligibility
-                </ListItem>
-                <ListItem sx={{ ...PLPagesStyling }}>
-                  Personal Loan EMI Calculator
-                </ListItem>
+                <Link
+                  to="/personalloaninterestrate"
+                  style={{ textDecoration: "none" }}
+                >
+                  <ListItem sx={{ ...PLPagesStyling }}>
+                    Personal Loan Interest Rate
+                  </ListItem>
+                </Link>
+                <Link
+                  to="/personalloaneligibility"
+                  style={{ textDecoration: "none" }}
+                >
+                  <ListItem sx={{ ...PLPagesStyling }}>
+                    Personal Loan Eligibility
+                  </ListItem>
+                </Link>
+                <Link
+                  to="/personalloanemicalculator"
+                  style={{ textDecoration: "none" }}
+                >
+                  <ListItem sx={{ ...PLPagesStyling }}>
+                    Personal Loan EMI Calculator
+                  </ListItem>
+                </Link>
               </List>
             </Box>
           </Grid>
