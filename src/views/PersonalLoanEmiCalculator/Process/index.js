@@ -280,7 +280,7 @@
 // export default Process;
 
 import React, { useState } from "react";
-import { Slider, Typography, Button, Grid, Paper, Box } from "@mui/material";
+import { Slider, Typography, Button, Grid, Paper, Box, Container } from "@mui/material";
 import { Doughnut } from "react-chartjs-2";
 import { Chart } from "chart.js/auto";
 const Process = () => {
@@ -327,7 +327,8 @@ const Process = () => {
       bgcolor={"#10162C"}
       sx={{ padding: { xs: "80px 16px", md: "80px 40px" } }}
     >
-      <Box sx={{ marginBottom: "40px", marginLeft: { lg: "10%" } }}>
+      <Container maxWidth={'xl'}>
+      <Box sx={{ marginBottom: "40px"}}>
         <Typography
           sx={{
             color: "#FFFFFF",
@@ -357,7 +358,6 @@ const Process = () => {
               backgroundColor: "#1A2C34",
               maxWidth: { md: "550px" },
               padding: "8% 10%",
-              marginLeft: { lg: "20%" },
             }}
           >
             <Box>
@@ -575,6 +575,7 @@ const Process = () => {
           </Box>
         </Grid>
       </Grid>
+      </Container>
     </Box>
   );
 };

@@ -1,12 +1,18 @@
-import { Box } from "@mui/material";
-import React from "react";
+import React from 'react'
+import ShortTerm from './ShortTerm'
+import ResponsibleCredit from './ResponsibleCredit'
+import LatestBlog from './LatestBlog'
+import AvoidPitfalls from './AvoidPitfalls'
 
 const CredmudraPage = () => {
   return (
     <>
-      <Box>CredMudra Main page</Box>
+      <ShortTerm/>
+      <ResponsibleCredit/>
+      <LatestBlog/>
+      <AvoidPitfalls/>
     </>
-  );
-};
+  )
+}
 
-export default CredmudraPage;
+export default CredmudraPage
