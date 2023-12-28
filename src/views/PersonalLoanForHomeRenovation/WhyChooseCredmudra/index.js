@@ -1,28 +1,59 @@
-import { Box, Container, Typography } from "@mui/material";
+import { Box, Container, Typography, keyframes } from "@mui/material";
 import React from "react";
 import Swiper from "swiper";
 import SwiperComponent from "../Swiper";
 import "../../../swiper.css";
+import logoImg from "../../../assets/images/PersonalLoanForHomeRenovation/logo.png";
+
 
 const WhyChooseCredmudra = () => {
+  const shapeRotate = keyframes`
+    0%, 100% {
+      transform: translateY(0);
+  }
+  20%, 80% {
+      transform: translateY(10px);
+  }
+  60% {
+      transform: translateY(20px);
+  }
+    `;
   return (
-    <Container>
+    <Box
+      sx={{
+        textAlign: "center",
+      }}
+    >
       <Box
         sx={{
-          // padding: "3rem 0 2rem",
-          textAlign: "center",
-          // maxWidth: "856px",
-          // margin: "auto",
-          // fontSize: "1rem",
+          animationDuration: "3s",
+          animationFillMode: "both",
+          animationIterationCount: "infinite",
+          animationName: `${shapeRotate}`,
+          animationTimingFunction: "linear",
+          transformOrigin: "center center",
+          position: "relative",
+          zIndex: "-1",
         }}
       >
+        <img
+          style={{
+            position: "absolute",
+            top: "0",
+            left: "40px",
+            width: "12%",
+            transform: "rotate(330deg)",
+          }}
+          src={logoImg}
+          alt="Credmudra"
+        />
+      </Box>
+      <Container maxWidth={"xl"}>
         <Typography
           sx={{
             lineHeight: { xs: "1.1", md: "1.5" },
             marginBottom: "25px",
             font: "normal normal 900 50px Inter",
-            // fontSize: { xs: "24px", sm: "30px", md: "40px" },
-            // fontFamily: "Inter",
             color: "#243771",
             fontWeight: "900",
             textAlign: "center",
@@ -46,9 +77,9 @@ const WhyChooseCredmudra = () => {
           a financial crisis. Following are some of the reasons that make us one
           of the leading ‘loan match-making’ portals in the market:
         </Typography>
-      </Box>
+      </Container>
       <SwiperComponent />
-    </Container>
+    </Box>
   );
 };
 

@@ -56,181 +56,185 @@ const ShortTerm = () => {
           zIndex: "-1",
         }}
       />
-      <Container maxWidth={'xl'} sx={{ padding: { md: "0 7%" } }}>
-
-      <Grid
-        container
-        sx={{
-          minHeight: { xs: "0vh", sm: "100vh" },
-          
-          display: "flex",
-          flexDirection: { xs: "column-reverse", sm: "column",md:"row" },
-        }}
-      >
+      <Container maxWidth={"xl"} sx={{ padding: { md: "0 7%" } }}>
         <Grid
-          item
-          xs={12}
-          md={6}
+          container
           sx={{
-            
+            minHeight: { xs: "0vh", sm: "100vh" },
+
             display: "flex",
-            justifyContent: "center",
-            alignItems: {xs:'center',md:"flex-start",lg:"flex-end"},
-            flexDirection: "column",
-            // padding: { xs: "16px", md: "32px" },
-            // backgroundColor:"gray"
+            flexDirection: { xs: "column-reverse", sm: "column", md: "row" },
           }}
-          // alignContent={"center"}
         >
-          <Box
+          <Grid
+            item
+            xs={12}
+            md={6}
             sx={{
-              // maxWidth: { md: "620px",lg:"600px" },
-              marginTop:{sm:"10%",md:"0"},
-              // padding: { md: "32px" },
-              // marginTop: { xs: "5%", sm: "0" },
-             
+              display: "flex",
+              justifyContent: "center",
+              alignItems: { xs: "center", md: "flex-start", lg: "flex-end" },
+              flexDirection: "column",
             }}
           >
-            <Box sx={{
-              padding: { xs: "16px",md:"0" },
-            }}>
-              <Typography
-                gutterBottom
-                sx={{
-                  fontFamily: "Inter",
-                  color: "#243771",
-                  fontSize: { xs: "26px", sm: "34px", md: "34px", lg: "45px" },
-                  lineHeight: "1.2",
-                  fontWeight: "900",
-                  margin: "30px 0",
-                  textAlign: { xs: "center", md: "left" },
-                }}
-              >
-                Your Short Term Loan Is Just A Match Away!
-              </Typography>
-              <Typography
-                sx={{
-                  fontFamily: "Inter",
-                  color: "#243771",
-                  fontSize: { xs: "12px", sm: "18px",md:"22px" },
-                  marginBottom: "14px",
-                  fontWeight: {xs:"500",md:"700"},
-                  margin: {md: "0 0 30px" },
-                  // paddingRight:"25%"
-                  textAlign: { xs: "center", md: "left" },
-                }}
-              >
-                On a mission of financial inclusion for every indian
-              </Typography>
-            </Box>
             <Box
               sx={{
-                display: "flex",
-                marginBottom: "20px",
-                justifyContent: { xs: "center", md: "flex-start" },
-                alignItems: "center",
+                marginTop: { sm: "10%", md: "0" },
               }}
             >
-              {linkData.map((link, index) => (
-                <Box key={index} sx={{transition: "all .3s ease-in-out",
-                "&:hover": {
-                  transform: "scale(1.1)",
-                },}}>
-                  <Link
-                    to={link.to}
-                    style={{
-                      color: "#404040",
-                      display: "inline-block",
-                      textDecoration: "none",
-                      
+              <Box
+                sx={{
+                  padding: { xs: "16px", md: "0" },
+                }}
+              >
+                <Typography
+                  gutterBottom
+                  sx={{
+                    fontFamily: "Inter",
+                    color: "#243771",
+                    fontSize: {
+                      xs: "26px",
+                      sm: "34px",
+                      md: "34px",
+                      lg: "45px",
+                    },
+                    lineHeight: "1.2",
+                    fontWeight: "900",
+                    margin: "30px 0",
+                    textAlign: { xs: "center", md: "left" },
+                  }}
+                >
+                  Your Short Term Loan Is Just A Match Away!
+                </Typography>
+                <Typography
+                  sx={{
+                    fontFamily: "Inter",
+                    color: "#243771",
+                    fontSize: { xs: "12px", sm: "18px", md: "22px" },
+                    marginBottom: "14px",
+                    fontWeight: { xs: "500", md: "700" },
+                    margin: { md: "0 0 30px" },
+                    textAlign: { xs: "center", md: "left" },
+                  }}
+                >
+                  On a mission of financial inclusion for every indian
+                </Typography>
+              </Box>
+              <Box
+                sx={{
+                  display: "flex",
+                  marginBottom: "20px",
+                  justifyContent: { xs: "center", md: "flex-start" },
+                  alignItems: "center",
+                }}
+              >
+                {linkData.map((link, index) => (
+                  <Box
+                    key={index}
+                    sx={{
+                      transition: "all .3s ease-in-out",
+                      "&:hover": {
+                        transform: "scale(1.1)",
+                      },
                     }}
                   >
-                    <Box
-                      sx={{
-                        alignItems: "center",
-                        background: "#243771",
-                        border: "1px solid #cdced6",
-                        borderRadius: "20px",
-                        boxShadow: "4px 8px 20px #5cb46a4f",
-                        display: "flex",
-                        flexDirection: "column",
-                        // height: "100px",
-                        justifyContent: "space-around",
-                        margin: "4px",
-                        height: { xs: "88px", md: "100px" },
-                        padding: { xs: "8px", sm: "4px" },
-                        width: { xs: "70px", sm: "100px" },
+                    <Link
+                      to={link.to}
+                      style={{
+                        color: "#404040",
+                        display: "inline-block",
+                        textDecoration: "none",
                       }}
                     >
                       <Box
                         sx={{
-                          width: { xs: "40%", md: "60%", textAlign: "center" },
+                          alignItems: "center",
+                          background: "#243771",
+                          border: "1px solid #cdced6",
+                          borderRadius: "20px",
+                          boxShadow: "4px 8px 20px #5cb46a4f",
+                          display: "flex",
+                          flexDirection: "column",
+                          justifyContent: "space-around",
+                          margin: "4px",
+                          height: { xs: "88px", md: "100px" },
+                          padding: { xs: "8px", sm: "4px" },
+                          width: { xs: "70px", sm: "100px" },
                         }}
                       >
-                        <img
-                          alt={`get ${link.label}`}
-                          style={{ maxWidth: "100%", height: "auto" }}
-                          src={link.imageSrc}
-                        />
+                        <Box
+                          sx={{
+                            width: {
+                              xs: "40%",
+                              md: "60%",
+                              textAlign: "center",
+                            },
+                          }}
+                        >
+                          <img
+                            alt={`get ${link.label}`}
+                            style={{ maxWidth: "100%", height: "auto" }}
+                            src={link.imageSrc}
+                          />
+                        </Box>
+                        <Typography
+                          sx={{
+                            fontSize: { xs: "9px", md: "12px" },
+                            fontFamily: "Inter,sans-serif",
+                            fontWeight: "700",
+                            textAlign: "center",
+                            color: "#ffffff",
+                            textDecoration: "none !important",
+                          }}
+                        >
+                          {link.label}
+                        </Typography>
                       </Box>
-                      <Typography
-                        sx={{
-                          fontSize: { xs: "9px", md: "12px" },
-                          fontFamily: "Inter,sans-serif",
-                          fontWeight: "700",
-                          textAlign: "center",
-                          color: "#ffffff",
-                          textDecoration: "none !important",
-                        }}
-                      >
-                        {link.label}
-                      </Typography>
-                    </Box>
-                  </Link>
-                </Box>
-              ))}
+                    </Link>
+                  </Box>
+                ))}
+              </Box>
+              <Box
+                sx={{
+                  display: "flex",
+                  alignItems: "flex-start",
+                  justifyContent: { xs: "center", md: "flex-start" },
+                }}
+              >
+                <GetMatchedButton />
+              </Box>
             </Box>
-            <Box
-              sx={{
-                display: "flex",
-                alignItems: "flex-start",
-                justifyContent: { xs: "center", md: "flex-start" },
-              }}
-            >
-              <GetMatchedButton />
-            </Box>
-          </Box>
-        </Grid>
-        <Grid
-          item
-          xs={12}
-          md={6}
-          sx={{
-            display: "flex",
-            justifyContent: {xs:'center',lg:"flex-start"},
-            alignItems: "center",
-            padding: { md: "32px", lg: "0" },
-          }}
-        >
-          <Box
+          </Grid>
+          <Grid
+            item
+            xs={12}
+            md={6}
             sx={{
-              marginTop: { xs: "30%", sm: "0" },
-              width: "100%",
-              animation: `${translateYAnimation} 5s linear infinite`,
-              transformOrigin: "center center",
+              display: "flex",
+              justifyContent: { xs: "center", lg: "flex-start" },
+              alignItems: "center",
+              padding: { md: "32px", lg: "0" },
             }}
           >
-            <img
-              style={{
-                width: "100%",
-                height: "auto",
+            <Box
+              sx={{
+                marginTop: { xs: "30%", sm: "0" },
+                width: { sm: "70%", md: "100%" },
+                animation: `${translateYAnimation} 5s linear infinite`,
+                transformOrigin: "center center",
               }}
-              src={bannerimg}
-              alt="loading"
-            />
-          </Box>
+            >
+              <img
+                style={{
+                  width: "100%",
+                  height: "auto",
+                }}
+                src={bannerimg}
+                alt="loading"
+              />
+            </Box>
+          </Grid>
         </Grid>
-      </Grid>
       </Container>
     </Box>
   );

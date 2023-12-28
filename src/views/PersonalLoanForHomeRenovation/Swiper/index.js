@@ -99,25 +99,16 @@ const SwiperComponent = () => {
   return (
     <Box sx={{ overflow: "hidden" }}>
       <Container sx={{ width: "100%", overflow: "visible" }}>
-        <div
-          className="swiper"
-          style={
-            {
-              // width: "100%",
-              // overflow: "visible",
-              // padding: "0 200px",
-            }
-          }
-        >
-          <div
+        <Box className="swiper">
+          <Box
             className="swiper-wrapper"
-            style={{ display: "flex", flexDirection: "row" }}
+            sx={{ display: "flex", flexDirection: "row" }}
           >
             {swiperData.map((data, index) => (
-              <div
+              <Box
                 className="swiper-slide"
                 key={`slide${index}`}
-                style={{ width: "280px" }}
+                sx={{ width: "280px" }}
               >
                 <Card
                   sx={{
@@ -157,35 +148,36 @@ const SwiperComponent = () => {
                     </Typography>
                   </CardContent>
                 </Card>
-              </div>
+              </Box>
             ))}
-          </div>
-          <div
-            style={{
+          </Box>
+          <Box
+            sx={{
               display: "flex",
               paddingTop: "20px",
               alignItems: "center",
             }}
           >
-            <div
+            <Box
               className="swiper-scrollbar"
-              style={{
+              sx={{
                 position: "initial",
                 margin: "10px 0",
                 width: "-webkit-fill-available",
                 height: "7px",
+                background:"#243771",
               }}
-            ></div>
-            <div style={{ display: "flex" }}>
-              <div className="swiper-prev">
+            ></Box>
+            <Box sx={{ display: "flex" }}>
+              <Box className="swiper-prev" sx={{ color: "#f6d549" }}>
                 <KeyboardArrowLeftIcon fontSize="large" />
-              </div>
-              <div className="swiper-next">
+              </Box>
+              <Box className="swiper-next" sx={{ color: "#f6d549" }}>
                 <KeyboardArrowRightIcon fontSize="large" />
-              </div>
-            </div>
-          </div>
-        </div>
+              </Box>
+            </Box>
+          </Box>
+        </Box>
       </Container>
     </Box>
   );

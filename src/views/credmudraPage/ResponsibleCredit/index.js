@@ -5,16 +5,13 @@ import GetMatchedButton from "../../../components/GetMatchedButton";
 
 const ResponsibleCredit = () => {
   return (
-    <Box sx={{marginTop:{xs:'10%',md:"0"}}}>
+    <Box sx={{ marginTop: { xs: "10%", md: "0" } }}>
       <Container maxWidth="xl" sx={{ paddingLeft: { md: "7%" } }}>
         <Grid
           container
           sx={{
             display: "flex",
             flexDirection: { xs: "column", md: "row" },
-            //   alignItems:"center",
-            //   justifyContent:'center',
-            // padding: { xs: "16px", md: "32px" },
           }}
           spacing={2}
         >
@@ -22,7 +19,6 @@ const ResponsibleCredit = () => {
             item
             xs={12}
             md={6}
-            //   bgcolor={"red"}
             sx={{
               display: "flex",
               justifyContent: {
@@ -32,12 +28,9 @@ const ResponsibleCredit = () => {
                 xl: "flex-end",
               },
               alignItems: "center",
-              // padding: { xs: "16px", md: "32px" },
             }}
           >
-            <Box sx={{ 
-              // maxWidth: { md: "500px", lg: "560px", xl: "620px" } 
-              }}>
+            <Box>
               <Typography
                 sx={{
                   color: "#243771",
@@ -60,7 +53,7 @@ const ResponsibleCredit = () => {
                   fontWeight: "300",
                   margin: "0 0 25px",
                   // lineHeight:"1.1"
-                  maxWidth:"500px"
+                  maxWidth: "500px",
                 }}
               >
                 At Credmudra, responsible credit means more than just borrowing.
@@ -84,12 +77,11 @@ const ResponsibleCredit = () => {
             item
             xs={12}
             md={6}
-              // bgcolor={"gray"}
+            // bgcolor={"gray"}
             sx={{
               display: "flex",
               justifyContent: { xs: "center", md: "flex-end" },
               alignItems: "center",
-              // padding: { xs: "16px", md: "32px" },
             }}
           >
             <Box
