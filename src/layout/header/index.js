@@ -161,6 +161,7 @@ const Header = () => {
             display: { xs: "none", md: "flex" },
             height: "230px",
             width: { md: "950px", lg: "1150px", xl: "1350px" },
+            width: "1350px",
             backgroundColor: "#000",
             position: "fixed",
             top: "64px",
