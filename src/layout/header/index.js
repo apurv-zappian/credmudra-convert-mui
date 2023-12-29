@@ -141,7 +141,7 @@ const Header = () => {
         <Box
           sx={{
             height: "230px",
-            width: "1345px",
+            width: "1350px",
             backgroundColor: "#000",
             position: "fixed",
             top: "64px",
